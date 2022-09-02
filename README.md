@@ -1,1 +1,1 @@
-# moja-pierwsza-strona-www - jak w nazwie repo: moja pierwsza strona w html :) brzydka jak piernik, ale co ma działać, to działa (przynajmniej na razie)
+# moja-pierwsza-strona-www - jak w nazwie repo: projektuję swoją pierwszą stronkę w html :) Nie jest może najpiększniejsza... Ale co ma działać, to działa!
