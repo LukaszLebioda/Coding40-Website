@@ -1,0 +1,29 @@
+body
+{
+	background-color: gray;
+	font-family: Verdana;
+	font-size: 20px;
+	color: white;
+}
+
+h1
+{
+	color: forestgreen;
+	font-size: 30px;
+}
+
+/* różne linki - nieodwiedzony, odwiedzony i najechany */
+a:link
+{
+	color: cyan;
+}
+
+a:visited
+{
+	color: darkorange;
+}
+
+a:hover
+{
+	color: crimson;
+}
