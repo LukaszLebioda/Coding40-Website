@@ -1,9 +1,9 @@
 body
 {
-	background-color: gray;
+	background-color: lightyellow;
 	font-family: Verdana;
 	font-size: 20px;
-	color: white;
+	color: black;
 }
 
 h1
@@ -29,6 +29,7 @@ h1
 {
 	float: left;
 	background-color: lightgray;
+	color: forestgreen;
 	width: 120px;
 	min-height: 620px;
 	padding: 10px;
@@ -51,7 +52,7 @@ h1
 {
 	clear: both;
 	background-color: black;
-	color: white;
+	color: forestgreen;
 	text-align: center;
 	padding: 20px;
 }	
