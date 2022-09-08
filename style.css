@@ -6,12 +6,6 @@ body
 	color: black;
 }
 
-h1
-{
-	color: forestgreen;
-	font-size: 30px;
-}
-
 #container
 {
 	width: 1000px;
@@ -20,16 +14,17 @@ h1
 }
 #logo
 {
-	background-color: black;
+	background-color: lightslategray;
 	color: white;
 	text-align: center;
 	padding: 15px;
+	font-size: 15px;
 }
 #nav
 {
 	float: left;
-	background-color: lightgray;
-	color: forestgreen;
+	background-color: lightskyblue;
+	font-size: 15px;
 	width: 120px;
 	min-height: 620px;
 	padding: 10px;
@@ -46,13 +41,13 @@ h1
 	width: 160px;
 	min-height: 620px;
 	padding: 10px;
-	background-color: lightgray;
+	background-color: lightskyblue;
 }
 #footer
 {
 	clear: both;
-	background-color: black;
-	color: forestgreen;
+	background-color: lightslategray;
+	color: white;
 	text-align: center;
 	padding: 20px;
 }	
