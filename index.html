@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" /> 
 </head>
 
-<body>
+<body onload="countdown();">
 	<!-- Miejsce na komentarz -->
 	<div id="container">
 		<div id="logo">
@@ -18,18 +18,16 @@
 		</div>
 	
 		<div id="nav">
-			<a href="source_code.html" title="Source code (O mnie)">Source code (O mnie)</a></br></br>
+			<a href="source_code.html" title="Source code (O mnie)">Source code (About me)</a></br></br>
 			Skills (soft, hard) </br></br>
 			Education </br></br>
-			Interests & Leisures </br></br></br>
+			<a href="leisures.html" title="Interests & Leisures">Interests & Leisures</a></br></br>
 			<a href="logs_weekly.html" title="Logs">Logs</a></br></br>
 			<a href="order_form.html" title="Logs">Order form</a></br></br>
 		</div>
 	
 		<div id="content">
-			
-			<br/><br/>&#60?php<br />echo "Hello World!";<br />?&#62
-			
+			<br/><br/>&#60?php<br />echo "Hello World!";<br />?&#62	
 			<br/><br/>
 			A few words about me
 			<br></br>
@@ -40,12 +38,17 @@
 			On may daily basis I administer the software and the CMS panel of the website. All ot this I mentioned above aroused my huge interest in the IT environment.
 			Recently I’ve decided to learn more about it to understand better how it works. I feel I learn a lot every day, however I have to admit sometimes the intellectual and emotional excitement is spoiled with the moments of doubt and feeling of being overwhelmed with all this data. And there is some much more! I’ve just started learning the basics of html, cee & php, and designing my first website. I push my commits regularly to GitHub.
 			<br></br>
-			The situation is dynamic. I believe I’ll have more to share in the days to come.
+			The situation is dynamic. I believe I’ll have more to share in the days to come.		
 		</div>
 	
-		<div id="ad">
+		<div timer and ad> 
+			<div id="clock">
+			</div>
+		
+			<div id="ad">
 			<!-- Standardowe wymiary reklamy od ad sense to 160x600px -->
 			<img src="img/reklama.jpg" />
+			</div>
 		</div>
 		
 		<div id="footer">
@@ -55,6 +58,7 @@
 	
 	</div>
 	
+<script type="text/javascript" src="timer.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" /> 
 </head>
 
-<body>
+<body onload="countdown();">
 	<!-- Miejsce na komentarz -->
 	<div id="container">
 		<div id="logo">
@@ -18,11 +18,12 @@
 		</div>
 	
 		<div id="nav">
-			Source code (O mnie) </br></br>
+			<a href="source_code.html" title="Source code (O mnie)">Source code (About me)</a></br></br>
 			Skills (soft, hard) </br></br>
 			Education </br></br>
-			Interests & Leisures </br></br>
-			Logs </br></br>
+			<a href="leisures.html" title="Interests & Leisures">Interests & Leisures</a></br></br>
+			<a href="logs_weekly.html" title="Logs">Logs</a></br></br>
+			<a href="order_form.html" title="Logs">Order form</a></br></br>
 		</div>
 	
 		<div id="content">
@@ -30,17 +31,24 @@
 			<i>Aug 29th - Sep 4th 2022: I've just turned 40. And I've just started learning how to code as part of my lifechanging project. Confused and overwhelmed by data, as well as excited and full of hope. Learned some basics of HTML & CSS. Starded designing my 1st website. Pushed all of it to GitHub (which took me a while to figure out). </i>
 		</div>
 	
-		<div id="ad">
+		<div timer and ad> 
+			<div id="clock">
+			</div>
+		
+			<div id="ad">
 			<!-- Standardowe wymiary reklamy od ad sense to 160x600px -->
 			<img src="img/reklama.jpg" />
+			</div>
 		</div>
 		
 		<div id="footer">
 			&copy; All rights reserved - Łukasz Lebioda
+			</br> lukasz.leb@gmail.com, +48 513-637-367
 		</div>
 	
 	</div>
-	
+
+<script type="text/javascript" src="timer.js"></script>
 </body>
 
 </html>

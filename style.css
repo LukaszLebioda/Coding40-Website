@@ -26,7 +26,7 @@ body
 	background-color: lightskyblue;
 	font-size: 15px;
 	width: 120px;
-	min-height: 620px;
+	min-height: 800px;
 	padding: 10px;
 }
 #content
@@ -35,11 +35,20 @@ body
 	padding: 20px;
 	width: 640px;
 }
+
+#clock
+{
+	float: left;
+	width: 160px;
+	background-color: aquamarine;
+	padding: 10px;
+	text-align: center;
+}
 #ad
 {
 	float: left;
 	width: 160px;
-	min-height: 620px;
+	min-height: 800px;
 	padding: 10px;
 	background-color: lightskyblue;
 }
@@ -55,15 +64,15 @@ body
 /* różne linki - nieodwiedzony, odwiedzony i najechany */
 a:link
 {
-	color: cyan;
+	color: black;
 }
 
 a:visited
 {
-	color: darkorange;
+	color: black;
 }
 
 a:hover
 {
-	color: crimson;
+	color: black;
 }
