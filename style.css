@@ -1,8 +1,7 @@
 body
 {
 	background-color: snow;
-	font-family: Verdana;
-	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 }
 
@@ -20,26 +19,50 @@ body
 	padding: 15px;
 	font-size: 15px;
 }
+
+#topbar
+{
+	background-color: lightblue;
+	color: white;
+	text-align: center;	
+}
+
 #nav
 {
 	float: left;
 	background-color: lightskyblue;
 	font-size: 15px;
-	width: 120px;
+	width: 160px;
 	min-height: 800px;
 	padding: 10px;
 }
+
+.tile-left
+{
+	background-color: navajowhite;
+	margin: 10px;
+	height: 40px;
+	padding: 5px;
+}
+
+.tile-left:hover
+{
+	background-color: orange;
+}
+
+
 #content
 {
 	float: left;
 	padding: 20px;
-	width: 640px;
+	width: 680px;
+	text-align: justify;
 }
 
 #clock
 {
 	float: left;
-	width: 160px;
+	width: 80px;
 	background-color: aquamarine;
 	padding: 10px;
 	text-align: center;
@@ -47,11 +70,20 @@ body
 #ad
 {
 	float: left;
-	width: 160px;
+	width: 80px;
 	min-height: 800px;
 	padding: 10px;
 	background-color: lightskyblue;
 }
+
+.tile-right
+{
+	background-color: deepskyblue;
+	height: 70px;
+	margin: 5px;
+	margin-bottom: 10px;
+}
+
 #footer
 {
 	clear: both;
