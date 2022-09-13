@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<h3> Sprawdźmy, czy liczba, którą wpiszemy, będzie dodatnia, czy ujemna </h3>
+	
+	<script type="text/javascript">
+	
+		function checknumber()
+		{
+			var number = document.getElementById("field").value;
+			
+			if (number>0) 
+			{
+			document.getElementById("result").innerHTML="positive number";
+			}
+			else if (number<0) document.getElementById("result").innerHTML="negative number";
+			else if (number==0) document.getElementById("result").innerHTML="equals zero";
+			else document.getElementById("result").innerHTML="this is not a number!";
+		
+		}
+	
+	</script>
+</head>
+
+<body>
+
+	<input type="text" id="field" />
+	<input type="submit" value="check" onclick="checknumber()"/>
+	
+	<div id="result">w to miejsce i tak wskoczy wynik ifa</div>
+
+</body>
+
+</html>
