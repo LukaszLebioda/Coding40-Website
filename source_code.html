@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html lang="pl">
+<html lang="en">
 <head>
-	
+	<!-- Miejsce na komentarz -->
 	<meta charset="utf-8" />
 	<title>Coding40 - My lifechanging project</title>
 	<meta name="description" content="I'd like to tell You my story of the change I made not to regret ever again I hadn't done it sooner" />
@@ -10,6 +10,8 @@
 	
 	<link rel="stylesheet" href="style.css" type="text/css" /> 
 	<link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" /> 
+	
+	<script type="text/javascript" src="timer.js"></script>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,6 @@
 <body onload="countdown();">
 	
 	<div id="container">
-	
 		<div id="logo">
 			<h1>Coding40 - My lifechanging project</h1>
 		</div>
@@ -31,12 +32,13 @@
 	
 		<div id="nav">
 			</br>
-			<div class="tile-left"><a href="source_code.html" title="About me">About me</a></div>
-			<div class="tile-left">Skills</div>
-			<div class="tile-left">Education</div>
-			<div class="tile-left"><a href="leisures.html" title="Leisures">Leisures</a></div>
-			<div class="tile-left"><a href="logs_weekly.html" title="Logs">Logs</a></div>
-			<div class="tile-left"><a href="login_form.html" title="Logs">Login</a></div>
+			<a href="index.html" class="tile-left" title="About me"><i class="icon-home"></i> Start page</a>
+			<a href="source_code.html" class="tile-left" title="About me"><i class="icon-adult"></i> About me</a>
+			<a href="skills.html" class="tile-left" title="Skills"><i class="icon-wrench"></i> Skills</a>
+			<a href ="education.html" class="tile-left"><i class="icon-graduation-cap"></i> Education</a>
+			<a href="leisures.html" class="tile-left" title="Leisures"><i class="icon-glass"></i> Leisures</a>
+			<a href = "logs_weekly.html" class="tile-left" title="Logs"><i class="icon-comment"></i> Weekly logs</a>
+			<a href="login_form.html" class="tile-left" title="Login"><i class="icon-right"></i> Login</a>
 		</div>
 	
 		<div id="content">
@@ -61,11 +63,15 @@
 		</div>
 		
 		<div id="ad">
+			
 			<div class="tile-right" style="background-color: #25D366;"><i class="icon-phone"></i></div>
 			<div class="tile-right" style="background-color: navajowhite;"><i class="icon-mail-alt"></i></div>
-			<div class="tile-right" style="background-color: #25D366;"><a href="https://web.whatsapp.com/" target="_blank" title="Find me on Whatsupp"><i class="icon-whatsapp"></i></a></div>
-			<div class="tile-right" style="background-color: #0e76a8;"><a href="https://www.linkedin.com/in/%C5%82ukasz-l-45936924b/" target="_blank" title="Find me on LinkedIn"><i class="icon-linkedin-rect"></i></a></div>
-			<div class="tile-right" style="background-color: #000000;"><a href="https://github.com/LukaszLebioda/Coding40-MF-WebsiteProject" target="_blank" title="Find me on GitHub"><i class="icon-github-circled-alt2"></i></a></div>
+			
+			<a href="https://web.whatsapp.com/" target="_blank" title="Find me on Whatsupp" class="tile-right" style="background-color: #25D366;"><i class="icon-whatsapp"></i></a>
+			
+			<a href="https://www.linkedin.com/in/%C5%82ukasz-l-45936924b/" target="_blank" title="Find me on LinkedIn" class="tile-right" style="background-color: #0e76a8;"><i class="icon-linkedin-rect"></i></a>
+			
+			<a href="https://github.com/LukaszLebioda/Coding40-MF-WebsiteProject" target="_blank" title="Find me on GitHub" class="tile-right" style="background-color: #000000;"><i class="icon-github-circled-alt2"></i></a>
 		</div>
 		
 		<div id="footer">

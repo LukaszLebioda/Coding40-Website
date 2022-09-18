@@ -1,5 +1,6 @@
 
 .icon-emo-happy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-login { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .icon-emo-wink { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
 .icon-emo-unhappy { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
 .icon-music { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
@@ -53,6 +54,7 @@
 .icon-play { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe833;&nbsp;'); }
 .icon-flash { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe834;&nbsp;'); }
 .icon-graduation-cap-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe835;&nbsp;'); }
+.icon-adult { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe836;&nbsp;'); }
 .icon-github-circled-alt2 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf056;&nbsp;'); }
 .icon-bookmark-empty { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf097;&nbsp;'); }
 .icon-phone-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf098;&nbsp;'); }

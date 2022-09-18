@@ -1,5 +1,6 @@
 
 .icon-emo-happy:before { content: '\e800'; } /* '' */
+.icon-login:before { content: '\e800'; } /* '' */
 .icon-emo-wink:before { content: '\e801'; } /* '' */
 .icon-emo-unhappy:before { content: '\e802'; } /* '' */
 .icon-music:before { content: '\e803'; } /* '' */
@@ -53,6 +54,7 @@
 .icon-play:before { content: '\e833'; } /* '' */
 .icon-flash:before { content: '\e834'; } /* '' */
 .icon-graduation-cap-1:before { content: '\e835'; } /* '' */
+.icon-adult:before { content: '\e836'; } /* '' */
 .icon-github-circled-alt2:before { content: '\f056'; } /* '' */
 .icon-bookmark-empty:before { content: '\f097'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */

@@ -28,6 +28,15 @@ Font license info
    Homepage:  http://designmodo.com/linecons-free/
 
 
+## Elusive
+
+   Copyright (C) 2013 by Aristeides Stathopoulos
+
+   Author:    Aristeides Stathopoulos
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://aristeides.com/
+
+
 ## MFG Labs
 
    Copyright (C) 2012 by Daniel Bruce

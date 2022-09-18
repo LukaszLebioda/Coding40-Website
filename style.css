@@ -22,32 +22,40 @@ body
 
 #topbar
 {
-	background-color: lightblue;
+	background-color: lightskyblue;
 	color: white;
+	height: 30px;
 	text-align: center;	
 }
 
 #nav
 {
 	float: left;
-	background-color: lightskyblue;
+	background-color: dodgerblue;
 	font-size: 15px;
 	width: 160px;
 	min-height: 800px;
 	padding: 10px;
 }
 
+/* display, text-decoration i box-sizing po to, aby z całego diva zrobić link */
 .tile-left
 {
-	background-color: navajowhite;
+	background-color: aquamarine;
 	margin: 10px;
 	height: 40px;
 	padding: 5px;
+	cursor: pointer;
+	border-radius: 6px;
+	
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
 .tile-left:hover
 {
-	background-color: orange;
+	background-color: darksalmon;
 }
 
 
@@ -73,7 +81,7 @@ body
 	width: 80px;
 	min-height: 800px;
 	padding: 10px;
-	background-color: lightskyblue;
+	background-color: dodgerblue;
 }
 
 .tile-right
@@ -82,6 +90,11 @@ body
 	height: 70px;
 	margin: 5px;
 	margin-bottom: 10px;
+	cursor: pointer;
+	border-radius: 6px;
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
 #footer
