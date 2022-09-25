@@ -1,3 +1,13 @@
+/*
+selectors:
+* (dla całej zawartości html)
+body (dla całej sekcji body strony)
+p, h1-h6 (tylko dla paragrafów i/lub nagłówków)
+# (dla ID danego elementu, id="text")
+. (dla klasy danych elementów, class="group")
+p.group (tylko dla paragrafów z klasy "groups")
+*/
+
 body
 {
 	background-color: snow;
@@ -25,7 +35,9 @@ body
 	background-color: lightskyblue;
 	color: white;
 	height: 30px;
-	text-align: center;	
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 #nav
@@ -34,7 +46,7 @@ body
 	background-color: dodgerblue;
 	font-size: 15px;
 	width: 160px;
-	min-height: 800px;
+	min-height: 852px;
 	padding: 10px;
 }
 
