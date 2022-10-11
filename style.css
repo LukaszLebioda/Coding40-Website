@@ -13,10 +13,12 @@ body
 	background-image: url("img/background.jpg");
     background-repeat: no-repeat; /* or repeat-x; repeat-y */
     background-attachment: fixed; /* or scroll */
+    background-position: center top;
     background-size:2200px 1100px;
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
+	margin: 0px;
 }
 
 #container
@@ -25,26 +27,34 @@ body
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #logo
 {
 	background-color: rgb(119, 136, 153, 0.8); /* #778899; lightslategray; */
+	border-bottom: 2px solid gray;
 	color: white;
 	text-align: center;
-	padding: 20px;
-	font-size: 15px;
-	letter-spacing: 2px;
+	padding: 15px 0px 15px 0px;    /* góra, prawo, dół, lewo: zgodnie z ruchem zegara po układzie kartezjańskim */
+	font-size: 14px;
+	letter-spacing: 1px;
 	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: /* najpierw ćwiartka kartezjańska x2, potem blur, potem kolor */
+	1px 1px 0 grey,
+	-1px 1px 0 grey,
+	-1px -1px 0 grey,
+	1px -1px 0 grey;
 }
 
 #topbar
 {
-	background-color: lightskyblue;
+	background-color: lightskyblue; /* 87cefa */
 	color: white;
 	height: 30px;
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	width: 900px;
+	width: 901px;
 	float: left;
 }
 
@@ -105,7 +115,7 @@ body
 	background-color: dodgerblue;
 	font-size: 15px;
 	width: 160px;
-	min-height: 852px;
+	min-height: 853px;
 	padding: 10px;
 }
 
@@ -128,6 +138,7 @@ body
 .tile-left:hover
 {
 	background-color:#5dddb2;
+    text-decoration: none;
 }
 
 
@@ -137,8 +148,56 @@ body
     float: left;
 	padding: 20px;
 	width: 680px;
-    height: 832px;
+    height: 833px;
 	text-align: justify;
+}
+
+#list
+{
+    padding: 4px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol
+{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+ol > li
+{
+    text-transform: none; /*lowercase, uppercase */
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+ol > li > ul
+{
+    font-weight: 400;
+    text-transform: none;
+    padding: 0px;
+    letter-spacing: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: none; /* może być disc, square, circle; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
+}
+
+ol > li > ul > li
+{
+    margin: 0px; /* bo czasami przeglądarki ustawiają tu swój domyślny margin */ 
+}
+
+ol > li > ul > li:before
+{
+    color: grey; 
+    content: "➛"; /* encja html; mogą też być czcionki fontello */
+    margin-right: 4px;
 }
 
 p.pborder
@@ -148,6 +207,12 @@ p.pborder
     border-color: lightskyblue;
     border-radius: 3px;
     padding: 4px;
+}
+
+.list_item
+{
+    padding: 10px 20px; /* w pionie (oś y), w poziomie (oś x) */
+    text-align: justify;
 }
 
 #clock
@@ -193,14 +258,26 @@ p.pborder
 a:link
 {
 	color: black;
+    text-decoration: none;
 }
 
 a:visited
 {
 	color: black;
+    text-decoration: none;
 }
 
 a:hover
 {
 	color: black;
+    text-decoration: underline;
 }
+
+a:active
+{
+	color: black;
+    text-decoration: none;
+}
+
+
+

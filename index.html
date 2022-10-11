@@ -17,7 +17,26 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-		
+
+<!-- poniżej 3 etapy scrollowania z linku listy do konkretnego slajdu:
+1) podpięcie biblioteki JQuery z googleapis
+2) podpięcie elementu scrollTo (od jakiegoś gościa z githuba)
+3) okodowanie funkcji wywołującej scrollTo
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="jquery.scrollTo.min.js"></script>
+
+<script>
+
+    jQuery(function($) {
+        // zresetuj scrolla
+        $.scrollTo(0);
+        
+        $("#link4").click(function() {$.scrollTo($("#link4"), 500);}); 
+    }
+    );
+</script>
+    
 </head>
 
 <!-- onload uruchamia zainkludowany java script -->
@@ -68,15 +87,15 @@
 			<br>
 			Jeśli chcesz wiedzieć więcej o Koronie Himalajów i Karakorum <a href="https://pl.wikipedia.org/wiki/O%C5%9Bmiotysi%C4%99cznik" target="_blank" title="Przejdź do strony o 8-tysięcznikach">kliknij ten link</a> i zacznij swoją przygodę już teraz!
 			<br><br>
-<<<<<<< HEAD
+
 			<p title = "My biggest professional success"><mark style="background-color: lightslategray">My biggest professional succes</mark>, I think, is the implementation of the iKSORIS sales program into the three units of the Jagiellonian University: The JU Museum, the Botanical Garden and the Nature Education Centre. I coordinated the whole process from the very beginning to the very end, of course with the support of many wonderful people. The process was long, complicated and demanding, and its major visible result is probably the website https://bilety.uj.edu.pl/ where one can learn about those units and purchase tickets to them. It is planned to develop the website into the online store. Probably other JU unit will join as well.</p> 
 			
             <p title = "What do I do professionally"><mark style="background-color: lightslategray">On may daily basis</mark> I administer the software and the CMS panel of the website. All ot this I mentioned above aroused my huge interest in the IT environment.
-=======
+
 			<p title = "My biggest professional success">My biggest professional succes, I think, is the implementation of the iKSORIS sales program into the three units of the Jagiellonian University: The JU Museum, the Botanical Garden and the Nature Education Centre. I coordinated the whole process from the very beginning to the very end, of course with the support of many wonderful people. The process was long, complicated and demanding, and its major visible result is probably the website https://bilety.uj.edu.pl/ where one can learn about those units and purchase tickets to them. It is planned to develop the website into the online store. Probably other JU unit will join as well.</p> 
 			
 			<p title = "What do I do professionally">On may daily basis I administer the software and the CMS panel of the website. All ot this I mentioned above aroused my huge interest in the IT environment.
->>>>>>> b607a37b5fc8b13fdf567908fdf40c093a2b0d16
+
 			Recently I’ve decided to learn more about it to understand better how it works. I feel I learn a lot every day, however I have to admit sometimes the intellectual and emotional excitement is spoiled with the moments of doubt and feeling of being overwhelmed with all this data. And there is some much more! I’ve just started learning the basics of html, cee & php, and designing my first website. I push my commits regularly to GitHub.</p>
 			
 			<p title = "summary">The situation is dynamic. I believe I’ll have more to share in the days to come.</p>		
@@ -108,7 +127,7 @@
 		-->
 	
 	</div>
-	
+
 </body>
 
 </html>
