@@ -151,8 +151,34 @@ body
 
 #list
 {
-	width: 500px;
-	border: 2px solid grey;
+	border-style: groove; /* dotted, dashed, solid, double, groove,  ridge */
+    border-width: 2px; /* or thin, medium, thick; or border-width: 5px 2px 2px 5px; /* top, right, bottom left */
+    border-color: lightskyblue;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+ol > li > ul
+{
+    font-weight: 400;
+    text-transform: none;
+    padding: 5px;
+    letter-spacing: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: none; /* może być disc, square, circle; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
+}
+
+ol > li > ul > li
+{
+    margin: 0px; /* bo czasami przeglądarki ustawiają tu swój domyślny margin */ 
+}
+
+ol > li > ul > li:before
+{
+    color: grey; 
+    content: "➛"; /* encja html; mogą też być czcionki fontello */
+    margin-right: 4px;
 }
 
 p.pborder
@@ -162,6 +188,12 @@ p.pborder
     border-color: lightskyblue;
     border-radius: 3px;
     padding: 4px;
+}
+
+.list_item
+{
+    padding: 10px 20px; /* w pionie (oś y), w poziomie (oś x) */
+    text-align: justify;
 }
 
 #clock

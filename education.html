@@ -17,7 +17,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-		
 </head>
 
 <!-- onload uruchamia zainkludowany java script -->
@@ -53,47 +52,57 @@
 	
 		<div id="content">
 			
-			<!-- są listy uporządkowane (ol), z numeracją, i listy nieuporządkowane (ul) z kształtami geometrycznymi -->
+			<!-- są listy uporządkowane (ol - ordered list), z numeracją, i listy nieuporządkowane (ul - unordered list ) z kształtami geometrycznymi; li - list item -->
 			<div id="list">
-				<ul>
-					<li>Pierwszy</li>
-					<li>Drugi</li>
-					<li>Trzeci</li>
-				</ul>
-				
+				<ol>
+					<li>Education
+                        <ul>
+                            <!-- po kliknięciu w link na liście przeglądarka przenosi nas do konkretnego slajdu skokowo; żeby przejście było płynne, trzema wykorzystać skrypt js; przed implementacją jQuery scrollTo zapis wyglądał tak:
+                            <li><a href="#link1">Official education</a></li>
+                            a po implementacji tak:
+                            <li><a id="link1" href=#">Official education</a></li>
+                            czyli dodano id (do którego odniesiemy się w skryptcie js) oraz w href pozostawiono tylko hash
+                            -->
+                            
+                            <li><a id="link1" href="#">Official education</a></li>
+                            <li><a href="#link2">Self study</a></li>    
+                        </ul>
+                    <li>Experience
+                        <ul>
+                            <li><a href="#link3">Job experience</a></li>
+                            <li><a id="link4" href="#">Life experience</a></li>    
+                        </ul>
+                    </li>
+				</ol>
 			</div>
 			
-			<p class="pborder">Official education</p> <br>
-			<p class="pborder">Self-study</p> <br><br>
-
-			Official education <br><br>
-			Self-study <br><br>
-			
-			<pre>
-			Why I started: 
-			- turning 40 (summary of my life);
-			- salary;
-			- it;s interesting;
-			- and important (pandemic);
-			- always a self-learner and curious spirit;
-			- foreign languages and coding languages (analogies);
-			</pre>
-			
-			<pre>
-			Why I started: 
-			- turning 40 (summary of my life);
-			- salary;
-			- it;s interesting;
-			- and important (pandemic);
-			- always a self-learner and curious spirit;
-			- foreign languages and coding languages (analogies);
-			</pre>
-			
-            <p class="pborder">Experience</p> <br><br>
-            iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+            <div class = list_item>
+                <p class="pborder" id="divlink1">Official education</p> <br><br>
+            </div>
             
-		</div>
-	
+            <div class = list_item>
+			<p class="pborder" id="divlink2">Self-study</p> <br><br>
+			     <pre>
+			     Why I started: 
+			     - turning 40 (summary of my life);
+			     - salary;
+			     - it;s interesting;
+			     - and important (pandemic);
+			     - always a self-learner and curious spirit;
+                 - foreign languages and coding languages (analogies);
+			     </pre>
+            </div>
+            
+            <div class = list_item>
+			 <p class="pborder" id="divlink3">Job experience</p> <br><br>
+                iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+            </div>
+            
+            <div class = list_item>
+			<p class="pborder" id="divlink4">Life experience</p> <br><br>
+            </div>
+        </div>
+			
 		<div id="clock">
 		</div>
 		
