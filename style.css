@@ -13,6 +13,7 @@ body
 	background-image: url("img/background.jpg");
     background-repeat: no-repeat; /* or repeat-x; repeat-y */
     background-attachment: fixed; /* or scroll */
+    background-position: center top;
     background-size:2200px 1100px;
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
@@ -26,6 +27,7 @@ body
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #logo
 {
 	background-color: rgb(119, 136, 153, 0.8); /* #778899; lightslategray; */
@@ -136,6 +138,7 @@ body
 .tile-left:hover
 {
 	background-color:#5dddb2;
+    text-decoration: none;
 }
 
 
@@ -151,18 +154,34 @@ body
 
 #list
 {
-	border-style: groove; /* dotted, dashed, solid, double, groove,  ridge */
-    border-width: 2px; /* or thin, medium, thick; or border-width: 5px 2px 2px 5px; /* top, right, bottom left */
-    border-color: lightskyblue;
-    border-radius: 3px;
     padding: 4px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol
+{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+ol > li
+{
+    text-transform: none; /*lowercase, uppercase */
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
 }
 
 ol > li > ul
 {
     font-weight: 400;
     text-transform: none;
-    padding: 5px;
+    padding: 0px;
     letter-spacing: 0px;
     margin-top: 5px;
     margin-left: 20px;
@@ -259,4 +278,6 @@ a:active
 	color: black;
     text-decoration: none;
 }
+
+
 

@@ -51,18 +51,22 @@
 			<br /><br /> 
 			<form action="login_form.php" method="post">
 	
+				<p id="loginExplanation"></p> <br>
+				<p id="checkBoxExplanation"></p> <br>
+
 				<label>Username</label><br><br>
-				
 				<input type ="text" id="username" /><br><br>
 	
 				<label>Password</label><br><br>
-				
 				<input type ="password" id="password" /><br><br>
-				
 				<!-- inna wersja włożenia przycisku button -->
 				<!-- <input type="button" value="Git push" /> -->
+
+				<button type = "button" onclick='document.getElementById("loginExplanation").innerHTML = "Sorry, but this is a fake simulation process, not the real thing... But in the future hovewer: 💪!"' >Git Push</button> <br><br>
 				
-				<a href="logout.html"><button type = "button" id = "button" >Git Push</button></a>
+				<input type="checkbox" id="myCheckBox" />
+				<label for="myCheckBox">I forgot my password</label>
+				
 			</form>
 	
 		</div>
