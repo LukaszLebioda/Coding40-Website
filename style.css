@@ -18,7 +18,13 @@ body
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
-	margin: 0px;
+	margin: 0 !important; /* przeglądarki mają swój defaultowy margin, a to polecenie ten margin zeruje */
+}
+
+/* div obejmujący wszystko, także containera, stworzony na potrzeby umieszczenia przyklejanego logo */
+#wrapper
+{
+    width: 100%;
 }
 
 #container
