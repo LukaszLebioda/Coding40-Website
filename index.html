@@ -27,15 +27,31 @@
 <script src="jquery.scrollTo.min.js"></script>
 
 <script>
-
-    jQuery(function($) {
-        // zresetuj scrolla
-        $.scrollTo(0);
-        
-        $("#link4").click(function() {$.scrollTo($("#link4"), 500);}); 
-    }
-    );
-</script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#listlink1').click(function() { $.scrollTo($('#divlink1'), 500); });
+			$('#listlink2').click(function() { $.scrollTo($('#divlink2'), 500); });
+			$('#listlink3').click(function() { $.scrollTo($('#divlink3'), 500); });
+			$('#listlink4').click(function() { $.scrollTo($('#divlink4'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
     
 </head>
 
@@ -67,7 +83,7 @@
 		</div>
 
 		<div id="nav">
-			</br>
+			<br>
 			<!-- poniżej przykład, jak wyglądała linia, zanim zrobiłem z diva cały klikalny link -->
 			<!-- <div class="tile-left"><a href="source_code.html" title="About me"><i class="icon-adult"></i> About me</a></div> -->
 			

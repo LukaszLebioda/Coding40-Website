@@ -277,6 +277,18 @@ p.pborder
 	padding: 20px;
 }	
 
+.scrollup
+{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
+
 /* różne linki - nieodwiedzony, odwiedzony i najechany */
 a:link
 {
