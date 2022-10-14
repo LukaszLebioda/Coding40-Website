@@ -18,7 +18,13 @@ body
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
-	margin: 0px;
+	margin: 0 !important; /* przeglądarki mają swój defaultowy margin, a to polecenie ten margin zeruje */
+}
+
+/* div obejmujący wszystko, także containera, stworzony na potrzeby umieszczenia przyklejanego logo */
+#wrapper
+{
+    width: 100%;
 }
 
 #container
@@ -53,9 +59,25 @@ body
 	height: 30px;
 	align-items: center;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	width: 901px;
 	float: left;
+}
+
+.tile-upper
+{
+    float: left;
+    min-width: 50px;
+    height: 30px;
+    border-right: 1px dotted #778899; 
+    align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.tile-upper:hover{
+    background-color: pink;
+    cursor: pointer;
 }
 
 #flag_pl 
@@ -139,6 +161,7 @@ body
 {
 	background-color:#5dddb2;
     text-decoration: none;
+    color: white;
 }
 
 
