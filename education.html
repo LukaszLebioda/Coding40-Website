@@ -17,6 +17,37 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+
+<script>
+		
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#listlink1').click(function() { $.scrollTo($('#divlink1'), 500); });
+			$('#listlink2').click(function() { $.scrollTo($('#divlink2'), 500); });
+			$('#listlink3').click(function() { $.scrollTo($('#divlink3'), 500); });
+			$('#listlink4').click(function() { $.scrollTo($('#divlink4'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn(); //300 oznacza po ilu pikselach ma się przycisk pojawić
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+    
 </head>
 
 <!-- onload uruchamia zainkludowany java script -->
@@ -24,6 +55,8 @@
 	
 	<div id="container">
 	
+        <a href="#" class="scrollup"></a>
+        
 		<div id="logo">
 			<h1 title="This is the title of the project I started to change my life">Coding40 - My lifechanging project</h1>
 		</div>
@@ -44,7 +77,7 @@
 		</div>
 
 		<div id="nav">
-			</br>
+			<br>
 			<a href="index.html" class="tile-left" title="About me"><i class="icon-home"></i> Start page</a>
 			<a href="source_code.html" class="tile-left" title="About me"><i class="icon-adult"></i> About me</a>
 			<a href="skills.html" class="tile-left" title="Skills"><i class="icon-wrench"></i> Skills</a>
@@ -65,13 +98,13 @@
                             <li><a href="#link1">Official education</a></li>
                             a po implementacji tak:
                             <li><a id="link1" href=#">Official education</a></li>
-                            czyli dodano id (do którego odniesiemy się w skryptcie js) oraz w href pozostawiono tylko hash
+                            czyli dodano id (do którego odniesiemy się w skryptcie js) oraz w href pozostawiono tylko hash, bo już nie chcemy, żeby nas tam przeglądarka skokowo prowadziła
                             -->
                             
-                            <li><a id="link1" href="#">Official education</a></li>
-                            <li><a href="#link2">Self-study</a></li>  
-                            <li><a href="#link3">Job experience</a></li>
-                            <li><a id="link4" href="#">Life experience</a></li> 
+                            <li><a id="listlink1" href="#">Official education</a></li>
+                            <li><a id="listlink2" href="#">Self-study</a></li>  
+                            <li><a id="listlink3" href="#">Job experience</a></li>
+                            <li><a id="listlink4" href="#">Life experience</a></li> 
                         </ul>                   
                     </li>
 				</ol>
@@ -96,7 +129,28 @@
             
             <div class = list_item>
 			 <p class="pborder" id="divlink3">Job experience</p> <br><br>
+                iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ 
+                
+                <br>
+                
                 iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+                
+                <br>
+                
+                iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+                
+                <br>
+                
+                iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+                
+                <br>
+                
+                iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+                
+                <br>
+                
+                iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+                
             </div>
             
             <div class = list_item>
