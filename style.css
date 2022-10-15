@@ -21,18 +21,21 @@ body
 	margin: 0 !important; /* przeglądarki mają swój defaultowy margin, a to polecenie ten margin zeruje */
 }
 
-/* div obejmujący wszystko, także containera, stworzony na potrzeby umieszczenia przyklejanego logo */
-#wrapper
-{
-    width: 100%;
-}
-
 #container
 {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#uppersticky_block
+{   
+    position: sticky;
+    left: 0; /* współrzędna x */
+    top: 0; /* współrzędna y; czyli przyklejamy logo do górnego lewego narożnika ekranu */
+    z-index: 100; /* współrzędna z, określa głębię, odległość od oczu użytkownika; im większy z-indeks, tym to coś więcej rzeczy będzie przesłaniać, będzie bardziej na wierzchu */
+}
+
 
 #logo
 {
@@ -62,22 +65,82 @@ body
 	justify-content: flex-end;
 	width: 901px;
 	float: left;
+    text-align: center;
 }
 
-.tile-upper
+ol.uppermenu_list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol.uppermenu_list a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+}
+
+ol.uppermenu_list > li
 {
     float: left;
-    min-width: 50px;
-    height: 30px;
-    border-right: 1px dotted #778899; 
-    align-items: center;
-	display: flex;
-	justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed black;
+    
 }
 
-.tile-upper:hover{
-    background-color: pink;
-    cursor: pointer;
+ol.uppermenu_list > li:first-child
+{
+  border-left: 1px dashed black;  
+}
+
+ol.uppermenu_list > li:hover
+{
+    background-color: lightblue;
+}
+
+ol.uppermenu_list > li:hover > a /* tylko w ten sposób możemy zmienić kolor czcionki po najechaniu, bo to jest link */
+{
+    color: red;
+}
+
+ol.uppermenu_list > li > ul
+{
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    list-style-type: none;
+    display: none;
+}
+
+ol.uppermenu_list > li:hover > ul
+{
+    display: block;
+}
+
+ol.uppermenu_list > li > ul > li
+{
+    background-color: lightgreen;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed grey;
+}
+
+ol.uppermenu_list > li > ul > li:hover
+{
+    background-color: grey;
+}
+
+ol.uppermenu_list > li > ul > li:hover > a
+{
+    color: hotpink; /* to sposób na zmianę koloru czcionki, czyli linka */
 }
 
 #flag_pl 
@@ -183,7 +246,7 @@ body
     margin-right: auto;
 }
 
-ol
+ol.content_list
 {
     margin-left: 0px;
     padding-left: 0px;
@@ -192,15 +255,16 @@ ol
     list-style-type: none;
 }
 
-ol > li
+ol.content_list > li
 {
     text-transform: none; /*lowercase, uppercase */
     font-size: 14px;
     font-weight: 400;
     padding: 5px;
+    /* dalibyśmy float:letf jeśli chcielibyśmy ułożyć list itemy w poziomie */
 }
 
-ol > li > ul
+ol.content_list > li > ul
 {
     font-weight: 400;
     text-transform: none;
@@ -211,12 +275,12 @@ ol > li > ul
     list-style-type: none; /* może być disc, square, circle; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
 }
 
-ol > li > ul > li
+ol.content_list > li > ul > li
 {
     margin: 0px; /* bo czasami przeglądarki ustawiają tu swój domyślny margin */ 
 }
 
-ol > li > ul > li:before
+ol.content_list > li > ul > li:before
 {
     color: grey; 
     content: "➛"; /* encja html; mogą też być czcionki fontello */

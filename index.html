@@ -57,21 +57,39 @@
 
 <!-- onload uruchamia zainkludowany java script -->
 <body onload="countdown();">
-
-<div id="wrapper">
+   
+<div id="container">
+	   
+    <div id="uppersticky_block">
     
-	<div id="container">
-	
 		<div id="logo">
-			<h1 title="This is the title of the project I started to change my life">Coding<span style="color: lightgrey; text-decoration: underline;">40</span> - My lifechanging project</h1>
+			<h1 title="This is the title of the project I started to change my life">Coding<span style="color: red; text-decoration: none; font-size:30px; font-style: italic">40</span> - My lifechanging project</h1>
 		</div>
 	
 		<div id="topbar">
-            <div class="tile-upper">TILE1</div>
-            <div class="tile-upper">TILE2</div>
-            <div class="tile-upper">TILE3</div>
-            <div style="min-width: 50px; height: 30px;"></div>
-            <div style="clear:both;"></div>
+            <ol class="uppermenu_list">
+                <li><a href="#">list1</a>
+                    <ul>
+                        <li><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">list2</a>
+                    <ul>
+                        <li><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">list3</a>
+                    <ul>
+                        <li><a href="#">item1</a></li>
+                        <li><a href="#">item2</a></li>
+                        <li><a href="#">item3</a></li>
+                    </ul>
+                </li>
+            </ol>
 		</div>
 	
 		<!-- <img src="img/books.jpg" width="300" height="168" alt='a book "Hyperion" by Dan Simmons'/> -->
@@ -81,7 +99,9 @@
 		</div>
 		<div id="flag_es"><img src = "img/es.png" width = "22" height = "17px" />
 		</div>
-
+ 
+    </div>
+        
 		<div id="nav">
 			<br>
 			<!-- poniżej przykład, jak wyglądała linia, zanim zrobiłem z diva cały klikalny link -->
@@ -92,7 +112,6 @@
 			<a href="skills.html" class="tile-left" title="Skills"><i class="icon-wrench"></i> Skills</a>
 			<a href ="education.html" class="tile-left"><i class="icon-graduation-cap"></i> Education</a>
 			<a href="leisures.html" class="tile-left" title="Leisures"><i class="icon-glass"></i> Leisures</a>
-			<a href = "logs_weekly.html" class="tile-left" title="Logs"><i class="icon-comment"></i> Weekly logs</a>
 			<a href="login_form.html" class="tile-left" title="Login"><i class="icon-right"></i> Login</a>
 		</div>
 	
@@ -140,18 +159,17 @@
 		</div>
 		
 		<div id="footer">
+            <!-- <a href="mailto:lukasz.leb@gmail.com"></a> -->
 			&copy; All rights reserved - Łukasz Lebioda
-			</br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone-squared"></i>+48 513-637-367
+			<br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone-squared"></i>+48 513-637-367
 		</div>
-	
 		<!-- używamy, jeśli nie ma footera
 		<div style="clear: both"></div>
 		-->
-	
-	</div>
-
-</div>
-    
+	  
+<!-- podpinamy bibliotekę JQuery, którą ściągnęliśmy z neta (wersja skompresowana); to miało być do sticky logo, które jednak ogarnęliśmy w css, nie w js -->
+<script src="jquery-3.6.1.min.js"></script>
+  
 </body>
 
 </html>
