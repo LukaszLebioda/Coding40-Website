@@ -14,7 +14,7 @@ body
     background-repeat: no-repeat; /* or repeat-x; repeat-y */
     background-attachment: fixed; /* or scroll */
     background-position: center top;
-    background-size:2200px 1100px;
+    background-size:2200px 1100px; /* wypróbować - background-size: cover; background-size: 100% 100%; */
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
@@ -351,6 +351,11 @@ p.pborder
     right: 50px;
     bottom: 50px;
     display: none;
+}
+
+.asterix
+{
+    color: red;
 }
 
 /* różne linki - nieodwiedzony, odwiedzony i najechany */
