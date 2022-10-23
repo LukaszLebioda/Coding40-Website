@@ -6,6 +6,7 @@ p, h1-h6 (tylko dla paragrafów i/lub nagłówków)
 # (dla ID danego elementu, id="text")
 . (dla klasy danych elementów, class="group")
 p.group (tylko dla paragrafów z klasy "group")
+.div-name p (tylko dla paragrafów w konkretnym divie)
 */
 
 body
@@ -14,7 +15,7 @@ body
     background-repeat: no-repeat; /* or repeat-x; repeat-y */
     background-attachment: fixed; /* or scroll */
     background-position: center top;
-    background-size:2200px 1100px;
+    background-size:2200px 1100px; /* wypróbować - background-size: cover; background-size: 100% 100%; */
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
@@ -35,7 +36,6 @@ body
     top: 0; /* współrzędna y; czyli przyklejamy logo do górnego lewego narożnika ekranu */
     z-index: 100; /* współrzędna z, określa głębię, odległość od oczu użytkownika; im większy z-indeks, tym to coś więcej rzeczy będzie przesłaniać, będzie bardziej na wierzchu */
 }
-
 
 #logo
 {
@@ -66,6 +66,107 @@ body
 	width: 901px;
 	float: left;
     text-align: center;
+}
+
+.form
+{
+    background-color: lightcyan;
+    text-align: left;
+    padding: 10px; 
+    margin: 10px;
+    /* trzy linie kodu z "https://www.cssmatic.com/box-shadow" box shadow generatora, które można też wykorzystać w input:focus */
+    -webkit-box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+    -moz-box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+    box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+}
+
+input[type=text], input[type=password]
+{
+    width: 250px;
+    background-color: #efefef;
+    border: 2px solid lightslategrey;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 2px;
+    color: black;
+    font-family: Courier New;
+    box-sizing: border-box; /*może być też content-box*/
+    outline: none; /*usuwa domyślną obwódkę aktywności, którą ustawimy sobie w input:focus */
+}
+
+input[type=text]:focus, input[type=password]:focus
+{
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);  
+    border: 2px solid black;
+    background-color: #e9f3e9;
+    color: black; /* porównać z color w input i usunąć */
+}
+
+
+/* tutaj idą stylizacje dla placeholderów aktywnych i nieaktywnych w wersjach na różne przeglądarki; ale my zrobiliśby za pomocą java scriptu kasowanie placeholdera, więc te zapisy nie są potrzebne; to już zależy od naszych preferencji:
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/ Firefox < 19 /
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/ Firefox > 19 /
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/ Internet Explorer 10 /
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
+} */
+
+button
+{
+    width: 200px;
+    background-color: dodgerblue;
+    font-size: 20px;
+    color: white;
+    padding 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button:hover
+{
+    background-color: #37b93d;
+}
+
+button:focus
+{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);   
 }
 
 ol.uppermenu_list
@@ -351,6 +452,11 @@ p.pborder
     right: 50px;
     bottom: 50px;
     display: none;
+}
+
+.asterix
+{
+    color: red;
 }
 
 /* różne linki - nieodwiedzony, odwiedzony i najechany */
