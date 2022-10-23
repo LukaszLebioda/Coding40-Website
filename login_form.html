@@ -107,82 +107,132 @@
 		</div>
 	
 		<div id="content">
-			<br /><br /> 
-			<form action="login_form.php" method="post"> <!-- MDN ma aktualne propozycje do budowy elementów formularza! Zastosowałem dwie - do checkboxa i radio buttona, ale sprawdzić może pozostałe -->
-	
-				<p id="loginExplanation"></p> <br>
-				<p id="checkBoxExplanation"></p> <br>
+   
+            <br> 
+            
+            <form action="login_form.php" method="post"> <!-- MDN ma aktualne propozycje do budowy elementów formularza! Zastosowałem dwie - do checkboxa i radio buttona, ale sprawdzić może pozostałe -->
+            
+            <div class="form">
+                
+                <fieldset>
+                    
+                <legend>Log in:</legend>
+                    
+                <p id="loginExplanation"></p> 
+				<p id="checkBoxExplanation"></p> 
 
-				<label for="username"><span class="asterix">*</span>Username:</label><br><br>
-				<input type ="text" id="username" placeholder="username" /><br><br>
+				<input type ="text" id="username" placeholder="username" onfocus="this.placeholder=''" onblur="this.placeholder='login'" /><br><br>
                 <!-- można tak: <label>Username:<input type ="text" id="username" /></label>, czyli można pisać input w label -->
+                <label for="username"><span class="asterix">*</span>Username:</label>
+                    
+                <br><br>
 	
-				<label for="password"><span class="asterix">*</span>Password:</label><br><br>
-				<input type ="password" id="password" minlength="4" maxlength="15" required /><br><br>
+				<input type ="password" id="password" minlength="4" maxlength="15" placeholder="password" onfocus="this.placeholder=''" onblur="this.placeholder='password'" required /><br><br>
 				<!-- inna wersja włożenia przycisku button -->
 				<!-- <input type="button" value="Git push" /> -->
-
+                <label for="password"><span class="asterix">*</span>Password:</label>
+                    
+                <br><br>
+                  
+                 <button type = "submit" onclick='document.getElementById("loginExplanation").innerHTML = "Sorry, but this is a fake simulation process, not the real thing... But in the future hovewer: 💪!"' >Git Push</button> <br><br>
+                
+                 <input type="checkbox" id="myCheckBox" />
+				<label for="myCheckBox">I forgot my password</label>   
+                    
+                </fieldset>
+             
+            </div>   
+                
+            </form>   
+            
+                <br>
+                <hr>
+                <br>
+                
+            <form action="login_form.php" method="post">  
+            
+            <div class="form">
+                
                 <fieldset> <!-- checkbox -->
-                    <legend>Choose Your state:</legend>
+                <legend>Choose Your state:</legend>
 
-                    <div>
-                        <input type="checkbox" id="checkbox1" name="checkbox" checked>
-                        <label for="scales">I'am sober and sharp</label>
-                    </div>
+                <div>
+                    <input type="checkbox" id="checkbox1" name="checkbox1" checked>
+                    <label for="checkbox1">I'am sober and sharp</label>
+                </div>
 
-                    <div>
-                        <input type="checkbox" id="checkbox2" name="checkbox">
-                        <label for="horns">I'm totally boozed...</label>
-                    </div>
+                <div>
+                    <input type="checkbox" id="checkbox2" name="checkbox2">
+                    <label for="checkbox2">I'm totally boozed...</label>
+                </div>
                 </fieldset>
                 
-                <br><br>
+            </div>
+                
+            <br>
+                
+            <div class="form">
                 
                 <fieldset> <!-- radio button -->
-                    <legend>Where am I from:</legend>
-                    <div>
-                        <input type="radio" id="radio1" name="radioButton" value="value1" checked>
-                        <label for="huey">Google</label>
-                    </div>
+                <legend>Where am I from:</legend>
+                <div>
+                    <input type="radio" id="radio1" name="radio" value="value1">
+                    <label for="radio1">Google</label>
+                </div>
 
-                    <div>
-                        <input type="radio" id="radio2" name="radioButton" value="value2">
-                        <label for="dewey">NYPD</label>
-                    </div>
+                <div>
+                    <input type="radio" id="radio2" name="radio" value="value2">
+                    <label for="radio2">NYPD</label>
+                </div>
 
-                    <div>
-                        <input type="radio" id="radio3" name="radioButton" value="value3">
-                        <label for="louie">Poland</label>
+                <div>
+                    <input type="radio" id="radio3" name="radio" value="value3">
+                    <label for="radio3">Poland</label>
                     </div>
                 </fieldset>
                 
-                <br><br>
+            </div>    
+            
+            <br>
                 
-                <label for="favCodingLanguage" class=>My favourite coding language is:</label>
-                    <select name="favCodingLanguage" id="favCodingLanguage">
-                        <option value="" >Please choose an option</option>
-                        <option value="PHP">PHP</option>
-                        <option value="Python" selected>Python</option>
-                        <option value="Java">Java</option>
-                        <option value="Kotlin">Kotlin</option>
-                        <option value="C++">C++</option>
-                        <option value="Turbo Pascal">Turbo Pascal</option>
-                    </select>
+            <div class="form">
                 
-                <br><br><br>
+            <fieldset> <!-- dropdown list -->
                 
-                <label for="textArea">Napisz co chcesz:</label>
-                <textarea id="textArea" rows="3" cols="44"></textarea>
+            <legend>Choose:</legend>    
+            <label for="favCodingLanguage">Choose Your favourite coding language</label>
+            <select name="favCodingLanguage" id="favCodingLanguage">
+                <option value="" >Please choose an option</option>
+                <option value="PHP">PHP</option>
+                <option value="Python" selected>Python</option>
+                 <option value="Java">Java</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="C++">C++</option>
+                <option value="Turbo Pascal">Turbo Pascal</option>
+            </select>
                 
-                <br><br><br>
+            </fieldset>
+                  
+            </div>    
+               
+                 <br>
+                
+            <div class="form">  
+              
+            <fieldset> <!-- text area -->
+                
+            <legend>Write:</legend>
+            <label for="textArea">Napisz co chcesz:</label>
+            <textarea id="textArea" rows="3" cols="44"></textarea></fieldset>  
+                
+            </div>   
+                  
+                <br>
                 
                 <!-- type button - proste wewnętrzne przejścia, np. z użyciem java script; type submit - jeśli wysyłamy formularz backendowo -->
-				<button type = "submit" onclick='document.getElementById("loginExplanation").innerHTML = "Sorry, but this is a fake simulation process, not the real thing... But in the future hovewer: 💪!"' >Git Push</button> <br><br>
-				
-				<input type="checkbox" id="myCheckBox" />
-				<label for="myCheckBox">I forgot my password</label>
-				
-			</form>
+				<button type = "submit" onclick='document.getElementById("loginExplanation").innerHTML = "Sorry, but this is a fake simulation process, not the real thing... But in the future hovewer: 💪!"' >Git Commit</button> <br>
+	
+            </form>
 	
 		</div>
 	
