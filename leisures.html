@@ -15,36 +15,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-		
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="jquery.scrollTo.min.js"></script>
 
-<script>
-		
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0);
-			
-			$('#listlink1').click(function() { $.scrollTo($('#divlink1'), 500); });
-			$('#listlink2').click(function() { $.scrollTo($('#divlink2'), 500); });
-			$('#listlink3').click(function() { $.scrollTo($('#divlink3'), 500); });
-			$('#listlink4').click(function() { $.scrollTo($('#divlink4'), 500); });
-			
-			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();		
-		}
-		);
-	
-	</script>
-    
 </head>
 
 <body onload="countdown();">
@@ -104,6 +75,21 @@
 		</div>
 	
 		<div id="content">
+            
+            <!-- how to use different images for different devices / screen resolutions (supported format, limited size etc.) -->
+            <!-- <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg" style="width:auto;">
+        </picture> -->
+            
+            <!-- how to desing clickable areas of an image to link different sources -->
+            <!-- <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+            </map> -->
+            
 			<p>hiking</p> 
             <!-- alternatywny sposób zapisania parametrów obrazka: <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"> -->
 			<img src="img/hiking1.jpg" width="190" height="253" alt="a rock climber on the rock">
@@ -137,7 +123,7 @@
 	
 	</div>
 
-<script type="text/javascript" src="timer.js"></script>
+<script type="text/javascript" src="myScripts.js"></script>
 </body>
 
 </html>

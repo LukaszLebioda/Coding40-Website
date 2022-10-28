@@ -39,7 +39,7 @@ body
 
 #logo
 {
-	background-color: rgb(119, 136, 153, 0.8); /* #778899; lightslategray; */
+	background-color: rgb(119, 136, 153, 0.8); /* #778899; lightslategray; ładny też jest powderblue */
 	border-bottom: 2px solid gray;
 	color: white;
 	text-align: center;
@@ -70,6 +70,7 @@ body
 
 .form
 {
+    max-width: 700px;
     background-color: lightcyan;
     text-align: left;
     padding: 10px; 
@@ -256,7 +257,7 @@ ol.uppermenu_list > li > ul > li:hover > a
 	border-radius: 1px;
 	padding: 7px;
 	
-	display: block; 
+	display: block; /* display: inline-block? */
 	text-decoration: none; 
 	box-sizing: border-box;
 }
@@ -273,7 +274,7 @@ ol.uppermenu_list > li > ul > li:hover > a
 	border-radius: 1px;
 	padding: 7px;
 	
-	display: block; 
+	display: block; /* display: inline-block? */
 	text-decoration: none; 
 	box-sizing: border-box;
 }
@@ -290,9 +291,41 @@ ol.uppermenu_list > li > ul > li:hover > a
 	border-radius: 1px;
 	padding: 7px;
 	
-	display: block; 
+	display: block; /* display: inline-block? */
 	text-decoration: none; 
 	box-sizing: border-box;
+}
+
+table, th, td 
+{
+    background-color: #96D4D4;
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-radius: 2px; ale nie działa */
+    /* border-spacing: 50px; ale nie działa */
+}
+
+th, td 
+{
+    border-radius: 2px;
+    border-style: dotted;
+    border-color: black;
+    padding: 7px;
+}
+
+th 
+{
+  text-align: left;
+}
+
+/* to color every second row in the table:
+tr:nth-child(even) { background-color: yellow; } */
+/* to color every second column in the table:
+td:nth-child(even), th:nth-child(even) { background-color: #D6EEEE; } */
+
+table tr:hover td
+{
+    background-color: pink; 
 }
 
 #nav
@@ -335,8 +368,10 @@ ol.uppermenu_list > li > ul > li:hover > a
     float: left;
 	padding: 20px;
 	width: 680px;
-    height: 833px;
+    min-height: 833px;
 	text-align: justify;
+    /* overflow: scroll won't work if the js scrollTo script is involved :( */
+    
 }
 
 #list
@@ -373,7 +408,7 @@ ol.content_list > li > ul
     letter-spacing: 0px;
     margin-top: 5px;
     margin-left: 20px;
-    list-style-type: none; /* może być disc, square, circle; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
+    list-style-type: none; /* może być disc, square, circle i kilka innych; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
 }
 
 ol.content_list > li > ul > li
@@ -381,6 +416,8 @@ ol.content_list > li > ul > li
     margin: 0px; /* bo czasami przeglądarki ustawiają tu swój domyślny margin */ 
 }
 
+/* poniższa stylizacja z encją html mogłaby też spokojnie zostać usunięta; wtedy do stylizacji elementu li listy (powyżej) moglibyśmy
+użyć dowolnego obrazka poleceniem: list-style-image: url("image source"); dodatkowo moglibyśmy użyć: list-style-position: inside / outside, żeby wskazać, czy obrazek ma być wewnątrz tagu li, czy poza nim */
 ol.content_list > li > ul > li:before
 {
     color: grey; 

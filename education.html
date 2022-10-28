@@ -13,15 +13,19 @@
 	<link rel="stylesheet" href="style.css" type="text/css" /> 
 	<link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" /> 
 	
-	<script type="text/javascript" src="timer.js"></script>
-	
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="jquery.scrollTo.min.js"></script>
+<!-- poniżej 3 etapy scrollowania z linku listy do konkretnego slajdu:
+1) podpięcie biblioteki JQuery z googleapis albo ze ściągniętego z jQuery pliku
+2) podpięcie elementu scrollTo (od jakiegoś gościa z githuba)
+3) okodowanie funkcji wywołującej scrollTo
+-->   
+
+<script src="jquery-3.6.1.min.js"></script>
+<script src="jquery.scrollTo.min.js"></script>
 
 <script>
 		
@@ -30,10 +34,10 @@
 			//zresetuj scrolla
 			$.scrollTo(0);
 			
-			$('#listlink1').click(function() { $.scrollTo($('#divlink1'), 500); });
-			$('#listlink2').click(function() { $.scrollTo($('#divlink2'), 500); });
-			$('#listlink3').click(function() { $.scrollTo($('#divlink3'), 500); });
-			$('#listlink4').click(function() { $.scrollTo($('#divlink4'), 500); });
+			$('#listlink1').click(function() { $.scrollTo($('#divlink1'), 700); });
+			$('#listlink2').click(function() { $.scrollTo($('#divlink2'), 700); });
+			$('#listlink3').click(function() { $.scrollTo($('#divlink3'), 700); });
+			$('#listlink4').click(function() { $.scrollTo($('#divlink4'), 700); });
 			
 			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
 		}
@@ -49,6 +53,8 @@
 	
 	
 	</script>
+    
+<script src="myScripts.js"></script>  
     
 </head>
 
@@ -167,6 +173,44 @@
                 <br>
                 
                 iKSORIS: koordynacja wdrożenia (dostawca oprogramowania, operator płatności terminal, operator płatności internetowych, regulamin sprzedaży i rezerwacji, projekt strony internetowej (makiety) i jej testowanie, koordynacja wdrożenia, administracja programem, szkolenie pracowników, kontakt z działem pomocy technicznej, Księgowość UJ, Podatki UJ, SAP UJ (moduł księgowej wymiany danych), hardware (wyposażenie kas dla 3 jednostek, automat biletowy), polityka prywatności, dział osób niepełnosprawnych (deklaracja dostępności), infrastruktura sieciowa (sieciowcy UJ, administrator Linuxa), prawnicy UJ
+                
+                <br><br>
+                
+                <table style="width:100%">
+                <!-- caption - optional -->
+                <caption>My top books:</caption>
+                  <tr>
+                    <!-- można łączyć komórki w pionie i poziomie: -->
+                    <!-- <th colspan="2">Name</th> -->
+                    <!-- <th rowspan="2">Phone</th> -->  
+                    <th style="width:35%">Author</th>
+                    <th style="width:35%">Title</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Cover</th>
+                  </tr>
+                  <tr style="height:35px">
+                    <td>Brandon Sanderson</td>
+                    <td>Stormlight Archive</td>
+                    <td>....</td>
+                    <td>fantasy</td>
+                    <td>img</td>
+                  </tr>
+                  <tr>
+                    <td>Jo Nesbo</td>
+                    <td>Harry Hole</td>
+                    <td>....</td>
+                    <td>crimi</td>
+                    <td>img</td>
+                  </tr>
+                  <tr>
+                    <td>Dan Simmons</td>
+                    <td>Hyperion</td>
+                    <td>....</td>
+                    <td>sci-fi</td>
+                    <td>img</td>
+                  </tr>
+                </table>
                 
                 <br>
                 

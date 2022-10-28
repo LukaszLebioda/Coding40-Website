@@ -13,42 +13,13 @@
 	<link rel="stylesheet" href="style.css" type="text/css" /> 
 	<link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" /> 
 	
-	<script type="text/javascript" src="timer.js"></script>
+	<script src="myScripts.js"></script>
 	
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="jquery.scrollTo.min.js"></script>
-
-    <script>
-		
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0);
-			
-			$('#listlink1').click(function() { $.scrollTo($('#divlink1'), 500); });
-			$('#listlink2').click(function() { $.scrollTo($('#divlink2'), 500); });
-			$('#listlink3').click(function() { $.scrollTo($('#divlink3'), 500); });
-			$('#listlink4').click(function() { $.scrollTo($('#divlink4'), 500); });
-			
-			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();		
-		}
-		);
-	
-	</script>
-    
 </head>
 
 <!-- onload uruchamia zainkludowany java script -->
@@ -99,7 +70,7 @@
     </div>
 
 		<div id="nav">
-			</br>
+			<br>
 			<a href="index.html" class="tile-left" title="About me"><i class="icon-home"></i> Start page</a>
 			<a href="source_code.html" class="tile-left" title="About me"><i class="icon-adult"></i> About me</a>
 			<a href="skills.html" class="tile-left" title="Skills"><i class="icon-wrench"></i> Skills</a>
@@ -136,7 +107,7 @@
 		
 		<div id="footer">
 			&copy; All rights reserved - Łukasz Lebioda
-			</br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone-squared"></i>+48 513-637-367
+			<br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone-squared"></i>+48 513-637-367
 		</div>
 	
 	</div>
