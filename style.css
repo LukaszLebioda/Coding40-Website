@@ -6,6 +6,7 @@ p, h1-h6 (tylko dla paragrafów i/lub nagłówków)
 # (dla ID danego elementu, id="text")
 . (dla klasy danych elementów, class="group")
 p.group (tylko dla paragrafów z klasy "group")
+.div-name p (tylko dla paragrafów w konkretnym divie)
 */
 
 body
@@ -14,17 +15,11 @@ body
     background-repeat: no-repeat; /* or repeat-x; repeat-y */
     background-attachment: fixed; /* or scroll */
     background-position: center top;
-    background-size:2200px 1100px;
+    background-size:2200px 1100px; /* wypróbować - background-size: cover; background-size: 100% 100%; */
 	opacity: 0.9;
 	font-family: 'Josefin Sans', sans-serif;
 	color: black;
 	margin: 0 !important; /* przeglądarki mają swój defaultowy margin, a to polecenie ten margin zeruje */
-}
-
-/* div obejmujący wszystko, także containera, stworzony na potrzeby umieszczenia przyklejanego logo */
-#wrapper
-{
-    width: 100%;
 }
 
 #container
@@ -34,9 +29,17 @@ body
 	margin-right: auto;
 }
 
+#uppersticky_block
+{   
+    position: sticky;
+    left: 0; /* współrzędna x */
+    top: 0; /* współrzędna y; czyli przyklejamy logo do górnego lewego narożnika ekranu */
+    z-index: 100; /* współrzędna z, określa głębię, odległość od oczu użytkownika; im większy z-indeks, tym to coś więcej rzeczy będzie przesłaniać, będzie bardziej na wierzchu */
+}
+
 #logo
 {
-	background-color: rgb(119, 136, 153, 0.8); /* #778899; lightslategray; */
+	background-color: rgb(119, 136, 153, 0.8); /* #778899; lightslategray; ładny też jest powderblue */
 	border-bottom: 2px solid gray;
 	color: white;
 	text-align: center;
@@ -62,22 +65,184 @@ body
 	justify-content: flex-end;
 	width: 901px;
 	float: left;
+    text-align: center;
 }
 
-.tile-upper
+.form
+{
+    max-width: 700px;
+    background-color: lightcyan;
+    text-align: left;
+    padding: 10px; 
+    margin: 10px;
+    /* trzy linie kodu z "https://www.cssmatic.com/box-shadow" box shadow generatora, które można też wykorzystać w input:focus */
+    -webkit-box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+    -moz-box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+    box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+}
+
+input[type=text], input[type=password]
+{
+    width: 250px;
+    background-color: #efefef;
+    border: 2px solid lightslategrey;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 2px;
+    color: black;
+    font-family: Courier New;
+    box-sizing: border-box; /*może być też content-box*/
+    outline: none; /*usuwa domyślną obwódkę aktywności, którą ustawimy sobie w input:focus */
+}
+
+input[type=text]:focus, input[type=password]:focus
+{
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);  
+    border: 2px solid black;
+    background-color: #e9f3e9;
+    color: black; /* porównać z color w input i usunąć */
+}
+
+
+/* tutaj idą stylizacje dla placeholderów aktywnych i nieaktywnych w wersjach na różne przeglądarki; ale my zrobiliśby za pomocą java scriptu kasowanie placeholdera, więc te zapisy nie są potrzebne; to już zależy od naszych preferencji:
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/ Firefox < 19 /
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/ Firefox > 19 /
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/ Internet Explorer 10 /
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
+} */
+
+button
+{
+    width: 200px;
+    background-color: dodgerblue;
+    font-size: 20px;
+    color: white;
+    padding 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button:hover
+{
+    background-color: #37b93d;
+}
+
+button:focus
+{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);   
+}
+
+ol.uppermenu_list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol.uppermenu_list a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+}
+
+ol.uppermenu_list > li
 {
     float: left;
-    min-width: 50px;
-    height: 30px;
-    border-right: 1px dotted #778899; 
-    align-items: center;
-	display: flex;
-	justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed black;
+    
 }
 
-.tile-upper:hover{
-    background-color: pink;
-    cursor: pointer;
+ol.uppermenu_list > li:first-child
+{
+  border-left: 1px dashed black;  
+}
+
+ol.uppermenu_list > li:hover
+{
+    background-color: lightblue;
+}
+
+ol.uppermenu_list > li:hover > a /* tylko w ten sposób możemy zmienić kolor czcionki po najechaniu, bo to jest link */
+{
+    color: red;
+}
+
+ol.uppermenu_list > li > ul
+{
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    list-style-type: none;
+    display: none;
+}
+
+ol.uppermenu_list > li:hover > ul
+{
+    display: block;
+}
+
+ol.uppermenu_list > li > ul > li
+{
+    background-color: lightgreen;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed grey;
+}
+
+ol.uppermenu_list > li > ul > li:hover
+{
+    background-color: grey;
+}
+
+ol.uppermenu_list > li > ul > li:hover > a
+{
+    color: hotpink; /* to sposób na zmianę koloru czcionki, czyli linka */
 }
 
 #flag_pl 
@@ -92,7 +257,7 @@ body
 	border-radius: 1px;
 	padding: 7px;
 	
-	display: block; 
+	display: block; /* display: inline-block? */
 	text-decoration: none; 
 	box-sizing: border-box;
 }
@@ -109,7 +274,7 @@ body
 	border-radius: 1px;
 	padding: 7px;
 	
-	display: block; 
+	display: block; /* display: inline-block? */
 	text-decoration: none; 
 	box-sizing: border-box;
 }
@@ -126,9 +291,41 @@ body
 	border-radius: 1px;
 	padding: 7px;
 	
-	display: block; 
+	display: block; /* display: inline-block? */
 	text-decoration: none; 
 	box-sizing: border-box;
+}
+
+table, th, td 
+{
+    background-color: #96D4D4;
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-radius: 2px; ale nie działa */
+    /* border-spacing: 50px; ale nie działa */
+}
+
+th, td 
+{
+    border-radius: 2px;
+    border-style: dotted;
+    border-color: black;
+    padding: 7px;
+}
+
+th 
+{
+  text-align: left;
+}
+
+/* to color every second row in the table:
+tr:nth-child(even) { background-color: yellow; } */
+/* to color every second column in the table:
+td:nth-child(even), th:nth-child(even) { background-color: #D6EEEE; } */
+
+table tr:hover td
+{
+    background-color: pink; 
 }
 
 #nav
@@ -138,7 +335,7 @@ body
 	font-size: 15px;
 	width: 160px;
 	min-height: 853px;
-	padding: 10px;
+	padding: 10px 10px 0 10px;
 }
 
 /* display, text-decoration i box-sizing po to, aby z całego diva zrobić link */
@@ -152,6 +349,7 @@ body
 	cursor: pointer;
 	border-radius: 6px;
 	
+
 	display: block; /* sprawia, że cały kafelek zachowuje się jak link */
 	text-decoration: none; /* likwiduje podkreślenie linka */
 	box-sizing: border-box; /* chyba sprawia, że link przybiera rozmiar kafelka */
@@ -171,8 +369,10 @@ body
     float: left;
 	padding: 20px;
 	width: 680px;
-    height: 833px;
+    min-height: 833px;
 	text-align: justify;
+    /* overflow: scroll won't work if the js scrollTo script is involved :( */
+    
 }
 
 #list
@@ -183,7 +383,7 @@ body
     margin-right: auto;
 }
 
-ol
+ol.content_list
 {
     margin-left: 0px;
     padding-left: 0px;
@@ -192,15 +392,16 @@ ol
     list-style-type: none;
 }
 
-ol > li
+ol.content_list > li
 {
     text-transform: none; /*lowercase, uppercase */
     font-size: 14px;
     font-weight: 400;
     padding: 5px;
+    /* dalibyśmy float:letf jeśli chcielibyśmy ułożyć list itemy w poziomie */
 }
 
-ol > li > ul
+ol.content_list > li > ul
 {
     font-weight: 400;
     text-transform: none;
@@ -208,15 +409,17 @@ ol > li > ul
     letter-spacing: 0px;
     margin-top: 5px;
     margin-left: 20px;
-    list-style-type: none; /* może być disc, square, circle; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
+    list-style-type: none; /* może być disc, square, circle i kilka innych; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu */
 }
 
-ol > li > ul > li
+ol.content_list > li > ul > li
 {
     margin: 0px; /* bo czasami przeglądarki ustawiają tu swój domyślny margin */ 
 }
 
-ol > li > ul > li:before
+/* poniższa stylizacja z encją html mogłaby też spokojnie zostać usunięta; wtedy do stylizacji elementu li listy (powyżej) moglibyśmy
+użyć dowolnego obrazka poleceniem: list-style-image: url("image source"); dodatkowo moglibyśmy użyć: list-style-position: inside / outside, żeby wskazać, czy obrazek ma być wewnątrz tagu li, czy poza nim */
+ol.content_list > li > ul > li:before
 {
     color: grey; 
     content: "➛"; /* encja html; mogą też być czcionki fontello */
@@ -250,8 +453,8 @@ p.pborder
 {
 	float: left;
 	width: 80px;
-	min-height: 800px;
-	padding: 10px;
+    min-height: 800px;
+	padding: 10px 10px 0px 10px; /* top, right, bottom, left */
 	background-color: dodgerblue;
 }
 
@@ -287,6 +490,11 @@ p.pborder
     right: 50px;
     bottom: 50px;
     display: none;
+}
+
+.asterix
+{
+    color: red;
 }
 
 /* różne linki - nieodwiedzony, odwiedzony i najechany */
