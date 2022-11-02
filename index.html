@@ -8,7 +8,31 @@ nav - nawigacja
 article - artykuł
 section - sekcja
 aside - poboczna zawartość
-footer - stopka -->
+footer - stopka 
+
+1. CZY MA BYĆ: 
+<div>
+<header>
+</header>
+</div>
+
+2. CZY: 
+<header>
+<div>
+</div>
+</header>
+
+3. CZY W OGÓLE HEADER MA ZASTĄPIĆ DIVA?
+
+RACZEJ MAJĄ BYĆ DIVY WEWNĄTRZ ZNACZNIKÓW SEMANTYCZNYCH, CZYLI WERSJA DRUGA, CZYLI MA BYĆ:
+
+<selection>
+    <div>
+        <h1>reggdfg</h1>
+    </div>
+</selection>
+
+-->
     
     
 <head>
@@ -35,17 +59,25 @@ footer - stopka -->
     
 <script src="myScripts.js"></script>   
     
+<!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js></script>
+<![endif]-->
+    
 </head>
 
+<!---------------------------------------------------------------------------------------------------------------->
+    
 <!-- onload uruchamia zainkludowany java script -->
 <body onload="countdown();">
-   
+
+<main> <!-- newtag; jest podrzędny tylko dla body, dlatego nie może być w divie content, bo byłby wtedy wewnątrz diva container; może być użyty tylko raz; ma za zadanie określić, co jest najważniejszą częścią podstrony (gdyby struktura się rozmazała) -->
+</main>
+    
 <div id="container">
 	   
-    <main> <!-- newtag; musi być podrzędny tylko dla body; może być użyty tylko raz; ma za zadanie określić, co jest najważniejszą częścią podstrony (gdyby struktura się rozmazała) -->
-    <header> <!-- newtag; ten header jest headerem dla całej sekcji body tej podstrony -->
     <div id="uppersticky_block">
     
+        <header> <!-- newtag; ten header jest headerem dla całej sekcji body tej podstrony; headery można zagnieżdżać, tzn. mogą być inne headery wewnątrz innych divów algo nowych znaczników article itd. -->
 		<div id="logo">
 			<h1 title="This is the title of the project I started to change my life">Coding<span style="color: red; text-decoration: none; font-size:30px; font-style: italic">40</span> - My lifechanging project</h1>
 		</div>
@@ -77,6 +109,7 @@ footer - stopka -->
             </ol>
         </nav>
 		</div>
+        </header>
 	
 		<!-- <img src="img/books.jpg" width="300" height="168" alt='a book "Hyperion" by Dan Simmons'/> -->
 		<div id = "flag_pl"><img src = "img/pl.png" width = "22" height = "17px" />
@@ -87,8 +120,7 @@ footer - stopka -->
 		</div>
  
     </div>
-    </header>
-    </main>
+   
         
 		<div id="nav">
         <nav id="nav_leftsidebar"> <!-- newtag; nav dotyczący lewego menu głównego -->
@@ -104,7 +136,7 @@ footer - stopka -->
 			<a href="login_form.html" class="tile-left" title="Login"><i class="icon-right"></i> Login</a>
         </nav>
 		</div>
-	
+    
 		<div id="content">
         <article id="article_index"> <!-- newtag; wyodrębnia autonomiczną, czasem powtarzalną część witryny: artykuł, post, kompentarz itd. -->
 			<section> <!-- newtag; sekcja to wyodrębniona mniejsza całość; może być częścią artykułu, ale nie musi -->

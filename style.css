@@ -59,12 +59,12 @@ body
 {
 	background-color: lightskyblue; /* 87cefa */
 	color: white;
-	height: 30px;
+	height: 30px; /* line-height: 200%; */
 	align-items: center;
 	display: flex;
 	justify-content: flex-end;
 	width: 901px;
-	float: left;
+	float: left; /* display: inline-block */
     text-align: center;
 }
 
@@ -243,6 +243,38 @@ ol.uppermenu_list > li > ul > li:hover
 ol.uppermenu_list > li > ul > li:hover > a
 {
     color: hotpink; /* to sposób na zmianę koloru czcionki, czyli linka */
+}
+
+.leisurePhoto
+{
+    display: inline-block;
+    opacity: 0.9;
+}
+
+/* można też wystylizować img, np. .leisurePhoto img */
+
+.leisurePhoto:hover
+{
+    opacity: 1;
+}
+
+.leisurePhoto p
+{
+    font-weight: bold;
+}
+
+figure /* domyślny margin dla figure jest zbyt duży */
+{
+    margin: 8px;
+    padding: 3px;
+}
+
+figcaption
+{
+    text-align: right;
+    padding: 0px;
+    margin-top: 8px;
+    font-style: italic;
 }
 
 #flag_pl 
