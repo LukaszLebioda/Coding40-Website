@@ -94,21 +94,21 @@
 			<p>hiking</p> 
             <!-- alternatywny sposób zapisania parametrów obrazka: <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"> -->
 			    <figure>
-                    <img src="img/hiking1.jpg" width="190" height="253" alt="a rock climber on the rock">
+                    <img id="photo1" src="img/hiking1.jpg" width="190" height="253" alt="a rock climber on the rock">
                     <figcaption>Orla Perć</figcaption>
                 </figure>
             </div>   
             
             <div class="leisurePhoto">
                 <figure>
-                    <img src="img/hiking2.jpg" width="190" height="253" alt="a mounaineer in the deep snow">
+                    <img id="photo2" src="img/hiking2.jpg" width="190" height="253" alt="a mounaineer in the deep snow">
                     <figcaption>Starorobociański</figcaption>
                 </figure>
             </div>    
             
             <div class="leisurePhoto">
                 <figure>
-			         <img src="img/hiking3.jpg" width="190" height="253" alt="a hiker in the mountain surroundings">
+			         <img id="photo3"  src="img/hiking3.jpg" width="190" height="253" alt="a hiker in the mountain surroundings">
                      <figcaption>Orla Perć</figcaption>
                 </figure>
             </div>    
@@ -116,14 +116,18 @@
             <div class="leisurePhoto">
 			<p>biking</p>
                 <figure>
-			         <img src="img/biking1.jpeg" width="300" height="168" alt="a mountain biker and the night landscape" />
+			         <img id="photo4" src="img/biking1.jpeg" width="300" height="168" alt="a mountain biker and the night landscape" />
                 <figcaption>Tyniec</figcaption>
                 </figure>
             </div>    
             
             <div class="leisurePhoto">
                 <figure>
-			         <img src="img/biking2.jpeg" width="300" height="168" alt="a mountain biker descending">
+                     <div id="overlay">
+			             <img id="photo5" src="img/biking2.jpeg" width="300" height="168" alt="a mountain biker descending">
+                         <p>Miejsce na opis</p>
+                         <!-- można dać zamiast tekstu ikonkę fontello, np. lupkę, kiedy zdjęcie byłoby linkiem przenoszącym do galerii -->
+                     </div>
                 <figcaption>Małopolska</figcaption>
                 </figure>
             </div>    
@@ -131,7 +135,7 @@
             <div class="leisurePhoto">
             <p>motorsport</p>
                 <figure>
-			         <img src="img/motorsport.jpg" width="300" height="168" alt="a rally fan cheering and supporting">
+			         <img id="photo6" src="img/motorsport.jpg" width="300" height="168" alt="a rally fan cheering and supporting">
                 <figcaption>Rally Wisła</figcaption>
                 </figure>
             </div>
@@ -139,7 +143,7 @@
             <div class="leisurePhoto">
             <p>books</p>
                 <figure>
-			         <img src="img/books.jpg" width="300" height="168" alt='a book "Hyperion" by Dan Simmons'> 
+			         <img id="photo7"  src="img/books.jpg" width="300" height="168" alt='a book "Hyperion" by Dan Simmons'> 
                 <figcaption>Hyperion</figcaption>
                 </figure>
             </div>

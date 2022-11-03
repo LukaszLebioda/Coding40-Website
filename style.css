@@ -251,8 +251,6 @@ ol.uppermenu_list > li > ul > li:hover > a
     opacity: 0.9;
 }
 
-/* można też wystylizować img, np. .leisurePhoto img */
-
 .leisurePhoto:hover
 {
     opacity: 1;
@@ -262,6 +260,91 @@ ol.uppermenu_list > li > ul > li:hover > a
 {
     font-weight: bold;
 }
+
+/* można też wystylizować img, np. .leisurePhoto img */
+
+/* --------------------------------------- */
+
+/* transform (w hoverze) i transition (w img) działają razem */
+
+/* photo1 jest wystylizowane powyżej, w .leisurePhoto i .leisurePhoto:hover (prosta zmiana opacity) */
+
+#photo2
+/*transition: transform (tylko transform) albo transition: all (transform + opacity i wszystkie inne właściwości w  hoverze); czas trwania przejścia w sekundach; sposób przejścia */
+{
+    transition: transform 0.6s ease-in-out;
+}
+
+#photo2:hover
+/* można w skali podać dwa argumenty: osobny do osi x, osobny do osi y */
+{
+    -webkit-transform: scale(0.91) rotate(-5deg);
+    -ms-transform: scale(0.91) rotate(-5deg);
+    transform: scale(0.91) rotate(-5deg);
+    opacity: 0.7;
+}
+
+
+
+#photo3
+/*transition: transform (tylko transform) albo transition: all (transform + opacity i wszystkie inne właściwości w  hoverze); czas trwania przejścia w sekundach; sposób przejścia czyli zmiany przejścia w czasie */
+{
+    transition: transform 0.6s ease-in-out;
+}
+
+#photo3:hover
+/* shouldiprefix.com, css prefixes zapewniają poprawność działania w starszych wersjach przeglądarek */
+{
+    -webkit-transform: skew(-5deg,10deg);
+    -ms-transform: skew(-5deg,10deg);
+    transform: skew(-5deg,10deg);
+}
+
+#photo4
+/*transition: transform (specific) albo transition: all (wszystkie elementy w hoverze); czas trwania przejścia w sekundach; sposób przejścia */
+{
+    transition: all 0.8s ease-in-out;
+}
+
+#photo4:hover
+{
+    -webkit-transform: scale(0.91);
+    -ms-transform: scale(0.91);
+    transform: scale(0.91);
+    opacity: 0.1;
+}
+
+#photo5
+{
+    transition: all 0.8s ease-in-out;
+}
+
+#overlay
+/* position: relative względem <figure> albo diva leisurePhoto; position absolute byłoby chyba względem body; użycie obu właścicości pozawala na wykorzystanie właściwości left, right, top i bottom */
+{
+    position: relative;
+    width=100%; 
+    height=100%;
+}
+
+#overlay p
+{
+    position: absolute;
+    background-color: #27a38d;
+    width=100%; 
+    height=65px;
+    left: 10px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+}
+
+#overlay:hover p
+{
+    opacity: 0.8;
+}
+
+/* ------------------------------- */
 
 figure /* domyślny margin dla figure jest zbyt duży */
 {
