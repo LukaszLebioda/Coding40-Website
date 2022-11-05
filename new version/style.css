@@ -4,7 +4,6 @@ body
     background-image: url("img/body_background.png"); /*alternatywa: background-color: #value*/
     background-repeat: repeat; /* no-repeat; repeat-x; repeat-y */
     background-attachment: fixed; /* scroll */ 
-    background-position: center top;
 	margin: 0 !important; /* zeruje defaultowy margin przeglądarki */ 
         /*font-family: 'Josefin Sans', sans-serif; albo Open Sans*/
         /*font-size: 17px;*/
