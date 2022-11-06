@@ -10,12 +10,14 @@ body
         /*color: #efefef;*/
 }
 
-main /* for main content */
-{   /* margin-left: auto; margin-right: auto; width: 1100px; padding: 0; not necessary because of bootstrap */
+main 
+{   /* margin-left: auto; margin-right: auto; width: 1100px;       padding: 0 - not necessary because of bootstrap */
     text-align: center;
 }
 
-.leisurePhotos /* for main section in LEISURES */
+/* PHOTO SECTION */
+
+.leisurePhotos 
 {
 	/* margin-left: auto; margin-right: auto; width: 1100px; padding: 0; not necessary because of bootstrap */
 	text-align: center;
@@ -29,9 +31,9 @@ h1
 	margin: 20px;
 }
 
-.leisurePhotos img /* zamiast class="img-fluig" wewnątrz img */
+.leisurePhotos img /* można też użyć class="img-fluid" wewnątrz <img> w html */
 {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 

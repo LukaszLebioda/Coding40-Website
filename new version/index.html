@@ -38,33 +38,37 @@
 
 </head>
    
-<!-- STRUCTURE: --   
+<!-- STRUCTURE:   
 
-<header>
+<body>
 
-    <nav>
-        <a><img></a> (logo)
-        <button><span></span></button> (toggler)
-        <div></div> (dropdown menu)
-    </nav>
+    <header>
 
-</header>   
+        <nav> (ewentualnie <div role="navigation">)
+            <a><img></a> (logo)
+            <button><span></span></button> (toggler)
+            <div></div> (dropdown menu)
+        </nav>
 
-<main>
-    <div container> (responsive grid container)
-        <section> (section for photos)
-            <header> (header for section for photos)
-            </header>
-            <div row> (responsive grid row)
-                <div col> (for photo)
-                    <figure> (photo)
-                    <img> (photo)
-                    </figure>
+    </header>   
+
+    <main> (main content, once only, subjected only to body)
+        <div container> (responsive-grid, zbiorczy pojemnik siatki)
+            <section> (photo section)
+                <header> (header for photo section)
+                </header>
+                <div row> (wrapper for columns, wiersz wewnątrz pojemnika siatki)
+                    <div col> (for a photo, kolumny wewnątrz wrappera)
+                        <figure> (photo)
+                        <img> (photo)
+                        </figure>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</main>
+            </section>
+        </div>
+    </main>
+
+</body>
 
 -->
 
@@ -77,13 +81,18 @@
     </div>
 -->
     
-    <nav class="navbar navbar-dark bg-primary navbar-expand-md"> <!-- navbar - klasa dla belki nawigacyjnej, bg-primary to jedna z predefiniowanych klas koloru belki; navbar-dark lub light określa kolor elementu w navbarze; navbar-expand-medium żeby od medium toggler rozszerzał się do zwykłego menu i sam znikał // alternatywa to zwykły div z właściwością role="navigation" -->
+    <nav class="navbar navbar-dark bg-info navbar-expand-md"> 
+    <!-- .navbar: górna belka nawigacyjna --> 
+    <!-- .bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark, .bg-white: predefiniowane kolory tła belki nawigacyjnej -->
+    <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
+       
+<!--       navbar-expand-medium żeby od medium toggler rozszerzał się do zwykłego menu i sam znikał -->
         
-        <a class="navbar-brand" href="#"><img class="d-inline-block mx-2 align-bottom" src="img/favicons/apple-icon-57x57.png" width="25" height="25" alt="">Coding40</a>
-        <!-- class="navbar-brand": tak oznaczamy logo serwisu -->
-        <!-- class="d-inline-block", może być d-none, d-flex, d-block itd., i taki zapis będzie miał zastosowanie do wszystkich rozmiarów; a jeśli zapiszemy d-md-none to zastosujemy tę właściwość od konkretnego rozmiaru wzwyż -->
-        <!-- class="mr-1"; m margin, p padding; t top, b bottom, l left, r right, x = left + rigth, y = top + bottom; wielkość: 0,1,2,3,4,5 lub auto; predefiniowane klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
-        <!-- class="align-top"; ustawia względem sąsiedniego elementu; może być top, bottom, middle, text-bottom, text-top; tylko dla klas inline lub inline-block  -->
+        <a class="navbar-brand" href="#"><img class="d-inline-block mx-2 align-bottom" src="img/favicons/apple-icon-57x57.png" width="25" height="25" alt=""> Coding40</a>
+        <!-- .navbar-brand: logo serwisu -->
+        <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
+        <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
+        <!-- .align-top: vertical alignment, ułożenie elementu w pionie względem sąsiedniego elementu; może być -baseline, -top, -bottom, -middle, -text-bottom, -text-top; tylko jeśli ustawiono inline lub inline-block  -->
         
         <!-- toggler do menu mobilnego; można użyć class="navbar-toggler order-first" żeby togler był z lewej, a logo z prawej; data-toggle="collapse" włącza zapadanie się menu -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
@@ -102,114 +111,139 @@
     
 </header>
     
-<main><!-- instead of content; once only, subjected only to body -->
+<main>
     
-    <section class="leisurePhotos">
-		
-        <div class="container"> <!-- bootstrap's predefined div class with max width to host a responsive grid -->
+        <div class="container"> 
+				
+            <section class="leisurePhotos">
 				
 				<header>
 					
 					<h1>What I love to do</h1>
-					<p>Some examples of what I love to do in my spare timeSome examples of what I love to do in my spare timeSome examples of what I love to do in my spare time</p>
+					<p>Some examples of what I love doing when I'm not coding</p>
 						
 				</header>
 					
-            <div class="row"> <!-- wrapper for columns in bootstrap; it creates default gutters around the pictures, but it can be changed with g-0 and such-->
+                <div class="row"> 
+                <!-- no-gutters: <div class="row g-0"> -->
                 
-                 <div class="col-sm-6 col-md-4">
-				<!-- ewentualnie col-sm6 col-md-4 col-xl-3 żeby na xl były 4 zdjęcia obok siebie -->
-				<!-- można też dać col-sm-6 dla np. dwóch pierwszych zdjęć z góry, żeby je wyróżnić -->
-				<!-- albo można też dać col-sm-6 col-md-5 dla np. dwóch pierwszych zdjęć z góry, ale wtedy trzeba offestować , czyli dołożyć jedną kolumnę z lewej strony, żeby te 2 zdjęcia się wyśrodkowały; czyli wtedy dla pierwszego zdjęcia będzie col-sm-6 col md-5 offset-md-1 -->
-					<figure>
-						<a href="#"><img src="img/compressed/Wielkanoc-min.jpeg" width="300px" alt="A bike rider in the night landscape"></a>
-						<figcaption>biking</figcaption>
-					</figure>
+                     <div class="col-sm-6 col-md-4">
+                     <!-- offsetowanie: col-sm-6 col md-5 offset-md-1 -->
+                        <figure>
+                            <a href="#"><img src="img/Wielkanoc-min.jpg" width="300px" alt="A cyclist in the night landscape"></a>
+                            <figcaption>cycling through the night</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Tenczynek-min.jpg" width="300px" alt="A cyclist watching the horizon"></a>
+                            <figcaption>admiring landscapes every now and then</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Kalwaria-min.jpg" width="300px" alt="A cyclist riding down the slope"></a>
+                            <figcaption>riding smoothly down the slope</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <!-- sposób na złamanie struktury siatki:
+                    <div class="w-100"></div> -->
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test-min.jpg" width="300px" alt="A cyclist..."></a>
+                            <figcaption>or a bit faster...</figcaption>
+                        </figure>
+
+                    </div>
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Giewont-min.jpg" width="300px" alt="Man sitting on the summit, eating breakfast"></a>
+                            <figcaption>eating sandwich on the summit</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Starorobocianski-min.jpg" width="300px" alt="Man covered with frost on the Starorobocianski summit"></a>
+                            <figcaption>getting covered by frost</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test-min.jpg" width="300px" alt="....."></a>
+                            <figcaption>trekking through the forests</figcaption>
+                        </figure>
+
+                    </div>
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test-min.jpg" width="300px" alt="....."></a>
+                            <figcaption>climbing on the rocks</figcaption>
+                        </figure>
+
+                    </div>
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/motorsport-min.jpg" width="300px" alt="A rally fan supporting"></a>
+                            <figcaption>smell some gasoline and burnt rubber</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/books-min.jpg" width="300px" alt="Hyperion by Dan Simmons"></a>
+                            <figcaption>read some fiction</figcaption>
+                        </figure>
+
+                    </div>				
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test-min.jpg" width="300px" alt="Hyperion by Dan Simmons"></a>
+                            <figcaption>do some stuff</figcaption>
+                        </figure>
+
+                    </div>		
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test-min.jpg" width="300px" alt="A man with binoculars watching birds"></a>
+                        <figcaption>watch some birds</figcaption>
+                        </figure>
 				
-				</div>
+				    </div> <!-- final photo -->
                 
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/Tenczynek-min.JPG" width="300px" alt="A bike rider watching the horizon"></a>
-						<figcaption>biking</figcaption>
-					</figure>
-				
-				</div>
-                
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/Kalwaria-min.JPEG" width="300px" alt="A bikie rider riding down the slope"></a>
-						<figcaption>biking</figcaption>
-					</figure>
-				
-				</div>
-                
-                <!-- sposób na złamanie struktury siatki:
-                <div class="w-100"></div> -->
-                
-				<div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/Giewont1-min.jpg" width="300px" alt="Man sitting on the Giewont summit, eating breakfast"></a>
-						<figcaption>hiking</figcaption>
-					</figure>
-				
-				</div>
-                
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/Starorobocianski1-min.jpg" width="300px" alt="Man covered with frost on the Starorobocianski summit"></a>
-						<figcaption>hiking</figcaption>
-					</figure>
-				
-				</div>
-                
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/Krywan1-min.jpg" width="300px" alt="Man on Krywan Summit"></a>
-						<figcaption>hiking</figcaption>
-					</figure>
-				
-				</div>
-                
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/motorsport-min.jpg" width="300px" alt="A rally fan supporting"></a>
-						<figcaption>motorsport</figcaption>
-					</figure>
-				
-				</div>
-                
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/books-min.jpg" width="300px" alt="Hyperion by Dan Simmons"></a>
-						<figcaption>motorsport</figcaption>
-					</figure>
-				
-				</div>				
-				
-                <div class="col-sm-6 col-md-4">
-				
-					<figure>
-						<a href="#"><img src="img/compressed/test-min.jpg" width="300px" alt="A man with binoculars watching birds"></a>
-				    <figcaption>birdwatching</figcaption>
-					</figure>
-				
-				</div>
-                
-			</div>	
+			    </div> <!-- row -->	
 		
-        </div>
+		    </section> <!-- section -->
+		
+        </div> <!-- container -->
                 
-		</section>
-    
-    
 </main>
         
     
