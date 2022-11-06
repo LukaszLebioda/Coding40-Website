@@ -45,9 +45,25 @@
     <header>
 
         <nav> (ewentualnie <div role="navigation">)
-            <a><img></a> (logo)
-            <button><span></span></button> (toggler)
-            <div></div> (dropdown menu)
+            <a>
+                <figure>
+                    <img>
+                </figure>
+            </a> (logo)
+            <button> (toggler)
+                <span> (toggler icon)
+                </span>
+            </button> 
+            <div> (collapse, dropdown menu)
+                <ul>
+                    <li>
+                        <a></a>
+                    </li>
+                    <li>
+                        <a></a>
+                    </li>
+                </ul>                
+            </div> 
         </nav>
 
     </header>   
@@ -85,25 +101,62 @@
     <!-- .navbar: górna belka nawigacyjna --> 
     <!-- .bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark, .bg-white: predefiniowane kolory tła belki nawigacyjnej -->
     <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
-       
-<!--       navbar-expand-medium żeby od medium toggler rozszerzał się do zwykłego menu i sam znikał -->
+    <!-- navbar-expand-md: żeby od medium toggler znikał i pojawiało się zwykłe poziome menu -->
         
         <a class="navbar-brand" href="#"><img class="d-inline-block mx-2 align-bottom" src="img/favicons/apple-icon-57x57.png" width="25" height="25" alt=""> Coding40</a>
         <!-- .navbar-brand: logo serwisu -->
         <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
         <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
         <!-- .align-top: vertical alignment, ułożenie elementu w pionie względem sąsiedniego elementu; może być -baseline, -top, -bottom, -middle, -text-bottom, -text-top; tylko jeśli ustawiono inline lub inline-block  -->
-        
         <!-- toggler do menu mobilnego; można użyć class="navbar-toggler order-first" żeby togler był z lewej, a logo z prawej; data-toggle="collapse" włącza zapadanie się menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
+        <!-- .navbar-toggler: że będzie ikona -->
+        <!-- type="button" żeby nie submitowało formularza -->
+        <!-- ewentualnie .order first: zamiana brandu z togglerem miejscami -->
+        <!-- data-bs-toggle="collapse": umożliwia rozwinięcie się skolapsowanego menu --> 
+        <!-- data-bs-target="#mainMenu": wskazanie, co ma się zapadać -->   
+        <!-- atrybuty ARIA (Accesible Rich Internet Aplications) poprawiające dostępność (np. ułatwiające interpretowanie kodu witryny czytnikom): controls (powiązanie z menu pionowym), expanded (if currently expanded), label (nazwa buttona) -->   
             <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- <span class="navbar-toggler-icon">: IKONA -->
         
         <div class="collapse navbar-collapse" id="mainMenu">
-        <!-- tu chodzi o to, żeby, w przeciwieństwie do expand w <nav> menu po zwężeniu ekranu zapadało się, żeby pojawiał się toggler i rozwijane menu pionowe --> 
+        <!-- żeby (w przeciwieństwie do "navbar-expand-md" w <nav>) poziome menu zapadało się i żeby pojawiał się toggler wraz ze swoim rozwijanym menu pionowym po zwężeniu poniżej progu md -->
+        <!-- id="mainMenu", żeby <button> wiedział, co ma się zapadać --> 
             
-            tu będzie menu menu menu menu menu menu i menu
-            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                 <li class="nav-item dropdown">
+        <!-- .dropdown: bo będzie rozwijane -->
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">MyProjects</a>
+        <!-- .dropdown-toggle: bo będzie rozwijać -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">previous non-responsive web design</a>
+                        <a class="dropdown-item" href="#">Java Scripts</a>
+                        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                        <a class="dropdown-item" href="#">My tests</a>
+                        <a class="dropdown-item" href="#">Other</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">What I've learned</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Leisures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
         
     </nav>
