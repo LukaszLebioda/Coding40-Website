@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @LukaszLebioda
-- 👀 I’m interested in winter hiking, downhill cycling, reading fiction novels, birdwatching, and coding, coding, coding! 
+- 👀 I’m interested in winter hiking, downhill cycling, reading fiction novels, motorsport, birdwatching, and coding, coding, coding! 
 - 🌱 I’m currently learning JavaScript, Cypress
 - 💞️ I’m looking to collaborate on software testing
 - 📫 How to reach me: lukasz.leb@gmail.com
