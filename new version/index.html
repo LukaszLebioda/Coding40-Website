@@ -3,18 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
     <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
 	<meta name="keywords" content="coding, self-study, lifechange">
     <meta name="author" content="Coding40"> 
 	<title>Coding40 - A story of a lifechanging project</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- css podpięty zdalnie, ale można też lokalnie -->
+    
+    <link rel="icon" href="img/logo/logo2_semiwhite.png">   
 	<link rel="stylesheet" href="style.css" />
     
-    <!-- FAVICON:    
-    <link rel="icon" href="img/favicon.png">   
-	
     <!-- FONTELLO:
     <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />   
     
@@ -42,7 +41,7 @@
 
 <body>
 
-    <header>
+    <header class="container-fluid">
 
         <nav> (ewentualnie <div role="navigation">)
             <a>
@@ -65,11 +64,11 @@
                 </ul>                
             </div> 
         </nav>
-
+    
     </header>   
 
     <main> (main content, once only, subjected only to body)
-        <div container> (responsive-grid, zbiorczy pojemnik siatki)
+        <div class="container"> (responsive-grid, zbiorczy pojemnik siatki)
             <section> (photo section)
                 <header> (header for photo section)
                 </header>
@@ -84,18 +83,16 @@
         </div>
     </main>
 
+    <footer class="container-fluid">
+    </footer>
+
 </body>
 
 -->
 
 <body>
 
-<header>
-    
-<!-- już nie pamiętam, po co był ten div:
-    <div class="container-fluid">  bootstrap's predefined div class with fluid width to host a responsive grid 
-    </div>
--->
+<header class="cotainer-fluid">
     
     <nav class="navbar navbar-dark bg-info navbar-expand-md"> 
     <!-- .navbar: górna belka nawigacyjna --> 
@@ -103,7 +100,7 @@
     <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
     <!-- navbar-expand-md: żeby od medium toggler znikał i pojawiało się zwykłe poziome menu -->
         
-        <a class="navbar-brand" href="#"><img class="d-inline-block mx-2 align-bottom" src="img/favicons/apple-icon-57x57.png" width="25" height="25" alt=""> Coding40</a>
+        <a class="navbar-brand" href="#"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="30" height="30" alt=""> Coding40</a>
         <!-- .navbar-brand: logo serwisu -->
         <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
         <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
@@ -167,7 +164,7 @@
 <main>
     
         <div class="container"> 
-				
+        
             <section class="leisurePhotos">
 				
 				<header>
@@ -298,7 +295,9 @@
         </div> <!-- container -->
                 
 </main>
-        
+   
+<footer class="container-fluid">
+</footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->    
 </body>

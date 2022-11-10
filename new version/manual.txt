@@ -1,0 +1,20 @@
+CONTAINER:
+a) .container class provides a responsive fixed width container, max width: 1140px, better for texts;
+b) .container-fluid class provides a full width container, spanning the entire width of the viewport, width: 100%, 
+better for headers, footers, sliders;
+c) we can apply: <div class=container"> or <main, section, header, footer class="container-fluid">;
+d) we can apply: .container-sm|md|lg|xl classes to determine when the container should be responsive;
+
+PADDING:
+a) containers have left/right padding by default (no default top or bottom padding); 
+b) we can use extra paddings (and margins) like this: <div class="container pt-5"></div>;
+this makes default padding bigger or/and creates top or bottom padding like this:
+.pt-5 which means padding top - 5 (on scale 0-5);
+
+COLORS, FONTS & BORDERS:
+a) we can adjust borders: <div class="container p-5 my-5 border"></div>
+b) we can adjust background-colors: <div class="container p-5 my-5 bg-dark text-white"></div>
+c) we can adjust font colors: <div class="container p-5 my-5 bg-primary text-white"></div>
+
+
+
