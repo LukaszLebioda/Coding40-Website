@@ -12,12 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- css podpięty zdalnie, ale można też lokalnie -->
     
     <link rel="icon" href="img/logo/logo2_semiwhite.png">   
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">   
     
-    <!-- FONTELLO:
-    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />   
-    
-    <!-- GOOGLE FONTS:
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -37,123 +34,70 @@
 
 </head>
    
-<!-- STRUCTURE:   
-
-<body>
-
-    <header class="container-fluid">
-
-        <nav> (ewentualnie <div role="navigation">)
-            <a>
-                <figure>
-                    <img>
-                </figure>
-            </a> (logo)
-            <button> (toggler)
-                <span> (toggler icon)
-                </span>
-            </button> 
-            <div> (collapse, dropdown menu)
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>                
-            </div> 
-        </nav>
-    
-    </header>   
-
-    <main> (main content, once only, subjected only to body)
-        <div class="container"> (responsive-grid, zbiorczy pojemnik siatki)
-            <section> (photo section)
-                <header> (header for photo section)
-                </header>
-                <div row> (wrapper for columns, wiersz wewnątrz pojemnika siatki)
-                    <div col> (for a photo, kolumny wewnątrz wrappera)
-                        <figure> (photo)
-                        <img> (photo)
-                        </figure>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="container-fluid">
-    </footer>
-
-</body>
-
--->
-
 <body>
 
 <header class="cotainer-fluid">
     
-    <nav class="navbar navbar-dark bg-info navbar-expand-md"> 
-    <!-- .navbar: górna belka nawigacyjna --> 
-    <!-- .bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark, .bg-white: predefiniowane kolory tła belki nawigacyjnej -->
-    <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
-    <!-- navbar-expand-md: żeby od medium toggler znikał i pojawiało się zwykłe poziome menu -->
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl"> 
         
-        <a class="navbar-brand" href="#"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="30" height="30" alt=""> Coding40</a>
-        <!-- .navbar-brand: logo serwisu -->
-        <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
-        <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
-        <!-- .align-top: vertical alignment, ułożenie elementu w pionie względem sąsiedniego elementu; może być -baseline, -top, -bottom, -middle, -text-bottom, -text-top; tylko jeśli ustawiono inline lub inline-block  -->
-        <!-- toggler do menu mobilnego; można użyć class="navbar-toggler order-first" żeby togler był z lewej, a logo z prawej; data-toggle="collapse" włącza zapadanie się menu -->
+        <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="35" height="35" alt=""> Coding40</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
-        <!-- .navbar-toggler: że będzie ikona -->
-        <!-- type="button" żeby nie submitowało formularza -->
-        <!-- ewentualnie .order first: zamiana brandu z togglerem miejscami -->
-        <!-- data-bs-toggle="collapse": umożliwia rozwinięcie się skolapsowanego menu --> 
-        <!-- data-bs-target="#mainMenu": wskazanie, co ma się zapadać -->   
-        <!-- atrybuty ARIA (Accesible Rich Internet Aplications) poprawiające dostępność (np. ułatwiające interpretowanie kodu witryny czytnikom): controls (powiązanie z menu pionowym), expanded (if currently expanded), label (nazwa buttona) -->   
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <span class="navbar-toggler-icon">: IKONA -->
         
         <div class="collapse navbar-collapse" id="mainMenu">
-        <!-- żeby (w przeciwieństwie do "navbar-expand-md" w <nav>) poziome menu zapadało się i żeby pojawiał się toggler wraz ze swoim rozwijanym menu pionowym po zwężeniu poniżej progu md -->
-        <!-- id="mainMenu", żeby <button> wiedział, co ma się zapadać --> 
-            
-            <ul class="navbar-nav">
+
+            <ul class="navbar-nav me-auto"> <!-- me-auto chyba niepotrzebne -->
+            <!-- do niektórych linków dodałem testowo klasy active i disabled -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link active" href="./index.html">Home</a>
                 </li>
-                 <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
         <!-- .dropdown: bo będzie rozwijane -->
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">MyProjects</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
         <!-- .dropdown-toggle: bo będzie rozwijać -->
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                    <!-- id subMenu jest potrzebne do logicznego połączenia podmenu z odpowiednim rozwijanym divem -->
                         <a class="dropdown-item" href="#">previous non-responsive web design</a>
                         <a class="dropdown-item" href="#">Java Scripts</a>
-                        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
                         <a class="dropdown-item" href="#">My tests</a>
                         <a class="dropdown-item" href="#">Other</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="./html_skills.html">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">What I've learned</a>
+                    <a class="nav-link disabled" href="#">Testing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Leisures</a>
+                    <a class="nav-link" href="./html_leisures.html">Leisures</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
+            
+           <!-- poniżej wstawianie małego formularza, bez atrybutu action -->
+            <form class="form-inline">
+              <div class="row g-1">
+                <div class="col-5 col-sm-8">
+                  <input class="form-control" type="search" placeholder="type anything" aria-label="search">
+                </div>
+                <div class="col-5 col-sm-6 col-xl-3">
+                  <button class="btn btn-secondary" type="submit">send</button>
+                  <!-- btn-primary, secondary, success, danger, warning, info, light, dark, link -->
+                </div>
+              </div>
+            </form> 
+            
+            
+            
         </div>
         
     </nav>
@@ -167,51 +111,36 @@
         
             <section class="leisurePhotos">
 				
-				<header>
+				<aside class="col-12 bg-secondary my-3 p-3">Place your AD here DUMMY CONTENT to be removed ASAP</aside>
+        
+				<header class="border border-dark my-3"> 
+				
+				<!-- w divie subPagePhoto stylizujemy w css foto tła, zaś w divie color-overlay stylizujemy w css położenie elementów na tym tle oraz niuanse kolorystyczne tła -->
+				
+				<!-- <a href="http://www.freepik.com">Designed by starline / Freepik</a> -->
+				<div class="subPagePhoto" style="background-image: url('./img/backgrounds/matrixStartCoding.jpg');">
 					
-					<h1>What I love to do</h1>
-					<p>Some examples of what I love doing when I'm not coding</p>
+					<div class="color-overlay d-flex justify-content-center align-items-center">
+                        <div class="row">
+                            <div>
+                                <h1 class="fw-bold text-uppercase">Start coding</h1>
+                                <p>Some tips how to start coding</p>
+                                </div>
+                            </div>
+                    </div>	
+                        	
+                </div>		
 						
 				</header>
 					
                 <div class="row"> 
                 <!-- no-gutters: <div class="row g-0"> -->
                 
-                     <div class="col-sm-6 col-md-4">
-                     <!-- offsetowanie: col-sm-6 col md-5 offset-md-1 -->
-                        <figure>
-                            <a href="#"><img src="img/Tenczynek.jpg" width="400px" alt="A cyclist on a bike"></a>
-                            <figcaption>cycling during the day</figcaption>
-                        </figure>
-
-                    </div>
-                    
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/Raclawka.jpg" width="400px" alt="A cyclist on a bike"></a>
-                            <figcaption>...in the evening...</figcaption>
-                        </figure>
-
-                    </div>
-
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/Wielkanoc.jpg" width="400px" alt="A cyclist on a bike"></a>
-                            <figcaption>...and through the night</figcaption>
-                        </figure>
-
-                    </div>
-
-                    <!-- sposób na złamanie struktury siatki:
-                    <div class="w-100"></div> -->
-
                    <div class="col-sm-6 col-md-4">
 
                         <figure>
                             <a href="#"><img src="img/test.jpg" width="400px" alt="A cyclist..."></a>
-                            <figcaption>or a bit faster...</figcaption>
+                            <figcaption>Explanation1</figcaption>
                         </figure>
 
                     </div>
@@ -219,26 +148,8 @@
                     <div class="col-sm-6 col-md-4">
 
                         <figure>
-                            <a href="#"><img src="img/Giewont.jpg" width="400px" alt="Man sitting on the summit, eating breakfast"></a>
-                            <figcaption>eating sandwich on the summit</figcaption>
-                        </figure>
-
-                    </div>
-
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/Starorobocianski.jpg" width="400px" alt="Man covered with frost on the Starorobocianski summit"></a>
-                            <figcaption>getting covered by frost</figcaption>
-                        </figure>
-
-                    </div>
-
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
                             <a href="#"><img src="img/test.jpg" width="400px" alt="....."></a>
-                            <figcaption>trekking through the forests</figcaption>
+                            <figcaption>Explanation2</figcaption>
                         </figure>
 
                     </div>
@@ -247,47 +158,11 @@
 
                         <figure>
                             <a href="#"><img src="img/test.jpg" width="400px" alt="....."></a>
-                            <figcaption>climbing on the rocks</figcaption>
+                            <figcaption>Explanation3</figcaption>
                         </figure>
 
                     </div>
                    
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/motorsport.jpg" width="400px" alt="A rally fan supporting"></a>
-                            <figcaption>smell some gasoline and burnt rubber</figcaption>
-                        </figure>
-
-                    </div>
-
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/books.jpg" width="400px" alt="Hyperion by Dan Simmons"></a>
-                            <figcaption>read some fiction</figcaption>
-                        </figure>
-
-                    </div>				
-
-                   <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/test.jpg" width="400px" alt="Hyperion by Dan Simmons"></a>
-                            <figcaption>do some stuff</figcaption>
-                        </figure>
-
-                    </div>		
-                   
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="#"><img src="img/test.jpg" width="400px" alt="A man with binoculars watching birds"></a>
-                        <figcaption>watch some birds</figcaption>
-                        </figure>
-				
-				    </div> <!-- final photo -->
-                
 			    </div> <!-- row -->	
 		
 		    </section> <!-- section -->
@@ -304,149 +179,3 @@
     
 </html>
     
-<!-- ------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------ -->
-<!-- ------------------------------------------------------------------------------------------ -->
-    
-<!-- INDEX INDEX INDEX INDEX INDEX INDEX INDEX
-
-<div id="container">
-	   
-    <div id="uppersticky_block">
-    
-        <header> <-- newtag; ten header jest headerem dla całej sekcji body tej podstrony; headery można zagnieżdżać, tzn. mogą być inne headery wewnątrz innych divów algo nowych znaczników article itd. --
-		<div id="logo">
-			<h1 title="This is the title of the project I started to change my life">Coding<span style="color: red; text-decoration: none; font-size:30px; font-style: italic">40</span> - My lifechanging project</h1>
-		</div>
-	
-		<div id="topbar">
-        <nav id="nav_topbar"> <-- newtag; nav dotyczący tylko menu górnego strony --
-            <ol class="uppermenu_list">
-                <li><a href="#">list1</a>
-                    <ul>
-                        <li><a href="#">item1</a></li>
-                        <li><a href="#">item2</a></li>
-                        <li><a href="#">item3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">list2</a>
-                    <ul>
-                        <li><a href="#">item1</a></li>
-                        <li><a href="#">item2</a></li>
-                        <li><a href="#">item3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">list3</a>
-                    <ul>
-                        <li><a href="#">item1</a></li>
-                        <li><a href="#">item2</a></li>
-                        <li><a href="#">item3</a></li>
-                    </ul>
-                </li>
-            </ol>
-        </nav>
-		</div>
-        </header>
-	
-		<-- <img src="img/books.jpg" width="300" height="168" class="img-fluid" alt='a book "Hyperion" by Dan Simmons'/> --
-		<div id = "flag_pl"><img src = "img/pl.png" width = "22" height = "17px" />
-		</div>
-		<div id="flag_gb"><img src = "img/gb.png" width = "22" height = "17px" />
-		</div>
-		<div id="flag_es"><img src = "img/es.png" width = "22" height = "17px" />
-		</div>
- 
-    </div>
-   
-        
-		<div id="nav">
-        <nav id="nav_leftsidebar"> <-- newtag; nav dotyczący lewego menu głównego --
-			<br>
-			<-- poniżej przykład, jak wyglądała linia, zanim zrobiłem z diva cały klikalny link --
-			<-- <div class="tile-left"><a href="source_code.html" title="About me"><i class="icon-adult"></i> About me</a></div> --
-			
-			<a href="index.html" class="tile-left" title="About me"><i class="icon-home"></i> Start page</a>
-			<a href="source_code.html" class="tile-left" title="About me"><i class="icon-adult"></i> About me</a>
-			<a href="skills.html" class="tile-left" title="Skills"><i class="icon-wrench"></i> Skills</a>
-			<a href ="education.html" class="tile-left"><i class="icon-graduation-cap"></i> Education</a>
-			<a href="leisures.html" class="tile-left" title="Leisures"><i class="icon-glass"></i> Leisures</a>
-			<a href="login_form.html" class="tile-left" title="Login"><i class="icon-right"></i> Login</a>
-        </nav>
-		</div>
-    
-		<div id="content">
-        <article id="article_index"> <-- newtag; wyodrębnia autonomiczną, czasem powtarzalną część witryny: artykuł, post, kompentarz itd. --
-			<section> <-- newtag; sekcja to wyodrębniona mniejsza całość; może być częścią artykułu, ale nie musi --
-            <aside> <-- newtag; oznacza fragment podstrony luźno z nią związany (reklama, feedy socialmediowe, widgety itd.) --   
-            <pre>
-			&#60?php
-			echo "Hello World";
-			?&#62	
-			</pre>
-            </aside>
-            </section>
-            
-			<hr>
-			
-            <section> <-- newtag; sekcja to wyodrębniona mniejsza całość; może być częścią artykułu, ale nie musi --
-			<h3 style = "font-size:18px">A few words about me:</h3>
-			<br>
-			Jeśli chcesz wiedzieć więcej o Koronie Himalajów i Karakorum <a href="https://pl.wikipedia.org/wiki/O%C5%9Bmiotysi%C4%99cznik" target="_blank" title="Przejdź do strony o 8-tysięcznikach">kliknij ten link</a> i zacznij swoją przygodę już teraz
-			<br><br>
-            </section>    
-                
-            <-- strong - b; em - i; -- 
-            
-            <section> <-- newtag; sekcja to wyodrębniona mniejsza całość; może być częścią artykułu, ale nie musi --
-			<p title = "My biggest professional success"><mark style="background-color: lightslategray">My biggest professional succes</mark>, I think, is the implementation of the iKSORIS sales program into the three units of the Jagiellonian University: The JU Museum, the Botanical Garden and the Nature Education Centre. I coordinated the whole process from the very beginning to the very end, of course with the support of many wonderful people. The process was long, complicated and demanding, and its major visible result is probably the website https://bilety.uj.edu.pl/ where one can learn about those units and purchase tickets to them. It is planned to develop the website into the online store. Probably other JU unit will join as well.</p> 
-            </section>
-                
-            <section> <-- newtag; sekcja to wyodrębniona mniejsza całość; może być częścią artykułu, ale nie musi --
-            <strong>On may daily basis</strong> I administer the software and the CMS panel of the website. All ot this I mentioned above aroused my huge interest in the IT environment.
-
-			<p title = "My biggest professional success">My biggest professional succes, I think, is the implementation of the iKSORIS sales program into the three units of the Jagiellonian University: The JU Museum, the Botanical Garden and the Nature Education Centre. I coordinated the whole process from the very beginning to the very end, of course with the support of many wonderful people. The process was long, complicated and demanding, and its major visible result is probably the website https://bilety.uj.edu.pl/ where one can learn about those units and purchase tickets to them. It is planned to develop the website into the online store. Probably other JU unit will join as well.</p> 
-			
-			<p title = "What do I do professionally">On may daily basis I administer the software and the CMS panel of the website. All ot this I mentioned above aroused my huge interest in the IT environment.
-
-			Recently I’ve decided to learn more about it to understand better how it works. I feel I learn a lot every day, however I have to admit sometimes the intellectual and emotional excitement is spoiled with the moments of doubt and feeling of being overwhelmed with all this data. And there is some much more I’ve just started learning the basics of html, cee & php, and designing my first website. I push my commits regularly to GitHub.</p>
-			
-			<p title = "summary">The situation is dynamic. I believe I’ll have more to share in the days to come.</p>	
-            </section>
-        </article>
-		</div>
-	
-		<div id="clock">
-		</div>
-		
-		<div id="ad">
-			<-- webfonty od Fontello, poniżej komentarz pokazujący, jak wygląda linia bez mojego podlinkowania --
-			<-- <div class="tile-right" style="background-color: #25D366;"><i class="icon-phone"></i></div> --
-			<-- przykład zapisu sprzed zmian, zanim sprawiłem, żeby cały div (tile) był linkiem --
-			<-- <div class="tile-right" style="background-color: #25D366;"><i class="icon-phone"></i></div> --
-			
-			<a href="https://web.whatsapp.com/" target="_blank" title="Find me on Whatsupp" class="tile-right" style="background-color: #25D366;"><i class="icon-whatsapp"></i></a>
-			
-			<a href="https://www.linkedin.com/in/%C5%82ukasz-l-45936924b/" target="_blank" title="Find me on LinkedIn" class="tile-right" style="background-color: #0e76a8;"><i class="icon-linkedin-rect"></i></a>
-			
-			<a href="https://github.com/LukaszLebioda/Coding40-MF-WebsiteProject" target="_blank" title="Find me on GitHub" class="tile-right" style="background-color: #000000;"><i class="icon-github-circled-alt2"></i></a>
-		</div>
-		
-		<div id="footer">
-        <footer> <-- newtag; na podstronie może być więcej footerów (artykuły czy sekcje mogę mieć swoje własne footery), np. sekcja z komentarzami może mieć swój header ("komentarze"), artykuł (content) i footera (podsumowanie, jakieś statystyki, zasady netykiety itd.) --  
-            <-- <a href="mailto:lukasz.leb@gmail.com"></a> --
-			&copy; All rights reserved - Łukasz Lebioda
-			<br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone-squared"></i>+48 513-637-367
-        </footer>
-		</div>
-		<-- używamy, jeśli nie ma footera
-		<div style="clear: both"></div>
-		--
-
-<-- podpinamy bibliotekę JQuery, którą ściągnęliśmy z neta (wersja skompresowana); to miało być do sticky logo, które jednak ogarnęliśmy w css, nie w js --
-<script src="jquery-3.6.1.min.js"></script>
-  
-</body>
-
-</html>
-
--->

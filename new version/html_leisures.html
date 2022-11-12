@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
+    <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
+	<meta name="keywords" content="coding, self-study, lifechange">
+    <meta name="author" content="Coding40"> 
+	<title>Coding40 - A story of a lifechanging project</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- css podpięty zdalnie, ale można też lokalnie -->
+    
+    <link rel="icon" href="img/logo/logo2_semiwhite.png">   
+	<link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">  
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- JQUERY (CDN or locally):
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <script src="jquery-3.6.1.min.js"></script>
+    
+    <!-- MY SCRIPTS
+    <script src="myScripts.js"></script>   
+    
+    <!-- SHIV for transition & transform
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]
+     -->
+
+</head>
+   
+<!-- STRUCTURE:   
+
+<body>
+
+    <header class="container-fluid">
+
+        <nav> (ewentualnie <div role="navigation">)
+            <a>
+                <figure>
+                    <img>
+                </figure>
+            </a> (logo)
+            <button> (toggler)
+                <span> (toggler icon)
+                </span>
+            </button> 
+            <div> (collapse, dropdown menu)
+                <ul>
+                    <li>
+                        <a></a>
+                    </li>
+                    <li>
+                        <a></a>
+                    </li>
+                </ul> 
+                <form>
+                    <input> (search box or ligin inputs)
+                    <button></button>
+                </form>               
+            </div> 
+        </nav>
+    
+    </header>   
+
+    <main> (main content, once only, subjected only to body)
+        <div class="container"> (responsive-grid, zbiorczy pojemnik siatki)
+            <section> (photo section)
+                <header> (header for photo section)
+                </header>
+                <div row> (wrapper for columns, wiersz wewnątrz pojemnika siatki)
+                    <div col> (for a photo, kolumny wewnątrz wrappera)
+                        <figure> (photo)
+                        <img> (photo)
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+    </footer>
+
+</body>
+
+-->
+
+<body>
+
+<!-- me = margin-right and ms = margin-left ??? -->
+
+<header class="cotainer-fluid">
+    
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl"> <!-- MZ dał lg, a było md --> 
+    <!-- .navbar: górna belka nawigacyjna --> 
+    <!-- .bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark, .bg-white: predefiniowane kolory tła belki nawigacyjnej -->
+    <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
+    <!-- navbar-expand-md: żeby od medium toggler znikał i pojawiało się zwykłe poziome menu -->
+        
+        <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="35" height="35" alt=""> Coding40</a>
+        <!-- .navbar-brand: logo serwisu -->
+        <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
+        <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
+        <!-- .align-top: vertical alignment, ułożenie elementu w pionie względem sąsiedniego elementu; może być -baseline, -top, -bottom, -middle, -text-bottom, -text-top; tylko jeśli ustawiono inline lub inline-block  -->
+        <!-- toggler do menu mobilnego; można użyć class="navbar-toggler order-first" żeby togler był z lewej, a logo z prawej; data-toggle="collapse" włącza zapadanie się menu -->
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
+        <!-- .navbar-toggler: że będzie ikona -->
+        <!-- type="button" żeby nie submitowało formularza -->
+        <!-- ewentualnie .order first: zamiana brandu z togglerem miejscami -->
+        <!-- data-bs-toggle="collapse": umożliwia rozwinięcie się skolapsowanego menu --> 
+        <!-- data-bs-target="#mainMenu": wskazanie, co ma się zapadać -->   
+        <!-- atrybuty ARIA (Accesible Rich Internet Aplications) poprawiające dostępność (np. ułatwiające interpretowanie kodu witryny czytnikom): controls (powiązanie z menu pionowym), expanded (if currently expanded), label (nazwa buttona) -->   
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <span class="navbar-toggler-icon">: IKONA -->
+        
+        <div class="collapse navbar-collapse" id="mainMenu">
+        <!-- żeby (w przeciwieństwie do "navbar-expand-md" w <nav>) poziome menu zapadało się i żeby pojawiał się toggler wraz ze swoim rozwijanym menu pionowym po zwężeniu poniżej progu md -->
+        <!-- id="mainMenu", żeby <button> wiedział, co ma się zapadać --> 
+            
+            <ul class="navbar-nav me-auto"> <!-- me-auto chyba niepotrzebne -->
+            <!-- do niektórych linków dodałem testowo klasy active i disabled -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+        <!-- .dropdown: bo będzie rozwijane -->
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
+        <!-- .dropdown-toggle: bo będzie rozwijać -->
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                    <!-- id subMenu jest potrzebne do logicznego połączenia podmenu z odpowiednim rozwijanym divem -->
+                        <a class="dropdown-item" href="#">previous non-responsive web design</a>
+                        <a class="dropdown-item" href="#">Java Scripts</a>
+        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                        <a class="dropdown-item" href="#">My tests</a>
+                        <a class="dropdown-item" href="#">Other</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Testing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_leisures.html">Leisures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            
+           <!-- poniżej wstawianie małego formularza, bez atrybutu action -->
+            <form class="form-inline">
+              <div class="row g-1">
+                <div class="col-5 col-sm-8">
+                  <input class="form-control" type="search" placeholder="type anything" aria-label="search">
+                </div>
+                <div class="col-5 col-sm-6 col-xl-3">
+                  <button class="btn btn-secondary" type="submit">send</button>
+                  <!-- btn-primary, secondary, success, danger, warning, info, light, dark, link -->
+                </div>
+              </div>
+            </form> 
+               
+        </div>
+        
+    </nav>
+    
+</header>
+    
+<main>
+    
+        <div class="container"> 
+        
+            <section class="leisurePhotos">
+				
+				<aside class="col-12 bg-secondary my-3 p-3">Place your AD here DUMMY CONTENT to be removed ASAP</aside>
+        
+				<header class="border border-dark my-3"> 
+				
+				<!-- w divie subPagePhoto stylizujemy w css foto tła, zaś w divie color-overlay stylizujemy w css położenie elementów na tym tle oraz niuanse kolorystyczne tła -->
+				<div class="subPagePhoto" style="background-image: url('./img/backgrounds/mountainsLeisures.jpg');">
+					
+					<div class="color-overlay d-flex justify-content-center align-items-center">
+                        <div class="row">
+                           <div>
+                            <h1 class="fw-bold text-uppercase">Leisures</h1>
+                            <p>What You can do when you're not coding</p>
+                            </div>
+                        </div>
+                    </div>		
+						
+                </div>		
+						
+				</header>
+					
+                <div class="row"> 
+                <!-- no-gutters: <div class="row g-0"> -->
+                
+                     <div class="col-sm-6 col-md-4">
+                     <!-- offsetowanie: col-sm-6 col md-5 offset-md-1 -->
+                        <figure>
+                            <a href="#"><img src="img/Tenczynek.jpg" width="400px" alt="A cyclist on a bike"></a>
+                            <figcaption>cycling during the day</figcaption>
+                        </figure>
+
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Raclawka.jpg" width="400px" alt="A cyclist on a bike"></a>
+                            <figcaption>...in the evening...</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Wielkanoc.jpg" width="400px" alt="A cyclist on a bike"></a>
+                            <figcaption>...and through the night</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <!-- sposób na złamanie struktury siatki:
+                    <div class="w-100"></div> -->
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test.jpg" width="400px" alt="A cyclist..."></a>
+                            <figcaption>or a bit faster...</figcaption>
+                        </figure>
+
+                    </div>
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Giewont.jpg" width="400px" alt="Man sitting on the summit, eating breakfast"></a>
+                            <figcaption>eating sandwich on the summit</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/Starorobocianski.jpg" width="400px" alt="Man covered with frost on the Starorobocianski summit"></a>
+                            <figcaption>getting covered by frost</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test.jpg" width="400px" alt="....."></a>
+                            <figcaption>trekking through the forests</figcaption>
+                        </figure>
+
+                    </div>
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test.jpg" width="400px" alt="....."></a>
+                            <figcaption>climbing on the rocks</figcaption>
+                        </figure>
+
+                    </div>
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/motorsport.jpg" width="400px" alt="A rally fan supporting"></a>
+                            <figcaption>smell some gasoline and burnt rubber</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/books.jpg" width="400px" alt="Hyperion by Dan Simmons"></a>
+                            <figcaption>read some fiction</figcaption>
+                        </figure>
+
+                    </div>				
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test.jpg" width="400px" alt="Hyperion by Dan Simmons"></a>
+                            <figcaption>do some stuff</figcaption>
+                        </figure>
+
+                    </div>		
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="#"><img src="img/test.jpg" width="400px" alt="A man with binoculars watching birds"></a>
+                        <figcaption>watch some birds</figcaption>
+                        </figure>
+				
+				    </div> <!-- final photo -->
+                
+			    </div> <!-- row -->	
+		
+		    </section> <!-- section -->
+		
+        </div> <!-- container -->
+                
+</main>
+   
+<footer class="container-fluid">
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->    
+</body>
+    
+</html>
+    
