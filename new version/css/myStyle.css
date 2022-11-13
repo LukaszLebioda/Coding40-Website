@@ -42,7 +42,7 @@ p.regular
     width: 100%;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 1px) and (max-width: 575px) {
     .masthead {
         min-height: 20vh;
     }
@@ -51,7 +51,16 @@ p.regular
     }
 }
 
-@media (min-width: 361px) and (max-width: 700px) {
+@media (min-width: 576px) and (max-width: 768px) {
+    .masthead {
+        min-height: 25vh;
+    }
+    h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
     .masthead {
         min-height: 30vh;
     }
@@ -60,7 +69,16 @@ p.regular
     }
 }
 
-@media (min-width: 701px) and (max-width: 990px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+    .masthead {
+        min-height: 40vh;
+    }
+    h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
     .masthead {
         min-height: 50vh;
     }
@@ -69,7 +87,7 @@ p.regular
     }
 }
 
-@media (min-width: 9911px) and (max-width: 1200px) {
+@media (min-width: 1401px) and (max-width: 1800px) {
     .masthead {
         min-height: 60vh;
     }
@@ -77,6 +95,7 @@ p.regular
         font-size: calc(1.525rem + 3.3vw);
     }
 }
+
 /* --------(min-width: 768px) // (min-width: 768px) and (max-width: 991px)---------------------------------------------------------- */
 
 .bg-myQuotationColor
