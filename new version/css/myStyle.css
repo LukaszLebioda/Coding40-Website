@@ -1,3 +1,8 @@
+body
+{
+overflow-x:hidden; /* to remove bottom scroll bar */
+}
+
 .masthead {
     background-size: cover;
     min-height: 70vh;
