@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?59925484');
-  src: url('../font/fontello.eot?59925484#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?59925484') format('woff2'),
-       url('../font/fontello.woff?59925484') format('woff'),
-       url('../font/fontello.ttf?59925484') format('truetype'),
-       url('../font/fontello.svg?59925484#fontello') format('svg');
+  src: url('../font/fontello.eot?97079904');
+  src: url('../font/fontello.eot?97079904#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?97079904') format('woff2'),
+       url('../font/fontello.woff?97079904') format('woff'),
+       url('../font/fontello.ttf?97079904') format('truetype'),
+       url('../font/fontello.svg?97079904#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?59925484#fontello') format('svg');
+    src: url('../font/fontello.svg?97079904#fontello') format('svg');
   }
 }
 */
@@ -54,21 +54,5 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-mail:before { content: '\e804'; } /* '' */
-.icon-ok:before { content: '\e80e'; } /* '' */
-.icon-cancel:before { content: '\e80f'; } /* '' */
-.icon-home:before { content: '\e811'; } /* '' */
-.icon-phone:before { content: '\e825'; } /* '' */
-.icon-github-circled-alt2:before { content: '\f056'; } /* '' */
-.icon-phone-squared:before { content: '\f098'; } /* '' */
+.icon-phone:before { content: '\e802'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
-.icon-coffee:before { content: '\f0f4'; } /* '' */
-.icon-html5:before { content: '\f13b'; } /* '' */
-.icon-css3:before { content: '\f13c'; } /* '' */
-.icon-thumbs-up-alt:before { content: '\f164'; } /* '' */
-.icon-thumbs-down-alt:before { content: '\f165'; } /* '' */
-.icon-graduation-cap:before { content: '\f19d'; } /* '' */
-.icon-whatsapp:before { content: '\f232'; } /* '' */
-.icon-user-o:before { content: '\f2c0'; } /* '' */
-.icon-linkedin-1:before { content: '\f31a'; } /* '' */
-.icon-linkedin-rect:before { content: '\f31b'; } /* '' */
