@@ -49,7 +49,7 @@ p.regular
 
 @media (max-width: 575px) {
     .masthead {
-        min-height: 30vh;
+        min-height: 20vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -61,7 +61,7 @@ p.regular
 
 @media (min-width: 576px) and (max-width: 768px) {
     .masthead {
-        min-height: 40vh;
+        min-height: 25vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -73,7 +73,7 @@ p.regular
 
 @media (min-width: 769px) and (max-width: 991px) {
     .masthead {
-        min-height: 50vh;
+        min-height: 35vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -85,7 +85,7 @@ p.regular
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .masthead {
-        min-height: 60vh;
+        min-height: 45vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -97,7 +97,7 @@ p.regular
 
 @media (min-width: 1201px) and (max-width: 1400px) {
     .masthead {
-        min-height: 70vh;
+        min-height: 55vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -109,7 +109,7 @@ p.regular
 
 @media (min-width: 1401px) and (max-width: 1800px) {
     .masthead {
-        min-height: 80vh;
+        min-height: 60vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
