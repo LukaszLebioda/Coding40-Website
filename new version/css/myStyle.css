@@ -42,7 +42,7 @@ p.regular
 
 .color-overlay {
     position: absolute;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.6);
     height: 100%;
     width: 100%;
 }
@@ -54,6 +54,9 @@ p.regular
     h1 {
         font-size: calc(1.525rem + 3.3vw);
     }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -62,6 +65,9 @@ p.regular
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
+    }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
     }
 }
 
@@ -72,6 +78,9 @@ p.regular
     h1 {
         font-size: calc(1.525rem + 3.3vw);
     }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -80,6 +89,9 @@ p.regular
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
+    }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
     }
 }
 
@@ -90,6 +102,9 @@ p.regular
     h1 {
         font-size: calc(1.525rem + 3.3vw);
     }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
+    }
 }
 
 @media (min-width: 1401px) and (max-width: 1800px) {
@@ -98,6 +113,9 @@ p.regular
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
+    }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
     }
 }
 
