@@ -1,8 +1,31 @@
-body
-{
-overflow-x:hidden; /* to remove bottom scroll bar */
+body {
+    /* background image from: https://www.toptal.com/designers/subtlepatterns/ */
+    /* background-image: url("img/body_background.png"); */
+    /*alternatywa: background-color: #value*/
+    /* background-repeat: repeat; */
+    /* no-repeat; repeat-x; repeat-y */
+    /* background-attachment: fixed; */
+    /* scroll */
+    overflow-x:hidden; /* to remove bottom scroll bar */
+    margin: 0 !important;
+    /* zeruje defaultowy margin przeglądarki */
+    font-family: 'Josefin Sans', sans-serif; /* nunito albo Open Sans*/
+    font-size: 17px;
+    /*color: #efefef;*/
 }
 
+/* quotation */
+.bg-myQuotationColor
+{
+    background-color: #c0d06f !important; 
+}
+
+main {
+    /* margin-left: auto; margin-right: auto; width: 1100px;       padding: 0 - not necessary because of bootstrap */
+    text-align: center;
+}
+
+/* responsive background-image for every subpage */
 .masthead {
     background-size: cover;
     min-height: 70vh;
@@ -11,41 +34,43 @@ overflow-x:hidden; /* to remove bottom scroll bar */
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-/* showcase */
-h1 
-{
-    font-size: 4rem;
-    color: #C0D06F
-}
-
-/* elsewhere */
-h1.regular {
-    font-size: 40px;
-    font-weight: 400;
-    color: #c0d06f;   
-    margin: 20px;
-}
-
-/* showcase */
-p
-{
-    font-size: 30px;
-    color: white;
-}
-
-/* elsewhere */
-p.regular
-{
-    font-size: 16px;
-    color: black;
-}
-
+/* features added to masthead (text, opacity...) */
 .color-overlay {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 100%;
     width: 100%;
 }
+
+            /* in the showcase */
+            h1 
+            {
+                font-size: 4rem;
+                color: #C0D06F
+            }
+
+            /* elsewhere */
+            h1.regular {
+                font-size: 40px;
+                font-weight: 400;
+                color: #c0d06f;   
+                margin: 15px;
+            }
+
+            /* in the showcase */
+            p
+            {
+                font-size: 30px;
+                color: white;
+
+            }
+
+            /* elsewhere */
+            p.regular
+            {
+                font-size: 16px;
+                color: black;
+            }
 
 @media (max-width: 575px) {
     .masthead {
@@ -56,6 +81,12 @@ p.regular
     }
     p {
         font-size: calc(0.525rem + 3.3vw);
+    }
+    h1.regular {
+        font-size: 21px;
+    }
+    p.regular {
+        font-size: 15px;
     }
 }
 
@@ -68,6 +99,12 @@ p.regular
     }
     p {
         font-size: calc(0.525rem + 3.3vw);
+    }
+    h1.regular {
+        font-size: 25px;
+    }
+    p.regular {
+        font-size: 15px;
     }
 }
 
@@ -109,7 +146,7 @@ p.regular
 
 @media (min-width: 1401px) and (max-width: 1800px) {
     .masthead {
-        min-height: 60vh;
+        min-height: 57vh;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -119,34 +156,6 @@ p.regular
     }
 }
 
-/* --------(min-width: 768px) // (min-width: 768px) and (max-width: 991px)---------------------------------------------------------- */
-
-.bg-myQuotationColor
-{
-    background-color: #c0d06f !important; 
-}
-
-
-body {
-    /* background image from: https://www.toptal.com/designers/subtlepatterns/ */
-    /* background-image: url("img/body_background.png"); */
-    /*alternatywa: background-color: #value*/
-    /* background-repeat: repeat; */
-    /* no-repeat; repeat-x; repeat-y */
-    /* background-attachment: fixed; */
-    /* scroll */
-    margin: 0 !important;
-    /* zeruje defaultowy margin przeglądarki */
-    font-family: 'Josefin Sans', sans-serif; /* nunito albo Open Sans*/
-    font-size: 17px;
-    /*color: #efefef;*/
-}
-
-main {
-    /* margin-left: auto; margin-right: auto; width: 1100px;       padding: 0 - not necessary because of bootstrap */
-    text-align: center;
-}
-
 /* do opisów w skillach */
 .myTextJustify
 {
@@ -154,9 +163,8 @@ main {
     font-size: 16px;
 }
 
+/* do opisów w skillach */
 @media (max-width: 575px)
-/* takie cuś pozwala nam na ostylowanie elementu w konkretnym rozmiarze okna */
-/* można też tak: (min-width: 768px) // (min-width: 768px) and (max-width: 991px)  */
 {
     .myTextJustify
     {
@@ -166,7 +174,7 @@ main {
     }
 }
 
-/* PHOTO SECTION -------------------------------------- */
+/* PHOTO SECTION */
 
 .leisurePhotos {
     /* margin-left: auto; margin-right: auto; width: 1100px; padding: 0; not necessary because of bootstrap */
@@ -190,11 +198,16 @@ main {
     text-align: center;
 }
 
-/* NAVBAR SECTION -------------------------------------- */
+/* NAVBAR SECTION */
 
 .bg-myNavColor
 {
     background-color: #1e90ff !important; /* dodgerblue */
+}
+
+.dropdown-menu
+{
+    background-color: snow;
 }
 
 /* hover ma rozwijac dropdown-menu, ktore defaultowo ma nadany display:none */
