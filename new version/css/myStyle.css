@@ -225,6 +225,32 @@ main {
     min-height: 57px;
 }
 
+/* --- ACCORDION SECTION --- */
+/*
+.accordion (for general background)
+{
+    background-color: PapayaWhip;
+}
+*/
+
+.accordion-button
+{
+    background-color: #c0d06f;
+    font-size: 20px;
+}
+
+.accordion-button:not(.collapsed)
+{
+    background-color: #c0d06f;
+    font-size: 20px;
+    color: inherit;
+}
+
+.accordion-item /* background for opened div */
+{
+    background-color: snow;
+}
+
 /*-----------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
