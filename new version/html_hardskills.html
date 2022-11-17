@@ -46,7 +46,8 @@
 
 <header class="cotainer-fluid">
     
-    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl"> 
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl fixed-top"> 
+    <!-- I added "fixed-top" here and in css: body {padding-top: 60px;} to make the navbar sticky --> 
         
         <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="35" height="35" alt=""> Coding40</a>
         
@@ -157,7 +158,8 @@
                               <i class="icon-html5"></i>&nbsp&nbspHTML (Hypertext Markup Language)
                           </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <!-- <div id="collapseOne" class="accordion-collapse show": wtedy ten div jest defaultowo otwarty -->
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
                             <h1 class="h3 fw-normal mb-4 regular">HTML</h1>
                            

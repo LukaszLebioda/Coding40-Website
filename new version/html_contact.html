@@ -3,19 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
 	<meta name="keywords" content="coding, self-study, lifechange">
-    <meta name="author" content="Coding40"> 
+    <meta name="author" content="Coding40 - Łukasz Lebioda"> 
 	<title>Coding40 - A story of a lifechanging project</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
     
     <link rel="icon" href="img/logo/logoSemiTransparentLarge.png">   
 	<link rel="stylesheet" href="css/myStyle.css">
-    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">   
     
-    <!-- bootstrap używa NFS; NFS Native Font Stack to filozofia typograficzna, która zakłada, że dany OS będzie używał swojej defaultowej czcionki natywnej; my zaś podpięliśmy fonty od Google'a i nasza www będzie wyglądała wszędzie tak samo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -34,19 +33,11 @@
 
 </head>
    
-<!-- text-center: do wyśrodkowania tekstu; jest też left, right, justify --> 
-<!-- text-center można zapisać tak: text-md-left żeby właściwość działała od konkretnego rozmiaru wzwyż --> 
-<!-- h1-h6: można tak: <h1 class="h2"></h1> --> 
-<!-- fw-bold, bolder, normal, light, lighter, italic: czcionki --> 
-<!-- text-uppercase, text-lowercase, text-capitalize --> 
-<!-- img-fluid: obraz staje się responsywny, otrzymuje width 100% i max-height: auto; może być też img-thumbnail, czyli miniaturka, ale to sugeruje przejście do galerii, np. galerii typu lightbox, po kliknięciu w obraz, a my na razie tego nie mamy -->
-<!-- class="lead" używamy np. do paragrafów jako tekst wstępny z pewnymi predefiniowanymi właściwościami --> 
-
 <body>
 
 <header class="cotainer-fluid">
     
-    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl"> 
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl fixed-top"> 
         
         <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="35" height="35" alt=""> Coding40</a>
         
@@ -56,21 +47,26 @@
         
         <div class="collapse navbar-collapse" id="mainMenu">
 
-            <ul class="navbar-nav me-auto"> 
+            <ul class="navbar-nav me-auto"> <!-- me-auto chyba niepotrzebne -->
+            <!-- do niektórych linków dodałem testowo klasy active i disabled -->
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link active" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
+        <!-- .dropdown: bo będzie rozwijane -->
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
+        <!-- .dropdown-toggle: bo będzie rozwijać -->
                     <div class="dropdown-menu" aria-labelledby="subMenu">
+                    <!-- id subMenu jest potrzebne do logicznego połączenia podmenu z odpowiednim rozwijanym divem -->
                         <a class="dropdown-item" href="#">previous non-responsive web design</a>
                         <a class="dropdown-item" href="#">Java Scripts</a>
+        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
                         <a class="dropdown-item" href="#">My tests</a>
                         <a class="dropdown-item" href="#">Other</a>
                     </div>
                 </li>
                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
                         <a class="dropdown-item" href="./html_hardskills.html">Hard</a>
                         <a class="dropdown-item" href="./html_softskills.html">Soft</a>
@@ -90,6 +86,7 @@
                 </li>
             </ul>
             
+           <!-- poniżej wstawianie małego formularza, bez atrybutu action -->
             <form class="form-inline">
               <div class="row g-1">
                 <div class="col-5 col-sm-8">
@@ -97,14 +94,16 @@
                 </div>
                 <div class="col-5 col-sm-6 col-xl-3">
                   <button class="btn btn-secondary" type="submit">send</button>
+                  <!-- btn-primary, secondary, success, danger, warning, info, light, dark, link -->
                 </div>
               </div>
             </form> 
             
+            
+            
         </div>
         
     </nav>
-    
     
 </header>
     
@@ -112,68 +111,74 @@
     
         <div class="container"> 
         
-                <aside class="col-12 bg-myQuotationColor my-3 p-3"><i>'In in doubt - flat out'</i>,  Colin McRae</aside>
+            <section class="leisurePhotos">
+				
+				<aside class="col-12 bg-myQuotationColor my-3 p-3"><i>'There is no spoon'</i></aside>
         
 				<header class="border border-dark my-3"> 
 				
-				<!-- Car Hunters: https://www.youtube.com/watch?v=bS41Ymal0L0 -->
-				<div class="masthead" style="background-image: url('./img/backgrounds/subaruSkills3.jpg');">
+				<!-- w divie masthead stylizujemy w css foto tła, zaś w divie color-overlay stylizujemy w css położenie elementów na tym tle oraz niuanse kolorystyczne tła -->
 				
+				<!-- https://www.innovationnewsnetwork.com/ska-observatory-to-build-the-worlds-largest-radio-telescope-in-south-africa/5336/ -->
+				<div class="masthead" style="background-image: url('./img/backgrounds/contactRadiotelescope.jpg');">
+					
 					<div class="color-overlay d-flex flex-column justify-content-center align-items-center">
                         <div class="row">
-                           <div>
-                            <h1 class="fw-bold text-uppercase">Skills</h1>
-                            <p>What You need to learn</p>
+                            <div>
+                                <h1 class="fw-bold text-uppercase">Contact</h1>
+                                <p>How to reach me</p>
+                                </div>
                             </div>
-                        </div>
                     </div>	
-					
+                        	
                 </div>		
-					
+						
 				</header>
 				
-                <section class="hardSkills">
-                        
-               	    <header class="border border-dark">
+                <section class="homeSection mb-3">
+                    
+                     <header class="border border-dark">
 					
-                        <h1 class="regular">Tools && Software</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
-                        <p class="regular">Easy to learn, hard to master</p>
+                        <h1 class="regular">Some show offs</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <p class="regular">I would be pleased to welcome You on these tiny little Internet pieces of mine (below)</p>
                        
 				    </header>
-               
-                    <div class="row g-0"> 
+                    
+                </section>
+               		
+                <div class="row"> 
+                <!-- no-gutters: <div class="row g-0"> -->
                 
-                    <aside class="col-lg-2 order-lg-1 mt-4">
-                       
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            
-                        </ul>
-                        
-                     </aside>
-                    
-                     <div class="col-lg-10 bg-white text-dark border-bottom border-dark">
-                      
-                           <!-- <p class="lead regular">I would like to...</p> -->
+                   <div class="col-sm-6 col-md-4">
 
-                           <h1 class="h3 fw-normal mb-4 regular">HTML</h1>
-                           
-                            <img class="img-fluid float-none me-2 mb-4" src="./img/icons/html_medium.png" alt="html logo">
-                            <!-- img-fluid lub img-thumbnail -->
-                            
-                           <p class="myTextJustify regular">
-                            <b>name -v</b>: HTML5 (HyperText Markup Language) <br>
-                            <b>what is:</b> a markup language to describe the content of the page, the general behaviour of the page in different environments and to pass some info to the search engines out there <br>
-                            <b>opinion:</b> Quite intuitive and straigthforward at the beginning; hovever the deeper into the forest You go, the more trees You see...; without CSS it seems rough and naked (see below).
-                           </p>
-                            
+                        <figure>
+                            <a href="https://www.linkedin.com/in/%C5%82ukasz-l-45936924b/" target="_blank" title="Find me on LinkedIn"><img class="img-fluid float-none" src="img/icons/linkedin96x96.png" width="80px" alt="GitHub icon"></a>
+                            <figcaption>linkedin account</figcaption>
+                        </figure>
+
                     </div>
-                    
-			        </div> <!-- row -->	
+                   
+                    <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="https://github.com/LukaszLebioda?tab=repositories" target="_blank" title="Find me on GitHub"><img class="img-fluid float-none" src="img/icons/github96x96.png" width="80px" alt="GitHub icon"></a>
+                            <figcaption>some github repos</figcaption>
+                        </figure>
+
+                    </div>
+
+                   <div class="col-sm-6 col-md-4">
+
+                        <figure>
+                            <a href="https://www.npmjs.com/~lukaszleb" target="_blank" title="Find me on npmjs"><img class="img-fluid float-none mt-5" src="img/icons/npm.jpg" width="80px" alt="GitHub icon"></a>
+                            <figcaption>some npm packages</figcaption>
+                        </figure>
+
+                    </div>
+                   
+			    </div> <!-- row -->	
 		
-		        </section> <!-- section -->
+		    </section> <!-- section -->
 		
         </div> <!-- container -->
                 
@@ -187,7 +192,7 @@
     
 </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>     
 </body>
     
 </html>
