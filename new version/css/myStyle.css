@@ -228,6 +228,19 @@ main {
     min-height: 57px;
 }
 
+/* czcionka list itemów w głównej nawigacji navbar */
+#mainMenu
+{
+    font-size: 20px;
+}
+
+/* czcionka dla sub-list-itemów w głównej nawigacji navbar */
+#dropMenu
+{
+    font-size: 18px;
+    padding: 8px;
+}
+
 /* --- ACCORDION SECTION --- */
 /*
 .accordion (for general background)

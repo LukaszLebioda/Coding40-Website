@@ -52,12 +52,13 @@
         <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="35" height="35" alt=""> Coding40</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
-            <span class="navbar-toggler-icon"></span>
+            <!-- było: <span class="navbar-toggler-icon"></span> -->
+            <img src="./img/other/menu.png" witdh="33" height="33">
         </button>
         
-        <div class="collapse navbar-collapse" id="mainMenu">
+        <div class="collapse navbar-collapse px-2" id="mainMenu">
 
-            <ul class="navbar-nav me-auto"> 
+            <ul class="navbar-nav me-auto pt-2"> 
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">Home</a>
                 </li>
@@ -73,8 +74,8 @@
                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
-                        <a class="dropdown-item" href="./html_hardskills.html">Hard</a>
-                        <a class="dropdown-item" href="./html_softskills.html">Soft</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -87,7 +88,7 @@
                     <a class="nav-link" href="./html_leisures.html">Leisures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./html_contact.html">Contact</a>
                 </li>
             </ul>
             
@@ -155,7 +156,7 @@
                       <div class="accordion-item mt-2 border border-dark">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              <i class="icon-html5"></i>&nbsp&nbspHTML (Hypertext Markup Language)
+                              <i class="icon-html5"></i>&nbsp&nbspHTML
                           </button>
                         </h2>
                         <!-- <div id="collapseOne" class="accordion-collapse show": wtedy ten div jest defaultowo otwarty -->
@@ -167,8 +168,9 @@
                             <!-- img-fluid lub img-thumbnail -->
                             
                            <p class="myTextJustify regular">
-                            <b>name -v</b>: HTML5 (HyperText Markup Language) <br>
-                            <b>what is:</b> a markup language to describe the content of the page, the general behaviour of the page in different environments and to pass some info to the search engines out there <br>
+                            <b>name -v</b>: HTML 5 (HyperText Markup Language) <br>
+                            <b>in three words:</b>: Every beginners' beginning <br>
+                            <b>long story short:</b> a language to describe the content of the page and the general behaviour of the page in different environments, to link some external files or CDN libraries and to pass some info to the search engines out there <br>
                             <b>opinion:</b> Quite intuitive and straigthforward at the beginning; hovever the deeper into the forest You go, the more trees You see...; without CSS it seems rough and naked (see below).
                            </p>
                           </div>
@@ -177,12 +179,22 @@
                       <div class="accordion-item mt-2 border border-dark ">
                         <h2 class="accordion-header " id="headingTwo">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          <i class="icon-css3"></i>&nbsp&nbspCSS (Cascade Style Sheet)
+                          <i class="icon-css3"></i>&nbsp&nbspCSS
                           </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            
                           <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h1 class="h3 fw-normal mb-4 regular">CSS</h1>
+                            <img class="img-fluid float-none me-2 mb-4" src="./img/icons/css_medium.png" alt="html logo">
+                            <!-- img-fluid lub img-thumbnail -->
+                            
+                           <p class="myTextJustify regular">
+                            <b>name -v</b>: CSS 3 (Cascading Style Sheets) <br>
+                            <b>in three words:</b>: Instant pleasure of design<br>
+                            <b>long story short:</b> a language to tell the browser how it should render the page's look: fonts, colours, images, backgrounds, icons and many more; a powerful tool that is firmly bound with html and can be supported by external libraries to create even more picturesque results <br>
+                            <b>opinion:</b> Nice and clean syntax that tends to get more and more complicated in the course of development; can be tricky to remember what lines of css represent what, so comments every now and then are strongly recommended
+                           </p>
                           </div>
                         </div>
                       </div>
@@ -194,7 +206,7 @@
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            MORE INFO COMING SOON
                           </div>
                         </div>
                       </div>

@@ -116,15 +116,16 @@
         <!-- data-bs-toggle="collapse": umożliwia rozwinięcie się skolapsowanego menu --> 
         <!-- data-bs-target="#mainMenu": wskazanie, co ma się zapadać -->   
         <!-- atrybuty ARIA (Accesible Rich Internet Aplications) poprawiające dostępność (np. ułatwiające interpretowanie kodu witryny czytnikom): controls (powiązanie z menu pionowym), expanded (if currently expanded), label (nazwa buttona) -->   
-            <span class="navbar-toggler-icon"></span>
+            <!-- było: <span class="navbar-toggler-icon"></span> -->
+            <img src="./img/other/menu.png" witdh="33" height="33">
         </button>
         <!-- <span class="navbar-toggler-icon">: IKONA -->
         
-        <div class="collapse navbar-collapse" id="mainMenu">
+        <div class="collapse navbar-collapse px-2" id="mainMenu">
         <!-- żeby (w przeciwieństwie do "navbar-expand-md" w <nav>) poziome menu zapadało się i żeby pojawiał się toggler wraz ze swoim rozwijanym menu pionowym po zwężeniu poniżej progu md -->
         <!-- id="mainMenu", żeby <button> wiedział, co ma się zapadać --> 
             
-            <ul class="navbar-nav me-auto"> <!-- me-auto chyba niepotrzebne -->
+            <ul class="navbar-nav me-auto pt-2"> <!-- me-auto chyba niepotrzebne -->
             <!-- do niektórych linków dodałem testowo klasy active i disabled -->
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">Home</a>
@@ -145,8 +146,8 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
-                        <a class="dropdown-item" href="./html_hardskills.html">Hard</a>
-                        <a class="dropdown-item" href="./html_softskills.html">Soft</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -159,7 +160,7 @@
                     <a class="nav-link active" href="./html_leisures.html">Leisures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="./html_contact.html">Contact</a>
                 </li>
             </ul>
             

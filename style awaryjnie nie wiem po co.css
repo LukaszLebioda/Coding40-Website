@@ -1,0 +1,698 @@
+body {
+    /* background image from: https://www.toptal.com/designers/subtlepatterns/ */
+    background-image: url("img/body_background.png");
+    /*alternatywa: background-color: #value*/
+    background-repeat: repeat;
+    /* no-repeat; repeat-x; repeat-y */
+    background-attachment: fixed;
+    /* scroll */
+    margin: 0 !important;
+    /* zeruje defaultowy margin przeglądarki */
+    /*font-family: 'Josefin Sans', sans-serif; albo Open Sans*/
+    /*font-size: 17px;*/
+    /*color: #efefef;*/
+}
+
+main {
+    /* margin-left: auto; margin-right: auto; width: 1100px;       padding: 0 - not necessary because of bootstrap */
+    text-align: center;
+}
+
+/* PHOTO SECTION */
+
+.leisurePhotos {
+    /* margin-left: auto; margin-right: auto; width: 1100px; padding: 0; not necessary because of bootstrap */
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #C0D06F;
+    margin: 20px;
+}
+
+.leisurePhotos img
+
+/* można też użyć class="img-fluid" wewnątrz <img> w html */
+    {
+    max-width: 100%;
+    height: auto;
+}
+
+.leisurePhotos p {
+    margin-bottom: 30px;
+}
+
+.leisurePhotos figcaption {
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* hover ma rozwijac dropdown-menu, ktore defaultowo ma nadany display:none */
+/* niestety submenu po kliknięciu pozostaje rozwinięte */
+.navbar-nav li:hover > .dropdown-menu 
+{
+    display: block;
+}
+
+/* chyba niepotrzebne, bo i tak mi się navbar rozjeżdża */
+.navbar
+{
+    min-height: 57px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------*/
+
+/*
+selectors:
+* (dla całej zawartości html)
+body (dla całej sekcji body strony)
+p, h1-h6 (tylko dla paragrafów i/lub nagłówków)
+# (dla ID danego elementu, id="text")
+. (dla klasy danych elementów, class="group")
+p.group (tylko dla paragrafów z klasy "group")
+.div-name p (tylko dla paragrafów w konkretnym divie)
+
+
+body
+{
+
+    background-size:2200px 1100px; / wypróbować - background-size: cover; background-size: 100% 100%; 
+	opacity: 0.9;
+	
+}
+
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#uppersticky_block
+{   
+    position: sticky;
+    left: 0; / współrzędna x 
+    top: 0; / współrzędna y; czyli przyklejamy logo do górnego lewego narożnika ekranu 
+    z-index: 100; / współrzędna z, określa głębię, odległość od oczu użytkownika; im większy z-indeks, tym to coś więcej rzeczy będzie przesłaniać, będzie bardziej na wierzchu 
+}
+
+#logo
+{
+	background-color: rgb(119, 136, 153, 0.8); / #778899; lightslategray; ładny też jest powderblue 
+	border-bottom: 2px solid gray;
+	color: white;
+	text-align: center;
+	padding: 15px 0px 15px 0px;    / góra, prawo, dół, lewo: zgodnie z ruchem zegara po układzie kartezjańskim 
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: / najpierw ćwiartka kartezjańska x2, potem blur, potem kolor 
+	1px 1px 0 grey,
+	-1px 1px 0 grey,
+	-1px -1px 0 grey,
+	1px -1px 0 grey;
+}
+
+#topbar
+{
+	background-color: lightskyblue; / 87cefa 
+	color: white;
+	height: 30px; / line-height: 200%; 
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	width: 901px;
+	float: left; / display: inline-block 
+    text-align: center;
+}
+
+.form
+{
+    max-width: 700px;
+    background-color: lightcyan;
+    text-align: left;
+    padding: 10px; 
+    margin: 10px;
+    / trzy linie kodu z "https://www.cssmatic.com/box-shadow" box shadow generatora, które można też wykorzystać w input:focus 
+    -webkit-box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+    -moz-box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+    box-shadow: 5px 5px 5px 1px rgba(204,204,204,0.9);
+}
+
+input[type=text], input[type=password]
+{
+    width: 250px;
+    background-color: #efefef;
+    border: 2px solid lightslategrey;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 2px;
+    color: black;
+    font-family: Courier New;
+    box-sizing: border-box; /może być też content-box/
+    outline: none; /usuwa domyślną obwódkę aktywności, którą ustawimy sobie w input:focus 
+}
+
+input[type=text]:focus, input[type=password]:focus
+{
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,0.9);  
+    border: 2px solid black;
+    background-color: #e9f3e9;
+    color: black; / porównać z color w input i usunąć 
+}
+
+
+/ tutaj idą stylizacje dla placeholderów aktywnych i nieaktywnych w wersjach na różne przeglądarki; ale my zrobiliśby za pomocą java scriptu kasowanie placeholdera, więc te zapisy nie są potrzebne; to już zależy od naszych preferencji:
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #428C42;
+}
+/ Firefox < 19 /
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #428C42;
+}
+/ Firefox > 19 /
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #428C42;
+}
+/ Internet Explorer 10 /
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #428C42;
+} 
+
+button
+{
+    width: 200px;
+    background-color: dodgerblue;
+    font-size: 20px;
+    color: white;
+    padding 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button:hover
+{
+    background-color: #37b93d;
+}
+
+button:focus
+{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);   
+}
+
+ol.uppermenu_list
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol.uppermenu_list a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+}
+
+ol.uppermenu_list > li
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed black;
+    
+}
+
+ol.uppermenu_list > li:first-child
+{
+  border-left: 1px dashed black;  
+}
+
+ol.uppermenu_list > li:hover
+{
+    background-color: lightblue;
+}
+
+ol.uppermenu_list > li:hover > a / tylko w ten sposób możemy zmienić kolor czcionki po najechaniu, bo to jest link 
+{
+    color: red;
+}
+
+ol.uppermenu_list > li > ul
+{
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    list-style-type: none;
+    display: none;
+}
+
+ol.uppermenu_list > li:hover > ul
+{
+    display: block;
+}
+
+ol.uppermenu_list > li > ul > li
+{
+    background-color: lightgreen;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed grey;
+}
+
+ol.uppermenu_list > li > ul > li:hover
+{
+    background-color: grey;
+}
+
+ol.uppermenu_list > li > ul > li:hover > a
+{
+    color: hotpink; / to sposób na zmianę koloru czcionki, czyli linka 
+}
+
+.leisurePhoto
+{
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.leisurePhoto:hover
+{
+    opacity: 1;
+}
+
+.leisurePhoto p
+{
+    font-weight: bold;
+}
+
+/ można też wystylizować img, np. .leisurePhoto img 
+
+/ transform (w hoverze) i transition (w img) działają razem 
+
+/ photo1 jest wystylizowane powyżej, w .leisurePhoto i .leisurePhoto:hover (prosta zmiana opacity) 
+
+#photo2
+/transition: transform (tylko transform) albo transition: all (transform + opacity i wszystkie inne właściwości w  hoverze); czas trwania przejścia w sekundach; sposób przejścia 
+{
+    transition: transform 0.6s ease-in-out;
+}
+
+#photo2:hover
+/ można w skali podać dwa argumenty: osobny do osi x, osobny do osi y 
+{
+    -webkit-transform: scale(0.91) rotate(-5deg);
+    -ms-transform: scale(0.91) rotate(-5deg);
+    transform: scale(0.91) rotate(-5deg);
+    opacity: 0.7;
+}
+
+
+
+#photo3
+/transition: transform (tylko transform) albo transition: all (transform + opacity i wszystkie inne właściwości w  hoverze); czas trwania przejścia w sekundach; sposób przejścia czyli zmiany przejścia w czasie 
+{
+    transition: transform 0.6s ease-in-out;
+}
+
+#photo3:hover
+/ shouldiprefix.com, css prefixes zapewniają poprawność działania w starszych wersjach przeglądarek 
+{
+    -webkit-transform: skew(-5deg,10deg);
+    -ms-transform: skew(-5deg,10deg);
+    transform: skew(-5deg,10deg);
+}
+
+#photo4
+/transition: transform (specific) albo transition: all (wszystkie elementy w hoverze); czas trwania przejścia w sekundach; sposób przejścia 
+{
+    transition: all 0.8s ease-in-out;
+}
+
+#photo4:hover
+{
+    -webkit-transform: scale(0.91);
+    -ms-transform: scale(0.91);
+    transform: scale(0.91);
+    opacity: 0.1;
+}
+
+#photo5
+{
+    transition: all 0.8s ease-in-out;
+}
+
+#overlay
+/ position: relative względem <figure> albo diva leisurePhoto; position absolute byłoby chyba względem body; użycie obu właścicości pozawala na wykorzystanie właściwości left, right, top i bottom 
+{
+    position: relative;
+    width=100%; 
+    height=100%;
+}
+
+#overlay p
+{
+    position: absolute;
+    background-color: #27a38d;
+    width=100%; 
+    height=65px;
+    left: 10px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out
+}
+
+#overlay:hover p
+{
+    opacity: 0.8;
+}
+
+figure / domyślny margin dla figure jest zbyt duży 
+{
+    margin: 8px;
+    padding: 3px;
+}
+
+figcaption
+{
+    text-align: right;
+    padding: 0px;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+#flag_pl 
+{
+	background-color: lightskyblue;
+	width: 33px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	border-radius: 1px;
+	padding: 7px;
+	
+	display: block; / display: inline-block? 
+	text-decoration: none; 
+	box-sizing: border-box;
+}
+
+#flag_gb 
+{
+	background-color: lightskyblue;
+	width: 33px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	border-radius: 1px;
+	padding: 7px;
+	
+	display: block; / display: inline-block? 
+	text-decoration: none; 
+	box-sizing: border-box;
+}
+
+#flag_es
+{
+	background-color: lightskyblue;
+	width: 33px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	border-radius: 1px;
+	padding: 7px;
+	
+	display: block; / display: inline-block? 
+	text-decoration: none; 
+	box-sizing: border-box;
+}
+
+table, th, td 
+{
+    background-color: #96D4D4;
+    border: 1px solid black;
+    border-collapse: collapse;
+    / border-radius: 2px; ale nie działa 
+    /border-spacing: 50px; ale nie działa 
+}
+
+th, td 
+{
+    border-radius: 2px;
+    border-style: dotted;
+    border-color: black;
+    padding: 7px;
+}
+
+th 
+{
+  text-align: left;
+}
+
+/ to color every second row in the table:
+tr:nth-child(even) { background-color: yellow; } 
+/ to color every second column in the table:
+td:nth-child(even), th:nth-child(even) { background-color: #D6EEEE; } 
+
+table tr:hover td
+{
+    background-color: pink; 
+}
+
+#nav
+{
+	float: left;
+	background-color: dodgerblue;
+	font-size: 15px;
+	width: 160px;
+	min-height: 853px;
+	padding: 10px 10px 0 10px;
+}
+
+/ display, text-decoration i box-sizing po to, aby z całego diva zrobić link 
+.tile-left
+{
+	/ kolor jest aquamarine, ale zapisałem go w zapisie 16-kowym, bo w ten sposób można łatwo obniżyć jego wartość o 1 lub dwa: #6eeec3 lub #5dddb2 co można wykorzystać w efekcie HOVER 
+	background-color: #7fffD4;
+	margin: 10px;
+	height: 40px;
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 6px;
+	
+
+	display: block; / sprawia, że cały kafelek zachowuje się jak link 
+	text-decoration: none; / likwiduje podkreślenie linka 
+	box-sizing: border-box; / chyba sprawia, że link przybiera rozmiar kafelka 
+}
+
+.tile-left:hover
+{
+	background-color:#5dddb2;
+    text-decoration: none;
+    color: white;
+}
+
+
+#content
+{
+	background-color: snow;
+    float: left;
+	padding: 20px;
+	width: 680px;
+    min-height: 833px;
+	text-align: justify;
+    / overflow: scroll won't work if the js scrollTo script is involved :( 
+    
+}
+
+#list
+{
+    padding: 4px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol.content_list
+{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+
+ol.content_list > li
+{
+    text-transform: none; /lowercase, uppercase
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    / dalibyśmy float:letf jeśli chcielibyśmy ułożyć list itemy w poziomie 
+}
+
+ol.content_list > li > ul
+{
+    font-weight: 400;
+    text-transform: none;
+    padding: 0px;
+    letter-spacing: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: none; / może być disc, square, circle i kilka innych; ale dajemy tutaj none, ponieważ poniżej używamy własnej encji html, czyli własnej reprezentacji graficznej podpunktu 
+}
+
+ol.content_list > li > ul > li
+{
+    margin: 0px; / bo czasami przeglądarki ustawiają tu swój domyślny margin  
+}
+
+/ poniższa stylizacja z encją html mogłaby też spokojnie zostać usunięta; wtedy do stylizacji elementu li listy (powyżej) moglibyśmy
+użyć dowolnego obrazka poleceniem: list-style-image: url("image source"); dodatkowo moglibyśmy użyć: list-style-position: inside / outside, żeby wskazać, czy obrazek ma być wewnątrz tagu li, czy poza nim 
+ol.content_list > li > ul > li:before
+{
+    color: grey; 
+    content: "➛"; / encja html; mogą też być czcionki fontello 
+    margin-right: 4px;
+}
+
+p.pborder
+{
+    border-style: groove; / dotted, dashed, solid, double, groove,  ridge 
+    border-width: 2px; / or thin, medium, thick; or border-width: 5px 2px 2px 5px; / top, right, bottom left 
+    border-color: lightskyblue;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.list_item
+{
+    padding: 10px 20px; // w pionie (oś y), w poziomie (oś x) 
+    text-align: justify;
+}
+
+#clock
+{
+	float: left;
+	width: 80px;
+	background-color: aquamarine;
+	padding: 10px;
+	text-align: center;
+}
+#ad
+{
+	float: left;
+	width: 80px;
+    min-height: 800px;
+	padding: 10px 10px 0px 10px; // top, right, bottom, left 
+	background-color: dodgerblue;
+}
+
+.tile-right
+{
+	background-color: deepskyblue;
+	height: 70px;
+	margin: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border-radius: 6px;
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+#footer
+{
+	clear: both;
+	background-color: lightslategray;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}	
+
+.scrollup
+{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
+
+.asterix
+{
+    color: red;
+}
+
+// różne linki - nieodwiedzony, odwiedzony i najechany
+a:link
+{
+	color: black;
+    text-decoration: none;
+}
+
+a:visited
+{
+	color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+	color: black;
+    text-decoration: underline;
+}
+
+a:active
+{
+	color: black;
+    text-decoration: none;
+}
+/*
