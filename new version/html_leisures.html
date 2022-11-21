@@ -25,8 +25,8 @@
     <!-- MY SCRIPTS
     <script src="myScripts.js"></script>   
     
-    <!-- SHIV for transition & transform
-    <!--[if lt IE 9]>
+     SHIV for transition & transform
+    [if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]
      -->
@@ -102,7 +102,7 @@
     <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
     <!-- navbar-expand-md: żeby od medium toggler znikał i pojawiało się zwykłe poziome menu -->
         
-        <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="35" height="35" alt=""> Coding40</a>
+        <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"> Coding40</a>
         <!-- .navbar-brand: logo serwisu -->
         <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
         <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
@@ -136,11 +136,10 @@
         <!-- .dropdown-toggle: bo będzie rozwijać -->
                     <div class="dropdown-menu" aria-labelledby="subMenu">
                     <!-- id subMenu jest potrzebne do logicznego połączenia podmenu z odpowiednim rozwijanym divem -->
-                        <a class="dropdown-item" href="#">previous non-responsive web design</a>
-                        <a class="dropdown-item" href="#">Java Scripts</a>
+                        <a class="dropdown-item" id="dropMenu" href="#">Non-RWD webdesign</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
         <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
-                        <a class="dropdown-item" href="#">My tests</a>
-                        <a class="dropdown-item" href="#">Other</a>
+                        <a class="dropdown-item" id="dropMenu" href="#">Other</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -350,7 +349,9 @@
     
 </footer>
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->   
+
+<script src="js/myScripts.js"></script>
 </body>
     
 </html>

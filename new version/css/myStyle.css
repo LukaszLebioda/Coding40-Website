@@ -23,10 +23,12 @@ body {
     background-color: #c0d06f !important; 
 }
 
+/*
 main {
-    /* margin-left: auto; margin-right: auto; width: 1100px;       padding: 0 - not necessary because of bootstrap */
+     margin-left: auto; margin-right: auto; width: 1100px;       padding: 0 - not necessary because of bootstrap 
     text-align: center;
 }
+*/
 
 /* responsive background-image for every subpage */
 .masthead {
@@ -245,7 +247,7 @@ main {
 /*
 .accordion (for general background)
 {
-    background-color: PapayaWhip;
+    background-color: 	gainsboro;
 }
 */
 
@@ -277,6 +279,54 @@ main {
 
 .accordion-item /* background for opened div */
 {
-    background-color: snow;
+    background-color: #fff9bb; /* palegoldenrod */
 }
 
+/* --- LEGALTY CHECKER SECTION -- */
+/* button */
+.bg-button
+{
+    background: lightgreen;
+    font-size: 24px;
+    border: 3px solid #fff9bb;
+
+/* button hover */
+}.bg-button:hover
+{
+    background: limegreen;
+    border: 3px solid green;
+}
+
+/* fieldset */
+fieldset
+{
+background-color: khaki; 
+}
+
+/* nazwy krajów w zestawie radio buttonów LegalityChecker */
+#radioLabel1, #radioLabel2, #radioLabel3, #radioLabel4, #radioLabel5, #radioLabel6 
+{
+    font-size: 21px;
+}
+
+/* tabela oraz jej zmniejszenie dla urządzenia mobilnego */
+table
+{
+    font-size:21px;
+    text-align: left;
+}
+
+@media (min-width: 50px) and (max-width: 575px) {
+    table
+    {
+        font-size: 16px;
+    }
+}
+
+/* kolory łapek bootstrapowych */
+.icon-green{
+    color: green;
+}
+.icon-red{
+    color: red;
+}
