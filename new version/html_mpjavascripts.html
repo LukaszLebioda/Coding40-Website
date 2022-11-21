@@ -19,17 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-    <script src="jquery-3.6.1.min.js"></script> -->
-    
-    <!-- MY SCRIPTS
-    <script src="myScripts.js"></script>   
-    
-     SHIV for transition & transform
-    [if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <![endif]
-     -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
    
@@ -90,10 +80,10 @@
             <form class="form-inline">
               <div class="row g-1">
                 <div class="col-5 col-sm-8">
-                  <input class="form-control" type="search" placeholder="type anything" aria-label="search">
+                  <input class="form-control" type="search" placeholder="just testing" aria-label="search">
                 </div>
                 <div class="col-5 col-sm-6 col-xl-3">
-                  <button class="btn btn-secondary" type="submit">send</button>
+                  <button class="btn btn-secondary" type="submit">test</button>
                   <!-- btn-primary, secondary, success, danger, warning, info, light, dark, link -->
                 </div>
               </div>
@@ -112,7 +102,7 @@
         
             <section class="leisurePhotos">
 				
-				<aside class="col-12 bg-myQuotationColor my-3 p-3"><i>'Here's a little code I wrote, You might want to check it note for note...'</i></aside>
+				<aside class="col-12 bg-myQuotationColor mt-4 p-3"><i>'Here's a little code I wrote, You might want to check it note for note...'</i></aside>
         
 				<header class="border border-dark my-3"> 
 				
@@ -160,8 +150,8 @@
                             <h1 class="h3 fw-normal mb-4 regular">LEGALITY CHECKER</h1>
                            
                             <p class="myTextJustify regular">
-                            <b>Scenario</b>: Imagine You're abroad far away, in some exotic country, and lying on the couch in some fancy bungalow with a posh drink within an arm's reach, suddenly You are invaded by this overwhelming feeling that the time has finally come to unleash Your hidden desires. <br>
-                            <b>How is this useful:</b> Basing upon Your age the program will tell You what You can legally do or do not when in some exotic destinations. Give it a try! <br> <b>Explanation:</b> This is only a game. Please do not make any decisions based upon provided results! The codewriter disclaims any responsibility for what may or may not happen to You if You will!<br><b>Source code:</b> Check the source code if You will at my GitHub Repository LINK HERE or install npm package directly from LINK HERE as npm instal legalitychecker <br> 
+                            <b>Scenario</b>: You're abroad far away, in some exotic country, and lying on the couch in a fancy bungalow with a posh drink within an arm's reach, suddenly You are invaded by this overwhelming feeling that the time has finally come to unleash Your hidden desires. <br>
+                                <b>How is this useful:</b> Basing upon Your age the program will tell You what You can legally do (or do not) when abroad. Give it a try! <br> <b>Explanation:</b> This is only a game. Please do not make any decisions based upon provided results! The codewriter disclaims any responsibility for what may or may not happen to You if You will!<br><b>Source code:</b> The code I wrote reflects ruthlessly the level of my initiation. It's a bit messy and probably too repetitive. But on the other hand it gave me so much fun having made the program work and hope that I would do better! Check the source code if You will at my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or install npm package directly into You project with: <i>npm instal legalitychecker</i>. <br> 
                             </p>
                            
                             <!-- action="" method="post" -->
@@ -171,8 +161,8 @@
                                 <fieldset class="form-group border p-3 mb-4">
                                     <legend class="w-auto px-2 mb-4"></legend>
                                         <div class="form-group mb-4">
-                                            <label for="age"><h4>Type in Your age:</h4></label> <br><br>
-                                            <input type="number" style="width: 130px; height:40px; font-size:25px; text-align:center" class="" id="ageLegality" placeholder="Your age here" name="age">
+                                            <label for="age"><h4>Enter Your age:</h4></label> <br><br>
+                                            <input type="number" style="width: 80px; height:37px; font-size:23px; text-align:center" class="" id="ageLegality" placeholder="" name="age">
                                         </div>
                                         
                                 </fieldset>
@@ -226,8 +216,8 @@
                             <fieldset class="form-group border pt-4 mb-4">
                                 <legend class="w-auto px-2 mb-4"></legend>
                                     <div class="form-group mb-5">
-                                        <h4 id="selectedAge">Selected age: ...</h4>
-                                        <h4 id="selectedCountry">Selected country: ...</h4>
+                                        <h4>Entered age:<span id="selectedAge" style="color: blue"></span></h4>
+                                        <h4>Selected country:<span id="selectedCountry" style="color: blue"></span></h4>
                                     </div>
                             </fieldset>
                               
@@ -250,18 +240,23 @@
                                         </tr>
                                         <tr>
                                           <th scope="row">2</th>
-                                          <td>Buy some smokes & booze</td>
+                                          <td>Buy some smokes</td>
                                           <td id="tableLegality2">?</td>
                                         </tr>
                                         <tr>
                                           <th scope="row">3</th>
-                                          <td>Run for eligible state leader (citizenship required)</td>
+                                          <td>Buy some alcohol</td>
                                           <td id="tableLegality3">?</td>
                                         </tr>
                                         <tr>
                                           <th scope="row">4</th>
-                                          <td>Apply for retirement (citizenship required)</td>
+                                          <td>Run for eligible state leader (citizenship required)</td>
                                           <td id="tableLegality4">?</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">5</th>
+                                          <td>Apply for retirement (citizenship required)</td>
+                                          <td id="tableLegality5">?</td>
                                         </tr>
                                       </tbody>
                                 </table>
@@ -274,12 +269,12 @@
                       <div class="accordion-item mt-2 border border-dark">
                         <h2 class="accordion-header" id="headingThree">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Program 2 - coming soon
+                            Program 2 - Gasoline counter (coming soon)
                           </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            MORE INFO COMING SOON
+                            When more people travel together, there is always a problem how much each person should pay for gasoline. This program might come in handy.
                           </div>
                         </div>
                       </div>

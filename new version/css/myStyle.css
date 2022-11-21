@@ -15,6 +15,7 @@ body {
     font-family: 'Josefin Sans', sans-serif; /* nunito albo Open Sans*/
     font-size: 17px;
     /*color: #efefef;*/
+    text-align: center;
 }
 
 /* quotation */
@@ -47,37 +48,40 @@ main {
     width: 100%;
 }
 
-            /* in the showcase */
-            h1 
-            {
-                font-size: 4rem;
-                color: #C0D06F
-            }
+/* in the showcase */
+h1 
+{
+    font-size: 4rem;
+    color: #C0D06F
+}
 
-            /* elsewhere */
-            h1.regular {
-                font-size: 40px;
-                font-weight: 400;
-                color: #c0d06f;   
-                margin: 15px;
-            }
+/* elsewhere */
+h1.regular {
+    font-size: 40px;
+    font-weight: 400;
+    color: #c0d06f;   
+    margin: 15px;
+}
 
-            /* in the showcase */
-            p
-            {
-                font-size: 30px;
-                color: white;
+/* in the showcase */
+p
+{
+    font-size: 30px;
+    color: white;
 
-            }
+}
 
-            /* elsewhere */
-            p.regular
-            {
-                font-size: 16px;
-                color: black;
-            }
+/* elsewhere */
+p.regular
+{
+    font-size: 16px;
+    color: black;
+}
 
 @media (min-width: 50px) and (max-width: 575px) {
+    footer {
+        font-size: 14px;
+    }
     .masthead {
         min-height: 22vh;
     }
@@ -234,6 +238,7 @@ main {
 #mainMenu
 {
     font-size: 20px;
+    text-align: left!important;
 }
 
 /* czcionka dla sub-list-itemów w głównej nawigacji navbar */
@@ -283,18 +288,26 @@ main {
 }
 
 /* --- LEGALTY CHECKER SECTION -- */
-/* button */
+/* zwykły button */
 .bg-button
 {
     background: lightgreen;
     font-size: 24px;
     border: 3px solid #fff9bb;
+    border-radius: 12px;
+}
+    
+/* zwykły button active */
+.bg-button:active
+{
+    background: limegreen!important;
+}   
 
-/* button hover */
-}.bg-button:hover
+/* zwykły button hover */
+.bg-button:hover
 {
     background: limegreen;
-    border: 3px solid green;
+    border: 3px solid limegreen;
 }
 
 /* fieldset */
@@ -329,4 +342,10 @@ table
 }
 .icon-red{
     color: red;
+}
+
+/* hover na wiersze tabeli */
+table tr:hover td
+{
+    background-color: orange; 
 }
