@@ -193,7 +193,7 @@ p.regular
 .leisurePhotos img
 
 /* można też użyć class="img-fluid" wewnątrz <img> w html */
-    {
+{
     max-width: 100%;
     height: auto;
 }
@@ -209,9 +209,10 @@ p.regular
 
 /* NAVBAR SECTION */
 
+/* for navbar & footer */
 .bg-myNavColor
 {
-    background-color: #1e90ff !important; /* dodgerblue */
+    background-color: #0284c7!important; /* dodgerblue */
 }
 
 .dropdown-menu
@@ -232,6 +233,7 @@ p.regular
 .navbar
 {
     min-height: 57px;
+    max-height: 66px;
 }
 
 /* czcionka list itemów w głównej nawigacji navbar */
@@ -239,6 +241,7 @@ p.regular
 {
     font-size: 20px;
     text-align: left!important;
+    background: #0284c7;
 }
 
 /* czcionka dla sub-list-itemów w głównej nawigacji navbar */
@@ -246,6 +249,12 @@ p.regular
 {
     font-size: 18px;
     padding: 8px;
+}
+
+.nav-item:hover
+{
+    border-bottom: 1px dotted white;
+    color: red!important;
 }
 
 /* --- ACCORDION SECTION --- */
@@ -348,4 +357,111 @@ table
 table tr:hover td
 {
     background-color: orange; 
+}
+
+/* ------------------- index tiles section --------------- */
+
+/* kafelek menu */
+.menuTile
+{
+    width: 200px; /*or any width you like, but it must be defined*/
+    height: 200px; /*or any height you like */
+    background-color: palegoldenrod; /* było #dcfce7; */
+    background-size: cover /*very important as it covers the element within the defined width x height*/;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+}
+
+/* stylizacja poszczególnych dzieci menuTile */
+.menuTile a
+{
+    display: block;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.menuTile a:hover
+{
+    background-color: khaki; /* było #cbebd6; */ 
+    cursor: pointer;
+    transform: scale(1.03);
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.menuTile h3
+{
+   padding-top: 1px; 
+   font-size: 35px;
+}
+.menuTile p
+{
+   font-size: 15px;
+   color: black;
+   padding: 1px;
+}
+.menuTile i
+{
+    color: black;
+    font-size: 45px;
+}
+
+/* gdybyśmy chcieli zróżnicować menuTiles i dodać osobne kolory albo obrazki tła */
+/* 
+.tile1
+{
+    background-image: url('/img/test.jpg');
+}
+.tile2
+{
+    background-image: url('/img/test.jpg');
+}
+.tile3
+{
+    background-image: url('/img/test.jpg');
+}
+.tile4
+{
+    background-image: url('/img/test.jpg');
+}
+/*
+
+/* gdybyśmy chcieli dołożyć przycisk read more */
+/* <a href="">READ MORE</a> */
+/*
+.tileMenu a
+{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+/*
+.tileMenu:hover
+{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+*/
+
+/* ------------ footer ------------------- */
+footer
+{
+    color: white;
 }

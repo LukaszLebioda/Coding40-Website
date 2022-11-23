@@ -1,12 +1,17 @@
+@charset "UTF-8";
 
 .icon-mail:before { content: '\e800'; } /* '' */
 .icon-phone:before { content: '\e801'; } /* '' */
 .icon-github-circled:before { content: '\e802'; } /* '' */
+.icon-cog-alt:before { content: '\e803'; } /* '' */
+.icon-chat:before { content: '\e804'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-html5:before { content: '\f13b'; } /* '' */
 .icon-css3:before { content: '\f13c'; } /* '' */
 .icon-git-squared:before { content: '\f1d2'; } /* '' */
 .icon-git:before { content: '\f1d3'; } /* '' */
+.icon-snowflake-o:before { content: '\f2dc'; } /* '' */
 .icon-github-squared:before { content: '\f300'; } /* '' */
 .icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+.icon-home:before { content: '📞'; } /* '\1f4de' */
