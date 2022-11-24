@@ -3,24 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
     <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
 	<meta name="keywords" content="coding, self-study, lifechange">
-    <meta name="author" content="Coding40 - Łukasz Lebioda"> 
+    <meta name="author" content="Coding40"> 
 	<title>Coding40 - A story of a lifechanging project</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- css podpięty zdalnie, ale można też lokalnie -->
     
     <link rel="icon" href="img/logo/logoSemiTransparentLarge.png">   
 	<link rel="stylesheet" href="css/myStyle.css">
-    <link rel="stylesheet" href="css/fontello/css/fontello.css">   
-    
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">  
+      
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-   
+
 </head>
    
 <body>
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="./index.html">Coding40</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
+                    <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
                         <a class="dropdown-item" id="dropMenu" href="#">Non-RWD webdesign</a>
                         <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
@@ -68,10 +68,10 @@
                     <a class="nav-link" href="./html_leisures.html">Leisures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./html_contact.html">Contact</a>
+                    <a class="nav-link" href="./html_contact.html">Contact</a>
                 </li>
             </ul>
-            
+             
         </div>
         
     </nav>
@@ -82,71 +82,44 @@
     
         <div class="container"> 
         
-            <section class="leisurePhotos">
+            <section class="">
 				
-				<aside class="col-12 bg-myQuotationColor mt-4 p-3"><i>'If it is just us... seems like an awful waste of space'</i>, Ted Arroway</aside>
+				<aside class="col-12 bg-myQuotationColor mt-4 p-3"><i>'The truth is out there'</i>, Dana Scully</aside>
         
 				<header class="border border-dark my-3"> 
 				
-				<!-- w divie masthead stylizujemy w css foto tła, zaś w divie color-overlay stylizujemy w css położenie elementów na tym tle oraz niuanse kolorystyczne tła -->
-				
-				<!-- https://www.innovationnewsnetwork.com/ska-observatory-to-build-the-worlds-largest-radio-telescope-in-south-africa/5336/ -->
-				<div class="masthead" style="background-image: url('./img/backgrounds/contactRadiotelescope.jpg');">
+				<!-- https://www.flightnotch.com/post/hang-gliding-vs-wingsuit-diving -->
+				<div class="masthead" style="background-image: url('./img/backgrounds/testing.jpg');">
 					
 					<div class="color-overlay d-flex flex-column justify-content-center align-items-center">
                         <div class="row">
-                            <div>
-                                <h1 class="fw-bold text-uppercase">Contact</h1>
-                                <p>How to reach me</p>
-                                </div>
+                           <div>
+                            <h1 class="fw-bold text-uppercase">Testing</h1>
+                            <p>A glass half-full</p>
                             </div>
-                    </div>	
-                        	
+                        </div>
+                    </div>		
+						
                 </div>		
 						
 				</header>
 				
-                <section class="homeSection mb-3">
-                    
-                     <header class="border border-dark">
+                <section class="leisureSection">
+                   
+                    <header class="border border-dark">
 					
-                        <h1 class="regular">Some show offs</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
-                        <p class="regular">I would be pleased to welcome You on these tiny little Internet pieces of mine (below)</p>
+                        <h1 class="regular">You're already a tester</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <p class="regular">Cause we are all born to test reality </p>
                        
 				    </header>
                     
                 </section>
-               		
+               
                 <div class="row"> 
-                <!-- no-gutters: <div class="row g-0"> -->
+               
                 
-                   <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="https://www.linkedin.com/in/%C5%82ukasz-l-45936924b/" target="_blank" title="Find me on LinkedIn"><img class="img-fluid float-none" src="img/icons/linkedin96x96.png" width="80px" alt="GitHub icon"></a>
-                            <figcaption>linkedin account</figcaption>
-                        </figure>
-
-                    </div>
-                   
-                    <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="https://github.com/LukaszLebioda?tab=repositories" target="_blank" title="Find me on GitHub"><img class="img-fluid float-none" src="img/icons/github96x96.png" width="80px" alt="GitHub icon"></a>
-                            <figcaption>some github repos</figcaption>
-                        </figure>
-
-                    </div>
-
-                   <div class="col-sm-6 col-md-4">
-
-                        <figure>
-                            <a href="https://www.npmjs.com/~lukaszleb" target="_blank" title="Find me on npmjs"><img class="img-fluid float-none mt-5" src="img/icons/npm.jpg" width="80px" alt="GitHub icon"></a>
-                            <figcaption>some npm packages</figcaption>
-                        </figure>
-
-                    </div>
-                   
+                
+                
 			    </div> <!-- row -->	
 		
 		    </section> <!-- section -->
@@ -163,8 +136,9 @@
     
 </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
-    <script src="js/myScripts.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->   
+
+<script src="js/myScripts.js"></script>
 </body>
     
 </html>

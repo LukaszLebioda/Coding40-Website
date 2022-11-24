@@ -532,14 +532,14 @@ footer
     background-color: #fff9bb;
     border: 1px solid;
     border-radius: 10px;
-    height: 300px;
+    min-height: 300px;
 }
 /* div card */
 .softSkillsCard
 {
     background-color: khaki;
     width: 200px;
-    height: 300px;
+    min-height: 300px;
     border-radius: 10px;
     border: 1px solid;
 }
@@ -564,8 +564,18 @@ footer
     margin-bottom: 2px;
 }
 
-/* empty div - na kreskę */
+@media (min-width: 50px) and (max-width: 767px) {
+    .softSkillsDes p
+    {
+        font-size: 14px;
+    }
+    .softSkillsDes h1
+    {
+        font-size: 18px;
+    }
+}
 
+/* empty div - na kreskę */
 .emptyDiv
 {
     border-bottom: 1px solid
