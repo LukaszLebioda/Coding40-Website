@@ -5,12 +5,16 @@
 .icon-github-circled:before { content: '\e802'; } /* '' */
 .icon-cog-alt:before { content: '\e803'; } /* '' */
 .icon-chat:before { content: '\e804'; } /* '' */
+.icon-flash:before { content: '\e805'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-shield:before { content: '\f132'; } /* '' */
 .icon-html5:before { content: '\f13b'; } /* '' */
 .icon-css3:before { content: '\f13c'; } /* '' */
 .icon-git-squared:before { content: '\f1d2'; } /* '' */
 .icon-git:before { content: '\f1d3'; } /* '' */
+.icon-heartbeat:before { content: '\f21e'; } /* '' */
+.icon-bed:before { content: '\f236'; } /* '' */
 .icon-snowflake-o:before { content: '\f2dc'; } /* '' */
 .icon-github-squared:before { content: '\f300'; } /* '' */
 .icon-linkedin-squared:before { content: '\f30c'; } /* '' */

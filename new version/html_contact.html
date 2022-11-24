@@ -27,43 +27,39 @@
 
 <header class="cotainer-fluid">
     
-    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl fixed-top"> 
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-md fixed-top"> 
+    
+        <a class="navbar-brand" href="./index.html"><img class="align-bottom" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"></a>
         
-        <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"> Coding40</a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
             <!-- było: <span class="navbar-toggler-icon"></span> -->
             <img src="./img/other/menu.png" witdh="33" height="33">
         </button>
         
-        <div class="collapse navbar-collapse px-2" id="mainMenu">
+        <div class="collapse navbar-collapse mainMenu">
 
-            <ul class="navbar-nav me-auto pt-2"> <!-- me-auto chyba niepotrzebne -->
-            <!-- do niektórych linków dodałem testowo klasy active i disabled -->
+            <ul class="navbar-nav mx-auto"> 
                 <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">Home</a>
+                    <a class="nav-link" href="./index.html">Coding40</a>
                 </li>
                 <li class="nav-item dropdown">
-        <!-- .dropdown: bo będzie rozwijane -->
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
-        <!-- .dropdown-toggle: bo będzie rozwijać -->
                     <div class="dropdown-menu" aria-labelledby="subMenu">
-                    <!-- id subMenu jest potrzebne do logicznego połączenia podmenu z odpowiednim rozwijanym divem -->
                         <a class="dropdown-item" id="dropMenu" href="#">Non-RWD webdesign</a>
                         <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
-        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
-                        <a class="dropdown-item" id="dropMenu" href="#">Other</a>
+                        <a class="dropdown-item" id="dropMenu" href="#">Testing</a>
+                        <a class="dropdown-item" id="dropMenu" href="#">Server</a>
                     </div>
                 </li>
+                
+                <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                
                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
                         <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
                         <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Testing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Experience</a>
@@ -75,19 +71,6 @@
                     <a class="nav-link active" href="./html_contact.html">Contact</a>
                 </li>
             </ul>
-            
-           <!-- poniżej wstawianie małego formularza, bez atrybutu action -->
-            <form class="form-inline">
-              <div class="row g-1">
-                <div class="col-5 col-sm-8">
-                  <input class="form-control" type="search" placeholder="just testing" aria-label="search">
-                </div>
-                <div class="col-5 col-sm-6 col-xl-3">
-                  <button class="btn btn-secondary" type="submit">test</button>
-                  <!-- btn-primary, secondary, success, danger, warning, info, light, dark, link -->
-                </div>
-              </div>
-            </form> 
             
         </div>
         

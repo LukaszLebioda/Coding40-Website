@@ -95,6 +95,30 @@
       "css": "chat",
       "code": 59396,
       "src": "fontawesome"
+    },
+    {
+      "uid": "44a0e2660ac966cdfaa04deb6aac51df",
+      "css": "shield",
+      "code": 61746,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3212f42c65d41ed91cb435d0490e29ed",
+      "css": "flash",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d84a06c5ce6da9ebdc9b0a5cb94db4c4",
+      "css": "heartbeat",
+      "code": 61982,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "df9d9b2fb366c10427ffb727943db912",
+      "css": "bed",
+      "code": 62006,
+      "src": "fontawesome"
     }
   ]
 }

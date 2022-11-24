@@ -237,11 +237,12 @@ p.regular
 }
 
 /* czcionka list itemów w głównej nawigacji navbar */
-#mainMenu
+.mainMenu
 {
     font-size: 20px;
-    text-align: left!important;
+/*    text-align: left!important;*/
     background: #0284c7;
+    margin-left: -21px;
 }
 
 /* czcionka dla sub-list-itemów w głównej nawigacji navbar */
@@ -249,12 +250,17 @@ p.regular
 {
     font-size: 18px;
     padding: 8px;
+    text-align: center;
 }
 
+/* elementy listy głównej */
+.nav-item
+{
+    padding: 0px 2px 0 2px;
+}
 .nav-item:hover
 {
-    border-bottom: 1px dotted white;
-    color: red!important;
+    border-bottom: 0 dotted white;
 }
 
 /* --- ACCORDION SECTION --- */
@@ -364,8 +370,8 @@ table tr:hover td
 /* kafelek menu */
 .menuTile
 {
-    width: 200px; /*or any width you like, but it must be defined*/
-    height: 200px; /*or any height you like */
+    width: 180px; /*or any width you like, but it must be defined*/
+    height: 180px; /*or any height you like */
     background-color: palegoldenrod; /* było #dcfce7; */
     background-size: cover /*very important as it covers the element within the defined width x height*/;
     background-repeat: no-repeat;
@@ -381,8 +387,8 @@ table tr:hover td
 .menuTile a
 {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     cursor: pointer;
     text-decoration: none;
     color: black;
@@ -402,18 +408,26 @@ table tr:hover td
 .menuTile h3
 {
    padding-top: 1px; 
-   font-size: 35px;
+   font-size: 25px;
 }
 .menuTile p
 {
    font-size: 15px;
    color: black;
-   padding: 1px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
 .menuTile i
 {
     color: black;
-    font-size: 45px;
+    font-size: 35px;
+}
+
+/* opisy Description, Explanation, Motivation, Activation */
+.descriptionHome
+{
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 /* gdybyśmy chcieli zróżnicować menuTiles i dodać osobne kolory albo obrazki tła */
@@ -460,8 +474,105 @@ table tr:hover td
 }
 */
 
+/* ------- resize of index tiles section-------- */
+
+.menuTile a:hover
+{
+    background-color: khaki; /* było #cbebd6; */ 
+    cursor: pointer;
+    transform: scale(1.03);
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+@media (min-width: 50px) and (max-width: 575px) {
+    .menuTile
+    {
+    width: 130px; /*or any width you like, but it must be defined*/
+    height: 130px; /*or any height you like */
+    }
+    .menuTile a
+    {
+    width: 130px;
+    height: 130px;
+    }
+    .menuTile h3
+    { 
+       font-size: 15px;
+    }
+    .menuTile p
+    {
+       font-size: 10px;
+    }
+    .menuTile i
+    {
+        font-size: 22px;
+    }
+}
+
 /* ------------ footer ------------------- */
 footer
 {
     color: white;
+}
+
+}
+
+/* ------------ soft skills section --------*/
+/* cała sekcja, żeby był flexbox */
+/* musi to zostać, bo inaczej mi kolor znika... */
+.softSkillSection
+{
+    border-radius: 0px;
+}
+
+/* div opisowy */
+.softSkillsDes
+{
+    background-color: #fff9bb;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 300px;
+}
+/* div card */
+.softSkillsCard
+{
+    background-color: khaki;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+/* część obrazkowa */
+.softSkillsImage
+{
+    height: 130px;
+    margin-bottom: 10px;
+    background-size: cover;
+    padding: 0 10px;
+}
+
+.softSkillsCard h3
+{
+    font-size: 20px;
+}
+
+.softSkillsCard p
+{
+    font-size: 12px;
+    color: black;
+    margin-bottom: 2px;
+}
+
+/* empty div - na kreskę */
+
+.emptyDiv
+{
+    border-bottom: 1px solid
+}
+.emptyDiv p
+{
+    font-size: 10px;
+    color: black;
+    display: none;
 }

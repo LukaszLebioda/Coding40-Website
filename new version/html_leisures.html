@@ -23,124 +23,43 @@
 
 </head>
    
-<!-- STRUCTURE:   
-
 <body>
-
-    <header class="container-fluid">
-
-        <nav> (ewentualnie <div role="navigation">)
-            <a>
-                <figure>
-                    <img>
-                </figure>
-            </a> (logo)
-            <button> (toggler)
-                <span> (toggler icon)
-                </span>
-            </button> 
-            <div> (collapse, dropdown menu)
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul> 
-                <form>
-                    <input> (search box or ligin inputs)
-                    <button></button>
-                </form>               
-            </div> 
-        </nav>
-    
-    </header>   
-
-    <main> (main content, once only, subjected only to body)
-        <div class="container"> (responsive-grid, zbiorczy pojemnik siatki)
-            <section> (photo section)
-                <header> (header for photo section)
-                </header>
-                <div row> (wrapper for columns, wiersz wewnątrz pojemnika siatki)
-                    <div col> (for a photo, kolumny wewnątrz wrappera)
-                        <figure> (photo)
-                        <img> (photo)
-                        </figure>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="container-fluid">
-    </footer>
-
-</body>
-
--->
-
-<body>
-
-<!-- me = margin-right and ms = margin-left ??? -->
 
 <header class="cotainer-fluid">
     
-    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-xl fixed-top"> <!-- MZ dał lg, a było md --> 
-    <!-- .navbar: górna belka nawigacyjna --> 
-    <!-- .bg-primary, .bg-secondary, .bg-success, .bg-danger, .bg-warning, .bg-info, .bg-light, .bg-dark, .bg-white: predefiniowane kolory tła belki nawigacyjnej -->
-    <!-- navbar-dark, navbar-light: predefiniowane kolory elementów belki nawigacyjnej (można też w css, np.: .navbar a {color: white;}) -->
-    <!-- navbar-expand-md: żeby od medium toggler znikał i pojawiało się zwykłe poziome menu -->
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-md fixed-top"> 
+    
+        <a class="navbar-brand" href="./index.html"><img class="align-bottom" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"></a>
         
-        <a class="navbar-brand" href="./index.html"><img class="d-inline-block mx-2 align-bottom" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"> Coding40</a>
-        <!-- .navbar-brand: logo serwisu -->
-        <!-- .d-inline-block, d-inline, d-none, d-flex, d-block itd.; d-md-inline-block, d-sm-none: właściwość zadziała od konkretnego rozmiaru wzwyż -->
-        <!-- .mr-1, .mx-2 (m margin, p padding / t top, b bottom, l left, r right, x = left + rigth, y = top + bottom / wielkość: 0,1,2,3,4,5 lub auto); predef. klasy do marginesów i paddingu; można zapisać mr-sm-1 żeby zmiana miała miejsce od rozmiaru sm wzwyż  -->
-        <!-- .align-top: vertical alignment, ułożenie elementu w pionie względem sąsiedniego elementu; może być -baseline, -top, -bottom, -middle, -text-bottom, -text-top; tylko jeśli ustawiono inline lub inline-block  -->
-        <!-- toggler do menu mobilnego; można użyć class="navbar-toggler order-first" żeby togler był z lewej, a logo z prawej; data-toggle="collapse" włącza zapadanie się menu -->
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
-        <!-- .navbar-toggler: że będzie ikona -->
-        <!-- type="button" żeby nie submitowało formularza -->
-        <!-- ewentualnie .order first: zamiana brandu z togglerem miejscami -->
-        <!-- data-bs-toggle="collapse": umożliwia rozwinięcie się skolapsowanego menu --> 
-        <!-- data-bs-target="#mainMenu": wskazanie, co ma się zapadać -->   
-        <!-- atrybuty ARIA (Accesible Rich Internet Aplications) poprawiające dostępność (np. ułatwiające interpretowanie kodu witryny czytnikom): controls (powiązanie z menu pionowym), expanded (if currently expanded), label (nazwa buttona) -->   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
             <!-- było: <span class="navbar-toggler-icon"></span> -->
             <img src="./img/other/menu.png" witdh="33" height="33">
         </button>
-        <!-- <span class="navbar-toggler-icon">: IKONA -->
         
-        <div class="collapse navbar-collapse px-2" id="mainMenu">
-        <!-- żeby (w przeciwieństwie do "navbar-expand-md" w <nav>) poziome menu zapadało się i żeby pojawiał się toggler wraz ze swoim rozwijanym menu pionowym po zwężeniu poniżej progu md -->
-        <!-- id="mainMenu", żeby <button> wiedział, co ma się zapadać --> 
-            
-            <ul class="navbar-nav me-auto pt-2"> <!-- me-auto chyba niepotrzebne -->
-            <!-- do niektórych linków dodałem testowo klasy active i disabled -->
+        <div class="collapse navbar-collapse mainMenu">
+
+            <ul class="navbar-nav mx-auto"> 
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="./index.html">Coding40</a>
                 </li>
                 <li class="nav-item dropdown">
-        <!-- .dropdown: bo będzie rozwijane -->
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
-        <!-- .dropdown-toggle: bo będzie rozwijać -->
                     <div class="dropdown-menu" aria-labelledby="subMenu">
-                    <!-- id subMenu jest potrzebne do logicznego połączenia podmenu z odpowiednim rozwijanym divem -->
                         <a class="dropdown-item" id="dropMenu" href="#">Non-RWD webdesign</a>
                         <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
-        <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
-                        <a class="dropdown-item" id="dropMenu" href="#">Other</a>
+                        <a class="dropdown-item" id="dropMenu" href="#">Testing</a>
+                        <a class="dropdown-item" id="dropMenu" href="#">Server</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                
+                <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                
+                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
                         <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
                         <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Testing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Experience</a>
@@ -152,20 +71,7 @@
                     <a class="nav-link" href="./html_contact.html">Contact</a>
                 </li>
             </ul>
-            
-           <!-- poniżej wstawianie małego formularza, bez atrybutu action -->
-            <form class="form-inline">
-              <div class="row g-1">
-                <div class="col-5 col-sm-8">
-                  <input class="form-control" type="search" placeholder="just testing" aria-label="search">
-                </div>
-                <div class="col-5 col-sm-6 col-xl-3">
-                  <button class="btn btn-secondary" type="submit">test</button>
-                  <!-- btn-primary, secondary, success, danger, warning, info, light, dark, link -->
-                </div>
-              </div>
-            </form> 
-               
+             
         </div>
         
     </nav>

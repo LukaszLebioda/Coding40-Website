@@ -15,12 +15,16 @@
 .icon-github-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
 .icon-cog-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); }
 .icon-chat { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe804;&nbsp;'); }
+.icon-flash { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe805;&nbsp;'); }
 .icon-mail-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e0;&nbsp;'); }
 .icon-linkedin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf0e1;&nbsp;'); }
+.icon-shield { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf132;&nbsp;'); }
 .icon-html5 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13b;&nbsp;'); }
 .icon-css3 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf13c;&nbsp;'); }
 .icon-git-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1d2;&nbsp;'); }
 .icon-git { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf1d3;&nbsp;'); }
+.icon-heartbeat { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf21e;&nbsp;'); }
+.icon-bed { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf236;&nbsp;'); }
 .icon-snowflake-o { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf2dc;&nbsp;'); }
 .icon-github-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf300;&nbsp;'); }
 .icon-linkedin-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30c;&nbsp;'); }
