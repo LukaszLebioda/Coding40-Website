@@ -548,8 +548,6 @@ footer
 {
     height: 130px;
     margin-bottom: 10px;
-    background-size: cover;
-    padding: 0 10px;
 }
 
 .softSkillsCard h3
@@ -576,13 +574,9 @@ footer
 }
 
 /* empty div - na kreskę */
-.emptyDiv
+hr
 {
-    border-bottom: 1px solid
-}
-.emptyDiv p
-{
-    font-size: 10px;
-    color: black;
-    display: none;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
