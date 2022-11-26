@@ -37,8 +37,8 @@ document.getElementById("buttonGasoline").onclick = function(){
         
         document.getElementById("providedPrice").innerHTML = `${price} (e.g. EUR)` 
         document.getElementById("providedAverageConsumption").innerHTML = `${averageConsumption} / 100km`  
-        document.getElementById("providedPersonsNumber").innerHTML = `${persons} persons`
-        document.getElementById("resultGasoline").innerHTML = `${resultRounded} (e.g. EUR / person)`
+        document.getElementById("providedPersonsNumber").innerHTML = `${persons} person(s)`
+        document.getElementById("resultGasoline").innerHTML = `${resultRounded} (e.g. EUR / person(s))`
 
         }
 }
