@@ -531,7 +531,7 @@ footer
 {
     background-color: #fff9bb;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 15px;
     min-height: 300px;
 }
 /* div card */
@@ -539,15 +539,23 @@ footer
 {
     background-color: khaki;
     width: 200px;
-    min-height: 300px;
-    border-radius: 10px;
+    max-height: 300px;
+    border-radius: 15px;
     border: 1px solid;
 }
 /* część obrazkowa */
 .softSkillsImage
 {
     height: 130px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 1px;
+    border-radius: 2px;
+    background-size: cover;
+}
+
+.softSkillsCard h1
+{
+    margin-bottom: 1px;
 }
 
 .softSkillsCard h3
@@ -562,14 +570,33 @@ footer
     margin-bottom: 2px;
 }
 
-@media (min-width: 50px) and (max-width: 767px) {
+@media (min-width: 1px) and (max-width: 300px) {
+    .softSkillsDes p
+    {
+        font-size: 10px;
+    }
+    .softSkillsDes h1
+    {
+        font-size: 12px;
+    }
+    .softSkillsDes h5
+    {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 991px) {
     .softSkillsDes p
     {
         font-size: 14px;
     }
     .softSkillsDes h1
     {
-        font-size: 18px;
+        font-size: 20px;
+    }
+      .softSkillsDes h5
+    {
+        font-size: 16px;
     }
 }
 
