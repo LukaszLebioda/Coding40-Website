@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Muzeum UJ sprzedaż biletów online dane do faktury</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+<!--
+#box {
+	background-color: #FFFFFF;
+	height: auto;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.form-group {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+#panel_s {
+	height: auto;
+	width: 50%;
+	margin-left: 25%;
+}
+.col-md-4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+}
+.help-block {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+	color: #585858;
+}
+.btn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	background-color: #004A8B;
+	height: 10%;
+	width: 100%;
+}
+.btn1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	background-color: #004A8B;
+	height: 10%;
+	width: 80%;
+	display: inline;
+	float: none;
+}
+.style1 {color: #004A8B}
+.btn2 {	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFFFFF;
+	background-color: #004A8B;
+	height: 10%;
+	width: 100%;
+}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+<div id="header"><img src="images/her_nieb_nap.jpg" alt="Muzeum Uniwersytetu Jagiellońskiego Collegium Maius. Rezerwacja i sprzedaż biletów online." width="80%" height="auto"/></div>
+<div id="obrazek"><img src="images/10.jpg" alt="Fragment obrazu Zdzisława Pabisiaka - Typus fundationis Academiae Cracoviensis - namalowanego według XVII-wiecznego drzeworytu." title="Fragment obrazu Zdzisława Pabisiaka - Typus fundationis Academiae Cracoviensis - namalowanego według XVII-wiecznego drzeworytu." width="100%" height="auto" /></div>
+<div id="menu">
+<ul><li><a href="https://maius.uj.edu.pl/"><img src="images/home.jpg" alt="Strona główna Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <a href="https://www.facebook.com/muzeumUJ/"><img src="images/fb.jpg" alt="Facebook Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <a href="https://twitter.com/CollegiumMaius"><img src="images/tw.jpg" alt="Tweeter Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <a href="https://www.youtube.com/user/MuzeumUJ"><img src="images/yt.jpg" alt="Kanał Youtube Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <img src="images/regulamin_i.jpg" alt="Regulamin zakupu biletów online" width="6%" height="auto" />
+      <img src="images/rodo_i.jpg" alt="Przepisy RODO" width="6%" height="auto" />
+      <a href="https://maius.uj.edu.pl/kontakt/sekretariat"><img src="images/kontakt_i.jpg" alt="Kontakt z Muzeum UJ" width="6%" height="auto" border="0" /></a>
+      <img src="images/en_i.jpg" alt="Wersja angielska zakupu biletów online Muzeum UJ" width="3%" height="auto" /><a href="index.html"><img src="images/wybor_i.jpg" alt="Wybór trasy" width="6%" height="auto" border="0" /></a>
+      <a href="logowanie.html"><img src="images/konto_i.jpg" alt="Moje konto" width="6%" height="auto" border="0" /></a>
+      <img src="images/basket_i.jpg" alt="Mój koszyk" width="3%" height="auto" title="Twój koszyk jest pusty. Dokonaj zakupu!"/></li>
+</ul></div>
+<div id="box">
+<div id="panel_s">
+<form class="form-horizontal">
+<fieldset>
+<legend><h2>Twoje konto</h2></legend>
+<h1 class="style1">TWOJE KONTO</h1>
+<p>Jan Kowalski <br />
+ul. Zamkowa 33/8<br />
+00-002 Gdańsk<br />
+e-mail: jan.kowalski@o2.pl <br />
+tel. 500 000 000</p>
+<input class="btn" type="button" onclick="window.location.href='konto_klient.html'" style="cursor:pointer" value="DANE ZAMAWIAJĄCEGO" aria-pressed="true"/>
+<input class="btn" type="button" onclick="window.location.href='konto_haslo.html'" style="cursor:pointer" value="HASŁO" aria-pressed="true"/>
+<input class="btn" type="button" onclick="window.location.href='konto_historia.html'" style="cursor:pointer" value="TWOJE ZAMÓWIENIA" aria-pressed="true"/>
+</fieldset><br />
+
+<form class="form-horizontal">
+<label><input type="checkbox">Chcę otrzymać fakturę VAT</label>
+<fieldset>
+<legend><h2>Dane do faktury</h2></legend>
+  <!-- Text input-->
+</h2>
+<div class="form-group">
+<label class="col-md-4 control-label" for="nip">NIP/Imię</label>
+<div class="col-md-4">
+<input id="nip" type="text" name="nip" placeholder="" required="">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="nazwa">Nazwa lub nazwisko</label>  
+<div class="col-md-4">
+<input id="nazwa" type="text" name="nazwa" placeholder="" required="">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="ulica1">Ulica i nr</label>  
+<div class="col-md-4">
+<input id="ulica1" type="text" name="ulica1" placeholder="" required="">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="kod1">Kod pocztowy</label>  
+<div class="col-md-4">
+<input id="kod1" type="text" name="kod1" placeholder="" required="">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="miejscowosc1">Miejscowość</label>  
+<div class="col-md-4">
+<input id="miejscowosc1" type="text" name="miejscowosc1" placeholder="" required="">
+</div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kraj1">Kraj</label>
+   <div class="col-md-4">
+    <select id="kraj1" name="kraj1" class="form-control">
+      <option value="1">Polska</option>
+      <option value="2">Austria</option>
+      <option value="">Belgia</option>
+      <option value="">Białoruś</option>
+      <option value="">Bośnia i Hercegowina</option>
+      <option value="">Bułgaria</option>
+      <option value="">Chorwacja</option>
+      <option value="">Czarnogóra</option>
+      <option value="">Czechy</option>
+      <option value="">Dania</option>
+      <option value="">Estonia</option>
+      <option value="">Finlandia</option>
+      <option value="">Francja</option>
+      <option value="">Grecja</option>
+      <option value="">Hiszpania</option>
+      <option value="">Holandia</option>
+      <option value="">Irlandia</option>
+      <option value="">Islandia</option>
+      <option value="">Kazachstan</option>
+      <option value="">Liechtenstein</option>
+      <option value="">Litwa</option>
+      <option value="">Luksemburg</option>
+      <option value="">Łotwa</option>
+      <option value="">Macedonia Płn</option>
+      <option value="">Malta</option>
+      <option value="">Mołdawia</option>
+      <option value="">Monako</option>
+      <option value="">Niemcy</option>
+      <option value="">Norwegia</option>
+      <option value="">Portugalia</option>
+      <option value="">Rosja</option>
+      <option value="">Rumunia</option>
+      <option value="">San Marino</option>
+      <option value="">Serbia</option>
+      <option value="">Słowacja</option>
+      <option value="">Szwajcaria</option>
+      <option value="">Szwecja</option>
+      <option value="">Turcja</option>
+      <option value="">Ukraina</option>
+      <option value="">Watykan</option>
+      <option value="">Węgry</option>
+      <option value="">Wielka Brytania</option>
+      <option value="">Włochy</option>
+      <option value="">Kanada</option>
+      <option value="">USA</option>
+    </select>
+	</div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend><h2>Dane do wysyłki</h2></legend>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="ulica2">Ulica i nr</label>  
+<div class="col-md-4">
+<input id="ulica" type="text" name="ulica2" placeholder="" required="">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="kod2">Kod pocztowy</label>  
+<div class="col-md-4">
+<input id="kod2" type="text" name="kod2" placeholder="" required="">
+</div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+<label class="col-md-4 control-label" for="miejscowosc2">Miejscowość</label>  
+<div class="col-md-4">
+<input id="miejscowosc2" type="text" name="miejscowosc2" placeholder="" required="">
+</div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kraj2">Kraj</label>
+  <div class="col-md-4">
+    <select id="kraj2" name="kraj2" class="form-control">
+      <option value="1">Polska</option>
+      <option value="2">Austria</option>
+      <option value="">Belgia</option>
+      <option value="">Białoruś</option>
+      <option value="">Bośnia i Hercegowina</option>
+      <option value="">Bułgaria</option>
+      <option value="">Chorwacja</option>
+      <option value="">Czarnogóra</option>
+      <option value="">Czechy</option>
+      <option value="">Dania</option>
+      <option value="">Estonia</option>
+      <option value="">Finlandia</option>
+      <option value="">Francja</option>
+      <option value="">Grecja</option>
+      <option value="">Hiszpania</option>
+      <option value="">Holandia</option>
+      <option value="">Irlandia</option>
+      <option value="">Islandia</option>
+      <option value="">Kazachstan</option>
+      <option value="">Liechtenstein</option>
+      <option value="">Litwa</option>
+      <option value="">Luksemburg</option>
+      <option value="">Łotwa</option>
+      <option value="">Macedonia Płn</option>
+      <option value="">Malta</option>
+      <option value="">Mołdawia</option>
+      <option value="">Monako</option>
+      <option value="">Niemcy</option>
+      <option value="">Norwegia</option>
+      <option value="">Portugalia</option>
+      <option value="">Rosja</option>
+      <option value="">Rumunia</option>
+      <option value="">San Marino</option>
+      <option value="">Serbia</option>
+      <option value="">Słowacja</option>
+      <option value="">Szwajcaria</option>
+      <option value="">Szwecja</option>
+      <option value="">Turcja</option>
+      <option value="">Ukraina</option>
+      <option value="">Watykan</option>
+      <option value="">Węgry</option>
+      <option value="">Wielka Brytania</option>
+      <option value="">Włochy</option>
+      <option value="">Kanada</option>
+      <option value="">USA</option>
+    </select>
+	
+</div></div>
+</fieldset>
+<button type="reset">wyczyść</button>
+</form>
+</div>
+<div id="lower">
+<div id="lower_img_l">
+  <input name="Submit" type="submit" class="btn" style="cursor:pointer" value="ZAPISZ ZMIANY" aria-pressed="true" />
+</div>
+  <div id="lower_img_r">
+<div align="right"><input class="btn" type="button" onclick="window.location.href='index.html'" value="KONTYNUUJ ZAKUPY" style="cursor:pointer" aria-pressed="true"/></div></div>
+</div>
+<div id="footer"><p>Muzeum Uniwersytetu Jagiello&#324;skiego Collegium Maius ul. Jagiello&#324;ska 15, 31-010 Krak&oacute;w<br />
+Rezerwacja na dzie&#324; bie&#380;&#261;cy: tel. 12 663 15 21, rezerwacja z wyprzedzeniem: tel. 12 663 14 48<br />
+Administratorem Pa&#324;stwa danych osobowych jest: Uniwersytet Jagiello&#324;ski w Krakowie, ul. Go&#322;&#281;bia 24, 31-007 Krak&oacute;w<br />
+Operatorem p&#322;atno&#347;ci jest: Dotpay Sp. z o.o., ul. Wielicka 286, 31-552 Krak&oacute;w</p> 
+</div></div>
+</body>
+</html>
