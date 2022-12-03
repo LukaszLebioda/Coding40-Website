@@ -119,8 +119,8 @@
                
                     <div class="userStory mt-4">
                     
-                        <h1 class="regular">User story</h1>
-                        <h5><i>Lukasz has recently discovered the diverse world of IT which had always been there <br> but Lukasz was too blind to see it. <br><br> The more blind he was in the past the more intense his experiencing of IT-reality is nowadays. <br><br> On the other hand he feels he spent too much time in his current job <br> ant he wants to change it.<br><br> After having tasted different flavours of IT he finally realized that all his experiences, <br> all his actions and all the decisions led to this precious moment: <br><br> to the resolution of becoming a software tester...</i></h5>
+                        <h1 class="regular">User story, ep. 1: Settings</h1>
+                        <h6><i>Lukasz has recently discovered the diverse world of IT which had always been there <br> but Lukasz was too blind to see it. <br><br> The more blind he was in the past the more intense his experiencing of IT-reality is nowadays. <br><br> On the other hand he feels he spent too much time in his current job <br> ant he wants to change it.<br><br> After having tasted different flavours of IT he finally realized that all his experiences, <br> all his actions and all the decisions led to this precious moment: <br><br> to the resolution of becoming a software tester...</i></h6>
                     
                     </div>
                     
@@ -128,17 +128,17 @@
                         <hr>   
                     </div>
                     
-                    <div class="col-md-2">
+                    <div class="col-md-2 mb-1">
                         <figure>
-                            <a href="#"><img src="img/icons/cypress.jpeg" width="140px" alt="A rally fan supporting"></a>
-                            <figcaption>Cypress</figcaption>
+                            <a href="#"><img src="img/icons/cypress.jpeg" width="140px" alt="A Cypress software logo"></a>
+                            <figcaption></figcaption>
                         </figure>
                     </div>
                     
                     <div class="userStory col-md-8">
                     
-                        <h1 class="regular">Cypress</h1>
-                        <h5><i>So he started building home from a chimney and skipped all the manual testing basics, <br> jumping into Cypress. He had no idea what he was doing...</i></h5>
+                        <h1 class="regular">User story, ep. 2: Cypress</h1>
+                        <h6 class="p-3"><i>So he started building home from a chimney and skipped all the manual testing basics, <br> jumping into Cypress. He had no idea what he was doing...</i></h6>
                     
                     </div>
                 
@@ -156,11 +156,15 @@
                             <h1 class="h3 fw-normal mb-4 regular">Mountain weather report</h1>
                         
                             <h5 class="regular mb-5">
-                                I'm about to set for an expedition to conquer Gerlach summit in winter. I' better check the weather report. This is a source code which will do this for me:   
+                                I'm about to set for an expedition to conquer Gerlach summit (The Tatras, Slovakia) in winter. I'd better check the weather report. This is a source code which will do this for me:   
                             </h5>
                               
                             <div class="automationTest">
-                             <p class="regular" style="font-family: Courier New;">
+                            <fieldset class="form-group border p-3 mb-4">
+                                    <legend class="w-auto px-2 mb-4"></legend>
+                                        <div class="form-group mb-4">
+                                      <h5 class="mb-4" style="text-align: center;">Source code:</h5>
+                                      <p class="regular" style="font-family: Courier New;">
                                 describe("I want to see the a mountain weather report", () => { <br>
                                 ...it("should load the page and check the URL", () => { <br>
                                 ........cy.visit("https://www.mountain-forecast.com/", {timeout: 10000}) <br>
@@ -173,45 +177,49 @@
                                 ......cy.get('#location').type("Gerlach {Enter}"); <br>
                                 ...}) <br>
                                 })
-                             </p>
+                             </p>   
+                                </div>
+                                </fieldset>
+                             
                             </div>  
                              
-                            <h5 class="regular mb-5">
+                            <h5 class="regular mb-4">
                                 And this is a video with the execution of the code in Cypress:   
                             </h5>  
-                              
+                             
+                        <div> 
+                           <fieldset class="form-group border p-3 mb-4">
+                                <legend class="w-auto px-2 mb-3"></legend> 
+                                <h5 class="mb-4">Video:</h5> 
                             <div class="embed-responsive embed-responsive-16by9">  
-                                <video class="embed-responsive-item" width="520" height="440" controls>
+                                <video class="embed-responsive-item" width="80%" max-height="auto" controls>
                                     <source src="video/Gerlach.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
                                 </video>
                             </div>
+                            </fieldset>
+                        </div>
                               
                           </div>
                         </div>
                       </div>
+                      
                       <div class="accordion-item mt-2 border border-dark ">
                         <h2 class="accordion-header " id="headingTwo">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                           Automation test 2 - Coming soon
                           </button>
                         </h2>
+                        
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             
                           <div class="accordion-body">
-                            <h1 class="h3 fw-normal mb-4 regular">Coming soon</h1>
-                            <img class="img-fluid float-none me-2 mb-4" src="./img/icons/css_medium.png" alt="html logo">
-                            <!-- img-fluid lub img-thumbnail -->
-                            
-                           <p class="myTextJustify regular">
-                            <b>name -v</b>: CSS 3 (Cascading Style Sheets) <br>
-                            <b>in three words:</b>: Instant pleasure of design<br>
-                            <b>long story short:</b> a language to tell the browser how it should render the page's look: fonts, colours, images, backgrounds, icons and many more; a powerful tool that is firmly bound with html and can be supported by external libraries to create even more picturesque results <br>
-                            <b>opinion:</b> Nice and clean syntax that tends to get more and more complicated in the course of development; can be tricky to remember what lines of css represent what, so comments every now and then are strongly recommended
-                           </p>
+                            <div class="accordion-body">
+                            Automation test 2 - Coming soon
+                          </div>
                           </div>
                         </div>
                       </div>
+                      
                       <div class="accordion-item mt-2 border border-dark">
                         <h2 class="accordion-header" id="headingThree">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
