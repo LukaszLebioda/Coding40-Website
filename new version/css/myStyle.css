@@ -57,7 +57,7 @@ h1
 h1.regular {
     font-size: 40px;
     font-weight: 400;
-    color: #c0d06f;   
+    color: #b0c05d; /* było: #C0D06F */ 
     margin: 15px;
 }
 
@@ -267,7 +267,7 @@ p.regular
     border-bottom: 0 dotted white;
 }
 
-/* --- ACCORDION SECTION --- */
+/* --- ACCORDION JAVA SCRIPT SECTION --- */
 /*
 .accordion (for general background)
 {
@@ -304,6 +304,125 @@ p.regular
 .accordion-item /* background for opened div */
 {
     background-color: #fff9bb; /* palegoldenrod */
+}
+
+/* --- ACCORDION TESTING SECTION --- */
+/*
+.accordion (for general background)
+{
+    background-color: 	gainsboro;
+}
+*/
+
+.accordionTestingButton /* style of closed button */
+{
+    background-color: lightskyblue !important;
+    font-size: 20px !important;
+}
+
+.accordionTestingButton:not(.collapsed) /* style of opened button */
+{
+    background-color: lightskyblue !important;
+    font-size: 20px !important;
+    color: black !important;
+}
+
+/* accordion button icon when closed */
+.accordionTestingButton.collapsed::after 
+{
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.9) !important;
+}
+/* accordion button icon when opened */
+.accordionTestingButton:not(.collapsed)::after 
+{
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  
+}
+
+.accordionTestingItem /* background for opened div */
+{
+    background-color: #E0FFFF; /* palegoldenrod */
+}
+
+.accordionTestingFieldset
+{
+    background-color: lightskyblue;
+}
+
+@media (min-width: 50px) and (max-width: 575px) {
+    p.sourceCode
+    {
+        font-size: 11px;
+    }
+}
+@media (min-width: 575px) and (max-width: 991px) {
+    p.sourceCode
+    {
+        font-size: 14px;
+    }
+}
+
+/* ---- ACCORDION HARDSKILLS SECTION ----- */
+/*
+.accordion (for general background)
+{
+    background-color: 	gainsboro;
+}
+*/
+.hardskillsList
+{
+    list-style: none;
+    text-align: left;
+}
+
+.accordionHardskillsButton /* style of closed button */
+{
+    background-color: silver !important;
+    font-size: 20px !important;
+}
+
+.accordionHardskillsButton:not(.collapsed) /* style of opened button */
+{
+    background-color: silver !important;
+    font-size: 20px !important;
+    color: black !important;
+}
+
+/* accordion button icon when closed */
+.accordionHardskillsButton.collapsed::after 
+{
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.9) !important;
+}
+/* accordion button icon when opened */
+.accordionHardskillsButton:not(.collapsed)::after 
+{
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  
+}
+
+.accordionHardskillsItem /* background for opened div */
+{
+    background-color: #F0F0F0; /* palegoldenrod */
+}
+
+.accordionTestingFieldset
+{
+    background-color: lightskyblue;
+}
+
+@media (min-width: 50px) and (max-width: 575px) {
+    p.sourceCode
+    {
+        font-size: 11px;
+    }
+}
+@media (min-width: 575px) and (max-width: 991px) {
+    p.sourceCode
+    {
+        font-size: 14px;
+    }
 }
 
 /* --- LEGALTY CHECKER SECTION -- */
@@ -533,7 +652,7 @@ footer
 /* div opisowy */
 .softSkillsDes
 {
-    background-color: #fff9bb;
+    background-color: #F0F0F0;
     border: 1px solid;
     border-radius: 15px;
     min-height: 300px;
@@ -541,7 +660,7 @@ footer
 /* div card */
 .softSkillsCard
 {
-    background-color: khaki;
+    background-color: #F0F0F0;
     width: 190px;
     max-height: 300px;
     border-radius: 15px;
@@ -552,7 +671,7 @@ footer
 {
     height: 138px;
     margin-bottom: 10px;
-    background-color: #C0D06F;
+    background-color: silver;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }

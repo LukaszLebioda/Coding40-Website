@@ -20,7 +20,7 @@ document.getElementById("buttonGasoline").onclick = function(){
       window.alert("Looks like You skipped some questions. Please review the form and make sure all the answers are provided");
     
    } else if (route <= 0 || price <= 0 || averageConsumption <= 0 || persons <= 0) {
-       window.alert("Some answers You've provided are zero or numbers below zero. I'm sure You've done this undeliberately :) Please correct this however, because I want to move on with all the counting.");
+       window.alert("Some answers You've provided are zero(s) or number(s) below zero. I'm sure You've done this undeliberately :) Please correct this however, because I want to move on with all the counting.");
    } else {
       
       totalConsumption = (route * averageConsumption) / 100
