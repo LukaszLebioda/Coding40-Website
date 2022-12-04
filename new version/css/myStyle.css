@@ -407,24 +407,6 @@ p.regular
     background-color: #F0F0F0; /* palegoldenrod */
 }
 
-.accordionTestingFieldset
-{
-    background-color: lightskyblue;
-}
-
-@media (min-width: 50px) and (max-width: 575px) {
-    p.sourceCode
-    {
-        font-size: 11px;
-    }
-}
-@media (min-width: 575px) and (max-width: 991px) {
-    p.sourceCode
-    {
-        font-size: 14px;
-    }
-}
-
 /* --- LEGALTY CHECKER SECTION -- */
 /* zwykły button */
 .bg-button
