@@ -760,7 +760,7 @@ hr
 /* -------------CAROUSEL SECTION ------*/
 .carousel-item
 {
-    height: 32rem;
+    height: 22rem;
     background: khaki;
 
 }
@@ -773,3 +773,4 @@ hr
     right: 0;
     padding-bottom: 50px;
 }
+

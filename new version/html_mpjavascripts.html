@@ -348,28 +348,31 @@
                            
                             <form>
                                
-<!-- CAROUSEL ------------------------------------------------------------->
-                               
+<!-- CAROUSEL ------------------------------------------------------------->         
+                                
                                <!-- to set carousel in motion replace data-bs-interval="false" with data-bs-ride="carousel"-->   
-                              <div id="myCarousel" class="carousel slide" data-bs-interval="false">
+                              <div id="myCarousel" class="carousel slide carousel-dark mb-4" data-bs-interval="false">
                                 <div class="carousel-indicators">
-                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="carousel-button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
                                 
                                 <div class="carousel-inner">
                                  
-                                  <div class="carousel-item active">
-                                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                                    <div class="carousel-container">
-                                      <div class="carousel-caption text-start">
-                                        <h1>Example headline.</h1>
-                                        <p>Some representative placeholder content for the first slide of the carousel.</p>
-                                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                                      </div>
-                                    </div>
+                                <div class="carousel-item active d-flex justify-content-center align-items-center">
+                                
+                                <!--TEST FIELDSET-->
+                                <fieldset class="form-group border p-3 mb-4">
+                                    <legend></legend>
+                                        <div>
+                                            <label><h4>Enter Your age:</h4></label> <br><br>
+                                            <input type="number">
+                                        </div>
+                                </fieldset>
+                                          
+                                      
+                                  
                                   </div>
                                   
                                   <div class="carousel-item">
@@ -408,7 +411,7 @@
                               </div>
                               
                             </form>         
-                             
+                              
                             <fieldset class="form-group border pt-4 mb-4">
                                 <legend class="w-auto px-2 mb-4"></legend>
                                     <div class="form-group mb-5">
