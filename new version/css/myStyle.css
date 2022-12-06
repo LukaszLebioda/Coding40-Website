@@ -757,3 +757,19 @@ hr
     }
 }
 
+/* -------------CAROUSEL SECTION ------*/
+.carousel-item
+{
+    height: 32rem;
+    background: khaki;
+
+}
+
+.carousel-container
+{
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}

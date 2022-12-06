@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
    
@@ -325,7 +326,110 @@
                         </div>
                    
                       </div>
-            </div>   
+                    
+                        <div class="accordion-item mt-2 border border-dark">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                              Program 3 - Bird recognizer (coming soon)
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <h1 class="h3 fw-normal mb-4 regular">Bird recognizer</h1>
+                           
+                            <p class="myTextJustify regular">
+                            <b>Scenario</b>: Lorem ipsum. <br>
+                                <b>How is this useful:</b> 
+                                Lorem ipsum. <br> 
+                                <b>Explanation:</b> Lorem ipsum.<br>
+                                <b>Source code:</b> Lorem ipsum. 
+                                Download this app from my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or just hit <i>npm i birdrecognizer</i> in Your terminal. 
+                            </p>
+                           
+                            <form>
+                               
+<!-- CAROUSEL ------------------------------------------------------------->
+                               
+                               <!-- to set carousel in motion replace data-bs-interval="false" with data-bs-ride="carousel"-->   
+                              <div id="myCarousel" class="carousel slide" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                
+                                <div class="carousel-inner">
+                                 
+                                  <div class="carousel-item active">
+                                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                                    <div class="carousel-container">
+                                      <div class="carousel-caption text-start">
+                                        <h1>Example headline.</h1>
+                                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="carousel-item">
+                                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                                    <div class="carousel-container">
+                                      <div class="carousel-caption">
+                                        <h1>Another example headline.</h1>
+                                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="carousel-item">
+                                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                                    <div class="carousel-container">
+                                      <div class="carousel-caption text-end">
+                                        <h1>One more for good measure.</h1>
+                                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              
+                            </form>         
+                             
+                            <fieldset class="form-group border pt-4 mb-4">
+                                <legend class="w-auto px-2 mb-4"></legend>
+                                    <div class="form-group mb-5">
+                                      <label><h2>Provided data:</h2></label>
+                                        <h4>Distance: <span id="providedRoute" style="color: blue"></span></h4>
+                                        <h4>Fuel price: <span id="providedPrice" style="color: blue"></span></h4>
+                                        <h4>Average cons.: <span id="providedAverageConsumption" style="color: blue"></span></h4>
+                                        <h4>No. of persons: <span id="providedPersonsNumber" style="color: blue"></span></h4>
+                                    </div>
+                            </fieldset>
+                              
+                            <fieldset class="form-group border p-3 mb-4 bg-fieldset">
+                                <h2>Result:</h2>      
+                                <h4><span id="resultGasoline" style="color: blue"></span></h4>
+                            </fieldset>
+                          </div>
+                        </div>
+                   
+                      </div>
+                      
+                </div>   
                
                 </div> <!-- end of CONTAINER -->             
                 
