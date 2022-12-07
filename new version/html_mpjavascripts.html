@@ -345,37 +345,143 @@
                                 <b>Source code:</b> Lorem ipsum. 
                                 Download this app from my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or just hit <i>npm i birdrecognizer</i> in Your terminal. 
                             </p>
-                           
-                            <form>
-                               
+                                                     
 <!-- CAROUSEL ------------------------------------------------------------->         
                                 
+                               <form> 
+                                
                                <!-- to set carousel in motion replace data-bs-interval="false" with data-bs-ride="carousel"-->   
-                              <div id="myCarousel" class="carousel slide carousel-dark mb-4" data-bs-interval="false">
-                                <div class="carousel-indicators">
-                                  <button type="carousel-button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
+                               <div id="myCarousel" class="carousel slide carousel-dark mb-4" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
                                 
                                 <div class="carousel-inner">
                                  
-                                <div class="carousel-item active d-flex justify-content-center align-items-center">
-                                
-                                <!--TEST FIELDSET-->
+                                <div class="carousel-item active">
                                 <fieldset class="form-group border p-3 mb-4">
                                     <legend></legend>
-                                        <div>
-                                            <label><h4>Enter Your age:</h4></label> <br><br>
-                                            <input type="number">
+                                        
+                                        <label><h4>When did You spot the bird?</h4></label>
+                                            
+                                          <br><br>  
+                                        
+                                        <div class="divBirdRadioButtons d-flex">
+                                    
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio1" name="radioWhen">
+                                            <label id="birdradio1" for="birdradio1">Spring</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio2" name="radioWhen">
+                                            <label id="birdradio2" for="birdradio2">Summer</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio3" name="radioWhen">
+                                            <label id="birdradio3" for="birdradio3">Fall</label>
+                                            </div>
+                                                    
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio4" name="radioWhen">
+                                            <label id="birdradio4" for="birdradio4">Winter</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio5" name="radioWhen">
+                                            <label id="birdradio5" for="birdradio5">Don't recall</label>
+                                            </div>
+                                            
                                         </div>
+                                    
                                 </fieldset>
-                                          
-                                      
+                                </div>
                                   
-                                  </div>
+                                   <div class="carousel-item">
+                                <fieldset class="form-group border p-3 mb-4">
+                                    <legend></legend>
+                                        
+                                        <label><h4>Where did You spot the bird?</h4></label>
+                                            
+                                          <br><br>  
+                                        
+                                        <div class="divBirdRadioButtons d-flex">
+                                    
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio6" name="radioWhere">
+                                            <label id="birdradio6" for="birdradio6">Spring</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio7" name="radioWhere">
+                                            <label id="birdradio7" for="birdradio7">Summer</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio8" name="radioWhere">
+                                            <label id="birdradio8" for="birdradio8">Fall</label>
+                                            </div>
+                                                    
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio9" name="radioWhere">
+                                            <label id="birdradio9" for="birdradio9">Winter</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio10" name="radioWhere">
+                                            <label id="birdradio10" for="birdradio10">Don't recall</label>
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                </fieldset>
+                                </div>
                                   
                                   <div class="carousel-item">
+                                <fieldset class="form-group border p-3 mb-4">
+                                    <legend></legend>
+                                        
+                                        <label><h4>What size was the bird?</h4></label>
+                                            
+                                          <br><br>  
+                                        
+                                        <div class="divBirdRadioButtons d-flex">
+                                    
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio11" name="radioWhatSize">
+                                            <label id="birdradio11" for="birdradio11">Spring</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio12" name="radioWhatSize">
+                                            <label id="birdradio12" for="birdradio12">Summer</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio13" name="radioWhatSize">
+                                            <label id="birdradi1o3" for="birdradio13">Fall</label>
+                                            </div>
+                                                    
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio14" name="radioWhatSize">
+                                            <label id="birdradio14" for="birdradio14">Winter</label>
+                                            </div>
+
+                                            <div class="divBirdRadioButton">
+                                            <input type="radio" id="birdradio15" name="radioWhatSize">
+                                            <label id="birdradio15" for="birdradio15">Don't recall</label>
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                </fieldset>
+                                </div>
+                                    
+<!--
+                                    <div class="carousel-item">
                                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
                                     <div class="carousel-container">
@@ -398,6 +504,9 @@
                                       </div>
                                     </div>
                                   </div>
+-->
+                                    
+                                    
                                 </div>
                                 
                                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -454,6 +563,7 @@
     
     <script src="js/legalityChecker.js"></script>   
     <script src="js/fuelCounter.js"></script>   
+    <script src="js/birdRecognizer.js"></script>   
 </body>
     
 </html>

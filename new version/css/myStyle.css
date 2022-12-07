@@ -758,11 +758,50 @@ hr
 }
 
 /* -------------CAROUSEL SECTION ------*/
+/* only for radio button in birdRecognizer */
+.divBirdRadioButtons input[type="radio"]{
+  margin: 0 0 20px 30px;
+}
+
+/* wrapper for a radiobutton + label to align properly */
+.divBirdRadioButton
+{
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1px) and (max-width: 767px) {
+    .divBirdRadioButtons
+    {
+        flex-direction: column;
+    }
+    .divBirdRadioButtons input[type="radio"]
+    {
+       margin-left: 0 0 0 0; 
+    }
+}
+
+/* wrapper for all radiobuttons + labels to align properly */
+.divBirdRadioButtons
+{
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1px) and (max-width: 991px) {
+    .divBirdRadioButtons
+    {
+        flex-direction: column;
+    }
+}
+
+/* carousel-items and carousel-container */
 .carousel-item
 {
-    height: 22rem;
+    height: 25rem;
     background: khaki;
-
+    padding-top: 12%
+    
 }
 
 .carousel-container
