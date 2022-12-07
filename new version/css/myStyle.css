@@ -766,7 +766,7 @@ hr
 /* wrapper for a radiobutton + label to align properly */
 .divBirdRadioButton
 {
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -784,7 +784,7 @@ hr
 /* wrapper for all radiobuttons + labels to align properly */
 .divBirdRadioButtons
 {
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }

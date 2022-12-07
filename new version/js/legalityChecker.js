@@ -29,7 +29,7 @@ document.getElementById("buttonLegality").onclick = function(){
    } else if (age > 100) {
       window.alert("If You're really that mature - my congratulations! You don't need this program however. Just assume You can do anything You want 😄");
 
-   } else if (document.querySelectorAll('input[type="radio"]:checked').length === 0) {
+   } else if (document.querySelectorAll('.legalityRadioDiv input[type="radio"]:checked').length === 0) {
        alert("Sorry, but I can go any further unless You select a country...");
     
    } else if (radio1.checked) {

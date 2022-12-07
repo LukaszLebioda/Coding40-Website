@@ -1,23 +1,35 @@
-const birdMonth = ["notKnow", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
-const birdLocation = ["notKnow", "cityArchitecture", "cityGreenery", "lakeShore", "riverBank", "seaBeach", "mountainRock"];
-const birdSize = ["notKnow", "mouse", "cat", "dog"];
-const birdColor1 = ["notKnow", "brown", "dark", "white"];
-const birdColor2 = ["notKnow", "brown", "dark", "white"];
-const birdNumber = ["notKnow", "single", "inPair", "smallFlock", "mediumFlock", "bigFlock"];
-const birdActivity = ["notKnow", "walksAround", "fliesAround", "swimsAround"]; 
-const birdSound = ["notKnow", "co", "hoot", "whistle"];
-const birdFeature = ["notKnow", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const kwiczol = document.querySelector("#kwiczol");
+
+let radios = document.querySelectorAll('.divBirdRadioButton input[type="radio"]');
+let button = document.querySelector('#buttonBirds');
+
+let birdPermutation = [];
+
+button.addEventListener('click', () => {
+    if(document.querySelectorAll('.divBirdRadioButton input[type="radio"]:checked').length < 7) {
+        alert("something remains unchecked - please go backwards and check");
+    } else {
+
+	    for (let radio of radios) {
+		    if (radio.checked) {
+                birdPermutation.push(radio.value);
+                document.getElementById("buttonBirds").disabled = true; 
+                console.log(birdPermutation);
+                    if(birdPermutation.includes("2") && birdPermutation.includes("7") && birdPermutation.includes("13") && birdPermutation.includes("16")) {
+                        document.getElementById("resultBird").innerHTML = "Czyżyk"
+                    } else if(birdPermutation.includes("1") && birdPermutation.includes("6") && birdPermutation.includes("12") && birdPermutation.includes("16")) {
+                        document.getElementById("resultBird").innerHTML = "Potrzeszcz"
+                    } else if(birdPermutation.includes("3") && birdPermutation.includes("8") && birdPermutation.includes("14") && birdPermutation.includes("16")) {
+                        document.getElementById("resultBird1").innerHTML = "Kwiczoł "
+                        document.getElementById("resultBird2").innerHTML = "Wesoły pożeracz dżdżownic "
+                        document.getElementById("resultBird3").innerHTML = "<img src='./img/birds/kwiczol.jpg'>"
+                    } else {
+                        console.log("Something went wrong");
+                    }
+                
+		    }
+	    }
+    }
+})
 
 
-const perkozDwuczuby = {
-    birdMonth:"birdMonth[3, 4, 5, 6, 7, 8, 9, 10, 11]", 
-    birdLocation:"birdLocation[3]", 
-    birdSize: "birdSize[2] ",
-    birdColor1: "birdColor1 [1]",
-    birdColor2: "birdColor2 [3]",
-    birdNumber: "birdNumber[1, 2]",
-    birdActivity: "birdActivity [3]", 
-    birdSound: "birdSound[4]",
-    birdFeature: "birdFeature[0]",
-}
-console.log(birdColor1[1]);
