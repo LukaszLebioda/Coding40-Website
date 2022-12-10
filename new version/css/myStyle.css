@@ -376,6 +376,21 @@ p.regular
     text-align: left;
 }
 
+/* icona w accordion-body dla hardskilla */
+.hardskillIcon
+{
+    width: 55px;
+}
+
+/* zmniejszenie paddingu na niskich rozdzielczościach */
+@media (min-width: 1px) and (max-width: 390px) {
+    .accordion-body
+    {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 .accordionHardskillsButton /* style of closed button */
 {
     background-color: silver !important;
@@ -407,7 +422,7 @@ p.regular
     background-color: #F0F0F0; /* palegoldenrod */
 }
 
-/* --- LEGALTY CHECKER SECTION -- */
+/* --- LEGALITY CHECKER SECTION -- */
 /* zwykły button */
 .bg-button
 {
