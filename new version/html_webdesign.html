@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
+	<meta name="keywords" content="coding, self-study, lifechange">
+    <meta name="author" content="Coding40"> 
+	<title>Coding40 - A story of a lifechanging project</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    
+    <link rel="icon" href="img/logo/logoSemiTransparentLarge.png">   
+	<link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    
+    <!-- bootstrap używa NFS; NFS Native Font Stack to filozofia typograficzna, która zakłada, że dany OS będzie używał swojej defaultowej czcionki natywnej; my zaś podpięliśmy fonty od Google'a i nasza www będzie wyglądała wszędzie tak samo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+
+</head>
+   
+<!-- text-center: do wyśrodkowania tekstu; jest też left, right, justify --> 
+<!-- text-center można zapisać tak: text-md-left żeby właściwość działała od konkretnego rozmiaru wzwyż --> 
+<!-- h1-h6: można tak: <h1 class="h2"></h1> --> 
+<!-- fw-bold, bolder, normal, light, lighter, italic: czcionki --> 
+<!-- text-uppercase, text-lowercase, text-capitalize --> 
+<!-- img-fluid: obraz staje się responsywny, otrzymuje width 100% i max-height: auto; może być też img-thumbnail, czyli miniaturka, ale to sugeruje przejście do galerii, np. galerii typu lightbox, po kliknięciu w obraz, a my na razie tego nie mamy -->
+<!-- class="lead" używamy np. do paragrafów jako tekst wstępny z pewnymi predefiniowanymi właściwościami --> 
+
+<body>
+
+<header class="cotainer-fluid">
+    
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-md fixed-top"> 
+    
+        <a class="navbar-brand" href="./index.html"><img class="align-bottom ms-1" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
+            <!-- było: <span class="navbar-toggler-icon"></span> -->
+            <img src="./img/other/menu.png" witdh="33" height="33">
+        </button>
+        
+        <div class="collapse navbar-collapse mainMenu">
+
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Coding40</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="#">Non-RWD webdesign</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_testing.html">Testing</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_serverside.html">Server</a>
+                    </div>
+                </li>
+                
+                <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_leisures.html">Leisures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_contact.html">Contact</a>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </nav>
+    
+</header>
+    
+<main>
+    
+        <div class="container"> 
+        
+                <aside class="col-12 bg-myQuotationColor mt-4 p-3"><i>'The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.'</i>,  Carl Sagan</aside>
+        
+				<header class="border border-dark my-3"> 
+				
+				<!-- Car Hunters: https://www.youtube.com/watch?v=bS41Ymal0L0 -->
+				<div class="masthead" style="background-image: url('./img/backgrounds/clockmechanism.jpg');">
+				
+					<div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+                        <div class="row">
+                           <div>
+                            <h1 class="fw-bold text-uppercase">Design</h1>
+                            <p>How (not) to present ideas</p>
+                            </div>
+                        </div>
+                    </div>	
+					
+                </div>		
+					
+				</header>
+				
+                <section class="">
+                        
+               	    <header class="border border-dark">
+					
+                        <h1 class="regular">Front-end & Back-end are twins</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <p class="regular">One can not live without the other</p>
+                       
+				    </header>
+               
+                </section>   
+                   
+            <section class="web-designs">
+               
+                <div class="row d-flex justify-content-center mt-4 g-0">
+                   
+                   <div class="col-8 d-flex justify-content-center">
+                       <h1 class="mt-4">***</h1><br><br>
+                    </div>
+                    
+                    <div class="col-8 d-flex justify-content-center">
+                       <p class="regular">I would be honored to present You with the two web design projects I created (or co-created) in the past. The first one was actually working for over a year, the second one was just a way to practice what I've learned.</p>
+                   </div>
+                   
+                   <div class="col-8 d-flex justify-content-center">
+                       <h1 class="mt-4">***</h1><br><br>
+                    </div>
+                   
+                    <div class="col-8 d-flex justify-content-center">
+                       <p class="regular">This is the very first web design project I took vital part in. I didn't wrote any code yet cause I had no clue how html/css work back then. I was merely the author of the logic of the page as well as it's main tester before it was implemented by a proffesional company and opened for public. <br> During the time of pandemia, in 2021, this page served as a way to buy tickets online to the Jagiellonian University Museum where I worked back then and I'm still working nowadays. <br> We did it together, my friend Jacek and I, both total newbies, without any external help whatsoever. </p>  
+                   </div>
+                   
+                    <div class="col-8 d-flex justify-content-center">
+                       <h1>***</h1><br><br>
+                    </div>
+                   
+                    <div class="col-9 my-5" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+                         <iframe src="./designs/muj" width="100%" height="100%" width="100%" height="100%" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
+                         </iframe>   
+                    </div>
+                    
+                     <div class="col-8 d-flex justify-content-center">
+                       <h1 class="mt-4">***</h1><br><br>
+                    </div>
+                    
+                    <div class="col-9 mb-5" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+                         <iframe src="./designs/old" width="100%" height="100%" width="100%" height="100%" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
+                         </iframe>   
+                    </div>
+
+                </div> <!-- row -->
+		        </section> <!-- section -->
+		
+        </div> <!-- container -->
+                
+</main>
+   
+<footer class="container-fluid mt-3 p-3 text-center bg-primary">
+
+    <!-- <a href="mailto:lukasz.leb@gmail.com"></a> -->
+    &copy; All rights reserved - Łukasz Lebioda, 2022
+    <br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone"></i>+48 513-637-367
+    
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <script src="js/myScripts.js"></script>
+</body>
+    
+</html>
+    

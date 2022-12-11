@@ -649,7 +649,7 @@ footer
 /* div opisowy */
 .softSkillsDes
 {
-    background-color: #F0F0F0;
+    background-color: snow;
     border: 1px solid;
     border-radius: 15px;
     min-height: 300px;
@@ -657,7 +657,7 @@ footer
 /* div card */
 .softSkillsCard
 {
-    background-color: #F0F0F0;
+    background-color: snow;
     width: 190px;
     max-height: 300px;
     border-radius: 15px;
@@ -668,7 +668,7 @@ footer
 {
     height: 138px;
     margin-bottom: 10px;
-    background-color: silver;
+    background-color: #C0D06F;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -691,6 +691,7 @@ footer
 .softSkillsCard h3
 {
     font-size: 20px;
+    color: #C0D06F;
 }
 
 .softSkillsCard p

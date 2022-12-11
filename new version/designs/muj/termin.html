@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Muzeum UJ sprzedaz biletów online wybór terminu</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="src/css/calendar.css">
+<script src="src/js/calendar.js"></script>
+
+<style type="text/css">
+<!--
+#panel_s {
+	height: auto;
+	width: 70%;
+	border: thin solid #ACACAC;
+	margin-right: 15%;
+	margin-left: 15%;
+	padding-left: 2%;
+}
+#myCalendar {
+	border: thin solid #ACACAC;
+	width: 40%;
+	height: auto;
+	font-weight: normal;
+	font-variant: normal;
+	font-size: 1.0em;
+}
+@media (max-width: 400px) {
+    #myCalendar {
+        width: 55%;
+        height: auto;
+        line-height: 5%;
+		font-size: 1.0vh;
+    } }
+#box {
+	background-color: #FFFFFF;
+	height: 500px;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style1 {
+	color: #004A8B;
+	font-weight: bold;
+}
+.style2 {color: #FFFFFF}
+.style3 {font-size: medium}
+#termin {
+	width: 60%;
+	float: left;
+}
+-->
+</style>
+</head>
+<body>
+<div class="container">
+<div id="header"><img src="images/her_nieb_nap.jpg" alt="Muzeum Uniwersytetu Jagiellońskiego Collegium Maius. Rezerwacja i sprzedaż biletów online." width="80%" height="auto"/></div>
+<div id="obrazek"><img src="images/02.jpg" alt="Libraria. Dawna biblioteka uniwersytecka w Collegium Maius."  title= "Libraria. Dawna biblioteka uniwersytecka w Collegium Maius."width="100%"/></div>
+<div id="menu">
+<ul><li><a href="https://maius.uj.edu.pl/"><img src="images/home.jpg" alt="Strona główna Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <a href="https://www.facebook.com/muzeumUJ/"><img src="images/fb.jpg" alt="Facebook Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <a href="https://twitter.com/CollegiumMaius"><img src="images/tw.jpg" alt="Tweeter Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <a href="https://www.youtube.com/user/MuzeumUJ"><img src="images/yt.jpg" alt="Kanał Youtube Muzeum UJ" width="3%" height="auto" border="0" /></a>
+      <img src="images/regulamin_i.jpg" alt="Regulamin zakupu biletów online" width="6%" height="auto" />
+      <img src="images/rodo_i.jpg" alt="Przepisy RODO" width="6%" height="auto" />
+      <a href="https://maius.uj.edu.pl/kontakt/sekretariat"><img src="images/kontakt_i.jpg" alt="Kontakt z Muzeum UJ" width="6%" height="auto" border="0" /></a>
+      <img src="images/en_i.jpg" alt="Wersja angielska zakupu biletów online Muzeum UJ" width="3%" height="auto" /><a href="index.html"><img src="images/wybor_i.jpg" alt="Wybór trasy" width="6%" height="auto" border="0" /></a>
+      <a href="logowanie.html"><img src="images/konto_i.jpg" alt="Moje konto" width="6%" height="auto" border="0" /></a>
+      <img src="images/basket_i.jpg" alt="Mój koszyk" width="3%" height="auto" title="Twój koszyk jest pusty. Dokonaj zakupu!"/></li>
+</ul></div>
+<div id="box">
+  <div align="center"><img src="images/termin_li.png" alt="Pasek postępu. Aktywne: 1. trasa zwiedzania, 2.termin Nie aktywne: 3.rodzaj i liczba biletów, 4. podsumowanie, 5. sposób płatności." width="60%"/></div>
+  <div align="center">
+  <h1 class="style1">WYBÓR TERMINU</h1>
+  </div>
+  <div id="myCalendar" class="vanilla-calendar"><script>
+            let pastDates = true, availableDates = false, availableWeekDays = false
+
+            let calendar = new VanillaCalendar({
+                selector: "#myCalendar",
+                onSelect: (data, elem) => {
+                    console.log(data, elem)
+                }
+            })
+
+            let btnPastDates = document.querySelector('[name=pastDates]')
+            btnPastDates.addEventListener('click', () => {
+                pastDates = !pastDates
+                calendar.set({pastDates: pastDates})
+                btnPastDates.innerText = `${(pastDates ? 'Disable' : 'Enable')} past dates`
+            })
+
+            let btnAvailableDates = document.querySelector('[name=availableDates]')
+            btnAvailableDates.addEventListener('click', () => {
+                availableDates = !availableDates
+                btnAvailableDates.innerText = `${(availableDates ? 'Clear available dates' : 'Set available dates')}`
+                if (!availableDates) {
+                    calendar.set({availableDates: [], datesFilter: false})
+                    return
+                }
+                let dates = () => {
+                    let result = []
+                    for (let i = 1; i < 15; ++i) {
+                        if (i % 2) continue
+                        let date = new Date(new Date().getTime() + (60 * 60 * 24 * 1000) * i)
+                        result.push({date: `${String(date.getFullYear())}-${String(date.getMonth() + 1).padStart(2, 0)}-${String(date.getDate()).padStart(2, 0)}`})
+                    }
+                    return result
+                }
+                calendar.set({availableDates: dates(), availableWeekDays: [], datesFilter: true})
+            })
+
+            let btnAvailableWeekDays = document.querySelector('[name=availableWeekDays]')
+            btnAvailableWeekDays.addEventListener('click', () => {
+                availableWeekDays = !availableWeekDays
+                btnAvailableWeekDays.innerText = `${(availableWeekDays ? 'Clear available weekdays' : 'Set available weekdays')}`
+                if (!availableWeekDays) {
+                    calendar.set({availableWeekDays: [], datesFilter: false})
+                    return
+                }
+                let days = [{
+                    day: 'monday'
+                }, {
+                    day: 'tuesday'
+                }, {
+                    day: 'wednesday'
+                }, {
+                    day: 'friday'
+                }]
+                calendar.set({availableWeekDays: days, availableDates: [], datesFilter: true})
+            })
+        </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+  </script>
+    <div id="termin"><img src="images/kw_n.jpg" alt="Termin dostepny " width="20" height="20" hspace="2" align="absmiddle" />termin dostępny<img src="images/kw_sz.jpg" alt="Termin niedostępny " width="20" height="20" hspace="2" align="absmiddle" />termin niedostępny</div>
+  </div>
+  <div align="center"><br />
+    <br />
+    <table width="35%" height="216" border="0" bgcolor="#FFFFFF">
+      <tr>
+        <td width="26%" height="28" bgcolor="#004A8B"><div align="center"><h2 class="style2">godzina</h2>
+        </div></td>
+        <td width="28%" bgcolor="#004A8B"><div align="center"><h2 class="style2">język</h2>
+        </div></td>
+        <td colspan="3" bgcolor="#004A8B"><h2 align="center" class="style2">dostępna ilość biletów</h2> </td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#FFFFFF"><div align="center" class="style3">10:40</div></td>
+        <td bgcolor="#FFFFFF"><div align="center"><img src="images/fl_en.jpg" alt="oprowadzanie w języku angielskim" width="30%" height="auto" /></div></td>
+        <td width="9%" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="27%" bgcolor="#FFFFFF"><div align="center" class="style3">5</div></td>
+        <td width="10%" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#FFFFFF"><div align="center" class="style3">11:40</div></td>
+        <td bgcolor="#FFFFFF"><div align="center"><img src="images/fl_pl.jpg" alt="oprowadzanie w języku polskim" width="30%" height="auto" /></div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#FFFFFF"><div align="center" class="style3">12</div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#FFFFFF"><div align="center" class="style3">12:40</div></td>
+        <td bgcolor="#FFFFFF"><div align="center"><img src="images/fl_en.jpg" alt="oprowadzanie w języku angielskim" width="30%" height="auto" /></div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#FFFFFF"><div align="center" class="style3">7</div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="36" bgcolor="#FFFFFF"><div align="center" class="style3">13:40</div></td>
+        <td bgcolor="#FFFFFF"><div align="center"><img src="images/fl_pl.jpg" alt="oprowadzanie w języku polskim" width="30%" height="auto" /></div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#FFFFFF"><div align="center" class="style3">0</div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="42" bgcolor="#FFFFFF"><div align="center" class="style3">14:40</div></td>
+        <td bgcolor="#FFFFFF"><div align="center"><img src="images/fl_en.jpg" alt="oprowadzanie w języku angielskim" width="30%" height="auto" /></div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+        <td bgcolor="#FFFFFF"><div align="center" class="style3">20</div></td>
+        <td bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+    </table>
+	</div>
+</div>
+	  
+  <div id="lower"><div id="lower_img_l"><input class="btn" onclick="window.location.href='index.html'" input type="button" value="WSTECZ" style="cursor:pointer" aria-pressed="true"/></div>
+<div id="lower_img_r">
+  <div align="right"><input class="btn" onclick="window.location.href='rodzaj.html'" type="button" value="DALEJ" style="cursor:pointer" aria-pressed="true"/></div>
+  </div></div>
+<div id="footer"><p>Muzeum Uniwersytetu Jagiello&#324;skiego Collegium Maius ul. Jagiello&#324;ska 15, 31-010 Krak&oacute;w<br />
+Rezerwacja na dzie&#324; bie&#380;&#261;cy: tel. 12 663 15 21, rezerwacja z wyprzedzeniem: tel. 12 663 14 48<br />
+Administratorem Pa&#324;stwa danych osobowych jest: Uniwersytet Jagiello&#324;ski w Krakowie, ul. Go&#322;&#281;bia 24, 31-007 Krak&oacute;w<br />
+Operatorem p&#322;atno&#347;ci jest: Dotpay Sp. z o.o., ul. Wielicka 286, 31-552 Krak&oacute;w</p> 
+</div></div></body>
