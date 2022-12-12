@@ -51,7 +51,7 @@ const placeBird = (name, description, photo, rights) => {
                             birdHeadingRights.style.padding = "10px";
                             birdHeadingRights.textContent = rights;
 
-                            birdEmptyDiv.textContent = "_____________________________________________";
+                            birdEmptyDiv.textContent = "--------------------";
 }
 
 let radios = document.querySelectorAll('.divBirdRadioButton input[type="radio"]');
