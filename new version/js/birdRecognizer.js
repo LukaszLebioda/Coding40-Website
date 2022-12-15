@@ -120,6 +120,22 @@ const sierpowka = {
     photo: "./img/birds/sierpowka.jpg"
 }
 
+const czaplaSiwa = {
+    sequence: 14,
+    name: "Grey heron (czapla siwa)",
+    description: "Often seen standing perfectly motionless, scanning the water in search for careless prey. It's long neck, acting as harpoon while hunting, folds like a letter 'S' while flying high.",
+    rights: "Photo by J.M.Garg - A feltöltő saját munkája, CC BY-SA 4.0",
+    photo: "./img/birds/czaplasiwa.jpg"
+}
+
+const czaplaBiala = {
+    sequence: 15,
+    name: "Great egret (czapla biała)",
+    description: "Hunts alone, standing still hidden among reeds. Or in groups, wading in water with hunting partners and scaring the fish in precise and coordinated action.",
+    rights: "Photo by 'Mike' Michael L. Baird, CC BY 2.0",
+    photo: "./img/birds/czaplabiala.jpg"
+}
+
 // ---------------------------------------------------------------------
 
 const placeBird = (name, description, photo, rights) => {
@@ -137,6 +153,8 @@ const placeBird = (name, description, photo, rights) => {
                             birdHeadingName.style.color = "blue";
                             birdHeadingName.style.padding = "10px";
                             birdHeadingName.textContent = name;
+
+                            console.log(name);
 
                             birdHeadingDescription.style.color = "blue";
                             birdHeadingDescription.style.padding = "10px";
@@ -411,6 +429,44 @@ button.addEventListener("click", () => {
                         ) 
                         {
                             placeBird(sierpowka.name, sierpowka.description, sierpowka.photo, sierpowka.rights);
+                        } 
+                        
+                     // 14 czapla siwa
+                     if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3")) 
+                        // location 5-12
+                        && (bp.includes("5") || bp.includes("6") || bp.includes("12")) 
+                        // size 13-18
+                        && bp.includes("18")
+                        // color 19-27
+                        && bp.includes("23") 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
+                        // activity 34-43
+                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(czaplaSiwa.name, czaplaSiwa.description, czaplaSiwa.photo, czaplaSiwa.rights);
+                        }  
+
+                    // 15 czapla biała
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3")) 
+                        // location 5-12
+                        && (bp.includes("5") || bp.includes("6")) 
+                        // size 13-18
+                        && bp.includes("18")
+                        // color 19-27
+                        && bp.includes("20") 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
+                        // activity 34-43
+                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(czaplaBiala.name, czaplaBiala.description, czaplaBiala.photo, czaplaBiala.rights);
                         }  
 
 
