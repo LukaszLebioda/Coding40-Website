@@ -342,7 +342,7 @@
                             <b>How is this useful:</b> 
                             There are 467 speciecies of birds either living in Poland all year long, coming in spring to reproduce and raise babies or just passing through, ocasionally landing to search for food. In your surroundings You may spot 10-20 most common species daily. Unless You're professional ornithologist You may find it hard figure out what are You actually looking at. This program will help You!<br> 
                             <b>Disclaimer: </b> Birds are creatures of nature. They may behave randomly, unexpectedly, beyond our perception and comprehension. This program (altough the most complicated I've written so far) will not encompass every species, every situation, every circumstance. Do not make bets with Your friends relying solely on the results provided. You may lose and I'm not keen on refunding. <br>
-                            <b>Source code:</b> I used arrays, addEventListeners, querySelectors, includes() method and many more for the first time in my life. My God, this was equally depressive and satisfactory trying to put all of these it into motion! 
+                            <b>Source code:</b> I used arrays, objects, for loops, addEventListeners, querySelectors and many more for the first time in my life. My God, this was equally depressive and satisfactory trying to put all of these it into motion! 
                             Download this app from my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or just hit <i>npm i birdrecognizer</i> in Your terminal. 
                             </p>
                                                      
@@ -473,32 +473,32 @@
                                     
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio13" name="radioWhatSize" value="13">
-                                            <label id="birdradio13" for="birdradio13">A mouse, a kiwi</label>
+                                            <label id="birdradio13" for="birdradio13">A mouse, a kiwi (5-20cm)</label>
                                             </div>
 
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio14" name="radioWhatSize" value="14">
-                                            <label id="birdradio14" for="birdradio14">A rat, a banana</label>
+                                            <label id="birdradio14" for="birdradio14">A rat, a banana (21-30cm)</label>
                                             </div>
 
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio15" name="radioWhatSize" value="15">
-                                            <label id="birdradio15" for="birdradio15">A hedgehog, a coconut</label>
+                                            <label id="birdradio15" for="birdradio15">A hedgehog, a coconut (31-40cm)</label>
                                             </div>
                                                     
-                                            <div class="divBirdRadioButton">
+                                            <!-- <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio16" name="radioWhatSize" value="16">
                                             <label id="birdradio16" for="birdradio16">A rabbit, a watermelon</label>
-                                            </div>
+                                            </div> -->
 
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio17" name="radioWhatSize" value="17">
-                                            <label id="birdradio17" for="birdradio17">A goose, a pumpkin</label>
+                                            <label id="birdradio17" for="birdradio17">A goose, a pumpkin (41-90cm)</label>
                                             </div>
                                             
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio18" name="radioWhatSize" value="18">
-                                            <label id="birdradio18" for="birdradio18">A big dog, a sheep-dog</label>
+                                            <label id="birdradio18" for="birdradio18">A big dog, a sheep-dog (91-200cm)</label>
                                             </div>
                                             
                                         </div>
@@ -732,7 +732,8 @@
                               
                             <fieldset class="form-group border p-3 mb-4 bg-fieldset">
                               
-                                <h2>Result(s):</h2>      
+                                <h2>Result(s):</h2>
+                                <h4 id="noBirdMatch"></h4>      
                                 <div id="birdResultDiv"></div>
 
                             </fieldset>

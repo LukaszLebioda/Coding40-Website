@@ -153,8 +153,10 @@ const placeBird = (name, description, photo, rights) => {
                             birdHeadingName.style.color = "blue";
                             birdHeadingName.style.padding = "10px";
                             birdHeadingName.textContent = name;
+                            birdHeadingName.setAttribute("id", "birdie");
 
                             console.log(name);
+                            console.log(birdHeadingName);
 
                             birdHeadingDescription.style.color = "blue";
                             birdHeadingDescription.style.padding = "10px";
@@ -400,7 +402,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("7") || bp.includes("8") || bp.includes("9") || bp.includes("11") || bp.includes("12")) 
                         // size 13-18
-                        && (bp.includes("15") || bp.includes("16")) 
+                        && bp.includes("15") 
                         // color 19-27
                         && (bp.includes("23") || bp.includes("24")) 
                         // numbers 28-33
@@ -468,10 +470,14 @@ button.addEventListener("click", () => {
                         {
                             placeBird(czaplaBiala.name, czaplaBiala.description, czaplaBiala.photo, czaplaBiala.rights);
                         }  
-
-
+                        
 		    }
 	    }
+        const birdie = document.querySelector("#birdie");
+        console.log(birdie);
+        if (birdie === null) {
+            document.getElementById("noBirdMatch").innerHTML = "Sorry, I couldn't find any match :(";
+        }
     }
 })
 

@@ -616,7 +616,11 @@ table tr:hover td
     width: 130px;
     height: 130px;
     }
-    .menuTile h3
+    .menuTile h3 
+    { 
+       font-size: 15px;
+    }  
+    .menuTile h5 
     { 
        font-size: 15px;
     }
