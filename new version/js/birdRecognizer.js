@@ -185,9 +185,25 @@ const rudzik = {
 const kuropatwa = {
     sequence: 24,
     name: "Grey partridge (kuropatwa)",
-    description: "An orange breast and beautiful singing are hallmarks of robin. Likes to sing till late evening when other spiecies go mute.",
+    description: "Builds nests on the ground, hidden in high grasses. Unlike many other species both parents take care of the offspring. In winter tend to gather in flocks easy to spot on white snow background.",
     rights: "Photo CC BY-SA 3.0",
     photo: "./img/birds/kuropatwa.jpg"
+}
+
+const dzieciolCzarny = {
+    sequence: 25,
+    name: "Black woodpecker (dzięcioł czarny)",
+    description: "The biggest European woodpecker. Can be seen when wandering up the tree trunks as well as browsing through the forest floor in search for ants and beetle larvas.",
+    rights: "Photo by Francesco Veronesi, CC BY-SA 2.0",
+    photo: "./img/birds/dzieciolczarny.jpg"
+}
+
+const dzieciolZielony = {
+    sequence: 26,
+    name: "Green woodpecker (dzięcioł zielony)",
+    description: "A quite noisy woodpecker whose laugh-like series of sounds spread wide through the forest. In search for ants, its favourite menu item, is able to dug deep into the snow.",
+    rights: "Photo by Francesco Veronesi, CC BY-SA 2.0",
+    photo: "./img/birds/dzieciolzielony.jpg"
 }
 
 // last1
@@ -368,7 +384,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && bp.includes("13") 
                         // color 19-27
-                        && (bp.includes("24") || bp.includes("26")) 
+                        && (bp.includes("44") || bp.includes("26")) 
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
@@ -441,7 +457,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && (bp.includes("15")) 
                         // color 19-27
-                        && (bp.includes("23") || bp.includes("24")) 
+                        && (bp.includes("23") || bp.includes("44")) 
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
@@ -460,7 +476,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && bp.includes("15") 
                         // color 19-27
-                        && (bp.includes("23") || bp.includes("24")) 
+                        && (bp.includes("23") || bp.includes("44")) 
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
@@ -479,7 +495,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && bp.includes("15")
                         // color 19-27
-                        && (bp.includes("23") || bp.includes("24")) 
+                        && (bp.includes("23") || bp.includes("44")) 
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
@@ -574,7 +590,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && (bp.includes("16") || bp.includes("13"))
                         // color 19-27
-                        && (bp.includes("24") || bp.includes("25") || bp.includes("27")) 
+                        && (bp.includes("44") || bp.includes("25") || bp.includes("27")) 
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
@@ -661,7 +677,7 @@ button.addEventListener("click", () => {
                             placeBird(perkozDwuczuby.name, perkozDwuczuby.description, perkozDwuczuby.photo, perkozDwuczuby.rights);
                         } 
 
-                     // 23 perkoz rudzik
+                     // 23 rudzik
                      if(
                         // season 1-4
                         (bp.includes("1") || bp.includes("2") || bp.includes("3"))
@@ -680,14 +696,72 @@ button.addEventListener("click", () => {
                             placeBird(rudzik.name, rudzik.description, rudzik.photo, rudzik.rights);
                         } 
 
-                        // last
+                       // 24 kuropatwa
+                       if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && (bp.includes("7") || bp.includes("9")) 
+                        // size 13-18
+                        && (bp.includes("14") || bp.includes("15"))
+                        // color 19-27
+                        && (bp.includes("22") || bp.includes("23")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32")) 
+                        // activity 34-43
+                        && (bp.includes("40") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(kuropatwa.name, kuropatwa.description, kuropatwa.photo, kuropatwa.rights);
+                        } 
+
+                    // 25 dzięcioł czarny
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("9")) 
+                        // size 13-18
+                        && bp.includes("15")
+                        // color 19-27
+                        && bp.includes("19") 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30")) 
+                        // activity 34-43
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("41") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(dzieciolCzarny.name, dzieciolCzarny.description, dzieciolCzarny.photo, dzieciolCzarny.rights);
+                        } 
+
+                    // 26 dzięcioł zielony
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("9") || bp.includes("12")) 
+                        // size 13-18
+                        && (bp.includes("14") || bp.includes("15"))
+                        // color 19-27
+                        && (bp.includes("24") || bp.includes("27")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30")) 
+                        // activity 34-43
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("41") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(dzieciolZielony.name, dzieciolZielony.description, dzieciolZielony.photo, dzieciolZielony.rights);
+                        } 
+
+
+                        // last2
                     
 
                         
 		    }
 	    }
         const birdie = document.querySelector("#birdie");
-        console.log(birdie);
+        // console.log(birdie);
         if (birdie === null) {
             document.getElementById("noBirdMatch").innerHTML = "Sorry, I couldn't find any match :(";
         }
