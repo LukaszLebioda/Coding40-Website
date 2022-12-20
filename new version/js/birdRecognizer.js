@@ -1,21 +1,3 @@
-
-// coś zrobić, żeby wyświetlało komunikat: "Sorry, I couldn't find a match"
-
-// coś zrobić, żeby wyświetlało komunikat: "Sorry, I couldn't find a match"
-// i żeby reloadowało nie do main page, a do właściwego accordiona z programem;
-
-//let ifBird;
-
-// if(ifBird.length = 1) {
-                    //     console.log("OK!");
-                    // } else {
-                    //     console.log("Ups...");
-                    // }
-                    // if (1=1){
-                        //     document.getElementById("resultBird1").innerHTML = "Sorry, I couldn't find any match :(";
-                        //     console.log("Something went wrong");
-                        // })
-
 const kos = {
     sequence: 1,
     name: "Blackbird (kos)",
@@ -136,6 +118,80 @@ const czaplaBiala = {
     photo: "./img/birds/czaplabiala.jpg"
 }
 
+const kapturka = {
+    sequence: 16,
+    name: "Blackcap (kapturka, pokrzewka czarnołbista)",
+    description: "Its beautiful flute-like singing is a feature easy to learn and recognize. Males have black caps and females brown ones.",
+    rights: "Photo by Charles J. Sharp, CC BY-SA 4.0",
+    photo: "./img/birds/kapturka.jpg"
+}
+
+const dzieciolDuzy = {
+    sequence: 17,
+    name: "Great spotted woodpecker (dzięcioł duży)",
+    description: "If You hear it banging on stuff like a machine gun, it's not trying to cut a hole - that's just a way to attract females. Males have a small red spot at the back of the head.",
+    rights: "Photo by Miraceti, CC BY-SA 3.0",
+    photo: "./img/birds/dzieciolduzy.jpg"
+}
+
+const modraszka = {
+    sequence: 18,
+    name: "Blue tit (modraszka, sikora modraszka)",
+    description: "A very busy bird, full of vital energy, even in the coldest mornings of winter. Often visits bird feeders. Wears a blue cap what distincts it from other tit species.",
+    rights: "Photo by Francis C. Franklin, CC-BY-SA-3.0, CC BY-SA 3.0",
+    photo: "./img/birds/modraszka.jpg"
+}
+
+const mewaSmieszka = {
+    sequence: 19,
+    name: "Black-headed gull (śmieszka, mewa śmieszka)",
+    description: "The most popular species of gull that lives in big, noisy flocks. Its white head turns black during mating period (in spring & summer).",
+    rights: "Photo by Von Helge Busch-Paulick, CC BY-SA 3.0",
+    photo: "./img/birds/mewasmieszka.jpg"
+}
+
+const bazant = {
+    sequence: 20,
+    name: "Pheasant (bażant)",
+    description: "A game bird whose characteristic shout spreads wide over the grasses. Introduced to Europe from far Asia by ancient Romans.",
+    rights: "Photo from Shutterstock",
+    photo: "./img/birds/bazant.jpg"
+}
+
+const zuraw = {
+    sequence: 21,
+    name: "Crane (żuraw)",
+    description: "Hundreds of cranes tend to gather on open fields in autumn to arrange the departure order. Their trumpet-like screams echoe kilometers away",
+    rights: "Photo by Andreas Trepte, CC BY-SA 2.5",
+    photo: "./img/birds/zuraw.jpg"
+}
+
+const perkozDwuczuby = {
+    sequence: 22,
+    name: "Great crested grebe (perkoz dwuczuby)",
+    description: "A great diver... and lover. Likes to give fish it hunted as a gift to those it fell in love with as a part of a sophisticated mating dance.",
+    rights: "Photo by Andy Vernon, CC BY 2.0",
+    photo: "./img/birds/perkozdwuczuby.jpg"
+}
+
+const rudzik = {
+    sequence: 23,
+    name: "Robin (rudzik)",
+    description: "An orange breast and beautiful singing are hallmarks of robin. Likes to sing till late evening when other spiecies go mute.",
+    rights: "Photo by Francis C. Franklin, CC-BY-SA-3.0, CC BY-SA 3.0",
+    photo: "./img/birds/rudzik.jpg"
+}
+
+const kuropatwa = {
+    sequence: 24,
+    name: "Grey partridge (kuropatwa)",
+    description: "An orange breast and beautiful singing are hallmarks of robin. Likes to sing till late evening when other spiecies go mute.",
+    rights: "Photo CC BY-SA 3.0",
+    photo: "./img/birds/kuropatwa.jpg"
+}
+
+// last1
+
 // ---------------------------------------------------------------------
 
 const placeBird = (name, description, photo, rights) => {
@@ -216,7 +272,7 @@ button.addEventListener("click", () => {
                     // 2 szpak
                     if(
                         // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3")) 
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
                         // location 5-12
                         && (bp.includes("9") || bp.includes("11") || bp.includes("12")) 
                         // size 13-18
@@ -346,7 +402,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("5") || bp.includes("6") || bp.includes("7")) 
                         // size 13-18
-                        && bp.includes("15") 
+                        && (bp.includes("14") || bp.includes("15")) 
                         // color 19-27
                         && (bp.includes("20") || bp.includes("23")) 
                         // numbers 28-33
@@ -470,6 +526,163 @@ button.addEventListener("click", () => {
                         {
                             placeBird(czaplaBiala.name, czaplaBiala.description, czaplaBiala.photo, czaplaBiala.rights);
                         }  
+
+                    // 16 kapturka
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3")) 
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("9") || bp.includes("10") || bp.includes("12")) 
+                        // size 13-18
+                        && (bp.includes("13") || bp.includes("16"))
+                        // color 19-27
+                        && (bp.includes("22") || bp.includes("23")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
+                        // activity 34-43
+                        && (bp.includes("37") || bp.includes("39") || bp.includes("42"))
+                        ) 
+                        {
+                            placeBird(kapturka.name, kapturka.description, kapturka.photo, kapturka.rights);
+                        }  
+
+                     // 17 dzięcioł duży
+                     if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("9") || bp.includes("12")) 
+                        // size 13-18
+                        && bp.includes("14")
+                        // color 19-27
+                        && (bp.includes("21") || bp.includes("26") || bp.includes("27")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30")) 
+                        // activity 34-43
+                        && (bp.includes("39") || bp.includes("41") || bp.includes("42"))
+                        ) 
+                        {
+                            placeBird(dzieciolDuzy.name, dzieciolDuzy.description, dzieciolDuzy.photo, dzieciolDuzy.rights);
+                        } 
+
+                    // 18 modraszka
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("9") || bp.includes("12")) 
+                        // size 13-18
+                        && (bp.includes("16") || bp.includes("13"))
+                        // color 19-27
+                        && (bp.includes("24") || bp.includes("25") || bp.includes("27")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
+                        // activity 34-43
+                        && (bp.includes("37") || bp.includes("39") || bp.includes("42"))
+                        ) 
+                        {
+                            placeBird(modraszka.name, modraszka.description, modraszka.photo, modraszka.rights);
+                        } 
+
+                    // 19 mewa śmieszka
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
+                        // location 5-12
+                        && (bp.includes("5") || bp.includes("6") || bp.includes("7") || bp.includes("11") || bp.includes("12")) 
+                        // size 13-18
+                        && (bp.includes("14") || bp.includes("15"))
+                        // color 19-27
+                        && (bp.includes("20") || bp.includes("21") || bp.includes("23")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
+                        // activity 34-43
+                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("40") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(mewaSmieszka.name, mewaSmieszka.description, mewaSmieszka.photo, mewaSmieszka.rights);
+                        } 
+
+                      // 20 bazant
+                      if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
+                        // location 5-12
+                        && (bp.includes("7") || bp.includes("9")) 
+                        // size 13-18
+                        && bp.includes("17")
+                        // color 19-27
+                        && (bp.includes("22") || bp.includes("27")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30")) 
+                        // activity 34-43
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(bazant.name, bazant.description, bazant.photo, bazant.rights);
+                        } 
+
+                    // 21 żuraw
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && (bp.includes("7") || bp.includes("8") || bp.includes("9")) 
+                        // size 13-18
+                        && bp.includes("18")
+                        // color 19-27
+                        && bp.includes("23") 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
+                        // activity 34-43
+                        && (bp.includes("38") || bp.includes("40") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(zuraw.name, zuraw.description, zuraw.photo, zuraw.rights);
+                        } 
+
+                    
+                    // 22 perkoz dwuczuby
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && (bp.includes("5") || bp.includes("6")) 
+                        // size 13-18
+                        && (bp.includes("15") || bp.includes("17"))
+                        // color 19-27
+                        && (bp.includes("19") || bp.includes("20") || bp.includes("21") || bp.includes("22")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
+                        // activity 34-43
+                        && (bp.includes("34") || bp.includes("35"))
+                        ) 
+                        {
+                            placeBird(perkozDwuczuby.name, perkozDwuczuby.description, perkozDwuczuby.photo, perkozDwuczuby.rights);
+                        } 
+
+                     // 23 perkoz rudzik
+                     if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3"))
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("9") || bp.includes("10") || bp.includes("12")) 
+                        // size 13-18
+                        && bp.includes("13")
+                        // color 19-27
+                        && (bp.includes("22") || bp.includes("23") || bp.includes("26")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30")) 
+                        // activity 34-43
+                        && (bp.includes("37") || bp.includes("39")|| bp.includes("42")|| bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(rudzik.name, rudzik.description, rudzik.photo, rudzik.rights);
+                        } 
+
+                        // last
+                    
+
                         
 		    }
 	    }
