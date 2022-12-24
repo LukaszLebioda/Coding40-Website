@@ -218,21 +218,41 @@
                                     <legend class="w-auto px-2 mb-4"></legend>
                                         <div class="form-group mb-4">
                                       <h5 class="mb-4" style="text-align: center;">Source code:</h5>
-                                      <p class="regular sourceCode" style="font-family: Courier New;">
-                                describe("I want to see the a mountain weather report", () => { <br>
-                                ..it("should load the page and check the URL", () => { <br>
-                                .....cy.visit("https://   
-                                www.mountain-forecast.com/", {timeout: 10000}) <br>
-                                .....cy.url().should("include", "com") <br>
-                                ..}) <br>
-                                ..it("should wait for 2 seconds just to see a map a little bit longer :)", () => { <br>
-                                .....cy.wait(2000) <br>
-                                ..}) <br> 
-                                ..it("should type in 'Gerlach' and press enter", () => { <br>
-                                .....cy.get('#location').type ("Gerlach {Enter}"); <br>
-                                ..}) <br>
-                                })
-                             </p>   
+                                            
+<pre class="regular sourceCode" style="font-family: Courier New;">
+                                                                               
+describe("when navigate to the mountain weather page on my mobile, viewport: 393 x 851", () => {
+
+        let mountainName = "Gerlach";
+
+    it("should visit the page and make sure it loaded", () => {
+        cy.pause()
+        cy.visit("https://www.mountain-forecast.com/", {timeout:10000});
+        cy.title("include", "Mountain Weather");
+        cy.url().should("include", "mountain-forecast")
+                .and("eq", "https://www.mountain-forecast.com/")
+                .and("contain", "mountain-forecast.com");
+    })
+    it("should make sure it loaded even more", () => {
+        cy.get("img[alt='Mountain-Forecast']").should("be.visible");
+        cy.get("a.active").should("exist");
+    })
+    it("should click on 'Weather maps' button", () => {
+        cy.get("a").contains("Weather maps").click({force:true});
+        cy.get("div#MM_search").should("be.visible");
+    })
+    it("should type in mountain name and display forecast table", () => {
+        cy.get("#location").as("myFirstAlias")
+        cy.get("@myFirstAlias").clear();
+        cy.get("@myFirstAlias").type(`${mountainName} {Enter}`, {delay:100});
+    })
+    it("should scroll down to weather forecast table", () => {
+        cy.get('.forecast-table__table-wrapper')
+            .scrollIntoView()
+            .should("be.visible")
+    })
+})
+</pre>   
                                 </div>
                                 </fieldset>
                              
@@ -248,7 +268,7 @@
                                 <h5 class="mb-4">Video:</h5> 
                             <div class="embed-responsive embed-responsive-16by9">  
                                 <video class="embed-responsive-item" width="80%" max-height="auto" controls>
-                                    <source src="video/Gerlach.mp4" type="video/mp4">
+                                    <source src="video/cyGerlach.mp4" type="video/mp4">
                                 </video>
                             </div>
                             </fieldset>
