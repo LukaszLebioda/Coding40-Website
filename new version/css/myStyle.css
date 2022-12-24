@@ -342,7 +342,7 @@ p.regular
 
 .accordionTestingItem /* background for opened div */
 {
-    background-color: #E0FFFF; /* palegoldenrod */
+    background-color: #E0FFFF; 
 }
 
 .accordionTestingFieldset

@@ -217,9 +217,13 @@
                             <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                     <legend class="w-auto px-2 mb-4"></legend>
                                         <div class="form-group mb-4">
-                                      <h5 class="mb-4" style="text-align: center;">Source code:</h5>
+                                        <h5 class="mb-4" style="text-align: center;">Source code:</h5>
+                                   
+                                        <div class="d-flex justify-content-center" >  
+                                        <button id="clipboardButton" title="Copy to clipboard" style="text-align: right;"><i class="bi bi-clipboard"></i></button>
+                                        </div>
                                             
-<pre class="regular sourceCode" style="font-family: Courier New;">
+<pre id="sourceCodeClipboard" class="regular sourceCode" style="font-family: Courier New;">
                                                                                
 describe("when navigate to the mountain weather page on my mobile, viewport: 393 x 851", () => {
 
