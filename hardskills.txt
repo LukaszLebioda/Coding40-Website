@@ -1,0 +1,7 @@
+TestLink
+Web based open source test management tool. 
+Synchronizes requirements specification and test specification together.
+Allows to create test projects and document test cases.
+Supports both automated and manual execution of test cases.
+Allows to create test plans and test reports.
+Supports integration with defect tracking systems like JIRA, Mantis, BugZilla.
