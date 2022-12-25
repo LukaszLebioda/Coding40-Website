@@ -211,6 +211,16 @@ p.regular
     text-align: center;
 }
 
+.jqButton
+{   
+    position: relative;
+    float: right;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
 /* NAVBAR SECTION */
 
 /* for navbar & footer */

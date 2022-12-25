@@ -1,6 +1,12 @@
-// $(document).ready(function(){
- // $(".navbar-toggler").click(function(){
- // $("#myTogglerIcon1",this).replaceWith("#myTogglerIcon2");
-// });
-// });
+// $(document).ready(function(){ 
+//    alert("Ready!"); 
+// })
+
+$(document).ready(function(){
+ $("#buttonjqHide").click(function(){
+   $("img#jqHide").toggle(1500);
+ });
+});
+
+
 
