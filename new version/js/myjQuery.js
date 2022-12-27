@@ -8,7 +8,7 @@ $(document).ready(function(){
    $("#jqButton1").hide(1500);
    $("img#jqImage1").hide(1500);
    $("span#jqSpan1").hide(1500);
-   $("#jqButton2").show( "<i class='bi bi-arrow-counterclockwise'></i>" );
+   $("#jqButton2").show(1500);
    $("span#jqSpan2").show(1500);
  });
 });
