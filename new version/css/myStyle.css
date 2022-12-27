@@ -797,6 +797,18 @@ hr
     text-align: left !important;
 }
 
+/* powiększanie zdjęć */
+.enlargePhoto
+{
+    cursor: zoom-in;
+    transition:transform 0.25s ease;
+}
+
+.enlargePhoto:hover {
+    -webkit-transform:scale(1.75); 
+    transform:scale(1.75);
+}
+
 /* -------------- SERVER-SIDE SECTION --------------------------*/
 @media (min-width: 1px) and (max-width: 300px) {
     .serverStep h6
