@@ -206,6 +206,14 @@ const dzieciolZielony = {
     photo: "./img/birds/dzieciolzielony.jpg"
 }
 
+const czubatka = {
+    sequence: 27,
+    name: "Crested tit (czubatka)",
+    description: "A vivid, cheerful tiny little creature easy to recognize thanks to the crest on its head. Strongly connected with coniferous forest (where trees don't have leaves but needles.",
+    rights: "Photo by Luc Viatour, CC BY-SA 3.0",
+    photo: "./img/birds/czubatka.jpg"
+}
+
 // last1
 
 // ---------------------------------------------------------------------
@@ -588,7 +596,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("8") || bp.includes("9") || bp.includes("12")) 
                         // size 13-18
-                        && (bp.includes("16") || bp.includes("13"))
+                        && bp.includes("16")
                         // color 19-27
                         && (bp.includes("44") || bp.includes("25") || bp.includes("27")) 
                         // numbers 28-33
