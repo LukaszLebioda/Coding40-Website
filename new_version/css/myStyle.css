@@ -809,6 +809,26 @@ hr
     transform:scale(1.75);
 }
 
+/*
+.enlargePhoto{
+   display: flex;
+}
+
+@media (max-width: 991px){
+    .enlargePhoto
+    {
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 992px){
+    .enlargePhoto
+    {
+      flex-direction: row;
+    }
+}
+*/
+
 /* -------------- SERVER-SIDE SECTION --------------------------*/
 @media (min-width: 1px) and (max-width: 300px) {
     .serverStep h6
