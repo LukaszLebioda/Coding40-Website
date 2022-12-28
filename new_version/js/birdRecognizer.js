@@ -217,9 +217,17 @@ const czubatka = {
 const orzelPrzedni = {
     sequence: 28,
     name: "Golden eagle (orzeł przedni)",
-    description: "A vivid, cheerful tiny little creature easy to recognize thanks to the crest on its head. Strongly connected with coniferous forest (where trees don't have leaves but needles).",
+    description: "A majestic predator, the biggest in Europe. Its silhoutette is frequently placed on coat of arms of cities & countries. Very rare - lives only in the most secluded mountains.",
     rights: "Photo by Dick Daniels, CC BY-SA 3.0",
     photo: "./img/birds/orzelprzedni.jpg"
+}
+
+const skowronek = {
+    sequence: 29,
+    name: "Skylark (skowronek)",
+    description: "",
+    rights: "Photo by Av Frebeck, CC BY-SA 3.0",
+    photo: "./img/birds/skowronek.jpg"
 }
 
 // last1
@@ -786,6 +794,25 @@ button.addEventListener("click", () => {
                         ) 
                         {
                             placeBird(czubatka.name, czubatka.description, czubatka.photo, czubatka.rights);
+                        } 
+                    
+                    // 28 orzeł przedni
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && bp.includes("10")
+                        // size 13-18
+                        && bp.includes("17")
+                        // color 19-27
+                        && bp.includes("19") 
+                        // numbers 28-33
+                        && bp.includes("28")
+                        // activity 34-43
+                        && (bp.includes("38") || bp.includes("43"))
+                        ) 
+                        {
+                            placeBird(orzelPrzedni.name, orzelPrzedni.description, orzelPrzedni.photo, orzelPrzedni.rights);
                         } 
 
 
