@@ -6,6 +6,12 @@ Supports both automated and manual execution of test cases.
 Allows to create test plans and test reports.
 Supports integration with defect tracking systems like JIRA, Mantis, BugZilla.
 
+After having downloaded the TesLink package (from github) and installed it 
+(as a MySQL database in the XAMPP runtime), he was finally able to set up the Test Project, 
+the Test Plan, the Build (version), 
+the Test Suite and last but not least: The Test Case with 5 steps.
+
+
 HTML, CSS, Bootstrap, jQuery, JavaScript
 XAMPP, phpMyAdmin, SQL, MySQL, PostgreSQL, MongoDB
 node.js, nmp
