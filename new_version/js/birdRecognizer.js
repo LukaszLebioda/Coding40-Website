@@ -209,9 +209,17 @@ const dzieciolZielony = {
 const czubatka = {
     sequence: 27,
     name: "Crested tit (czubatka)",
-    description: "A vivid, cheerful tiny little creature easy to recognize thanks to the crest on its head. Strongly connected with coniferous forest (where trees don't have leaves but needles.",
+    description: "The biggest bird-raptor of Europe often, whose silhouette if often placed on coat of arms of countries & cities. Very rare - lives only in secluded mountains.",
     rights: "Photo by Luc Viatour, CC BY-SA 3.0",
     photo: "./img/birds/czubatka.jpg"
+}
+
+const orzelPrzedni = {
+    sequence: 28,
+    name: "Golden eagle (orzeł przedni)",
+    description: "A vivid, cheerful tiny little creature easy to recognize thanks to the crest on its head. Strongly connected with coniferous forest (where trees don't have leaves but needles).",
+    rights: "Photo by Dick Daniels, CC BY-SA 3.0",
+    photo: "./img/birds/orzelprzedni.jpg"
 }
 
 // last1
@@ -759,6 +767,25 @@ button.addEventListener("click", () => {
                         ) 
                         {
                             placeBird(dzieciolZielony.name, dzieciolZielony.description, dzieciolZielony.photo, dzieciolZielony.rights);
+                        } 
+
+                    // 27 czubatka
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                        // location 5-12
+                        && (bp.includes("8") || bp.includes("10")) 
+                        // size 13-18
+                        && bp.includes("16")
+                        // color 19-27
+                        && (bp.includes("22") || bp.includes("23")) 
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
+                        // activity 34-43
+                        && (bp.includes("37") || bp.includes("40") || bp.includes("42"))
+                        ) 
+                        {
+                            placeBird(czubatka.name, czubatka.description, czubatka.photo, czubatka.rights);
                         } 
 
 
