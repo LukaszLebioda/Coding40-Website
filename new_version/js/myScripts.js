@@ -1,14 +1,51 @@
 // copy texts (e.g. source code pieces) to CLIPBOARD:
-const copyButton = document.querySelector("#clipboardButton");
-copyButton.addEventListener("click", function () {
+// Trzeba stworzy jedn funkcj do tych wszystkich clipboardw!!!
 
-  const copyButton2 = document.createElement("button");
-  copyButton2.innerHTML = "<i class='bi bi-clipboard-check'></i>";        
+// const copyButton1 = document.querySelector("#clipboardButton1");
+// const copyButton2 = document.querySelector("#clipboardButton2");
 
-  copyButton.parentNode.replaceChild(copyButton2, copyButton);
+// const whichButton = (button, sourceCode) => {
+//     const copyButton0 = document.createElement("button");
+//     copyButton0.innerHTML = "<i class='bi bi-clipboard-check'></i>";        
+  
+//     button.parentNode.replaceChild(copyButton0, button);
+  
+//             navigator.clipboard
+//                 .writeText(document.getElementById(sourceCode).innerText)
+//                 .then(
+//                     success => console.log("text copied"), err => console.log("error copying text")
+//                 )
+// }
+
+// copyButton1.addEventListener("click", whichButton(copyButton1, "sourceCodeClipboard1"));
+// copyButton2.addEventListener("click", whichButton(copyButton2, "sourceCodeClipboard2"));
+
+
+const copyButton1 = document.querySelector("#clipboardButton1");
+copyButton1.addEventListener("click", function () {
+
+  const copyButton0 = document.createElement("button");
+  copyButton0.innerHTML = "<i class='bi bi-clipboard-check'></i>";        
+
+  copyButton1.parentNode.replaceChild(copyButton0, copyButton1);
 
           navigator.clipboard
-              .writeText(document.getElementById("sourceCodeClipboard").innerText)
+              .writeText(document.getElementById("sourceCodeClipboard1").innerText)
+              .then(
+                  success => console.log("text copied"), err => console.log("error copying text")
+              )
+})
+
+const copyButton2 = document.querySelector("#clipboardButton2");
+copyButton2.addEventListener("click", function () {
+
+  const copyButton0 = document.createElement("button");
+  copyButton0.innerHTML = "<i class='bi bi-clipboard-check'></i>";        
+
+  copyButton2.parentNode.replaceChild(copyButton0, copyButton2);
+
+          navigator.clipboard
+              .writeText(document.getElementById("sourceCodeClipboard2").innerText)
               .then(
                   success => console.log("text copied"), err => console.log("error copying text")
               )
