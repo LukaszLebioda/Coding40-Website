@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
+    <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
+	<meta name="keywords" content="coding, self-study, lifechange">
+    <meta name="author" content="Coding40"> 
+	<title>Coding40 - A story of a lifechanging project</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- css podpięty zdalnie, ale można też lokalnie -->
+    
+    <link rel="icon" href="img/logo/logoSemiTransparentLarge.png">   
+	<link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">  
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+
+</head>
+   
+<body>
+
+<header class="cotainer-fluid">
+    
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-md fixed-top"> 
+    
+        <a class="navbar-brand" href="./index.html"><img class="align-bottom ms-1" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
+            <!-- było: <span class="navbar-toggler-icon"></span> -->
+            <img src="./img/other/menu.png" witdh="33" height="33">
+        </button>
+        
+        <div class="collapse navbar-collapse mainMenu">
+
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Coding40</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="html_webdesign.html">Web design</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_testing.html">Testing</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_serverside.html">Server</a>
+                    </div>
+                </li>
+                
+                <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_leisures.html">Leisures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_contact.html">Contact</a>
+                </li>
+            </ul>
+             
+        </div>
+        
+    </nav>
+    
+</header>
+    
+<main>
+    
+        <div class="container"> 
+        
+            <section class="">
+				
+				<aside class="col-12 bg-myQuotationColor mt-4 p-3"><i>'The truth is out there'</i>, Dana Scully</aside>
+        
+				<header class="border border-dark my-3"> 
+				
+				<!-- https://www.flightnotch.com/post/hang-gliding-vs-wingsuit-diving -->
+				<div class="masthead" style="background-image: url('./img/backgrounds/testing.jpg');">
+					
+					<div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+                        <div class="row">
+                           <div>
+                            <h1 class="fw-bold text-uppercase">Testing</h1>
+                            <p>A glass half-full</p>
+                            </div>
+                        </div>
+                    </div>		
+						
+                </div>		
+						
+				</header>
+				
+                <section class="leisureSection">
+                   
+                    <header class="border border-dark">
+					
+                        <h1 class="regular">You're already a tester</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <p class="regular">Cause You were born to test reality </p>
+                       
+				    </header>
+                    
+                </section>
+               
+                <div class="row d-flex justify-content-center m-4"> 
+               
+                   <div class="col-md-2 mb-1">
+                        <figure>
+                            <a href="#"><img src="img/icons/user.jpg" width="100px" alt="A user logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 1: Enlightment</h1>
+                        <h6 class="p-3"><i>Lukasz has recently discovered the diverse world of IT which had always been there <br> but Lukasz was too blind to see it. <br><br> The more blind he had been, the more intense his experiencing of IT-environment is nowadays. <br><br> After having tasted different flavours of IT he finally realized that all his experiences, <br> all his actions and all the decisions he made led to this precious moment: <br><br> to the resolution of becoming a software tester...</i></h6>
+                    </div>
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                    
+                     <div class="col-md-2 mb-1">
+                        <figure>
+                            <a href="#"><img src="img/other/kindle.png" width="100px" alt="A user logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="userStory col-md-8">
+                    
+                    <div class="d-flex justify-content-center">
+                        
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <a href="#"><img src="img/other/bookontesting1.png" width="80px" height="120px" alt="Book on testing"></a>
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <a href="#"><img src="img/other/bookontesting2.jpg" width="80px" height="120px" alt="Book on testing"></a>
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <a href="#"><img src="img/other/bookontesting3.jpg" width="80px" height="120px" alt="Book on testing"></a>
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <a href="#"><img src="img/other/bookontesting4.jpg" width="80px" height="120px" alt="Book on testing"></a>
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+                       
+                    </div>       
+                       
+                        <h1 class="regular">User story, ep. 2: Theory</h1>
+                        
+                        <h6 class="p-3"><i>So he started where many university-graduates think they should start from - buying / borrowing / downloading tons of books. <br> Some he read from cover to cover, some he left unfinished and some he abandoned after reading the contents. <br><br> Yet despite of the efforts of the authors he soon realized that without any experience whatsoever reading about testing is like listening how the mountain lake looks like in the morning when being blind. <br><br> He felt he need a change...</i></h6>
+                    
+                    </div>
+                    
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                    
+                    <div class="col-md-2 mb-1">
+                        <figure>
+                            <a href="#"><img src="img/icons/cypress.jpeg" width="130px" alt="A Cypress software logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="userStory col-md-8">
+                    
+                        <h1 class="regular">User story, ep. 3: Practice</h1>
+                        <h6 class="p-3"><i>So he started building home from a chimney (as the old Polish saying goes), skipped all the manual testing basics and jumped directly into the Cypress world. He had no idea what he was doing...<br><br>Luckily he had learned some JavaScript before and dealt with Visual Studio Code. So after hours of learning he was finally able to set all those colorized expressions into his first test that actually tested something. Nothing fancy, but still...</i></h6>
+                                       
+                    </div>
+                
+                <div class="accordion accordion-flush col-md-10 mt-4" id="accordionExample">
+                     
+                      <div class="accordion-item mt-2 border border-dark accordionTestingItem">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Cypress Automation Test 1 - Mountain weather report
+                          </button>
+                        </h2>
+                        <!-- <div id="collapseOne" class="accordion-collapse show": wtedy ten div jest defaultowo otwarty -->
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <h1 class="h3 fw-normal mb-4 regular">Mountain weather report</h1>
+                        
+                            <h5 class="regular mb-5">
+                                I'm about to set for an expedition to conquer Gerlach summit (The Tatras, Slovakia) in winter. I'd better check the weather report. This is a source code which will check if it is possible on one particular website:   
+                            </h5>
+                              
+                            <div class="automationTest">
+                            <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
+                                    <legend class="w-auto px-2 mb-4"></legend>
+                                        <div class="form-group mb-4">
+                                        <h5 class="mb-4" style="text-align: center;">Source code:</h5>
+                                   
+                                        <div class="d-flex justify-content-center" >  
+                                        <button id="clipboardButton" title="Copy to clipboard" style="text-align: right;"><i class="bi bi-clipboard"></i></button>
+                                        </div>
+                                            
+<pre id="sourceCodeClipboard" class="regular sourceCode" style="font-family: Courier New;">
+                                                                               
+describe("when navigate to the mountain weather page on my mobile, 
+viewport: 393 x 851", () => {
+
+        let mountainName = "Gerlach";
+
+    it("should visit the page and make sure it loaded", () => {
+        cy.pause()
+        cy.visit("https://www.mountain-forecast.com/", {timeout:10000});
+        cy.title("include", "Mountain Weather");
+        cy.url().should("include", "mountain-forecast")
+                .and("eq", "https://www.mountain-forecast.com/")
+                .and("contain", "mountain-forecast.com");
+    })
+    it("should make sure it loaded even more", () => {
+        cy.get("img[alt='Mountain-Forecast']").should("be.visible");
+        cy.get("a.active").should("exist");
+    })
+    it("should click on 'Weather maps' button", () => {
+        cy.get("a").contains("Weather maps").click({force:true});
+        cy.get("div#MM_search").should("be.visible");
+    })
+    it("should type in mountain name and display forecast table", () => {
+        cy.get("#location").as("myFirstAlias")
+        cy.get("@myFirstAlias").clear();
+        cy.get("@myFirstAlias").type(`${mountainName} {Enter}`, {delay:100});
+    })
+    it("should scroll down to weather forecast table", () => {
+        cy.get('.forecast-table__table-wrapper')
+            .scrollIntoView()
+            .should("be.visible")
+    })
+})
+</pre>   
+                                </div>
+                                </fieldset>
+                             
+                            </div>  
+                             
+                            <h5 class="regular mb-4">
+                                And this is a video with the execution of the code in Cypress:   
+                            </h5>  
+                             
+                        <div> 
+                           <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
+                                <legend class="w-auto px-2 mb-3"></legend> 
+                                <h5 class="mb-4">Video:</h5> 
+                            <div class="embed-responsive embed-responsive-16by9">  
+                                <video class="embed-responsive-item" width="80%" max-height="auto" controls>
+                                    <source src="video/cyGerlach.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            </fieldset>
+                        </div>
+                              
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+<!--
+                      <div class="accordion-item mt-2 border border-dark accordionTestingItem">
+                        <h2 class="accordion-header " id="headingTwo">
+                          <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Automation test 2 - Coming soon
+                          </button>
+                        </h2>
+                        
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            
+                          <div class="accordion-body">
+                            <div class="accordion-body">
+                            Automation test 2 - Coming soon
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+-->
+                      
+<!--
+                      <div class="accordion-item mt-2 border border-dark accordionTestingItem">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Automation test 3 - Coming soon
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Automation test 3 - Coming soon
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>        
+
+                <div class="col-12 my-4 emptyDiv">
+                    <hr>   
+                </div>
+                
+                 <div class="col-md-2 mb-1">
+                        <figure>
+                            <a href="#"><img src="img/other/ISTQBsyllabus.jpg" width="100px" alt="A user logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 4: More theory</h1>
+                        <h6 class="p-3"><i>After hours of learning Cypress he realized he needed theory to name somehow what he was doing. <br><br> There was one book, the book of books, the testers' bible he inevitably encountered. <br><br> The ISTQB syllabus. <br><br> A merely 100-pages-volume to encompass the foundations of knowledge every software tester needs. And to prepare for the exam to get a certificate well recognized by future employers. <br><br> It's definitely not a thrilling bedtime reading piece of art to be honest. But Lukasz continued reading.  </i></h6>
+                    </div>
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                
+                  <div class="col-md-2 d-flex flex-column align-items-center">
+                  
+                   <div class="col-md-2 mb-1">
+                        <figure>
+                           <!-- obraz iStock -->
+                            <a href="#"><img src="img/other/handwithlantern.jpg" width="70px" alt="hand with a lantern"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                   
+                    <div class="col-md-2 mb-1">
+                        <figure>
+                           <!-- obraz autorstwa Freepik -->
+                            <a href="#"><img src="img/other/handshake.jpg" width="70px" alt="handshake"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    </div>
+                     
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 5: Exploratory & Acceptance testing</h1>
+                        <h6 class="p-3"><i>He needed just a little bit of tech-vocabulary to realize that he has already been testing a lot! <br><br> Whenever he was playing a video-game, searching for his favourite tv-series on a streaming platform, buying christmas gifts in online store, basicly whenever he was browsing through the Internet, he was testing... The tests he carried out are called exploratory tests, a spontaneous, not pre-planned clicking tests to validate whether the website responds to the requests of the potential Users. <br><br> What is more, he carried out some acceptance tests as well, without even knowing that, when he was checking profoundly the sale system that was about to be implemented in his job (more about this implementation <a href="./html_experience.html">here</a>). </i></h6>
+                    </div>
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                    
+                    <div class="col-md-2 mb-1">
+                        <figure>
+                            <a href="#"><img src="img/other/testlink.png" width="90px" alt="A TestLink logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 6: Test cases with TestLink</h1>
+                        <h6 class="p-3"><i>He decided he's ready to do some systematic, pre-planned manual testing. He just needed a tool to write down and save all the test cases he was about to create. <br><br> A TestLink software was exactly what he was looking for. <br><br> Not necessarily super-intuitive, definitely not easy-to-download-and-install tool... But when he dived a little bit deeper into it, writing test cases has become really enjoyable. <br><br> At first he wanted to examine the searchbox behaviour on one of the leading online bookstores in Poland. <br><br> Check <a href="html_hardskills.html" src="html_hardskills.html">hard skills lexicon</a> for more info about TestLink. </i></h6>
+                        
+                        <br>
+                        
+                        <figure>
+                            <a href="#"><img class="img-fluid" src="img/other/TestLink_testcases.png" width="700px" alt="A screenshot of TestLink test cases"></a>
+                            <figcaption>Online bookstore searchbox funcionality (test cases).</figcaption>
+                        </figure>
+        
+                    </div>
+                    
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                    
+                
+                
+			    </div> <!-- row -->	
+		
+		    </section> <!-- section -->
+		
+        </div> <!-- container -->
+                
+</main>
+   
+<footer class="container-fluid mt-3 p-3 text-center bg-primary">
+
+    <!-- <a href="mailto:lukasz.leb@gmail.com"></a> -->
+    &copy; All rights reserved - Łukasz Lebioda, 2022
+    <br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone"></i>+48 513-637-367
+    
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->   
+
+<script src="js/myScripts.js"></script>
+</body>
+    
+</html>
+    
