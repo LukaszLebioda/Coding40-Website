@@ -225,9 +225,49 @@ const orzelPrzedni = {
 const skowronek = {
     sequence: 29,
     name: "Skylark (skowronek)",
-    description: "",
+    description: "Sings all day long, starting before sunrise and finishing after sunset, from February do August. Sings tirelessly from the sky, hovering 10-20m above fields and pastures.",
     rights: "Photo by Av Frebeck, CC BY-SA 3.0",
     photo: "./img/birds/skowronek.jpg"
+}
+
+const pustulka = {
+    sequence: 30,
+    name: "Kestrel (pustułka)",
+    description: "A common falcon, quite easy to spot in urban or rural areas where he learned to live among humans. Scans grassy areas hovering 10-20m above ground for couple of minutes, then moves to another place and begins scanning anew.",
+    rights: "Photo by Charles J. Sharp, CC BY-SA 4.0",
+    photo: "./img/birds/pustulka.jpg"
+}
+
+const drozdSpiewak = {
+    sequence: 31,
+    name: "Song thrush (śpiewak)",
+    description: "A great singer whose far-reaching, diversified melodies resound from the tree tops in warm spring evenings. Often wanders around on the ground searching for earthworms.",
+    rights: "Photo by JJ Harrison, CC BY-SA 4.0",
+    photo: "./img/birds/drozdspiewak.jpg"
+}
+
+const nuroges = {
+    sequence: 32,
+    name: "Merganser (nurogęś)",
+    description: "",
+    rights: "Photo by Bengt Nyman, CC BY 2.0",
+    photo: "./img/birds/nuroges.jpg"
+}
+
+const kruk = {
+    sequence: 33,
+    name: "Raven (kruk)",
+    description: "",
+    rights: "Photo by Frank Schulenburg, CC BY-SA 4.0",
+    photo: "./img/birds/kruk.jpg"
+}
+
+const jastrzab = {
+    sequence: 34,
+    name: "Northern goshawk (jastrząb)",
+    description: "",
+    rights: "Photo by Martin Mecnarowski, CC BY-SA 3.0",
+    photo: "./img/birds/jastrzab.jpg"
 }
 
 // last1
@@ -304,7 +344,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("42") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("42") || bp.includes("45"))
                         ) {
                             placeBird(trznadel.name, trznadel.description, trznadel.photo, trznadel.rights);
                         }
@@ -322,7 +362,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))
                         ) {
                             placeBird(szpak.name, szpak.description, szpak.photo, szpak.rights);
                         }
@@ -340,7 +380,8 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("37") || bp.includes("40") || bp.includes("42") || bp.includes("43"))) 
+                        && (bp.includes("37") || bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
+                        ) 
                         {
                             placeBird(kos.name, kos.description, kos.photo, kos.rights);
                         }  
@@ -394,7 +435,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43"))) 
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))) 
                         {
                             placeBird(sojka.name, sojka.description, sojka.photo, sojka.rights);
                         }  
@@ -430,7 +471,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("29") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
-                        && (bp.includes("38") || bp.includes("40") || bp.includes("42") || bp.includes("43"))) 
+                        && (bp.includes("38") || bp.includes("40") || bp.includes("42") || bp.includes("45"))) 
                         {
                             placeBird(bocianBialy.name, bocianBialy.description, bocianBialy.photo, bocianBialy.rights);
                         }  
@@ -448,7 +489,8 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32")) 
                         // activity 34-43
-                        && (bp.includes("36") || bp.includes("38") || bp.includes("40"))) 
+                        && (bp.includes("36") || bp.includes("38") || bp.includes("40") || bp.includes("43"))
+                        ) 
                         {
                             placeBird(rybitwaRzeczna.name, rybitwaRzeczna.description, rybitwaRzeczna.photo, rybitwaRzeczna.rights);
                         }  
@@ -466,7 +508,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
                         ) 
                         {
                             placeBird(dudek.name, dudek.description, dudek.photo, dudek.rights);
@@ -485,7 +527,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
-                        && (bp.includes("38") || bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43"))
+                        && (bp.includes("38") || bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
                         ) 
                         {
                             placeBird(golabMiejski.name, golabMiejski.description, golabMiejski.photo, golabMiejski.rights);
@@ -504,7 +546,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))
                         ) 
                         {
                             placeBird(grzywacz.name, grzywacz.description, grzywacz.photo, grzywacz.rights);
@@ -523,7 +565,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))
                         ) 
                         {
                             placeBird(sierpowka.name, sierpowka.description, sierpowka.photo, sierpowka.rights);
@@ -542,7 +584,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
-                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("43"))
+                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("43") || bp.includes("45"))
                         ) 
                         {
                             placeBird(czaplaSiwa.name, czaplaSiwa.description, czaplaSiwa.photo, czaplaSiwa.rights);
@@ -561,7 +603,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
-                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("43"))
+                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("43") || bp.includes("45"))
                         ) 
                         {
                             placeBird(czaplaBiala.name, czaplaBiala.description, czaplaBiala.photo, czaplaBiala.rights);
@@ -637,7 +679,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
-                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("40") || bp.includes("43"))
+                        && (bp.includes("35") || bp.includes("36") || bp.includes("38") || bp.includes("40") || bp.includes("43") || bp.includes("45"))
                         ) 
                         {
                             placeBird(mewaSmieszka.name, mewaSmieszka.description, mewaSmieszka.photo, mewaSmieszka.rights);
@@ -714,7 +756,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("37") || bp.includes("39")|| bp.includes("42")|| bp.includes("43"))
+                        && (bp.includes("37") || bp.includes("39")|| bp.includes("42")|| bp.includes("45"))
                         ) 
                         {
                             placeBird(rudzik.name, rudzik.description, rudzik.photo, rudzik.rights);
@@ -752,7 +794,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("41") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("41"))
                         ) 
                         {
                             placeBird(dzieciolCzarny.name, dzieciolCzarny.description, dzieciolCzarny.photo, dzieciolCzarny.rights);
@@ -771,7 +813,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("41") || bp.includes("43"))
+                        && (bp.includes("39") || bp.includes("40") || bp.includes("41"))
                         ) 
                         {
                             placeBird(dzieciolZielony.name, dzieciolZielony.description, dzieciolZielony.photo, dzieciolZielony.rights);
@@ -809,11 +851,68 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && bp.includes("28")
                         // activity 34-43
-                        && (bp.includes("38") || bp.includes("43"))
+                        && (bp.includes("38") || bp.includes("45"))
                         ) 
                         {
                             placeBird(orzelPrzedni.name, orzelPrzedni.description, orzelPrzedni.photo, orzelPrzedni.rights);
                         } 
+
+                    // 29 skowronek
+                    if(
+                        // season 1-4
+                        (bp.includes("1") || bp.includes("2") || bp.includes("3"))
+                        // location 5-12
+                        && (bp.includes("7") || bp.includes("9"))
+                        // size 13-18
+                        && (bp.includes("13") || bp.includes("14"))
+                        // color 19-27
+                        && bp.includes("22")  
+                        // numbers 28-33
+                        && (bp.includes("28") || bp.includes("30") || bp.includes("31"))
+                        // activity 34-43
+                        && (bp.includes("38") || bp.includes("40"))
+                        ) 
+                        {
+                            placeBird(skowronek.name, skowronek.description, skowronek.photo, skowronek.rights);
+                        } 
+
+                        // 30 pustułka
+                        if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("7") || bp.includes("9") || bp.includes("10") || bp.includes("11") || bp.includes("12"))
+                            // size 13-18
+                            && bp.includes("15")
+                            // color 19-27
+                            && bp.includes("22")  
+                            // numbers 28-33
+                            && bp.includes("28")
+                            // activity 34-43
+                            && (bp.includes("38") || bp.includes("39") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(pustulka.name, pustulka.description, pustulka.photo, pustulka.rights);
+                            } 
+
+                        // 31 drozd śpiewak
+                        if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3"))
+                            // location 5-12
+                            && (bp.includes("7") || bp.includes("8") || bp.includes("9") || bp.includes("10") || bp.includes("11") || bp.includes("12"))
+                            // size 13-18
+                            && bp.includes("14")
+                            // color 19-27
+                            && bp.includes("22")  
+                            // numbers 28-33
+                            && bp.includes("28")
+                            // activity 34-43
+                            && (bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(drozdSpiewak.name, drozdSpiewak.description, drozdSpiewak.photo, drozdSpiewak.rights);
+                            } 
 
 
                         // last2
