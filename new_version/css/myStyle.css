@@ -456,6 +456,12 @@ p.regular
     background-color: #F0F0F0; /* palegoldenrod */
 }
 
+.sourceCodeHardSkills
+{
+    font-family: Courier New;
+    text-align: left!important;
+}
+
 /* --- LEGALITY CHECKER SECTION -- */
 /* zwykły button */
 .bg-button

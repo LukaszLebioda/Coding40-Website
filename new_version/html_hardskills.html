@@ -131,8 +131,17 @@
             
             <div class="container">   
                 
-            <div class="row mt-3">            
-                                        
+            <div class="row mt-3">                                        
+            <div class="col-8 col-sm-10">
+                <h1 class="regular">Front-end</h1>
+            </div>
+              
+             <!--
+             1 HTML
+             2 CSS 
+             3 JavaSctipt
+             4 
+             -->                                                                                     
             <div class="accordion accordion-flush col-8 col-sm-10" id="accordionExample">
                      
                       <div class="accordion-item mt-2 border border-dark accordionHardskillsItem">
@@ -146,15 +155,30 @@
                           <div class="accordion-body p-">
                             <h1 class="h3 fw-normal mb-4 regular">HTML</h1>
                            
-                            <img class="img-fluid float-none me-2 mb-4 hardskillIcon" src="./img/icons/html_large.png" alt="html logo">
+                            <img class="img-fluid float-none me-2 mb-4 hardskillIcon" src="./img/icons/html_medium.png" alt="html logo">
                             <!-- img-fluid lub img-thumbnail -->
                             
                            <p class="myTextJustify regular">
                             <b>name -v</b>: HTML 5 (HyperText Markup Language) <br>
                             <b>in three words:</b>: Every beginners' beginning <br>
                             <b>long story short:</b> a language to describe the content of the page and the general behaviour of the page in different environments, to link some external files or CDN libraries and to pass some info to the search engines out there <br>
-                            <b>opinion:</b> Quite intuitive and straigthforward at the beginning; hovever the deeper into the forest You go, the more trees You see...; without CSS it seems rough and naked (see below).
-                           </p>
+                            <b>opinion:</b> Quite intuitive and straigthforward at the beginning; hovever the deeper into the forest You go, the more trees You see...; without CSS it seems rough and naked (see CSS).<br>
+                            <b>code sample:</b>a simple HTML template with head section for metadata and body section for actual content.</p>
+                            <pre class="sourceCodeHardSkills"> 
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    Meta info goes here.
+&lt;title>HTML Template&lt;title&gt;
+&lt;meta name="description" content="html, template"&gt;
+&lt;meta name="keywords" content="html tutorial template"&gt;
+&lt;head&gt;
+&lt;body&gt;
+    Content goes here.
+&lt;body&gt;
+&lt;html&gt;      
+                            </pre>
+                           
                           </div>
                         </div>
                       </div>
@@ -175,11 +199,30 @@
                             <b>name -v</b>: CSS 3 (Cascading Style Sheets) <br>
                             <b>in three words:</b>: Instant pleasure of design<br>
                             <b>long story short:</b> a language to tell the browser how it should render the page's look: fonts, colours, images, backgrounds, icons and many more; a powerful tool that is firmly bound with html and can be supported by external libraries to create even more picturesque results <br>
-                            <b>opinion:</b> Nice and clean syntax that tends to get more and more complicated in the course of development; can be tricky to remember what lines of css represent what, so comments every now and then are strongly recommended
-                           </p>
+                            <b>opinion:</b> Nice and clean syntax that tends to get more and more complicated in the course of development; can be tricky to remember what lines of css represent what, so comments every now and then are strongly recommended.<br>
+                           <b>code sample:</b> a css syntax sample that sets the page background color blue, describes the font-look of a main header and a paragraph and sets the resolution of an image.</p>
+                            <pre class="sourceCodeHardSkills"> 
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 700px;
+  height: 300px;
+}     
+                            </pre>
+                           
                           </div>
                         </div>
                       </div>
+                      
                       <div class="accordion-item mt-2 border border-dark accordionHardskillsItem">
                         <h2 class="accordion-header" id="headingThree">
                           <button class="accordion-button collapsed accordionHardskillsButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -196,18 +239,58 @@
                             <b>name -v</b>: Java Script (ECMA Script 6) <br>
                             <b>in three words:</b>: It's a kind of magic<br>
                             <b>long story short:</b> A programming language that has become a core technology to develop modern www pages. It's syntax has the magnificent ability to manipulate DOM, which injects interactivity and life info traditional html-css structure. Many frameworks and runtimes use JavaScript nowadays, including Cypress (testing) and node.js (back-end programming). <br>
-                            <b>opinion:</b> Although it's syntax seems a little bit overloaded (in contrast to python), it provides the opportunity to dive deep into the programming world and the results can be truly satisfactory.
-                           </p>
+                            <b>opinion:</b> Although it's syntax seems a little bit overloaded (in contrast to python), it provides the opportunity to dive deep into the programming world and the results can be truly satisfactory.<br><b>code sample:</b> that tiny little piece of js below marks a certain &ldquo;element&rdquo; of the page and attaches it to one of the js typical events - a &ldquo; click&rdquo; event that triggers a function; a solely purpose of that function's existence is to pop up a window with &ldquo;Hello World!&rdquo; message.</p>
+                           <pre class="sourceCodeHardSkills"> 
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+                            </pre>
+                           
                           </div>
                         </div>
                       </div>
+                      
+                          <div class="accordion-item mt-2 border border-dark accordionHardskillsItem">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed accordionHardskillsButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-arrow-right"></i>&nbspjQuery
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <h1 class="h3 fw-normal mb-4 regular">jQuery</h1>
+                            <img class="img-fluid float-none me-2 mb-4 hardskillIcon" src="./img/icons/jQuery_large.png" alt="jQuery logo">
+                            <!-- img-fluid lub img-thumbnail -->
+                            
+                           <p class="myTextJustify regular">
+                            <b>name -v</b>: jQuery <br>
+                            <b>in three words:</b> JavaScript simplified.<br>
+                            <b>long story short:</b> jQuery is a JavaScript library: a set of ready-to-go pieces of code (a set of functions to invoke actually) we can use when we want to interact with a DOM element - to change it, hide it, expose it, animate it etc. In other words it's main purpose is to make the manipulation of DOM elements easier according to the rule: "Write less do more".<br>
+                            <b>opinion:</b> You really can achieve more with less code written. The syntax is straightforward and simple to learn, the mechanics is obvious and easy to apply. Another tool to have in a webdev-garage.<br><b>code sample:</b> The code below makes sure the page is fully loaded. Then it waits for an element (in our example: "p", a paragraph) to be clicked. When this happens the clicked element dissapears within 2000 miliseconds.</p>
+                           <pre class="sourceCodeHardSkills"> 
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).fadeOut(2000);
+  });
+});
+                            </pre>
+                           
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
             </div> 
             
             <div class="col-2 mt-2">
                 <ul class="hardskillsList p-0">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>5 Bootstrap</li>
+                    <li>1 HTML</li>
+                    <li>2 CSS</li>
+                    <li>3 JavaScript</li>
+                    <li>4 jQuery</li>
                 </ul>
                 
             </div>
