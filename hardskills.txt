@@ -12,7 +12,6 @@ the Test Plan, the Build (version),
 the Test Suite and last but not least: The Test Case with 5 steps.
 
 
-HTML, CSS, Bootstrap, jQuery, JavaScript
 XAMPP, phpMyAdmin, SQL, MySQL, PostgreSQL, MongoDB
 node.js, nmp
 CMD, PowerShell, UNIX-Linux
@@ -20,4 +19,3 @@ GIT, GitHub
 FileZilla, Putty
 TestLink, JIRA, BugZilla, Mantis, Postman
 PicPick, Sharex
-win notatnik, Notepad++, Brackets, VS Code

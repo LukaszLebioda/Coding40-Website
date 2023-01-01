@@ -893,7 +893,7 @@ hr
 @media (min-width: 1px) and (max-width: 991px) {
     .carousel-item
     {
-        height: 34rem;
+        height: 36rem;
         font-size: 12px;
     }
     .carousel-item h5
