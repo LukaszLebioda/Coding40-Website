@@ -249,7 +249,7 @@ const drozdSpiewak = {
 const nuroges = {
     sequence: 32,
     name: "Merganser (nurogęś)",
-    description: "",
+    description: "Great diver und underwater hunter. Quite common actually, however best to be observed in winter on not-frozen rivers, lakes and coastal waters.",
     rights: "Photo by Bengt Nyman, CC BY 2.0",
     photo: "./img/birds/nuroges.jpg"
 }
@@ -257,7 +257,7 @@ const nuroges = {
 const kruk = {
     sequence: 33,
     name: "Raven (kruk)",
-    description: "",
+    description: "One of the most intelligent animals, said to be capable of abstract thinking. A monogamous creature - a pair of ravens remains together until death sets them apart.",
     rights: "Photo by Frank Schulenburg, CC BY-SA 4.0",
     photo: "./img/birds/kruk.jpg"
 }
@@ -265,7 +265,7 @@ const kruk = {
 const jastrzab = {
     sequence: 34,
     name: "Northern goshawk (jastrząb)",
-    description: "",
+    description: "Hunts for medium-sized birds and mammals, especially for pigeons and pheasants. Although quite common, it's very difficult to spot as it uses every terrain obstacle to get cover.",
     rights: "Photo by Martin Mecnarowski, CC BY-SA 3.0",
     photo: "./img/birds/jastrzab.jpg"
 }
@@ -502,7 +502,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("7") || bp.includes("8") || bp.includes("9")) 
                         // size 13-18
-                        && (bp.includes("14") || bp.includes("15")) 
+                        && bp.includes("14") 
                         // color 19-27
                         && (bp.includes("21") || bp.includes("26") || bp.includes("27")) 
                         // numbers 28-33
@@ -521,7 +521,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("7") || bp.includes("11") || bp.includes("12")) 
                         // size 13-18
-                        && (bp.includes("15")) 
+                        && (bp.includes("14") || bp.includes("15")) 
                         // color 19-27
                         && (bp.includes("23") || bp.includes("44")) 
                         // numbers 28-33
@@ -559,7 +559,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("8") || bp.includes("9") || bp.includes("11") || bp.includes("12")) 
                         // size 13-18
-                        && bp.includes("15")
+                        && (bp.includes("14") || bp.includes("15"))
                         // color 19-27
                         && (bp.includes("23") || bp.includes("44")) 
                         // numbers 28-33
@@ -616,7 +616,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("8") || bp.includes("9") || bp.includes("10") || bp.includes("12")) 
                         // size 13-18
-                        && (bp.includes("13") || bp.includes("16"))
+                        && bp.includes("13")
                         // color 19-27
                         && (bp.includes("22") || bp.includes("23")) 
                         // numbers 28-33
@@ -673,7 +673,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("5") || bp.includes("6") || bp.includes("7") || bp.includes("11") || bp.includes("12")) 
                         // size 13-18
-                        && (bp.includes("14") || bp.includes("15"))
+                        && bp.includes("15")
                         // color 19-27
                         && (bp.includes("20") || bp.includes("21") || bp.includes("23")) 
                         // numbers 28-33
@@ -685,7 +685,7 @@ button.addEventListener("click", () => {
                             placeBird(mewaSmieszka.name, mewaSmieszka.description, mewaSmieszka.photo, mewaSmieszka.rights);
                         } 
 
-                      // 20 bazant
+                      // 20 bażant
                       if(
                         // season 1-4
                         (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
@@ -731,7 +731,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("5") || bp.includes("6")) 
                         // size 13-18
-                        && (bp.includes("15") || bp.includes("17"))
+                        && bp.includes("15")
                         // color 19-27
                         && (bp.includes("19") || bp.includes("20") || bp.includes("21") || bp.includes("22")) 
                         // numbers 28-33
@@ -769,7 +769,7 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && (bp.includes("7") || bp.includes("9")) 
                         // size 13-18
-                        && (bp.includes("14") || bp.includes("15"))
+                        && bp.includes("14") 
                         // color 19-27
                         && (bp.includes("22") || bp.includes("23")) 
                         // numbers 28-33
@@ -845,9 +845,9 @@ button.addEventListener("click", () => {
                         // location 5-12
                         && bp.includes("10")
                         // size 13-18
-                        && bp.includes("17")
+                        && (bp.includes("17") || bp.includes("18"))
                         // color 19-27
-                        && bp.includes("19") 
+                        && (bp.includes("19") || bp.includes("22")) 
                         // numbers 28-33
                         && bp.includes("28")
                         // activity 34-43
@@ -883,9 +883,9 @@ button.addEventListener("click", () => {
                             // location 5-12
                             && (bp.includes("7") || bp.includes("9") || bp.includes("10") || bp.includes("11") || bp.includes("12"))
                             // size 13-18
-                            && bp.includes("15")
+                            && (bp.includes("14") || bp.includes("15"))
                             // color 19-27
-                            && bp.includes("22")  
+                            && (bp.includes("22") || bp.includes("23"))  
                             // numbers 28-33
                             && bp.includes("28")
                             // activity 34-43
@@ -912,6 +912,63 @@ button.addEventListener("click", () => {
                             ) 
                             {
                                 placeBird(drozdSpiewak.name, drozdSpiewak.description, drozdSpiewak.photo, drozdSpiewak.rights);
+                            } 
+
+                         // 32 nurogęś
+                         if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("5") || bp.includes("6"))
+                            // size 13-18
+                            && bp.includes("17")
+                            // color 19-27
+                            && (bp.includes("21") || bp.includes("22") || bp.includes("23") || bp.includes("27"))  
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("29") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33"))
+                            // activity 34-43
+                            && (bp.includes("34") || bp.includes("36") || bp.includes("43"))
+                            ) 
+                            {
+                                placeBird(nuroges.name, nuroges.description, nuroges.photo, nuroges.rights);
+                            } 
+
+                        // 33 kruk
+                        if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("7") || bp.includes("8") || bp.includes("9") || bp.includes("10"))
+                            // size 13-18
+                            && bp.includes("17")
+                            // color 19-27
+                            && bp.includes("19")  
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30") || bp.includes("31"))
+                            // activity 34-43
+                            && (bp.includes("38") || bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(kruk.name, kruk.description, kruk.photo, kruk.rights);
+                            } 
+
+                        // 34 jastrząb
+                        if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("7") || bp.includes("8") || bp.includes("9"))
+                            // size 13-18
+                            && (bp.includes("15") || bp.includes("17"))
+                            // color 19-27
+                            && (bp.includes("19") || bp.includes("22") || bp.includes("23"))  
+                            // numbers 28-33
+                            && bp.includes("28")
+                            // activity 34-43
+                            && (bp.includes("38") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(jastrzab.name, jastrzab.description, jastrzab.photo, jastrzab.rights);
                             } 
 
 

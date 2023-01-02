@@ -286,13 +286,19 @@ p.regular
 }
 */
 
-.accordion-button /* style of closed button */
+.accordionJavaScriptButton /* style of closed button */
 {
     background-color: #c0d06f !important;
     font-size: 20px !important;
+    border-radius: 15px !important;
 }
 
-.accordion-button:not(.collapsed) /* style of opened button */
+.accordionJavaScriptButton:hover /* style of closed button */
+{
+    background-color: #b0c05e !important;
+}
+
+.accordionJavaScriptButton:not(.collapsed) /* style of opened button */
 {
     background-color: #c0d06f !important;
     font-size: 20px !important;
@@ -300,13 +306,13 @@ p.regular
 }
 
 /* accordion button icon when closed */
-.accordion-button.collapsed::after 
+.accordionJavaScriptButton.collapsed::after 
 {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     transform: scale(.9) !important;
 }
 /* accordion button icon when opened */
-.accordion-button:not(.collapsed)::after 
+.accordionJavaScriptButton:not(.collapsed)::after 
 {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
   
@@ -315,6 +321,7 @@ p.regular
 .accordion-item /* background for opened div */
 {
     background-color: #fff9bb; /* palegoldenrod */
+    border-radius: 15px !important;
 }
 
 /* --- ACCORDION TESTING SECTION --- */
@@ -427,13 +434,20 @@ p.regular
 
 .accordionHardskillsButton /* style of closed button */
 {
+    background-color: lightgrey !important;
+    font-size: 20px !important;
+    border-radius: 15px !important;
+}
+
+.accordionHardskillsButton:hover /* style of button hovered */
+{
     background-color: silver !important;
     font-size: 20px !important;
 }
 
 .accordionHardskillsButton:not(.collapsed) /* style of opened button */
 {
-    background-color: silver !important;
+    background-color: lightgrey !important;
     font-size: 20px !important;
     color: black !important;
 }
@@ -454,12 +468,31 @@ p.regular
 .accordionHardskillsItem /* background for opened div */
 {
     background-color: #F0F0F0; /* palegoldenrod */
+    border-radius: 15px !important;
 }
 
 .sourceCodeHardSkills
 {
     font-family: Courier New;
     text-align: left!important;
+}
+
+@media (min-width: 50px) and (max-width: 350px) {
+    .sourceCodeHardSkills
+    {
+    font-size: 10px;
+    padding: 10px;
+    
+    }
+}
+
+@media (min-width: 351px) and (max-width: 575px) {
+    .sourceCodeHardSkills
+    {
+    font-size: 12px;
+    padding: 10px;
+    
+    }
 }
 
 
@@ -695,7 +728,7 @@ footer
 /* div opisowy */
 .softSkillsDes
 {
-    background-color: snow;
+    background-color: #F0F0F0;
     border: 1px solid;
     border-radius: 15px;
     min-height: 300px;
@@ -703,7 +736,7 @@ footer
 /* div card */
 .softSkillsCard
 {
-    background-color: snow;
+    background-color: #F0F0F0;
     width: 190px;
     max-height: 300px;
     border-radius: 15px;
@@ -714,7 +747,7 @@ footer
 {
     height: 138px;
     margin-bottom: 10px;
-    background-color: #C0D06F;
+    background-color: silver; /* #C0D06F; */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
