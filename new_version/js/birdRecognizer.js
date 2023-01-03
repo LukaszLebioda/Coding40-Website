@@ -270,6 +270,30 @@ const jastrzab = {
     photo: "./img/birds/jastrzab.jpg"
 }
 
+const mysikrolik = {
+    sequence: 35,
+    name: "Goldcrest (mysikrólik)",
+    description: "That tiny little creature has a big heart. It is very resistant to frost and can deal with extremely low temperatures.",
+    rights: "Photo by Francis C. Franklin, CC-BY-SA-3.0",
+    photo: "./img/birds/mysikrolik.jpg"
+}
+
+const jemioluszka = {
+    sequence: 36,
+    name: "Bohemian waxwing (jemiołuszka)",
+    description: "A winter visitor from far Siberia / Scandinavia. Tends to gather in numbers and invade rowans and mistletoes in search for delicious berries.",
+    rights: "Photo by Lisa Hupp/USFWS, Public Domain",
+    photo: "./img/birds/jemioluszka.jpg"
+}
+
+// const perkozek = {
+//     sequence: 37,
+//     name: "Little grebe (perkozek)",
+//     description: "",
+//     rights: "Photo by Andreas Trepte, CC BY-SA 2.5",
+//     photo: "./img/birds/perkozek.jpg"
+// }
+
 // last1
 
 // ---------------------------------------------------------------------
@@ -970,6 +994,45 @@ button.addEventListener("click", () => {
                             {
                                 placeBird(jastrzab.name, jastrzab.description, jastrzab.photo, jastrzab.rights);
                             } 
+
+                           // 35 mysikrólik
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && bp.includes("10")
+                            // size 13-18
+                            && bp.includes("16")
+                            // color 19-27
+                            && (bp.includes("23") || bp.includes("24") || bp.includes("25") || bp.includes("27"))  
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30") || bp.includes("31"))
+                            // activity 34-43
+                            && (bp.includes("37") || bp.includes("39") || bp.includes("42"))
+                            ) 
+                            {
+                                placeBird(mysikrolik.name, mysikrolik.description, mysikrolik.photo, mysikrolik.rights);
+                            } 
+
+                            // 36 jemiołuszka
+                           if(
+                            // season 1-4
+                            (bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("8") || bp.includes("9") || bp.includes("12"))
+                            // size 13-18
+                            && (bp.includes("13") || bp.includes("14"))
+                            // color 19-27
+                            && (bp.includes("22") || bp.includes("23") || bp.includes("26") || bp.includes("27"))  
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33"))
+                            // activity 34-43
+                            && (bp.includes("37") || bp.includes("39") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(jemioluszka.name, jemioluszka.description, jemioluszka.photo, jemioluszka.rights);
+                            } 
+                            
 
 
                         // last2

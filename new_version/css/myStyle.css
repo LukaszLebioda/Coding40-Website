@@ -336,6 +336,12 @@ p.regular
 {
     background-color: lightskyblue !important;
     font-size: 20px !important;
+    border-radius: 15px !important;
+}
+
+.accordionTestingButton:hover
+{
+    background-color: #76bdea !important;
 }
 
 .accordionTestingButton:not(.collapsed) /* style of opened button */
@@ -403,6 +409,23 @@ p.regular
         font-size: 14px;
     }
 }
+
+/* for every accordion button */
+@media (min-width: 1px) and (max-width: 991px) {
+    .accordion-item button
+    {
+        font-size: 15px !important;
+    }
+    .accordion-item button:hover
+    {
+        font-size: 15px !important;
+    }
+    .accordion-item button:not(.collapsed)
+    {
+        font-size: 15px !important;
+    }
+}
+
 
 /* ---- ACCORDION HARDSKILLS SECTION ----- */
 /*
