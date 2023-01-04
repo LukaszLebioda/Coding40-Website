@@ -375,19 +375,19 @@ p.regular
 }
 
 /* source code in pre */
-#sourceCodeClipboard
+.sourceCodeClipboard
 {
     font-size: 14px;
 }
 
 @media (min-width: 50px) and (max-width: 330px) {
-    #sourceCodeClipboard
+    .sourceCodeClipboard
     {
         font-size: 4px;
     }
 }
 @media (min-width: 331px) and (max-width: 574px) {
-    #sourceCodeClipboard
+    .sourceCodeClipboard
     {
         font-size: 8px;
     }
@@ -400,7 +400,7 @@ p.regular
     }
 }
 @media (min-width: 575px) and (max-width: 991px) {
-    #sourceCodeClipboard
+    .sourceCodeClipboard
     {
         font-size: 11px;
     }
@@ -525,9 +525,10 @@ p.regular
 .bg-button
 {
     background: lightgreen;
-    font-size: 24px;
+    font-size: 1.1rem;
     border: 3px solid #fff9bb;
     border-radius: 12px;
+    transition: 0.3s background-color;
 }
     
 /* zwykły button active */
@@ -732,12 +733,10 @@ table tr:hover td
     }
 }
 
-/* ------------ footer ------------------- */
+/* ------------ FOOTER ------------------- */
 footer
 {
     color: white;
-}
-
 }
 
 /* ------------ soft skills section --------*/
@@ -981,4 +980,3 @@ hr
     border: 1px solid black;
   }
 
-  
