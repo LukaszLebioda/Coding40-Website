@@ -36,6 +36,7 @@ main
     position: relative;
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    border-radius: 10px;
 }
 
 /* features added to masthead (text, opacity...) */
@@ -44,7 +45,21 @@ main
     background-color: rgba(0,0,0,0.6);
     height: 100%;
     width: 100%;
+    border-radius: 10px;
 }
+
+.myHeader
+{
+    background-color: snow;
+    border: 1px solid #C0D06F;
+    border-radius: 10px;
+}
+
+.myAside
+{
+    border-radius: 10px;
+}
+
 
 /* in the showcase */
 h1 
@@ -526,7 +541,6 @@ p.regular
 {
     background: lightgreen;
     font-size: 1.1rem;
-    border: 3px solid #fff9bb;
     border-radius: 12px;
     transition: 0.3s background-color;
 }
@@ -541,7 +555,6 @@ p.regular
 .bg-button:hover
 {
     background: limegreen;
-    border: 3px solid limegreen;
 }
 
 /* fieldset */
@@ -979,4 +992,31 @@ hr
     height: 100%;
     border: 1px solid black;
   }
+
+  /* --------------- CONTACT SECTION ---------------*/
+#myForm {
+    box-sizing: border-box;
+    margin: 3rem auto;
+    max-width: 25rem;
+}
+
+#myForm input,
+#myForm textarea {
+    padding: 0.4rem;
+    border: 1px solid #bbb;
+    display: block;
+    width: 100%;
+    color: #666;
+}
+
+#myForm label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+
+
+
 
