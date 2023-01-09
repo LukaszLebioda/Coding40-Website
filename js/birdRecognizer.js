@@ -286,15 +286,39 @@ const jemioluszka = {
     photo: "./img/birds/jemioluszka.jpg"
 }
 
-// const perkozek = {
-//     sequence: 37,
-//     name: "Little grebe (perkozek)",
-//     description: "",
-//     rights: "Photo by Andreas Trepte, CC BY-SA 2.5",
-//     photo: "./img/birds/perkozek.jpg"
+const perkozek = {
+    sequence: 37,
+    name: "Little grebe (perkozek)",
+    description: "It's one of the smallest aquatic birds and often becomes a predator's interest. While escaping tends to run shortly on the surface of the water, then dives into it.",
+    rights: "Photo by Andreas Trepte, CC BY-SA 2.5",
+    photo: "./img/birds/perkozek.jpg"
+}
+
+const slowikSzary = {
+    sequence: 38,
+    name: "Thrush nightingale (słowik szary)",
+    description: "One of the best singers out there. It's songs spread far away in the evening and through the night. A bird loved and revered by poets and others of romantic nature.",
+    rights: "Photo by cheloVechek / talk - Own work, CC BY-SA 4.0",
+    photo: "./img/birds/slowikszary.jpg"
+}
+
+// const kukulka = {
+//     sequence: 39,
+//     name: "Cuckoo (kukułka)",
+//     description: "Many heard it's characteristic cuckooing, very few had actually chance to spot it. It secretly lays eggs into someone else's nests and let its chicks be raised by others.",
+//     rights: "Photo by Bogbumper, GFDL 1.2",
+//     photo: "./img/birds/kukulka.jpg"
 // }
 
-// last1
+// const plomykowka = {
+//     sequence: 40,
+//     name: "Barn owl (płomykówka)",
+//     description: "Associated with human settlements. Tends to inhabit attics of old churches, abandoned buldings etc. It's easier to hear it than to spot it as it is only active in the night.",
+//     rights: "Photo by Peter K Burian, CC BY 4.0",
+//     photo: "./img/birds/plomykowka.jpg"
+// }
+
+// next
 
 // ---------------------------------------------------------------------
 
@@ -421,7 +445,7 @@ button.addEventListener("click", () => {
                         // color 19-27
                         && (bp.includes("22") || bp.includes("23")) 
                         // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32")) 
+                        && (bp.includes("30") || bp.includes("31") || bp.includes("32")) 
                         // activity 34-43
                         && (bp.includes("37") || bp.includes("39") || bp.includes("40") || bp.includes("42"))) 
                         {
@@ -439,7 +463,7 @@ button.addEventListener("click", () => {
                         // color 19-27
                         && (bp.includes("22") || bp.includes("23")) 
                         // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
+                        && (bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
                         && (bp.includes("37") || bp.includes("39") || bp.includes("40") || bp.includes("42"))) 
                         {
@@ -1032,10 +1056,48 @@ button.addEventListener("click", () => {
                             {
                                 placeBird(jemioluszka.name, jemioluszka.description, jemioluszka.photo, jemioluszka.rights);
                             } 
+
+                           // 37 perkozek
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && bp.includes("5")
+                            // size 13-18
+                            && bp.includes("14")
+                            // color 19-27
+                            && (bp.includes("19") || bp.includes("23"))  
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("29") || bp.includes("30"))
+                            // activity 34-43
+                            && (bp.includes("34") || bp.includes("35"))
+                            ) 
+                            {
+                                placeBird(perkozek.name, perkozek.description, perkozek.photo, perkozek.rights);
+                            } 
+
+                            // 38 słowik szary
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2"))
+                            // location 5-12
+                            && (bp.includes("7") || bp.includes("9"))
+                            // size 13-18
+                            && bp.includes("13")
+                            // color 19-27
+                            && (bp.includes("22") || bp.includes("23"))
+                            // numbers 28-33
+                            && bp.includes("28") 
+                            // activity 34-43
+                            && (bp.includes("39") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(slowikSzary.name, slowikSzary.description, slowikSzary.photo, slowikSzary.rights);
+                            } 
                             
 
 
-                        // last2
+                        // last
                     
 
                         

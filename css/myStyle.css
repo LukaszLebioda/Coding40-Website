@@ -1021,6 +1021,7 @@ hr
 
     box-sizing: border-box;
     margin: 4rem auto;
+    margin-top: 2rem;
     max-width: 25rem;
 }
 
@@ -1045,6 +1046,26 @@ hr
         width: 80%;
     }
 }
+
+#confirmationSpan
+{
+    font-size: 25px;
+    color: blue;
+}
+@media (min-width: 400px) and (max-width: 500px) {
+    #confirmationSpan
+    {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1px) and (max-width: 399px) {
+    #confirmationSpan
+    {
+        font-size: 15px;
+    }
+}
+
+ 
 
 
 
