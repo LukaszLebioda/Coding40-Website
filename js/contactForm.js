@@ -11,6 +11,9 @@ let alertMessage = document.getElementById("alertMessage");
 
 let contactFormButton = document.getElementById("contactFormButton");
 
+// const reg = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$/;
+
+const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
 document
       .getElementById("myForm")
@@ -39,7 +42,17 @@ document
               document.getElementById("alertEmail").innerHTML = "";
               document.getElementById("email").style.border = "1px solid #bbb";
             })
-            
+           
+        } else if (!reg.test(email.value)) {
+                
+          document.getElementById("alertEmail").innerHTML = "I think there are some typos in the email address You've provided...";
+          document.getElementById("email").style.border = "1px solid red";
+
+          email.addEventListener("click", () => {
+            document.getElementById("alertEmail").innerHTML = "";
+            document.getElementById("email").style.border = "1px solid #bbb";
+          })
+
         } else if (message.value == "") {
 
             document.getElementById("alertMessage").innerHTML = "Please type at least few UTF-8 characters :)";
