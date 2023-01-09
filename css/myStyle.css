@@ -48,18 +48,44 @@ main
     border-radius: 10px;
 }
 
+/* for motto beneath masthead */
+
 .myHeader
 {
-    background-color: snow;
+    background-color: whitesmoke;
     border: 1px solid #C0D06F;
     border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+@media (min-width: 1px) and (max-width: 768px) {
+    .myHeader
+    {
+        max-height: 95px;
+    }
+    .myHeader p 
+    {
+        font-size: 13px !important;
+    }
+    .myHeader h1 
+    {
+        font-size: 20px !important;
+    }
+}
+
+/* for quotation */
 .myAside
 {
     border-radius: 10px;
+    font-size: 16px;
 }
-
+@media (min-width: 1px) and (max-width: 768px) {
+    .myAside 
+    {
+        font-size: 13px;
+    }
+}
 
 /* in the showcase */
 h1 
@@ -73,7 +99,8 @@ h1.regular {
     font-size: 40px;
     font-weight: 400;
     color: #b0c05d; /* było: #C0D06F */ 
-    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 /* in the showcase */
@@ -89,6 +116,7 @@ p.regular
 {
     font-size: 16px;
     color: black;
+    margin-top: 5px;
 }
 
 @media (min-width: 50px) and (max-width: 575px) {
@@ -972,11 +1000,6 @@ hr
 
 /* -------------- EXPERIENCE SECTION ---------------- */
 
-
-
-
-/* -------------- EXPERIENCE SECTION ---------------- */
-
 .iframeDiv {
     position: relative;
     overflow: hidden;
@@ -995,8 +1018,9 @@ hr
 
   /* --------------- CONTACT SECTION ---------------*/
 #myForm {
+
     box-sizing: border-box;
-    margin: 3rem auto;
+    margin: 4rem auto;
     max-width: 25rem;
 }
 
@@ -1015,6 +1039,16 @@ hr
     margin-bottom: 0.5rem;
     margin-top: 0.7rem;
 }
+@media (min-width: 1px) and (max-width: 500px) {
+    #myForm
+    {
+        width: 80%;
+    }
+}
+
+
+
+
 
 
 

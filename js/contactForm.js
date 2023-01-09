@@ -22,7 +22,7 @@ document
 
         if(name.value == ""){
 
-            document.getElementById("alertName").innerHTML = "How should I call You?";
+            document.getElementById("alertName").innerHTML = "What's Your name?";
             document.getElementById("name").style.border = "1px solid red";
 
             name.addEventListener("click", () => {
