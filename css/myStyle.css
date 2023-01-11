@@ -52,7 +52,7 @@ main
 
 .myHeader
 {
-    background-color: whitesmoke;
+    background-color: #FFF5EE;
     border: 1px solid #C0D06F;
     border-radius: 10px;
     padding-left: 10px;
@@ -66,7 +66,7 @@ main
     }
     .myHeader p 
     {
-        font-size: 13px !important;
+        font-size: 12px !important;
     }
     .myHeader h1 
     {
@@ -119,6 +119,21 @@ p.regular
     margin-top: 5px;
 }
 
+p.myTextJustify
+{
+    text-align: justify;
+}
+
+/* do opisów w skillach */
+@media (max-width: 575px)
+{
+    p.myTextJustify
+    {
+        margin: 40px 20px;
+        text-align: left;
+    }
+}
+
 @media (min-width: 50px) and (max-width: 575px) {
     footer {
         font-size: 14px;
@@ -136,7 +151,7 @@ p.regular
         font-size: 25px;
     }
     p.regular {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
@@ -209,24 +224,6 @@ p.regular
     }
     p {
         font-size: calc(0.525rem + 3.3vw);
-    }
-}
-
-/* do opisów w skillach */
-.myTextJustify
-{
-    text-align: justify;
-    font-size: 16px;
-}
-
-/* do opisów w skillach */
-@media (max-width: 575px)
-{
-    .myTextJustify
-    {
-        margin: 40px 20px;
-        text-align: left;
-        font-size: 15px;
     }
 }
 
@@ -321,7 +318,8 @@ p.regular
     border-bottom: 0 dotted white;
 }
 
-/* --- ACCORDION JAVA SCRIPT SECTION --- */
+/* --- JAVA SCRIPTS SECTION --- */
+
 /*
 .accordion (for general background)
 {
@@ -632,7 +630,7 @@ table tr:hover td
 {
     width: 180px; /*or any width you like, but it must be defined*/
     height: 180px; /*or any height you like */
-    background-color: palegoldenrod; /* było #dcfce7; */
+    background-color: #FFF5EE; 
     background-size: cover /*very important as it covers the element within the defined width x height*/;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -641,6 +639,7 @@ table tr:hover td
     padding: 10px;
     border-radius: 8px;
     display: block;
+    border: 1px solid #C0D06F; 
 }
 
 /* stylizacja poszczególnych dzieci menuTile */
@@ -658,21 +657,21 @@ table tr:hover td
 
 .menuTile a:hover
 {
-    background-color: khaki; /* było #cbebd6; */ 
+    background-color: #E9DCC9!important;  
     cursor: pointer;
     transform: scale(1.03);
     border-radius: 8px;
-    border: 1px solid;
+    border: 1px solid #C0D06F !important;
 }
 
 .menuTile h3
 {
    padding-top: 1px; 
-   font-size: 25px;
+   font-size: 22px;
 }
 .menuTile p
 {
-   font-size: 15px;
+   font-size: 13px;
    color: black;
    padding-left: 5px;
    padding-right: 5px;
@@ -690,66 +689,11 @@ table tr:hover td
     padding-right: 40px;
 }
 
-/* gdybyśmy chcieli zróżnicować menuTiles i dodać osobne kolory albo obrazki tła */
-/* 
-.tile1
-{
-    background-image: url('/img/test.jpg');
-}
-.tile2
-{
-    background-image: url('/img/test.jpg');
-}
-.tile3
-{
-    background-image: url('/img/test.jpg');
-}
-.tile4
-{
-    background-image: url('/img/test.jpg');
-}
-/*
-
-/* gdybyśmy chcieli dołożyć przycisk read more */
-/* <a href="">READ MORE</a> */
-/*
-.tileMenu a
-{
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 20px 50px;
-    text-decoration: none;
-}
-/*
-.tileMenu:hover
-{
-    background-color: rgb(62,62,62);
-    color: white;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-}
-*/
-
-/* ------- resize of index tiles section-------- */
-
-.menuTile a:hover
-{
-    background-color: khaki; /* było #cbebd6; */ 
-    cursor: pointer;
-    transform: scale(1.03);
-    border-radius: 8px;
-    border: 1px solid;
-}
-
 @media (min-width: 50px) and (max-width: 575px) {
     .menuTile
     {
-    width: 130px; /*or any width you like, but it must be defined*/
-    height: 130px; /*or any height you like */
+    width: 130px; 
+    height: 130px; 
     }
     .menuTile a
     {
@@ -771,6 +715,34 @@ table tr:hover td
     .menuTile i
     {
         font-size: 22px;
+    }
+}
+@media (min-width: 576px) and (max-width: 1202px) {
+    .menuTile
+    {
+    width: 160px; 
+    height: 160px; 
+    }
+    .menuTile a
+    {
+    width: 160px;
+    height: 160px;
+    }
+    .menuTile h3 
+    { 
+       font-size: 18px;
+    }  
+    .menuTile h5 
+    { 
+       font-size: 18px;
+    }
+    .menuTile p
+    {
+       font-size: 13px;
+    }
+    .menuTile i
+    {
+        font-size: 24px;
     }
 }
 
@@ -947,7 +919,7 @@ hr
     }
 }
 
-/* -------------CAROUSEL SECTION ------*/
+/* ------------- CAROUSEL SECTION FOR BIRD APP ------*/
 /* only for radio button in birdRecognizer */
 .divBirdRadioButtons input[type="radio"]{
   margin: 0 0 20px 0;
@@ -969,8 +941,8 @@ hr
     align-items: center;
 }
 
-/* carousel-items and carousel-container */
-.carousel-item
+/* carousel-items and carousel-container for BIRD RECOGNIZER */
+.birdCarousel
 {
     height: 42rem;
     background: khaki;
@@ -978,23 +950,191 @@ hr
     
 }
 
-.carousel-container
+/* .carousel-container
 {
     bottom: 0;
     left: 0;
     right: 0;
     padding-bottom: 50px;
-}
+} */
 
-@media (min-width: 1px) and (max-width: 991px) {
-    .carousel-item
+@media (min-width: 331px) and (max-width: 991px) {
+    .birdCarousel
     {
         height: 36rem;
         font-size: 12px;
     }
-    .carousel-item h5
+}
+
+@media (min-width: 1px) and (max-width: 330px) {
+    .birdCarousel
     {
-        font-size: 15px;
+        height: 36rem;
+        font-size: 9px;
+    }
+}
+
+/* ----------- carousel for LIFECYCLE & MANIFESTO (HOME PAGE) -------*/
+
+.divCarousel 
+{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.indexCarouselLifecycle
+{
+    width: 70%;
+    margin: auto;
+    height: auto;
+}
+
+.indexCarouselManifesto
+{
+    height: auto;
+    width: 70%;
+    margin: auto;
+}
+
+/* only for non-active items with more content */
+.lifecycleItem
+{
+    height: 180px;
+}
+.manifestoItem
+{
+    height: 440px;
+}
+
+.carouselPhoto
+{
+    border-radius: 10px;
+}
+
+/* next - previous buttons */
+.carouselButton
+{
+    position: absolute;
+    top: 0;
+    bottom: auto;
+
+}
+/* div containing all the items + carousel next - prev buttons */
+.carouselPosition
+{
+    position: relative;
+}
+
+@media (min-width: 1px) and (max-width: 330px) {
+    .divCarousel 
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .divCarousel h5
+    {
+        font-size: 16px;
+    }
+    .divCarousel figcaption
+    {
+        font-size: 12px;
+    }
+    .divCarousel p
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+    .lifecycleItem
+    {
+    height: 280px;
+    }
+    .manifestoItem
+    {
+    height: 340px;
+    }
+}
+@media (min-width: 331px) and (max-width: 434px) {
+    .divCarousel 
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .divCarousel p
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+    .divCarousel h5
+    {
+        font-size: 18px;
+    }
+    .divCarousel figcaption
+    {
+        font-size: 12px;
+    }
+    .lifecycleItem
+    {
+    height: 250px;
+    }
+    .manifestoItem
+    {
+    height: 340px;
+    }
+}
+@media (min-width: 435px) and (max-width: 575px) {
+    .divCarousel 
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .divCarousel p
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+    .manifestoItem
+    {
+    height: 400px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .divCarousel 
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .divCarousel p
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .manifestoItem
+    {
+    height: 400px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .divCarousel 
+    {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .manifestoItem
+    {
+    height: 420px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .divCarousel 
+    {
+        margin-left: 170px;
+        margin-right: 170px;
     }
 }
 
@@ -1061,7 +1201,7 @@ hr
 @media (min-width: 1px) and (max-width: 399px) {
     #confirmationSpan
     {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 

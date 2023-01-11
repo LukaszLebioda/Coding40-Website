@@ -302,21 +302,37 @@ const slowikSzary = {
     photo: "./img/birds/slowikszary.jpg"
 }
 
-// const kukulka = {
-//     sequence: 39,
-//     name: "Cuckoo (kukułka)",
-//     description: "Many heard it's characteristic cuckooing, very few had actually chance to spot it. It secretly lays eggs into someone else's nests and let its chicks be raised by others.",
-//     rights: "Photo by Bogbumper, GFDL 1.2",
-//     photo: "./img/birds/kukulka.jpg"
-// }
+const kukulka = {
+    sequence: 39,
+    name: "Cuckoo (kukułka)",
+    description: "Many heard it's characteristic cuckooing, very few had actually chance to spot it. It secretly lays eggs into someone else's nests and let its chicks be raised by others.",
+    rights: "Photo by Bogbumper, GFDL 1.2",
+    photo: "./img/birds/kukulka.jpg"
+}
 
-// const plomykowka = {
-//     sequence: 40,
-//     name: "Barn owl (płomykówka)",
-//     description: "Associated with human settlements. Tends to inhabit attics of old churches, abandoned buldings etc. It's easier to hear it than to spot it as it is only active in the night.",
-//     rights: "Photo by Peter K Burian, CC BY 4.0",
-//     photo: "./img/birds/plomykowka.jpg"
-// }
+const plomykowka = {
+    sequence: 40,
+    name: "Barn owl (płomykówka)",
+    description: "Associated with human settlements. Tends to inhabit attics of old churches, abandoned buldings etc. It's easier to hear it than to spot it as it is only active in the night.",
+    rights: "Photo by Peter K Burian, CC BY 4.0",
+    photo: "./img/birds/plomykowka.jpg"
+}
+
+const trzciniak = {
+    sequence: 41,
+    name: "Great reed warbler (trzciniak)",
+    description: "This little creature can be really noisy when announcing its presence at the reed-overgrown lakeshores. Its more like making noise rather than singing, but it gets the job done.",
+    rights: "Photo from https://www.wattpad.com/",
+    photo: "./img/birds/trzciniak.jpg"
+}
+
+const trzcinniczek = {
+    sequence: 42,
+    name: "Common reed warbler (trzcinniczek)",
+    description: "A smaller version of 'great reed warbler', similarly noisy and well-adapted to live among shore reeds. If You wonder which species is being taken advantage of by cuckoos, here's Your answer.",
+    rights: "Photo by Furrfu/Kurpfalzbilder.de, CC BY-SA 3.0",
+    photo: "./img/birds/trzcinniczek.jpg"
+}
 
 // next
 
@@ -573,7 +589,7 @@ button.addEventListener("click", () => {
                         // color 19-27
                         && (bp.includes("23") || bp.includes("44")) 
                         // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
+                        && (bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
                         // activity 34-43
                         && (bp.includes("38") || bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
                         ) 
@@ -770,8 +786,7 @@ button.addEventListener("click", () => {
                         {
                             placeBird(zuraw.name, zuraw.description, zuraw.photo, zuraw.rights);
                         } 
-
-                    
+                 
                     // 22 perkoz dwuczuby
                     if(
                         // season 1-4
@@ -804,7 +819,7 @@ button.addEventListener("click", () => {
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("30")) 
                         // activity 34-43
-                        && (bp.includes("37") || bp.includes("39")|| bp.includes("42")|| bp.includes("45"))
+                        && (bp.includes("37") || bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))
                         ) 
                         {
                             placeBird(rudzik.name, rudzik.description, rudzik.photo, rudzik.rights);
@@ -933,7 +948,7 @@ button.addEventListener("click", () => {
                             // size 13-18
                             && (bp.includes("14") || bp.includes("15"))
                             // color 19-27
-                            && (bp.includes("22") || bp.includes("23"))  
+                            && bp.includes("22")  
                             // numbers 28-33
                             && bp.includes("28")
                             // activity 34-43
@@ -1083,9 +1098,9 @@ button.addEventListener("click", () => {
                             // location 5-12
                             && (bp.includes("7") || bp.includes("9"))
                             // size 13-18
-                            && bp.includes("13")
+                            && (bp.includes("13") || bp.includes("46"))
                             // color 19-27
-                            && (bp.includes("22") || bp.includes("23"))
+                            && (bp.includes("22") || bp.includes("23") || bp.includes("47"))
                             // numbers 28-33
                             && bp.includes("28") 
                             // activity 34-43
@@ -1093,6 +1108,82 @@ button.addEventListener("click", () => {
                             ) 
                             {
                                 placeBird(slowikSzary.name, slowikSzary.description, slowikSzary.photo, slowikSzary.rights);
+                            } 
+
+                            // 39 kukułka
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3"))
+                            // location 5-12
+                            && (bp.includes("8") || bp.includes("9"))
+                            // size 13-18
+                            && (bp.includes("14") || bp.includes("15"))
+                            // color 19-27
+                            && bp.includes("23")
+                            // numbers 28-33
+                            && bp.includes("28") 
+                            // activity 34-43
+                            && (bp.includes("39") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(kukulka.name, kukulka.description, kukulka.photo, kukulka.rights);
+                            } 
+
+                            // 40 płomykówka
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("7") || bp.includes("9") || bp.includes("11") || bp.includes("12"))
+                            // size 13-18
+                            &&(bp.includes("14") || bp.includes("15") || bp.includes("46"))
+                            // color 19-27
+                            && bp.includes("47")
+                            // numbers 28-33
+                            && bp.includes("28") 
+                            // activity 34-43
+                            && (bp.includes("39") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(plomykowka.name, plomykowka.description, plomykowka.photo, plomykowka.rights);
+                            } 
+
+                            // 41 trzciniak
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2"))
+                            // location 5-12
+                            && bp.includes("5")
+                            // size 13-18
+                            &&(bp.includes("13") || bp.includes("14"))
+                            // color 19-27
+                            && bp.includes("22")
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30")) 
+                            // activity 34-43
+                            && (bp.includes("35") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(trzciniak.name, trzciniak.description, trzciniak.photo, trzciniak.rights);
+                            } 
+
+                            // 42 trzcinniczek
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2"))
+                            // location 5-12
+                            && bp.includes("5")
+                            // size 13-18
+                            &&(bp.includes("16") || bp.includes("13"))
+                            // color 19-27
+                            && bp.includes("22")
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30")) 
+                            // activity 34-43
+                            && (bp.includes("35") || bp.includes("42") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(trzcinniczek.name, trzcinniczek.description, trzcinniczek.photo, trzcinniczek.rights);
                             } 
                             
 

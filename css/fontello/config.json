@@ -119,6 +119,12 @@
       "css": "bed",
       "code": 62006,
       "src": "fontawesome"
+    },
+    {
+      "uid": "c9b928dc82d7d77033644fcf59dca3b3",
+      "css": "flashlight",
+      "code": 59398,
+      "src": "entypo"
     }
   ]
 }

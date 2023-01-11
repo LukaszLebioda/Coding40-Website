@@ -45,7 +45,7 @@ document
            
         } else if (!reg.test(email.value)) {
                 
-          document.getElementById("alertEmail").innerHTML = "I think there are some typos in the email address You've provided...";
+          document.getElementById("alertEmail").innerHTML = "There might be a typo in the email address You've provided...";
           document.getElementById("email").style.border = "1px solid red";
 
           email.addEventListener("click", () => {
@@ -55,7 +55,7 @@ document
 
         } else if (message.value == "") {
 
-            document.getElementById("alertMessage").innerHTML = "Please type at least few UTF-8 characters :)";
+            document.getElementById("alertMessage").innerHTML = "Please type at least one UTF-8 character :)";
             document.getElementById("message").style.border = "1px solid red";
 
             message.addEventListener("click", () => {

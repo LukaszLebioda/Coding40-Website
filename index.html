@@ -54,10 +54,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">MyProjects</a>
                     <div class="dropdown-menu" aria-labelledby="subMenu">
-                        <a class="dropdown-item" id="dropMenu" href="html_webdesign.html">Web design</a>
-                        <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">Java Scripts</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">JS Apps</a>
                         <a class="dropdown-item" id="dropMenu" href="html_testing.html">Testing</a>
                         <a class="dropdown-item" id="dropMenu" href="html_serverside.html">Server</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_webdesign.html">Design</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_experience.html">Implementation</a>
                     </div>
                 </li>
                 
@@ -105,7 +106,7 @@
         
             <section class="leisurePhotos">
 				
-                <aside class="col-12 bg-myQuotationColor mt-4 p-3"><i>'There is no spoon'</i></aside>
+                <aside class="col-12 bg-myQuotationColor mt-4 p-3 myAside"><i>'If you start me up, If you start me up I'll never stop', The Rolling Stones</i></aside>
         
 				<header class="my-3"> 
 				
@@ -118,7 +119,7 @@
                         <div class="row">
                             <div>
                                 <h1 class="fw-bold text-uppercase">Start coding</h1>
-                                <p>Where to start</p>
+                                <p>Where to start...</p>
                                 </div>
                             </div>
                     </div>	
@@ -129,108 +130,196 @@
 				
                 <section class="homeSection mb-3">
                     
-                     <header class="border border-dark">
+                     <header class="myHeader">
 					
-                        <h1 class="regular">A Story of a Lifechange</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <h1 class="regular">A Story of a change</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
                         <p class="regular">This page tells a story of a project I made not to regret ever again I hadn't done it sooner.</p>
                        
 				    </header>
                     
                 </section>
-               		
-                <div class="row g-0"> 
-                <!-- no-gutters: <div class="row g-0"> -->
-                
-                  <div class="col-sm-12 col-md-6 descriptionHome">
+
+                <div class="divCarousel">
+                <h1 class="regular my-5">Lifecycle</h1>
+
+                    <div id="myCarousel2" class="carousel slide carousel-dark mb-4 carouselPosition" data-bs-interval="false">
+                        <div class="carousel-indicators" style="display: none;">
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                    
+                    <div class="carousel-inner indexCarouselLifecycle">
+                     
+                    <div class="carousel-item active">   
+                        <h5>There are 6 stages of sotware development</h5>
+                        <p class="regular">Well... It depends, but mostly there are.</p>   
+                    </div>
+
+                    <div class="carousel-item lifecycleItem">
+                        <h5>#1 Analysis</h5>
+                        <p class="regular">I fell into this vast IT-ocean, I'm in the middle of nowhere, I don't know what to do, and dont't know where to go. I need a raft and a paddle. I need a website to forge an order out of all that chaos my mind was turned into.</p>   
+                    </div>
+                      
+                      <div class="carousel-item lifecycleItem">
+                        <h5>#2 Design</h5>
+                       <p class="regular">What is required? Strength to change what can be changed, humility to accept unchangeable and enough reason to tell the difference. And some tools'n'software. Some hardskills, some softskills as well. But most of all: time. A hell of a lot of time.</p>
+                    </div>
                         
-                      <h5>Analysis</h5>
-                       <p class="regular">I fell into this vast IT-ocean, I'm in the middle of nowhere, I don't know what to do. I need a raft and a paddle. I need a website to forge an order out of all that chaos I turned my mind into.</p>   
-                         
+                    <div class="carousel-item lifecycleItem">
+                        <h5>#3 Development</h5>
+                       <p class="regular">A beginner's code is like a little brother - bit annoying, bit messy, sometimes unpredictive, sometimes repetitive. But in the end of the day You keep playing with it and see it grows up. It might become somebody. Sky is the limit! Or at least they say it is...</p>
                     </div>
-                  
-                   <div class="col-sm-12 col-md-6 descriptionHome">
                         
-                       <h5>Design</h5>
-                       <p class="regular">I need strength to change what can be changed, humility to accept unchangeable and reason to always tell the difference. And some tools'n'software as well.</p>   
-                         
-                    </div>
-                   
-                    <div class="col-sm-12 col-md-6 descriptionHome">
-
-                       <h5>Development</h5>
-                       <p class="regular">A beginner's code can be like a little brother - bit annoying, bit messy, sometimes unpredictive, sometimes repetitive, but in the end of the day You keep playing with it and see it grows up.</p> 
-
-                    </div>
-
-                   <div class="col-sm-12 col-md-6 descriptionHome">
-
-                       <h5>Testing</h5>
-                       <p class="regular">Specified requirements to verify: understanding modern world, channelling creativity, having fun, inspiring others who hesitate or have little faith. Needs and expectations to validate: having better career oportunities.</p> 
-
+                        
+                    <div class="carousel-item lifecycleItem">
+                        <h5>#4 Testing</h5>
+                       <p class="regular">Specified requirements to verify when all of this is over: understanding modern world, channelling creativity, having fun, inspiring others who hesitate or have little faith. Needs and expectations to validate: having better career oportunities.</p> 
+                    </div>  
+                        
+                    <div class="carousel-item lifecycleItem">
+                        <h5>#5 Deployment</h5>
+                        <p class="regular">You write stories for somebody to read them, possibly even enjoy them. But You're so afraid Your work comes to light. So You stash all those handwritten sheets of paper at the bottom of Your desk drawer. Enough of that. It's hightime You finally did it. </p>
+                    </div>        
+                        
+                    <div class="carousel-item lifecycleItem">
+                        <h5>#6 Maintenance</h5>
+                        <p class="regular">A superior power is said to have created this world and left it alone for the entropy to do its job. It's probably easier this way. But it's not something I'm gonna do. I will water this plant untill it blossoms. I mean I think I will.</p>
+                            </div>  
                     </div>
                     
-                     <div class="col-sm-12 col-md-6 descriptionHome">
+                    <button class="carousel-control-prev carouselButton" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carouselButton" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
 
-                       <h5>Deployment</h5>
-                       <p class="regular"></p> 
+                <hr>
 
+                <div class="divCarousel">
+                    <h1 class="regular my-5">Manifesto</h1>
+    
+                        <div id="myCarousel3" class="carousel slide carousel-dark mb-4 carouselPosition" data-bs-interval="false">
+                            <div class="carousel-indicators" style="display: none;">
+                              <button type="button" data-bs-target="#myCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#myCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#myCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#myCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#myCarousel3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                        
+                        <div class="carousel-inner indexCarouselManifesto">
+                         
+                            <div class="carousel-item active">   
+                                <h5>And there are 4 main pillars of Agile Manifesto</h5>
+                                <p class="regular">first published back in 2001</p>   
+                            </div>
+
+                        <div class="carousel-item manifestoItem">
+                            <h5 class="mb-4">#1 Individuals and interactions over processes and tools</h5> 
+                            <figure>
+                            <img class="img-fluid carouselPhoto" src="img/other/titanic.jpg" alt="A scene from Titanic movie">
+                            <figcaption><i>Titanic (1997)</i></figcaption> 
+                            <figcaption><i>Love that lasts longer than most powerful machines created by man. </i></figcaption>
+                        </figure> 
+                        </div>
+
+                        <div class="carousel-item manifestoItem">
+                            <h5 class="mb-4">#2 Working software over comprehensive documentation</h5> 
+                            <figure>
+                            <img class="img-fluid carouselPhoto" src="img/other/matrix.jpg" alt="A scene from Matrix movie">
+                            <figcaption><i>The Matrix (1999)</i></figcaption> 
+                            <figcaption><i>No documentation at all. Just pure software.</i></figcaption>
+                        </figure> 
+                        </div>
+   
+                        <div class="carousel-item manifestoItem">
+                            <h5 class="mb-4">#3 Customer collaboration over contract negotiation</h5> 
+                            <figure>
+                            <img class="img-fluid carouselPhoto" src="img/other/atimetokill.jpg" alt="A scene from 'A Time ti Kill' movie">
+                            <figcaption><i>A Time to Kill (1996)</i></figcaption> 
+                            <figcaption><i>Empathy and beliefs over money and prestige.</i></figcaption>
+                        </figure> 
+                        </div>
+                            
+                        <div class="carousel-item manifestoItem">
+                            <h5 class="mb-4 px-3">#4 Responding to change over following a plan</h5> 
+                            <figure>
+                            <img class="img-fluid carouselPhoto" src="img/other/martian.jpg" alt="A scene from The Martian movie">
+                            <figcaption><i>The Martian (2015)</i></figcaption> 
+                            <figcaption><i>On Mars if You stick to the plan you die.</i></figcaption>
+                        </figure> 
+                        </div> 
+                             
+                        </div>
+                        
+                        <button class="carousel-control-prev carouselButton" type="button" data-bs-target="#myCarousel3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next carouselButton" type="button" data-bs-target="#myCarousel3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
-                    
-                     <div class="col-sm-12 col-md-6 descriptionHome">
+   
+            <hr>
 
-                       <h5>Maintenance</h5>
-                       <p class="regular"></p> 
+            <h1 class="regular my-5">Some shortcuts</h1>
 
-                    </div>
-                   
-			    </div> <!-- row -->	
-		
-		    </section> <!-- section -->
-           
             <section>
                
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center mb-5">
                    
-                   
-                    <div class="col-lg-3 border border-dark menuTile p-0 m-3">
+                    <div class="col-lg-3 menuTile p-0 m-3">
                         <a href="html_mpjavascripts.html">
                             <i class="icon-cog-alt"></i> <br>        
-                            <h3>Apps</h3>
-                            <p>Just some apps in JavaScript for practice and  fun</p>
+                            <h3>JS Apps</h3>
+                            <p>Some JavaScript apps <br> for practice and  fun</p>
                         </a>
                     </div>  
                    
-                    <div class="col-lg-3 border border-dark menuTile p-0 m-3">
+                    <div class="col-lg-3 menuTile p-0 m-3">
                         <a href="html_testing.html">
                             <i class="bi bi-stoplights-fill"></i> <br>        
                             <h3>Testing</h3>
-                            <p>Cypress test examples <br> & trivia about testing</p> 
+                            <p>Trivia about testing <br> including Cypress test examples</p> 
                         </a>
                     </div>
                         
-                    <div class="col-lg-3 border border-dark menuTile p-0 m-3">
+                    <div class="col-lg-3 menuTile p-0 m-3">
                         <a href="html_serverside.html">
                             <i class="icon-chat"></i> <br>        
                             <h3>Server</h3> 
-                            <p>Struggles with node.js based servers and sql databases</p>
+                            <p>Struggles with node.js, <br> servers and databases</p>
                         </a>
                              
                     </div>    
                
-                    <div class="col-lg-3 border border-dark menuTile p-0 m-3">
+                    <div class="col-lg-3 menuTile p-0 m-3">
                         <a href="html_webdesign.html">
                             <i class="icon-snowflake-o"></i> <br>        
                             <h3>Design</h3> 
-                            <p>A few previous non-responsive web designs</p>
+                            <p>A few non-responsive <br> web designs</p>
                         </a>
                              
                     </div>  
                                    
-                    <div class="col-lg-3 border border-dark menuTile p-0 m-3">
+                    <div class="col-lg-3 menuTile p-0 m-3">
                         <a href="html_experience.html">
                             <i class="bi bi-box-arrow-in-right"></i> <br>        
-                            <h5 class="mb-3">Implementation</h5> 
-                            <p>of a sale system I coordinated</p>
+                            <h3>Implementation</h3> 
+                            <p>Of a sale system <br> I coordinated</p>
                         </a>
                              
                     </div>  
