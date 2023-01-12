@@ -336,7 +336,7 @@
                         <div class="accordion-item mt-2">
                             <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed accordionJavaScriptButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                              Program 3 - Bird recognizer (coming soon)
+                              Program 3 - Bird recognizer (unfinished)
                             </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -344,12 +344,11 @@
                             <h1 class="h3 fw-normal mb-4 regular">Bird recognizer</h1>
                            
                             <p class="myTextJustify regular">
-                            <b>Scenario</b>: Normally You just don't pay attention. There are so many things to do, to remember, to deal with... On Your way to work or home You just think intensively about all of that without even realizing how diverse and beautiful the world outside the car actually is. But there comes a moment when You spot a colorful bird walking on the top of the traffic light and You start wondering what the heck is that.<br>
+                            <b>Scenario</b>: Normally You just don't pay attention. On Your way to work or home You just think about everything but the diversity and beauty of the world that surrounds You. But there comes a moment when You spot a colorful bird walking on the top of the traffic light and You start wondering what the heck is that.<br>
                             <b>How is this useful:</b> 
-                            There are 467 speciecies of birds either living in Poland all year long, coming in spring to reproduce and raise babies or just passing through, ocasionally landing to search for food. In your surroundings You may spot 10-20 most common species daily. Unless You're professional ornithologist You may find it hard figure out what are You actually looking at. This program will help You!<br> 
-                            <b>Disclaimer: </b> Birds are creatures of nature. They may behave randomly, unexpectedly, beyond our perception and comprehension. This program (altough the most complicated I've written so far) will not encompass every species, every situation, every circumstance. Do not make bets with Your friends relying solely on the results provided. You may lose and I'm not keen on refunding. <br>
-                            <b>Source code:</b> I used arrays, objects, for loops, addEventListeners, querySelectors and many more for the first time in my life. My God, this was equally depressive and satisfactory trying to put all of these it into motion! 
-                            Download this app from my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or just hit <i>npm i birdrecognizer</i> in Your terminal. 
+                            There are 467 speciecies of birds to be spotted in Poland. In Your surroundings You may spot 10-20 most common species daily. Unless You're an ornithologist You may find it hard to figure out what are You actually looking at. This program will help You!<br> 
+                            <b>Disclaimer: </b> Birds are creatures of nature. They may behave beyond our perception and comprehension. This program will not encompass every species, every situation, every circumstance. Do not make bets with Your friends relying solely on the results provided. You may lose and I'm not keen on refunding. <br>
+                            <b>Source code:</b> The most complicated code I've written so far: with arrays, objects, for-loops, callbacks, addEventListeners, querySelectors, some DOM manipulation etc. My God, this was equally depressive and satisfactory trying to put all of these it into motion! Download this app from my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or just type <i>npm i birdrecognizer</i> in Your terminal. 
                             </p>
                                                      
                               <!-- BIRDCAROUSEL -->         
@@ -521,10 +520,10 @@
                                 </div>
                                     
                                 <div class="carousel-item birdCarousel">
-                                <fieldset class="form-group border p-3 mb-4">
-                                    <legend></legend>
+                                  <fieldset class="form-group border p-3 mb-4">
+                                      <legend></legend>
                                         
-                                    <br><br><br><br>
+                                    <br><br>
                                     
                                         <label><h4>What color was it (predominantly)?</h4></label>
                                             
@@ -534,8 +533,18 @@
                                     
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio19" name="radioWhatColor" value="19">
-                                            <label id="birdradio19" for="birdradio19">Black or dark brown</label>
+                                            <label id="birdradio19" for="birdradio19">Totally black</label>
                                             </div>
+
+                                            <!-- <div class="divBirdRadioButton">
+                                              <input type="radio" id="birdradio48" name="radioWhatColor" value="48">
+                                              <label id="birdradio48" for="birdradio48">Dark brown</label>
+                                              </div> -->
+
+                                              <div class="divBirdRadioButton">
+                                                <input type="radio" id="birdradio22" name="radioWhatColor" value="22">
+                                                <label id="birdradio22" for="birdradio22">Brown, light brown</label>
+                                                </div>
 
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio20" name="radioWhatColor" value="20">
@@ -547,11 +556,6 @@
                                             <label id="birdradio21" for="birdradio21">Black and white</label>
                                             </div>
                                                     
-                                            <div class="divBirdRadioButton">
-                                            <input type="radio" id="birdradio22" name="radioWhatColor" value="22">
-                                            <label id="birdradio22" for="birdradio22">Brownish, light brown</label>
-                                            </div>
-
                                             <div class="divBirdRadioButton">
                                             <input type="radio" id="birdradio23" name="radioWhatColor" value="23">
                                             <label id="birdradio23" for="birdradio23">Grey, greyish</label>
@@ -761,7 +765,7 @@
                             <fieldset class="form-group border p-3 mb-4 bg-fieldset">
                               
                                 <h2>Result(s):</h2>
-                                <h4 id="noBirdMatch"></h4>      
+                                <h4 id="noBirdMatch" class="my-4 text-primary"></h4>      
                                 <div id="birdResultDiv"></div>
 
                             </fieldset>

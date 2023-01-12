@@ -961,7 +961,7 @@ hr
 @media (min-width: 331px) and (max-width: 991px) {
     .birdCarousel
     {
-        height: 36rem;
+        height: 38rem;
         font-size: 12px;
     }
 }
@@ -969,7 +969,7 @@ hr
 @media (min-width: 1px) and (max-width: 330px) {
     .birdCarousel
     {
-        height: 36rem;
+        height: 38rem;
         font-size: 9px;
     }
 }

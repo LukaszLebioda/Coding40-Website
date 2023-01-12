@@ -334,6 +334,22 @@ const trzcinniczek = {
     photo: "./img/birds/trzcinniczek.jpg"
 }
 
+const gluszec = {
+    sequence: 43,
+    name: "Western capercaillie (głuszec)",
+    description: "Once numerous, currently on the brink of extinction. While attracting females in the breeding period displays an intricate spectacle of both sound and dance.",
+    rights: "Photo from https://avtovsamare.ru/pl/",
+    photo: "./img/birds/gluszec.jpg"
+}
+
+const cietrzew = {
+    sequence: 44,
+    name: "Black grouse (cietrzew)",
+    description: "A species similar to western capercaillie and endangered as well. Two males fighting fiercely it's an unforgettable sight they say.  ",
+    rights: "Photo from https://www.ardeaprints.com/",
+    photo: "./img/birds/cietrzew.jpg"
+}
+
 // next
 
 // ---------------------------------------------------------------------
@@ -796,7 +812,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && bp.includes("15")
                         // color 19-27
-                        && (bp.includes("19") || bp.includes("20") || bp.includes("21") || bp.includes("22")) 
+                        && (bp.includes("20") || bp.includes("21") || bp.includes("22")) 
                         // numbers 28-33
                         && (bp.includes("28") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
                         // activity 34-43
@@ -910,7 +926,7 @@ button.addEventListener("click", () => {
                         // size 13-18
                         && (bp.includes("17") || bp.includes("18"))
                         // color 19-27
-                        && (bp.includes("19") || bp.includes("22")) 
+                        && bp.includes("22")
                         // numbers 28-33
                         && bp.includes("28")
                         // activity 34-43
@@ -1024,7 +1040,7 @@ button.addEventListener("click", () => {
                             // size 13-18
                             && (bp.includes("15") || bp.includes("17"))
                             // color 19-27
-                            && (bp.includes("19") || bp.includes("22") || bp.includes("23"))  
+                            && (bp.includes("22") || bp.includes("23"))  
                             // numbers 28-33
                             && bp.includes("28")
                             // activity 34-43
@@ -1184,6 +1200,44 @@ button.addEventListener("click", () => {
                             ) 
                             {
                                 placeBird(trzcinniczek.name, trzcinniczek.description, trzcinniczek.photo, trzcinniczek.rights);
+                            } 
+
+                            // 43 głuszec
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && (bp.includes("8") || bp.includes("10")) 
+                            // size 13-18
+                            &&(bp.includes("17") || bp.includes("18"))
+                            // color 19-27
+                            && (bp.includes("27") || bp.includes("22") || bp.includes("44"))
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32")) 
+                            // activity 34-43
+                            && (bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
+                            ) 
+                            {
+                                placeBird(gluszec.name, gluszec.description, gluszec.photo, gluszec.rights);
+                            } 
+
+                             // 44 cietrzew
+                           if(
+                            // season 1-4
+                            (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4"))
+                            // location 5-12
+                            && bp.includes("8") 
+                            // size 13-18
+                            &&(bp.includes("15") || bp.includes("17"))
+                            // color 19-27
+                            && (bp.includes("27") || bp.includes("22") || bp.includes("44"))
+                            // numbers 28-33
+                            && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32")) 
+                            // activity 34-43
+                            && (bp.includes("40") || bp.includes("43"))
+                            ) 
+                            {
+                                placeBird(cietrzew.name, cietrzew.description, cietrzew.photo, cietrzew.rights);
                             } 
                             
 
