@@ -156,7 +156,7 @@ p.myTextJustify
 }
 @media (min-width: 331px) and (max-width: 475px) {
     .masthead {
-        min-height: 180px;
+        min-height: 200px;
     }
     h1 {
         font-size: 32px; 
@@ -1242,22 +1242,25 @@ hr
 
 .elementItem
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
     border-radius: 4px;
     width: 50px;
     height: 70px;
     padding: 1px;
-    position: relative;
 }
 
-.elementItem p
+.elementNumber
 {
-    font-size: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    font-size: 8px;
+
+}
+
+.elementAbbreviation
+{
+    font-size: 18px;
 }
 
 @media (min-width: 1px) and (max-width: 450px) {
@@ -1266,21 +1269,12 @@ hr
         width: 15px;
         height: 20px;
     }
-    .elementItem p
-    {
-        font-size: 5px;
-    }
-
 }
 @media (min-width: 451px) and (max-width: 767px) {
     .elementItem
     {
         width: 20px;
         height: 30px;
-    }
-    .elementItem p
-    {
-        font-size: 10px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1289,20 +1283,12 @@ hr
         width: 30px;
         height: 45px;
     }
-    .elementItem p
-    {
-        font-size: 10px;
-    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .elementItem
     {
         width: 40px;
         height: 65px;
-    }
-    .elementItem p
-    {
-        font-size: 10px;
     }
 }
 
