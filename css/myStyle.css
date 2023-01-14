@@ -32,7 +32,7 @@ main
 /* responsive background-image for every subpage */
 .masthead {
     background-size: cover;
-    min-height: 70vh;
+    min-height: 600px; /* było 70 vh */
     position: relative;
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
@@ -132,20 +132,37 @@ p.myTextJustify
         margin: 40px 20px;
         text-align: left;
     }
-}
-
-@media (min-width: 50px) and (max-width: 575px) {
     footer {
         font-size: 14px;
     }
+}
+
+@media (min-width: 50px) and (max-width: 330px) {
     .masthead {
-        min-height: 22vh;
+        min-height: 140px;
     }
     h1 {
-        font-size: calc(1.525rem + 3.3vw);
+        font-size: 28px;
     }
     p {
-        font-size: calc(0.525rem + 3.3vw);
+        font-size: 18px;
+    }
+    h1.regular {
+        font-size: 25px;
+    }
+    p.regular {
+        font-size: 12px;
+    }
+}
+@media (min-width: 331px) and (max-width: 475px) {
+    .masthead {
+        min-height: 180px;
+    }
+    h1 {
+        font-size: 32px; 
+    }
+    p {
+        font-size: 22px;
     }
     h1.regular {
         font-size: 25px;
@@ -155,15 +172,15 @@ p.myTextJustify
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 476px) and (max-width: 767px) {
     .masthead {
-        min-height: 35vh;
+        min-height: 240px;
     }
     h1 {
-        font-size: calc(1.525rem + 3.3vw);
+        font-size: 40px;
     }
     p {
-        font-size: calc(0.525rem + 3.3vw);
+        font-size: 26px;
     }
     h1.regular {
         font-size: 25px;
@@ -173,9 +190,9 @@ p.myTextJustify
     }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .masthead {
-        min-height: 50vh;
+        min-height: 330px;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -193,7 +210,7 @@ p.myTextJustify
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .masthead {
-        min-height: 55vh;
+        min-height: 460px;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -203,9 +220,9 @@ p.myTextJustify
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1400px) {
     .masthead {
-        min-height: 60vh;
+        min-height: 580px;
     }
     h1 {
         font-size: calc(1.525rem + 3.3vw);
@@ -215,17 +232,6 @@ p.myTextJustify
     }
 }
 
-@media (min-width: 1401px) and (max-width: 1800px) {
-    .masthead {
-        min-height: 65vh;
-    }
-    h1 {
-        font-size: calc(1.525rem + 3.3vw);
-    }
-    p {
-        font-size: calc(0.525rem + 3.3vw);
-    }
-}
 
 /* PHOTO SECTION */
 
@@ -372,6 +378,15 @@ p.myTextJustify
     background-color: 	gainsboro;
 }
 */
+
+@media (min-width: 1px) and (max-width: 440px) {
+    .bookOnTesting 
+    {
+        width:60px;
+        height: 90px;
+    }
+
+}
 
 .accordionTestingButton /* style of closed button */
 {
@@ -877,12 +892,24 @@ hr
 .enlargePhoto
 {
     cursor: zoom-in;
-    transition:transform 0.25s ease;
+    transition:transform 0.55s ease;
 }
 
 .enlargePhoto:hover {
     -webkit-transform:scale(1.75); 
     transform:scale(1.75);
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+    .enlargePhoto
+    {
+        cursor: default;
+    }
+    .enlargePhoto:hover
+    {
+        -webkit-transform:scale(1); 
+        transform:scale(1);
+    }
 }
 
 /*
@@ -1204,6 +1231,81 @@ hr
         font-size: 16px;
     }
 }
+
+/* ----------- HOMEMADE ALCHEMIST -------------- */
+.periodicTable
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.elementItem
+{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 50px;
+    height: 70px;
+    padding: 1px;
+    position: relative;
+}
+
+.elementItem p
+{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 1px) and (max-width: 450px) {
+    .elementItem
+    {
+        width: 15px;
+        height: 20px;
+    }
+    .elementItem p
+    {
+        font-size: 5px;
+    }
+
+}
+@media (min-width: 451px) and (max-width: 767px) {
+    .elementItem
+    {
+        width: 20px;
+        height: 30px;
+    }
+    .elementItem p
+    {
+        font-size: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .elementItem
+    {
+        width: 30px;
+        height: 45px;
+    }
+    .elementItem p
+    {
+        font-size: 10px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .elementItem
+    {
+        width: 40px;
+        height: 65px;
+    }
+    .elementItem p
+    {
+        font-size: 10px;
+    }
+}
+
 
  
 

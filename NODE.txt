@@ -1,0 +1,7 @@
+Pozwala uruchomić JS poza przeglądarką, np. na komputerze lokalnym albo serwerze.
+Alternatywa dla Pythona, Ruby, PHP.
+
+Atrakcyjny dla JS developerów, bi nie muszą się uczyć nowego języka.
+Jeden kod dla frontu i backu!
+Olbrzymia społeczność
+Olbrzymia ilość paczek i narzędzi
