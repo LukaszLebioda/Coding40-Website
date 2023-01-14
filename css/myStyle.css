@@ -896,8 +896,8 @@ hr
 }
 
 .enlargePhoto:hover {
-    -webkit-transform:scale(1.75); 
-    transform:scale(1.75);
+    -webkit-transform:scale(2.05); 
+    transform:scale(2.05);
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
@@ -911,26 +911,28 @@ hr
         transform:scale(1);
     }
 }
-
-/*
-.enlargePhoto{
-   display: flex;
-}
-
-@media (max-width: 991px){
+@media (min-width: 767px) and (max-width: 991px) {
     .enlargePhoto
     {
-      flex-direction: row;
+        cursor: default;
+    }
+    .enlargePhoto:hover
+    {
+        -webkit-transform:scale(1.75); 
+        transform:scale(1.75);
     }
 }
-
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-width: 1200px) {
     .enlargePhoto
     {
-      flex-direction: row;
+        cursor: default;
+    }
+    .enlargePhoto:hover
+    {
+        -webkit-transform:scale(1.95); 
+        transform:scale(1.95);
     }
 }
-*/
 
 /* -------------- SERVER-SIDE SECTION --------------------------*/
 @media (min-width: 1px) and (max-width: 300px) {

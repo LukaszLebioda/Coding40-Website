@@ -408,6 +408,7 @@ button.addEventListener("click", () => {
 		    if (radio.checked) {
                 bp.push(radio.value);
                 document.getElementById("buttonBirds").disabled = true; 
+                button.style.backgroundColor = "grey";
                 document.getElementById("buttonBirds2").disabled = false; 
                 console.log(bp);
                 

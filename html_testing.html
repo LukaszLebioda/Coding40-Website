@@ -238,23 +238,43 @@
                     
                     <div class="userStory col-md-8">
                         <h1 class="regular">User story, ep. 5: TestLink</h1>
-                        <p class="regular pt-3 mb-0"><i>So finally he was ready to run some organized, pre-planned manual testing. A TestLink software was exactly what he was looking for to manage the test cases he was about to invent. <br><br> Although not super-intuitive and not easy to set up, the tool soon made recording of the test cases really straightforward and enjoyable. <br><br> At first he examined the behaviour of an online bookstore. And more specifically - it's searchbox. With no specification at hand all he could do was to validate whether the searchbox behaviour met his personal expectations. <br><br> See below how it went: </i><br><br></p>
-                        
-                        <div class="d-flex flex-column flex-lg-row">
-                        <figure class="m-2">
-                            <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution1.png" width="700px" alt="A screenshot of TestLink test cases">
-                            <figcaption></figcaption>
-                        </figure>
-                        
-                         <figure class="m-2">
-                            <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution2.png" width="700px" alt="A screenshot of TestLink test cases">
-                            <figcaption></figcaption>
-                        </figure>
-                        
-                        </div>
-
+                        <p class="regular pt-3 mb-0"><i>So finally he was ready to run some organized, pre-planned manual testing. A TestLink software was exactly what he was looking for to manage the test cases he was about to invent. <br><br> Although not super-intuitive and not easy to set up, the tool soon made recording of the test cases really straightforward and enjoyable.</i></p> 
                     </div>
                     
+                    <div class="accordion accordion-flush col-md-10 mt-4" id="accordionExample">
+                     
+                        <div class="accordion-item mt-2 accordionTestingItem">
+                          <h2 class="accordion-header" id="headingZero">
+                            <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                TestLink - Manual online bookstore test
+                            </button>
+                          </h2>
+                          <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <h1 class="h3 fw-normal mb-4 regular">Mountain weather report</h1>
+                          
+                              <p class="myTextJustify regular mt-3 mb-4">
+                                  <b>Scenario:</b> <br><br> At first I examined the behaviour of an online bookstore. And more specifically - it's searchbox. With no specification at hand all he could do was to validate whether the searchbox behaviour met my personal expectations. In other words: I made this test fail on purpose hoping the owners won't ever know about this. <br><br> See below how it went:<br><br></p> 
+                            </p>
+                                
+                        <div class="d-flex flex-column flex-lg-row">
+                            <figure class="m-2">
+                                <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution1.png" width="700px" alt="A screenshot of TestLink test cases">
+                                <figcaption></figcaption>
+                            </figure>
+                            
+                             <figure class="m-2">
+                                <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution2.png" width="700px" alt="A screenshot of TestLink test cases">
+                                <figcaption></figcaption>
+                            </figure>
+                            
+                            </div> 
+                                                              
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+
                     <div class="col-12 my-4 emptyDiv">
                         <hr>   
                     </div>
@@ -287,8 +307,11 @@
                             <h1 class="h3 fw-normal mb-4 regular">Mountain weather report</h1>
                         
                             <p class="myTextJustify regular mt-3 mb-4">
-                                I'm about to set for an expedition to conquer Gerlach summit (The Tatras, Slovakia) in winter. I'd better check the weather report. This is a source code which will check if it is possible on one particular website:   
+                                <b>Scenario:</b> I'm about to set for an expedition to conquer Gerlach summit (The Tatras, Slovakia) in winter. I'd better see the weather report. The test below will check if it is possible on one particular website.   
                           </p>
+                          <p class="myTextJustify regular mt-3 mb-4">
+                            <b>Context:</b> There are only basic Cypress commands and assertions used in this test. Plus some aliases for practice. Without any requirements specified I found it really enjoyable to conduct.      
+                      </p>
                               
                             <div class="automationTest">
                             <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
@@ -339,7 +362,19 @@ viewport: 393 x 851", () => {
                                 </fieldset>
                              
                             </div>  
-                             
+                            
+                            <h1 class="h3 fw-normal mb-4 regular">Test results:</h1>
+                        
+                            <p class="regular mt-3 mb-4">
+                                - main page loaded: <i class="bi bi-check"></i> <br>   
+                                - page resized to mobile viewport <i class="bi bi-check"></i> <br>  
+                                - redirected to wheather maps subpage <i class="bi bi-check"></i> <br> 
+                                - searchbox working, mountain name found <i class="bi bi-check"></i> <br> 
+                                - wheather forecast table visible <i class="bi bi-check"></i> <br> 
+                              
+                          </p>
+
+
                         <div> 
                            <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                 <legend class="w-auto px-2 mb-3"></legend> 
@@ -370,7 +405,11 @@ viewport: 393 x 851", () => {
                             <h1 class="h3 fw-normal mb-4 regular">Online bookstore searchbox</h1>
                         
                             <p class="myTextJustify regular mt-3 mb-4">
-                                I'm about to buy a novel of one of my favourite authors: John Grisham. There is an online bookstore I get in touch with quite often when I need a good stuff to read. This is a source code which will if the searchbox of that bookstore website works flawlessly:   
+                                <b>Scenario:</b> I'm about to buy a novel of one of my favourite authors: John Grisham. There is an online bookstore I get in touch with quite often when I need a good stuff to read. The source code below will see if the searchbox of that bookstore website works flawlessly. 
+                            </p>
+                              
+                            <p class="myTextJustify regular mt-3 mb-4">
+                                <b>Context:</b> I used beforeEach and variables this time. And some new assertions. This test is an automated version of manual test I run using TestLink (above). I found it much more difficult to follow an established route of testing rather than inventing it freely. And again - the test failed because it was about to fail. I;m sure the searchbox works as planned and designed.   
                             </p>
                               
                             <div class="automationTest">
@@ -437,7 +476,20 @@ describe('when navigate to the online bookstore page', () => {
                                 </fieldset>
                              
                             </div>  
+                            
+                            <h1 class="h3 fw-normal mb-4 regular">Test results:</h1>
+                        
+                            <p class="regular mt-3 mb-4">
+                                - main page loaded <i class="bi bi-check"></i> <br>   
+                                - searchbox visible and clickable <i class="bi bi-check"></i> <br>  
+                                - no redirection when search icon clicked <i class="bi bi-check"></i> <br> 
+                                - info about no-results provided <i class="bi bi-slash-circle"></i> <br> 
+                                - searched phrase remains within the searchbox <i class="bi bi-slash-circle"></i> <br> 
+                                - searched prhase found, results returned <i class="bi bi-check"></i> <br> 
+                                - when phrase not found, info no-results provided <i class="bi bi-check"></i> <br> 
                               
+                          </p>
+
                         <div> 
                            <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                 <legend class="w-auto px-2 mb-3"></legend> 
