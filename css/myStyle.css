@@ -3,7 +3,7 @@
 body {
     /* background image from: https://www.toptal.com/designers/subtlepatterns/ */
     /* background-image: url("img/body_background.png"); */
-    background-color: #fffff2;
+    background-color: #FFFAFA;
     /* background-repeat: repeat; */
     /* no-repeat; repeat-x; repeat-y */
     /* background-attachment: fixed; */
@@ -52,7 +52,7 @@ main
 
 .myHeader
 {
-    background-color: #fffacd;
+    background-color: #FFF5EE;
     border: 1px solid #C0D06F;
     border-radius: 10px;
     padding-left: 10px;
@@ -278,7 +278,7 @@ p.myTextJustify
 
 .dropdown-menu
 {
-    background-color: #FFF5EE;
+    background-color: snow;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -954,7 +954,7 @@ hr
 /* ------------- CAROUSEL SECTION FOR BIRD APP ------*/
 /* only for radio button in birdRecognizer */
 .divBirdRadioButtons input[type="radio"]{
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 
 /* wrapper for a radiobutton + label to align properly */
@@ -990,7 +990,7 @@ hr
     padding-bottom: 50px;
 } */
 
-@media (min-width: 331px) and (max-width: 991px) {
+@media (min-width: 351px) and (max-width: 991px) {
     .birdCarousel
     {
         height: 38rem;
@@ -998,7 +998,7 @@ hr
     }
 }
 
-@media (min-width: 1px) and (max-width: 330px) {
+@media (min-width: 1px) and (max-width: 350px) {
     .birdCarousel
     {
         height: 38rem;
@@ -1114,7 +1114,7 @@ hr
     }
     .manifestoItem
     {
-    height: 340px;
+    height: 300px;
     }
 }
 @media (min-width: 435px) and (max-width: 575px) {
@@ -1132,7 +1132,7 @@ hr
     }
     .manifestoItem
     {
-    height: 400px;
+    height: 370px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
