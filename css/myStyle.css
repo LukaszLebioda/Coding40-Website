@@ -3,7 +3,7 @@
 body {
     /* background image from: https://www.toptal.com/designers/subtlepatterns/ */
     /* background-image: url("img/body_background.png"); */
-    /*alternatywa: background-color: #value*/
+    background-color: #fffff2;
     /* background-repeat: repeat; */
     /* no-repeat; repeat-x; repeat-y */
     /* background-attachment: fixed; */
@@ -32,7 +32,7 @@ main
 /* responsive background-image for every subpage */
 .masthead {
     background-size: cover;
-    min-height: 600px; /* było 70 vh */
+    min-height: 620px; /* było 70 vh */
     position: relative;
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,.5);
@@ -52,7 +52,7 @@ main
 
 .myHeader
 {
-    background-color: #FFF5EE;
+    background-color: #fffacd;
     border: 1px solid #C0D06F;
     border-radius: 10px;
     padding-left: 10px;
@@ -278,7 +278,10 @@ p.myTextJustify
 
 .dropdown-menu
 {
-    background-color: snow;
+    background-color: #FFF5EE;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* hover ma rozwijac dropdown-menu, ktore defaultowo ma nadany display:none */
