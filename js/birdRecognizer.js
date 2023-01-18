@@ -1,18 +1,18 @@
-// const kos = {
-//     sequence: 1,
-//     name: "Blackbird (kos)",
-//     description: "One of the best singers out there, often to be heard composing from the top of a tree all day long. Tends to focus on singing so much, that may lose vigilance and become an easy pray for predators.",
-//     rights: "Photo by Zeynel Cebeci, CC BY-SA 4.0",
-//     photo: "./img/birds/kos.jpg"
-// }
+const kos = {
+    sequence: 1,
+    name: "Blackbird (kos)",
+    description: "One of the best singers out there, often to be heard composing from the top of a tree all day long. Tends to focus on singing so much, that may lose vigilance and become an easy pray for predators.",
+    rights: "Photo by Zeynel Cebeci, CC BY-SA 4.0",
+    photo: "./img/birds/kos.jpg"
+}
 
-// const szpak = {
-//     sequence: 2,
-//     name: "Starling (szpak)",
-//     description: "Produces futuristic sounds an is able to imitate other birds, even simple human words. A group of starlings can deplete a cherry-tree fruit deposit within minutes.",
-//     rights: "Photo by Frank Schulenburg, CC BY-SA 4.0",
-//     photo: "./img/birds/szpak.jpg"
-// }
+const szpak = {
+    sequence: 2,
+    name: "Starling (szpak)",
+    description: "Produces futuristic sounds an is able to imitate other birds, even simple human words. A group of starlings can deplete a cherry-tree fruit deposit within minutes.",
+    rights: "Photo by Frank Schulenburg, CC BY-SA 4.0",
+    photo: "./img/birds/szpak.jpg"
+}
 
 // const trznadel = {
 //     sequence: 3,
@@ -350,6 +350,22 @@
 //     photo: "./img/birds/cietrzew.jpg"
 // }
 
+const gawron = {
+    sequence: 45,
+    name: "Gawron (rook)",
+    description: "Quite intelligent creature - can handle with pebbles, sticks etc. to get provisions. Builds big spherical nests in the treetops and guards them cawing loudly. Dozens of such guardians, each beside its own nest, can be pretty bothersome.",
+    rights: "Photo by Rafał Komorowski, CC BY-SA 4.0",
+    photo: "./img/birds/gawron.jpg"
+}
+
+const kawka = {
+    sequence: 46,
+    name: "Jackdaw (kawka)",
+    description: "A typical city bird that mastered the ability to search for food waste. It's intelligent, ubiquitous, inquisitive. In winter tends to gather, alongside rooks, in large flocks that span over the whole sky when on the move.",
+    rights: "Photo by Maxwell Hamilton, CC BY 2.0",
+    photo: "./img/birds/kawka.jpg"
+}
+
 // next
 
 // ---------------------------------------------------------------------
@@ -367,7 +383,7 @@ const placeBird = (name, description, photo, rights) => {
                             birdDiv.append(birdHeadingName, birdHeadingDescription, birdHeadingImage, birdHeadingRights, birdEmptyDiv);
                             
                             birdHeadingName.style.color = "blue";
-                            birdHeadingName.style.padding = "10px";
+                            birdHeadingName.style.marginTop = "30px";
                             birdHeadingName.textContent = name;
                             birdHeadingName.setAttribute("id", "birdie");
 
@@ -375,7 +391,7 @@ const placeBird = (name, description, photo, rights) => {
                             console.log(birdHeadingName);
 
                             birdHeadingDescription.style.color = "blue";
-                            birdHeadingDescription.style.padding = "10px";
+                            birdHeadingDescription.style.padding = "20px 40px 20px 40px";
                             birdHeadingDescription.textContent = description;
 
                             birdHeadingImage.setAttribute("src", photo);
@@ -386,6 +402,7 @@ const placeBird = (name, description, photo, rights) => {
                             birdHeadingRights.textContent = rights;
 
                             birdEmptyDiv.textContent = "--------------------";
+                            
 }
 
 let radios = document.querySelectorAll('.divBirdRadioButton input[type="radio"]');
@@ -432,36 +449,32 @@ button.addEventListener("click", () => {
                         
                     // 2 szpak
                     if(
-                        // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
-                        // location 5-12
-                        && (bp.includes("9") || bp.includes("11") || bp.includes("12")) 
-                        // size 13-18
-                        && bp.includes("14") 
-                        // color 19-27
-                        && bp.includes("19") 
-                        // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30") || bp.includes("31") || bp.includes("32") || bp.includes("33")) 
-                        // activity 34-43
-                        && (bp.includes("39") || bp.includes("40") || bp.includes("42") || bp.includes("45"))
+                        // location 1-8
+                        (bp.includes("4") || bp.includes("6") || bp.includes("8")) 
+                        // size 9-15
+                        && bp.includes("11") 
+                        // color 16-26
+                        && bp.includes("16") 
+                        // numbers 27-31
+                        && (bp.includes("27") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
+                        // activity 32-44
+                        && (bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
                         ) {
                             placeBird(szpak.name, szpak.description, szpak.photo, szpak.rights);
                         }
 
                     // 1 kos
                     if(
-                        // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
-                        // location 5-12
-                        && (bp.includes("8") || bp.includes("9") || bp.includes("10") || bp.includes("12")) 
-                        // size 13-18
-                        && bp.includes("14") 
-                        // color 19-27
-                        && bp.includes("19") 
-                        // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30")) 
-                        // activity 34-43
-                        && (bp.includes("37") || bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
+                        // location 1-8
+                        (bp.includes("4") || bp.includes("5") || bp.includes("6") || bp.includes("8")) 
+                        // size 9-15
+                        && bp.includes("11") 
+                        // color 16-26
+                        && bp.includes("16") 
+                        // numbers 27-31
+                        && (bp.includes("27") || bp.includes("29") || bp.includes("30")) 
+                        // activity 32-44
+                        && (bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
                         ) 
                         {
                             placeBird(kos.name, kos.description, kos.photo, kos.rights);
@@ -1240,6 +1253,40 @@ button.addEventListener("click", () => {
                             {
                                 placeBird(cietrzew.name, cietrzew.description, cietrzew.photo, cietrzew.rights);
                             } 
+
+                            // 45 gawron
+                            if(
+                            // location 1-8
+                            (bp.includes("4") || bp.includes("6") || bp.includes("8")) 
+                            // size 9-15
+                            && bp.includes("12") 
+                            // color 16-26
+                            && bp.includes("16") 
+                            // numbers 27-31
+                            && (bp.includes("27") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
+                            // activity 32-44
+                            && (bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
+                            ) 
+                            {
+                                placeBird(gawron.name, gawron.description, gawron.photo, gawron.rights);
+                            }  
+
+                             // 46 kawka
+                             if(
+                            // location 1-8
+                            (bp.includes("4") || bp.includes("6") || bp.includes("8")) 
+                            // size 9-15
+                            && bp.includes("11") 
+                            // color 16-26
+                            && (bp.includes("16") || bp.includes("20")) 
+                            // numbers 27-31
+                            && (bp.includes("27") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
+                            // activity 32-44
+                            && (bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
+                            ) 
+                            {
+                                placeBird(kawka.name, kawka.description, kawka.photo, kawka.rights);
+                            }
                             
 
 

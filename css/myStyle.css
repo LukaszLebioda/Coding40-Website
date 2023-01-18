@@ -3,7 +3,7 @@
 body {
     /* background image from: https://www.toptal.com/designers/subtlepatterns/ */
     /* background-image: url("img/body_background.png"); */
-    background-color: #FFFAFA;
+    background-color: #FFFFFA;
     /* background-repeat: repeat; */
     /* no-repeat; repeat-x; repeat-y */
     /* background-attachment: fixed; */
@@ -1245,22 +1245,36 @@ hr
     margin-bottom: 40px;
 }
 
+/* każdy pierwiastek */
 .elementItem
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    box-sizing: border-box;
     border: 1px solid black;
     border-radius: 4px;
     width: 50px;
     height: 70px;
     padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.elementNumber
+/* pierwiastek główny */
+.elementMaster
 {
-    font-size: 8px;
+    border: solid 2px red;
+}
 
+/* pusty div */
+.elementItemX
+{
+    display: block;
+    border: none;
+    border-radius: 4px;
+    width: 50px;
+    height: 70px;
+    padding: 1px;
 }
 
 .elementAbbreviation
@@ -1269,6 +1283,10 @@ hr
 }
 
 @media (min-width: 1px) and (max-width: 450px) {
+    .elementAbbreviation
+    {
+        font-size: 8px;
+    }
     .elementItem
     {
         width: 15px;
@@ -1276,6 +1294,10 @@ hr
     }
 }
 @media (min-width: 451px) and (max-width: 767px) {
+    .elementAbbreviation
+    {
+        font-size: 14px;
+    }
     .elementItem
     {
         width: 20px;

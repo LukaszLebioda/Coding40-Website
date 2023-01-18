@@ -254,9 +254,14 @@
                               <h1 class="h3 fw-normal mb-4 regular">Mountain weather report</h1>
                           
                               <p class="myTextJustify regular mt-3 mb-4">
-                                   <i><b>Scenario:</b> At first I examined the behaviour of an online bookstore searchbox. With no specification at hand all I could do was to validate whether the searchbox behaviour met my personal expectations. In other words: I made this test fail on purpose hoping the owners won't ever hear about this. </i><br><br></p> 
-                            </p>
-                                
+                              <i><b>Scenario:</b> At first I examined the behaviour of an online bookstore searchbox. With no specification at hand all I could do was to validate whether the searchbox behaviour met my personal expectations. In other words: I made this test fail on purpose hoping the owners won't ever hear about this. </i></p>
+                                   
+                              <p class="myTextJustify regular mt-3 mb-4">
+                              <i><b>Environment:</b>
+                              <br>Tool: Testlink (v. 1_0_20_fixed)  
+                              <br>OS: Windows 10 Home 64-bit
+                              <br>Browser: Google chrome </i></p>
+
                         <div class="d-flex flex-column flex-lg-row">
                             <figure class="m-2">
                                 <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution1.png" width="700px" alt="A screenshot of TestLink test cases">
@@ -310,9 +315,24 @@
                                 <i><b>Scenario:</b> I'm about to set for an expedition to conquer Gerlach summit (The Tatras, Slovakia) in winter. I'd better see the weather report. The test below would check if it is possible on one particular website.</i>   
                           </p>
                           <p class="myTextJustify regular mt-3 mb-4">
-                            <i><b>Context:</b> There are only basic Cypress commands and assertions used in this test. Plus some aliases for practice. Without any specified requirements to look up to I found it really enjoyable to conduct.</i>      
-                      </p>
+                            <i><b>Context:</b> There are only basic Cypress commands and assertions used in this test. Plus some aliases for practice. Without any specified requirements to look up to I found it really enjoyable to conduct.</i>          
+                            </p>
+
+                            <p class="myTextJustify regular mt-3 mb-4">
+                            <i><b>Environment:</b>
+                            <br>Testing framework: Cypress (v. 11.2.0)  
+                            <br>OS: Windows 10 Home 64-bit
+                            <br>Browser: Google chrome </i></p>
                               
+                            <p class="myTextJustify regular mt-3 mb-4">
+                                <b>Test Results:</b><br>
+                                - main page loaded: <i class="bi bi-check"></i> <br>   
+                                - page resized to mobile viewport <i class="bi bi-check"></i> <br>  
+                                - redirected to wheather maps subpage <i class="bi bi-check"></i> <br> 
+                                - searchbox working, mountain name found <i class="bi bi-check"></i> <br> 
+                                - wheather forecast table visible <i class="bi bi-check"></i> <br> 
+                          </p>
+
                             <div class="automationTest">
                             <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                     <legend class="w-auto px-2 mb-4"></legend>
@@ -363,18 +383,6 @@ viewport: 393 x 851", () => {
                              
                             </div>  
                             
-                            <h1 class="h3 fw-normal mb-4 regular">Test results:</h1>
-                        
-                            <p class="regular mt-3 mb-4">
-                                - main page loaded: <i class="bi bi-check"></i> <br>   
-                                - page resized to mobile viewport <i class="bi bi-check"></i> <br>  
-                                - redirected to wheather maps subpage <i class="bi bi-check"></i> <br> 
-                                - searchbox working, mountain name found <i class="bi bi-check"></i> <br> 
-                                - wheather forecast table visible <i class="bi bi-check"></i> <br> 
-                              
-                          </p>
-
-
                         <div> 
                            <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                 <legend class="w-auto px-2 mb-3"></legend> 
@@ -411,7 +419,24 @@ viewport: 393 x 851", () => {
                             <p class="myTextJustify regular mt-3 mb-4">
                                 <i><b>Context:</b> I used beforeEach and variables this time. And some new assertions as well. This test is an automated version of manual test I run using TestLink (above). I found it much more difficult to follow the established route of test cases rather than to design them freely. And again - the test failed because it was about to fail. I'm sure the searchbox actually works as planned and designed. </i>  
                             </p>
+
+                            <p class="myTextJustify regular mt-3 mb-4">
+                                <i><b>Environment:</b>
+                                <br>Testing framework: Cypress (v. 11.2.0)  
+                                <br>OS: Windows 10 Home 64-bit
+                                <br>Browser: Google chrome </i></p>
                               
+                                <p class="myTextJustify regular mt-3 mb-4">
+                                    <b>Test results:</b>
+                                    <br>
+                                    - main page loaded, searchbox visible <i class="bi bi-check"></i> <br>    
+                                    - no search phrase typed in, 'zero result' info provided <i class="bi bi-slash-circle"></i> <br> 
+                                    - search phrase remains in the searchbox <i class="bi bi-slash-circle"></i> <br> 
+                                    - search phrase found, results returned <i class="bi bi-check"></i> <br> 
+                                    - search phrase not found, info 'zero results' provided <i class="bi bi-check"></i> <br> 
+                                  
+                              </p>
+
                             <div class="automationTest">
                             <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                     <legend class="w-auto px-2 mb-4"></legend>
@@ -477,17 +502,6 @@ describe('when navigate to the online bookstore page', () => {
                              
                             </div>  
                             
-                            <h1 class="h3 fw-normal mb-4 regular">Test results:</h1>
-                        
-                            <p class="regular mt-3 mb-4">
-                                - main page loaded, searchbox visible <i class="bi bi-check"></i> <br>    
-                                - no search phrase typed in, 'zero result' info provided <i class="bi bi-slash-circle"></i> <br> 
-                                - search phrase remains in the searchbox <i class="bi bi-slash-circle"></i> <br> 
-                                - search phrase found, results returned <i class="bi bi-check"></i> <br> 
-                                - search phrase not found, info 'zero results' provided <i class="bi bi-check"></i> <br> 
-                              
-                          </p>
-
                         <div> 
                            <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
                                 <legend class="w-auto px-2 mb-3"></legend> 
