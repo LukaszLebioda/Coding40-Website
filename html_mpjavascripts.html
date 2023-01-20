@@ -336,21 +336,30 @@
                       <div class="accordion-item mt-2">
                         <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed accordionJavaScriptButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                          Program 3 - Homemade alchemist (in progress)
+                          Program 3 - Element mixer
                         </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                         <h1 class="h3 fw-normal mb-4 regular">HOMEMADE ALCHEMIST</h1>
-                       
+                
                         <p class="myTextJustify regular">
                         <b>Scenario</b>: Lorem ipsum <br>
-                            <b>How is this useful:</b> Lorem ipsum <br> <b>Explanation:</b> Lorem ipsum <br><b>Source code:</b>  Lorem ipsum  
+                            <b>How is this useful:</b> Lorem ipsum <br> <b>Explanation:</b> Lorem ipsum <br><b>Source code:</b>  Lorem ipsum <br><br>
+                            <b>Tutorial:</b><br>
+                            1# click the red-bordered element:<br> 
+                            - its name and some fun facts are displayed below;<br> 
+                            - other elements it gets in touch with turn red; <br>
+                            2# click on other red border elements:<br>
+                            - notation of chemical reaction is displayed below;<br>
+                            - sum facts about coumpounds are displayed below;<br>
+                            3# click on remix button to remix.
+                            
                         </p>
 
                         <button id="alchemyButton" class="btn bg-button my-4">Git remix</button>
                        
-                <div class="periodicTable">
+                <div class="periodicTable" id="periodicTable">
 
                     <div class="elementColumn">
 
@@ -441,7 +450,7 @@
 
                         <div class="elementItem elementItemX"></div>
 
-                        <div class="elementItem elementItemX"><span id="whatElement" style="font-size: 28px;"></span></div>
+                        <div class="elementItem elementItemX"><span style="font-size: 28px;"></span></div>
 
                         <div class="elementItem elementItemX"></div>
 
@@ -641,7 +650,7 @@
 
                         <div class="elementItem elementItemX"></div>
 
-                        <button class="elementItem" id="N" style="background-color:skyblue;" title="NITROGEN, AZOT"><span class ="elementAbbreviation">N</span>
+                        <button class="elementItem elementPartner" id="N" style="background-color:skyblue;" title="NITROGEN, AZOT"><span class ="elementAbbreviation">N</span>
                         </button>
 
                         <button class="elementItem" id="P" style="background-color:skyblue;" title="PHOSPORUS, FOSFOR"><span class ="elementAbbreviation">P</span>
@@ -664,10 +673,10 @@
 
                         <div class="elementItem elementItemX"></div>
 
-                        <button class="elementItem" id="O" style="background-color:skyblue;" title="OXYGEN, TLEN"><span class ="elementAbbreviation">O</span>
+                        <button class="elementItem elementPartner" id="O" style="background-color:skyblue;" title="OXYGEN, TLEN"><span class ="elementAbbreviation">O</span>
                         </button>
 
-                        <button class="elementItem" id="S" style="background-color:skyblue;" title="SULFUR, SIARKA"><span class ="elementAbbreviation">S</span>
+                        <button class="elementItem elementPartner elementMaster" id="S" style="background-color:skyblue;" title="SULFUR, SIARKA"><span class ="elementAbbreviation">S</span>
                         </button>
 
                         <button class="elementItem" id="Se" style="background-color:skyblue;" title="SELENIUM, SELEN"><span class ="elementAbbreviation">Se</span>
@@ -690,7 +699,7 @@
                         <button class="elementItem" id="F" style="background-color:#FECDFC;" title="FLUORINE, FLUOR"><span class ="elementAbbreviation">F</span>
                         </button>
 
-                        <button class="elementItem" id="Cl" style="background-color:#FECDFC;" title="CHLORINE, CHLOR"><span class ="elementAbbreviation">Cl</span>
+                        <button class="elementItem elementPartner" id="Cl" style="background-color:#FECDFC;" title="CHLORINE, CHLOR"><span class ="elementAbbreviation">Cl</span>
                         </button>
 
                         <button class="elementItem" id="Br" style="background-color:#FECDFC;" title="BROMINE, BROM"><span class ="elementAbbreviation">Br</span>
@@ -731,23 +740,35 @@
                     </div>
 
                 </div>
-                            <div class="d-flex justify-content-center mb-4">
-                                <div id="element1"  class="me-2">?</div>
-                                <div>+</div>
-                                <div id="element2" class="ms-2">?</div>
+                            
+                            <fieldset class="form-group border p-3 mb-4">
+                                <legend class="px-2"></legend>
+
+                                        <p class="regular mt-4 font-weight-bold" id="elementName">---</p>
+
+                                        <p class="regular mt-4 font-weight-bold" id="elementDescription">---</p>
+                                                                          
+                            </fieldset>
+
+                            <div class="d-flex justify-content-center">
+                                <p class="regular me-1" id="elementLeftFull">?</p>
+                                <p class="regular">+</p>
+                                <p class="regular ms-1" id="elementRightFull">?</p>
                             </div>
 
+                            <div class="d-flex justify-content-center">
+                                <p class="regular me-1" id="elementLeftAbbreviation">?</p>
+                                <p class="regular">+</p>
+                                <p class="regular ms-1" id="elementRightAbbreviation">?</p>
+                            </div>
 
                             <fieldset class="form-group border p-3 mb-4">
                                 <legend class="px-2"></legend>
-                                    
-                                        <!-- <h6 id="resultElement">Result:</h6> -->
 
-                                        <p class="regular mt-4 font-weight-bold" id="elementNameLabel1">---</p>
+                                        <p class="regular mt-4 font-weight-bold" id="compoundName">---</p>
 
-                                        <p class="regular" id="elementNameLabel2">---</p>
-                                            
-                                                                   
+                                        <p class="regular" id="compoundDescription">---</p>
+                                                                          
                             </fieldset>
                             
                             
@@ -760,7 +781,7 @@
                         <div class="accordion-item mt-2">
                             <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed accordionJavaScriptButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                              Program 4 - Bird recognizer (unfinished)
+                              Program 4 - Bird recognizer
                             </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
