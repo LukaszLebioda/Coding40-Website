@@ -189,14 +189,45 @@ wodorMaster.onclick = function() {
     this.style.backgroundColor = "red";
     this.style.transform = "scale(1.5)";
 
-    // provides master elements' name 
-    document.getElementById("elementName").innerHTML = "<b>HYDROGEN</b>";
-    // provides info about master element
-    document.getElementById("elementDescription").innerHTML = "The most common element in the Universe (91% of all atoms out there). The first one to be created in the Big Bang. Its conversion into helium is the reason why the Sun will shine and spread its warm rays for the next 4 billion years.";
-    // places master element's full name into the chemical reaction notation
-    document.getElementById("elementLeftFull").innerHTML = "<b>HYDROGEN</b>";
-    // places master element's abbreviation into the chemical reaction
-    document.getElementById("elementLeftAbbreviation").innerHTML = "<b>H</b>";
+    // from here
+
+    const element = document.querySelector("#elementName");
+    const elementName = document.createElement("h5");
+    const elementDescription = document.createElement("h6");
+    element.append(elementName, elementDescription);
+    elementName.textContent = "Selected: HYDROGENNNNN";
+    elementDescription.textContent = "właściwości wodoru";
+    
+    const notation = document.querySelector("#elementLeftFull");
+    const elementLeftFull = document.createElement("h6");
+    const elementLeftAbbreviation = document.createElement("h6");
+    notation.append(elementLeftFull, elementLeftAbbreviation);
+    elementLeftFull.textContent = "Hyddrogg +"
+    elementLeftAbbreviation.textContent =  "Hh +"
+             
+        // birdHeadingName.style.color = "blue";
+        // birdHeadingName.style.marginTop = "30px";
+
+        // birdHeadingName.setAttribute("id", "birdie");
+        // birdHeadingDescription.style.color = "blue";
+        // birdHeadingDescription.style.padding = "20px 40px 20px 40px";
+        // birdHeadingDescription.textContent = description;
+        // birdHeadingImage.setAttribute("src", photo);
+        // birdHeadingImage.style.width = "780px";
+        // birdHeadingRights.style.color = "blue";
+        // birdHeadingRights.style.padding = "10px";
+        // birdHeadingRights.textContent = rights;
+        // birdEmptyDiv.textContent = "--------------------";
+
+
+    // // provides master elements' name 
+    // document.getElementById("elementName").innerHTML = "<b>HYDROGEN</b>";
+    // // provides info about master element
+    // document.getElementById("elementDescription").innerHTML = "The most common element in the Universe (91% of all atoms out there). The first one to be created in the Big Bang. Its conversion into helium is the reason why the Sun will shine and spread its warm rays for the next 4 billion years.";
+    // // places master element's full name into the chemical reaction notation
+    // document.getElementById("elementLeftFull").innerHTML = "<b>HYDROGEN</b>";
+    // // places master element's abbreviation into the chemical reaction
+    // document.getElementById("elementLeftAbbreviation").innerHTML = "<b>H</b>";
     
     // turns partner elements red and replaces master with partner
     azotPartner.style.display = "block";
@@ -229,15 +260,29 @@ wodorMaster.onclick = function() {
             chlorPartner.style.backgroundColor = "#FECDFC";
             siarkaPartner.style.backgroundColor = "skyblue";
 
-            // places partner element's name into the chemical reaction
-            document.getElementById("elementRightFull").innerHTML = "<b>OXYGEN = WATER</b>";
-            // places partner element's abbreviation + result into the chemical reaction
-            document.getElementById("elementRightAbbreviation").innerHTML = "<b>O = H<sub>2</sub>0<b>";
+            // // places partner element's name into the chemical reaction
+            // document.getElementById("elementRightFull").innerHTML = "<b>OXYGEN = WATER</b>";
+            // // places partner element's abbreviation + result into the chemical reaction
+            // document.getElementById("elementRightAbbreviation").innerHTML = "<b>O = H<sub>2</sub>0<b>";
             
-            // places compounds name
-            document.getElementById("compoundName").innerHTML = "<b>WATER</b>";
-            // places compounds description
-            document.getElementById("compoundDescription").innerHTML = "Location: tap water, bath water or bottled one from the nearby store. <br><br> 71% of the surface of the Earth lies underwater. 60-75% human bodyweght is water. Water was brought to Earth by asteroids billions of years ago.";
+            const elementRightFull = document.createElement("h6");
+            const elementRightAbbreviation = document.createElement("h6");
+            notation.append(elementRightFull, elementRightAbbreviation);
+            elementRightFull.textContent = "Oxygg"
+            elementRightAbbreviation.textContent = "Ou = H<sub>2</sub>0"
+
+
+            const compound = document.querySelector("#compoundName");
+            const compoundName = document.createElement("h5");
+            const compoundDescription = document.createElement("h6");
+            compound.append(compoundName, compoundDescription)
+            compoundName.textContent = "Vater";
+            compoundDescription.textContent = "zyciodainy napuj";
+
+            // // places compounds name
+            // document.getElementById("compoundName").innerHTML = "<b>WATER</b>";
+            // // places compounds description
+            // document.getElementById("compoundDescription").innerHTML = "Location: tap water, bath water or bottled one from the nearby store. <br><br> 71% of the surface of the Earth lies underwater. 60-75% human bodyweght is water. Water was brought to Earth by asteroids billions of years ago.";
 
         }
 
