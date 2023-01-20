@@ -1271,12 +1271,6 @@ hr
     border: solid 2px red;
 }
 
-/* pierwiastek partner */
-.elementPartnerRed
-{
-    background-color: red;
-}
-
 /* pusty div */
 .elementItemX
 {
@@ -1296,18 +1290,19 @@ hr
 @media (min-width: 1px) and (max-width: 450px) {
     .elementAbbreviation
     {
-        font-size: 8px;
+        font-size: 9px;
     }
     .elementItem
     {
         width: 17px;
         height: 23px;
+        font-size: 3px;
     }
 }
 @media (min-width: 451px) and (max-width: 767px) {
     .elementAbbreviation
     {
-        font-size: 14px;
+        font-size: 12px;
     }
     .elementItem
     {
