@@ -1170,7 +1170,7 @@ hr
     }
 }
 
-/* -------------- EXPERIENCE SECTION ---------------- */
+/* -------------- DESIGN SECTION ---------------- */
 
 .iframeDiv {
     position: relative;
@@ -1187,6 +1187,13 @@ hr
     height: 100%;
     border: 1px solid black;
   }
+
+/* -------------- DESIGN SECTION ---------------- */
+.experienceStep
+{
+    max-width: 600px;
+    margin-bottom: 30px;
+}
 
   /* --------------- CONTACT SECTION ---------------*/
 #myForm {
@@ -1237,7 +1244,7 @@ hr
     }
 }
 
-/* ----------- HOMEMADE ALCHEMIST -------------- */
+/* ----------- ELEMENT MIXER -------------- */
 .periodicTable
 {
     display: flex;
@@ -1248,6 +1255,13 @@ hr
 #alchemyButton[disabled]
 {
     background-color: grey;
+}
+
+.alchemyFieldset
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* każdy pierwiastek */
@@ -1288,6 +1302,10 @@ hr
 }
 
 @media (min-width: 1px) and (max-width: 450px) {
+    .alchemyFieldset
+    {
+        width: 90%;
+    }
     .elementAbbreviation
     {
         font-size: 9px;
@@ -1300,6 +1318,10 @@ hr
     }
 }
 @media (min-width: 451px) and (max-width: 767px) {
+    .alchemyFieldset
+    {
+        width: 90%;
+    }
     .elementAbbreviation
     {
         font-size: 12px;

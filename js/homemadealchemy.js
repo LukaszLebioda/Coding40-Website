@@ -1,24 +1,5 @@
-/* 
-STEP1 (ALL ELEMENTS): 
-- store elements used in the application into variables;
-- separately store master elements and partner elements;
-- create two buttons for master element and partner element respectively;
-- add class "elementItem" to every element;
-- add class "elementPartner" to every partner element (id = "*_p");
-- add class "elementMaster" to every master element (id = "*_m");
-- set initial state of every partner element to "display: none";
-
-STEP2 (BUTTON):
-- within remix button function set: partner element to "display: none" and master element to "display: block";
-- reset master elements and partner elements to their initial state;
-
-STEP3 (SINGLE ELEMENT):
-- provide info about master element (name, description, left side of notation x2);
-- set partners of the master element to: "display: block" and "background-color: red;"
-- set masters that became partners of master element to: "display: none";
-- set the background of sibling partner elements to their initial state when partner element clicked;
--provide info about partner element and result of the reaction (element name, compound name, compound description, right side of the notation);
-*/
+// STORE ALL MASTER & PARTNER ELEMENTS INTO VARIABLE
+// SET PARTNER ELEMENTS INITIAL STATE TO "DISPLAY: NONE";
 
 // AZOT
 let azotPartner = document.querySelector("#N_p"); // skyblue
@@ -101,75 +82,70 @@ enableAllMasters();
 
 //------------------------------------------------------------------------------
 
-// remix button behaviour (enabled when a partner element is clicked)
+// REMIX BUTTON
+// remix button enabled when partner element is clicked
+
 alchemyButton.onclick = function () {
 
     disableAll()
     enableAllMasters()
 
-    // display block, display none
+    // RESET PARTNER VERSIONS TO "DISPLAY: NONE"; 
+    // RESET MASTER VERSIONS TO "DISPLAY: BLOCK"; 
+    // RESET PARTNER VERSIONS & MASTER VERSIONS TO THEIR INITIAL COLOR;
+    // RESET MASTER VERSIONS TO THEIR INITIAL SCALE (1); 
+
     azotPartner.style.display = "none";
     azotMaster.style.display = "block";
-
-    chlorPartner.style.display = "none";
-    chlorMaster.style.display = "block";
-
-    siarkaPartner.style.display = "none";
-    siarkaMaster.style.display = "block";
-
-    sodPartner.style.display = "none";
-    sodMaster.style.display = "block";
-
-    wodorPartner.style.display = "none";
-    wodorMaster.style.display = "block";
-
-    tlenPartner.style.display = "none";
-    tlenMaster.style.display = "block";
-
-    wapnPartner.style.display = "none";
-    wapnMaster.style.display = "block";
-
-    // reset master elements and partner elements to their initial state
     azotPartner.style.backgroundColor = "skyblue";
     azotMaster.style.backgroundColor = "skyblue";
     azotMaster.style.transform = "scale(1)";
-    
+
+    chlorPartner.style.display = "none";
+    chlorMaster.style.display = "block";
     chlorPartner.style.backgroundColor = "#FECDFC";
     chlorMaster.style.backgroundColor = "#FECDFC";
     chlorMaster.style.transform = "scale(1)";
 
+    siarkaPartner.style.display = "none";
+    siarkaMaster.style.display = "block";
     siarkaPartner.style.backgroundColor = "skyblue";
     siarkaMaster.style.backgroundColor = "skyblue";
     siarkaMaster.style.transform = "scale(1)";
-    
+
+    sodPartner.style.display = "none";
+    sodMaster.style.display = "block";
     sodPartner.style.backgroundColor = "lightsalmon";
     sodMaster.style.backgroundColor = "lightsalmon";
     sodMaster.style.transform = "scale(1)";
 
+    tlenPartner.style.display = "none";
+    tlenMaster.style.display = "block";
     tlenPartner.style.backgroundColor = "skyblue";
     tlenMaster.style.backgroundColor = "skyblue";
     tlenMaster.style.transform = "scale(1)";
 
+    wapnPartner.style.display = "none";
+    wapnMaster.style.display = "block";
     wapnPartner.style.backgroundColor = "moccasin";
     wapnMaster.style.backgroundColor = "moccasin";
     wapnMaster.style.transform = "scale(1)";
 
-    wodorPartner.style.backgroundColor = "moccasin";
-    wodorMaster.style.backgroundColor = "moccasin";
+    wodorPartner.style.display = "none";
+    wodorMaster.style.display = "block";
+    wodorPartner.style.backgroundColor = "skyblue";
+    wodorMaster.style.backgroundColor = "skyblue";
     wodorMaster.style.transform = "scale(1)";
-    
-    // provides info about the element
-    document.querySelector("#elementName").innerHTML = "---";
-    document.querySelector("#elementDescription").innerHTML = "---";
-    // provides information about compounds
-    document.querySelector("#compoundName").innerHTML = "---";
-    document.querySelector("#compoundDescription").innerHTML = "---";
-    // provides information about chemical reaction (full names)
-    document.querySelector("#elementLeftFull").innerHTML = "?";
-    document.querySelector("#elementRightFull").innerHTML = "?";
-    // provides information about chemical reaction (abbreviations)
-    document.querySelector("#elementLeftAbbreviation").innerHTML = "?";
-    document.querySelector("#elementRightAbbreviation").innerHTML = "?";
+
+    // remove info about elements & compounds: name and description; 
+    elementMaster.removeChild(elementMaster.firstChild);
+    elementMaster.removeChild(elementMaster.lastChild);
+    elementPartner.removeChild(elementPartner.firstChild);
+    elementPartner.removeChild(elementPartner.lastChild);
+    compoundName1.removeChild(compoundName1.firstChild);
+    compoundName1.removeChild(compoundName1.lastChild);
+    compoundName2.removeChild(compoundName2.firstChild);
+    compoundName2.removeChild(compoundName2.lastChild);
     
     // disables remix button
     this.disabled = true;
@@ -180,56 +156,45 @@ alchemyButton.onclick = function () {
 
 // WODÓR
 
+// HTML: CREATE SEPARATE VIVS (BUTTONS) FOR PARTNER VERSION & MASTER VERSION RESPECTIVELY;
+// HTML: ADD CLASS "ELEMENTITEM" TO EVERY ELEMENT;
+// HTML: ADD CLASS "ELEMENT PARTNER" TO EVERY PARTNER VERSION (id = "*_p");
+// HTML: ADD CLASS "ELEMENT MASTER" TO EVERY MASTER VERSION (id = "*_p");
+
+// STORE ALL MASTER & PARTNER ELEMENTS INTO VARIABLE
+// SET PARTNER ELEMENTS INITIAL STATE TO "DISPLAY: NONE";
+
+// REMIX BUTTON: RESET PARTNER VERSIONS TO "DISPLAY: NONE"; 
+// REMIX BUTTON: RESET MASTER VERSIONS TO "DISPLAY: BLOCK"; 
+// REMIX BUTTON: RESET PARTNER VERSIONS & MASTER VERSIONS TO THEIR INITIAL COLOR;
+// REMIX BUTTON: RESET MASTER VERSIONS TO THEIR INITIAL SCALE (1); 
+
 wodorMaster.onclick = function() {
 
-    // enables partners
+    // to prevent recreate master related div elements when reclicked
+    wodorMaster.disabled = true;
+
+    // enables all partners:
     enableAllPartners();
 
-    // change master element when clicked
+    // change this master element when clicked
     this.style.backgroundColor = "red";
     this.style.transform = "scale(1.5)";
 
-    // from here
+    // create elements for master element's name & description
+    const elementMaster = document.querySelector("#elementMaster");
+    const elementMasterName = document.createElement("h5");
+    const elementMasterDescription = document.createElement("h6");
+    elementMaster.append(elementMasterName, elementMasterDescription);
+    elementMasterName.textContent = "HYDROGEN (H)";
+    elementMasterName.style.fontWeight = "bold";
+    elementMasterDescription.innerHTML = "The most common element in the Universe (91% of all atoms out there). The first one to be created in the Big Bang. Its conversion into helium is the reason why the Sun will shine and spread its warm rays for the next 4 billion years.";
+    elementMasterDescription.style.padding = "10px 40px 10px 40px";
 
-    const element = document.querySelector("#elementName");
-    const elementName = document.createElement("h5");
-    const elementDescription = document.createElement("h6");
-    element.append(elementName, elementDescription);
-    elementName.textContent = "Selected: HYDROGENNNNN";
-    elementDescription.textContent = "właściwości wodoru";
     
-    const notation = document.querySelector("#elementLeftFull");
-    const elementLeftFull = document.createElement("h6");
-    const elementLeftAbbreviation = document.createElement("h6");
-    notation.append(elementLeftFull, elementLeftAbbreviation);
-    elementLeftFull.textContent = "Hyddrogg +"
-    elementLeftAbbreviation.textContent =  "Hh +"
-             
-        // birdHeadingName.style.color = "blue";
-        // birdHeadingName.style.marginTop = "30px";
-
-        // birdHeadingName.setAttribute("id", "birdie");
-        // birdHeadingDescription.style.color = "blue";
-        // birdHeadingDescription.style.padding = "20px 40px 20px 40px";
-        // birdHeadingDescription.textContent = description;
-        // birdHeadingImage.setAttribute("src", photo);
-        // birdHeadingImage.style.width = "780px";
-        // birdHeadingRights.style.color = "blue";
-        // birdHeadingRights.style.padding = "10px";
-        // birdHeadingRights.textContent = rights;
-        // birdEmptyDiv.textContent = "--------------------";
-
-
-    // // provides master elements' name 
-    // document.getElementById("elementName").innerHTML = "<b>HYDROGEN</b>";
-    // // provides info about master element
-    // document.getElementById("elementDescription").innerHTML = "The most common element in the Universe (91% of all atoms out there). The first one to be created in the Big Bang. Its conversion into helium is the reason why the Sun will shine and spread its warm rays for the next 4 billion years.";
-    // // places master element's full name into the chemical reaction notation
-    // document.getElementById("elementLeftFull").innerHTML = "<b>HYDROGEN</b>";
-    // // places master element's abbreviation into the chemical reaction
-    // document.getElementById("elementLeftAbbreviation").innerHTML = "<b>H</b>";
-    
-    // turns partner elements red and replaces master with partner
+    // removes master elements
+    // installs partner elements
+    // turns partner elements red 
     azotPartner.style.display = "block";
     azotPartner.style.backgroundColor = "red";
     azotMaster.style.display = "none";
@@ -246,43 +211,57 @@ wodorMaster.onclick = function() {
     tlenPartner.style.backgroundColor = "red";
     tlenMaster.style.display = "none";
 
-        // partner element 1
+        // PARTNER ELEMENT 1
         tlenPartner.onclick = function() {
 
             // disables all the elements
+            // enable all master elements
             disableAll()
             enableAllMasters();
+
+            // to prevent recreate master related div elements when reclicked
+            wodorMaster.disabled = true; 
+
             // enables remix button
             alchemyButton.disabled = false;
             
-            // resets the background of other partner elements
+            // resets the background of sibling partner elements
             azotPartner.style.backgroundColor = "skyblue";
             chlorPartner.style.backgroundColor = "#FECDFC";
             siarkaPartner.style.backgroundColor = "skyblue";
 
-            // // places partner element's name into the chemical reaction
-            // document.getElementById("elementRightFull").innerHTML = "<b>OXYGEN = WATER</b>";
-            // // places partner element's abbreviation + result into the chemical reaction
-            // document.getElementById("elementRightAbbreviation").innerHTML = "<b>O = H<sub>2</sub>0<b>";
-            
-            const elementRightFull = document.createElement("h6");
-            const elementRightAbbreviation = document.createElement("h6");
-            notation.append(elementRightFull, elementRightAbbreviation);
-            elementRightFull.textContent = "Oxygg"
-            elementRightAbbreviation.textContent = "Ou = H<sub>2</sub>0"
+            // create elements for partner element's name & description
+            const elementPartner = document.querySelector("#elementPartner");
+            const elementPartnerName = document.createElement("h5");
+            const elementPartnerDescription = document.createElement("h6");
+            elementPartner.append(elementPartnerName, elementPartnerDescription);
+            elementPartnerName.textContent = "OXYGEN (O)";
+            elementPartnerName.style.fontWeight = "bold";
+            elementPartnerDescription.innerHTML = "właściwości tlenu";
+            elementPartnerDescription.style.padding = "10px 40px 10px 40px";
 
+            // create elements for first compound's name and description
+            const compound1 = document.querySelector("#compoundName1");
+            const compoundName1 = document.createElement("h5");
+            const compoundDescription1 = document.createElement("h6");
+            compound1.append(compoundName1, compoundDescription1);
+            compoundName1.innerHTML = "WODA (H<sub>2</sub>O)";
+            compoundName1.style.fontWeight = "bold";
+            compoundDescription1.innerHTML = "Location: tap water, bath water or bottled one from the nearby store. <br><br> 71% of the surface of the Earth lies underwater. 60-75% human bodyweght is water. Water was brought to Earth by asteroids billions of years ago.<hr>";
+            compoundDescription1.style.padding = "10px 40px 10px 40px";
 
-            const compound = document.querySelector("#compoundName");
-            const compoundName = document.createElement("h5");
-            const compoundDescription = document.createElement("h6");
-            compound.append(compoundName, compoundDescription)
-            compoundName.textContent = "Vater";
-            compoundDescription.textContent = "zyciodainy napuj";
-
-            // // places compounds name
-            // document.getElementById("compoundName").innerHTML = "<b>WATER</b>";
-            // // places compounds description
-            // document.getElementById("compoundDescription").innerHTML = "Location: tap water, bath water or bottled one from the nearby store. <br><br> 71% of the surface of the Earth lies underwater. 60-75% human bodyweght is water. Water was brought to Earth by asteroids billions of years ago.";
+            // create elements for second compound's name and description
+            const compound2 = document.querySelector("#compoundName2");
+            // const separator = document.createElement("h6");
+            // const compoundNotation2 = document.createElement("h6");
+            const compoundName2 = document.createElement("h5");
+            const compoundDescription2 = document.createElement("h6");
+            compound2.append(compoundName2, compoundDescription2);
+            // compoundNotation2.textContent = "H202";
+            compoundName2.textContent = "Vater2";
+            compoundName2.style.fontWeight = "bold";
+            compoundDescription2.textContent = "zyciodainy napuj2";
+            compoundDescription2.style.padding = "10px 40px 10px 40px";
 
         }
 
