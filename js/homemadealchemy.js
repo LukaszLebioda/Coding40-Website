@@ -146,6 +146,12 @@ alchemyButton.onclick = function () {
     compoundName1.removeChild(compoundName1.lastChild);
     compoundName2.removeChild(compoundName2.firstChild);
     compoundName2.removeChild(compoundName2.lastChild);
+    compoundName3.removeChild(compoundName3.firstChild);
+    compoundName3.removeChild(compoundName3.lastChild);
+    compoundName4.removeChild(compoundName4.firstChild);
+    compoundName4.removeChild(compoundName4.lastChild);
+    compoundName5.removeChild(compoundName5.firstChild);
+    compoundName5.removeChild(compoundName5.lastChild);
 
     // otherCompoundName1.removeChild(otherCompoundName1.firstChild);
     // otherCompoundName1.removeChild(otherCompoundName1.lastChild);
@@ -262,6 +268,36 @@ wodorMaster.onclick = function() {
             compoundDescription2.innerHTML = "Low-concentrated solution is friendly as it cleans minor wounds. Medium-concentrated solution becomes a bleach used at hairdressers' to brighten hair. High-concentrated one becomes very toxic and is used only in the industry (e.g. in the production of rocket and submarine fuel).";
             compoundDescription2.style.padding = "10px 40px 10px 40px";
 
+            // create elements for third compound's name and description
+            const compound3 = document.querySelector("#compoundName3");
+            const compoundName3 = document.createElement("h5");
+            const compoundDescription3 = document.createElement("h6");
+            compound3.append(compoundName3, compoundDescription3);
+            compoundName3.innerHTML = "";
+            compoundName3.style.fontWeight = "bold";
+            compoundDescription3.innerHTML = "";
+            compoundDescription3.style.padding = "";
+
+            // create elements for fourth compound's name and description
+            const compound4 = document.querySelector("#compoundName4");
+            const compoundName4 = document.createElement("h5");
+            const compoundDescription4 = document.createElement("h6");
+            compound4.append(compoundName4, compoundDescription4);
+            compoundName4.innerHTML = "";
+            compoundName4.style.fontWeight = "bold";
+            compoundDescription4.innerHTML = "";
+            compoundDescription4.style.padding = "";
+
+            // create elements for fifth compound's name and description
+            const compound5 = document.querySelector("#compoundName5");
+            const compoundName5 = document.createElement("h5");
+            const compoundDescription5 = document.createElement("h6");
+            compound5.append(compoundName5, compoundDescription5);
+            compoundName5.innerHTML = "";
+            compoundName5.style.fontWeight = "bold";
+            compoundDescription5.innerHTML = "";
+            compoundDescription5.style.padding = "";
+
         }
 
         // PARTNER ELEMENT 2
@@ -311,7 +347,37 @@ wodorMaster.onclick = function() {
             compoundName2.innerHTML = "";
             compoundName2.style.fontWeight = "bold";
             compoundDescription2.innerHTML = "";
-            compoundDescription2.style.padding = "10px 40px 10px 40px";
+            compoundDescription2.style.padding = "";
+
+             // create elements for third compound's name and description
+             const compound3 = document.querySelector("#compoundName3");
+             const compoundName3 = document.createElement("h5");
+             const compoundDescription3 = document.createElement("h6");
+             compound3.append(compoundName3, compoundDescription3);
+             compoundName3.innerHTML = "";
+             compoundName3.style.fontWeight = "bold";
+             compoundDescription3.innerHTML = "";
+             compoundDescription3.style.padding = "";
+ 
+             // create elements for fourth compound's name and description
+             const compound4 = document.querySelector("#compoundName4");
+             const compoundName4 = document.createElement("h5");
+             const compoundDescription4 = document.createElement("h6");
+             compound4.append(compoundName4, compoundDescription4);
+             compoundName4.innerHTML = "";
+             compoundName4.style.fontWeight = "bold";
+             compoundDescription4.innerHTML = "";
+             compoundDescription4.style.padding = "";
+ 
+             // create elements for fifth compound's name and description
+             const compound5 = document.querySelector("#compoundName5");
+             const compoundName5 = document.createElement("h5");
+             const compoundDescription5 = document.createElement("h6");
+             compound5.append(compoundName5, compoundDescription5);
+             compoundName5.innerHTML = "";
+             compoundName5.style.fontWeight = "bold";
+             compoundDescription5.innerHTML = "";
+             compoundDescription5.style.padding = "";
             
         }
 
@@ -362,7 +428,37 @@ wodorMaster.onclick = function() {
             compoundName2.innerHTML = "";
             compoundName2.style.fontWeight = "bold";
             compoundDescription2.innerHTML = "";
-            compoundDescription2.style.padding = "10px 40px 10px 40px";
+            compoundDescription2.style.padding = "";
+
+             // create elements for third compound's name and description
+             const compound3 = document.querySelector("#compoundName3");
+             const compoundName3 = document.createElement("h5");
+             const compoundDescription3 = document.createElement("h6");
+             compound3.append(compoundName3, compoundDescription3);
+             compoundName3.innerHTML = "";
+             compoundName3.style.fontWeight = "bold";
+             compoundDescription3.innerHTML = "";
+             compoundDescription3.style.padding = "";
+ 
+             // create elements for fourth compound's name and description
+             const compound4 = document.querySelector("#compoundName4");
+             const compoundName4 = document.createElement("h5");
+             const compoundDescription4 = document.createElement("h6");
+             compound4.append(compoundName4, compoundDescription4);
+             compoundName4.innerHTML = "";
+             compoundName4.style.fontWeight = "bold";
+             compoundDescription4.innerHTML = "";
+             compoundDescription4.style.padding = "";
+ 
+             // create elements for fifth compound's name and description
+             const compound5 = document.querySelector("#compoundName5");
+             const compoundName5 = document.createElement("h5");
+             const compoundDescription5 = document.createElement("h6");
+             compound5.append(compoundName5, compoundDescription5);
+             compoundName5.innerHTML = "";
+             compoundName5.style.fontWeight = "bold";
+             compoundDescription5.innerHTML = "";
+             compoundDescription5.style.padding = "";
 
         }     
 }
@@ -452,7 +548,7 @@ siarkaMaster.onclick = function() {
             compoundName1.innerHTML = "";
             compoundName1.style.fontWeight = "bold";
             compoundDescription1.innerHTML = "";
-            compoundDescription1.style.padding = "10px 40px 10px 40px";
+            compoundDescription1.style.padding = "";
 
             // create elements for second compound's name and description
             const compound2 = document.querySelector("#compoundName2");
@@ -462,7 +558,37 @@ siarkaMaster.onclick = function() {
             compoundName2.innerHTML = "";
             compoundName2.style.fontWeight = "bold";
             compoundDescription2.innerHTML = "";
-            compoundDescription2.style.padding = "10px 40px 10px 40px";
+            compoundDescription2.style.padding = "";
+
+             // create elements for third compound's name and description
+             const compound3 = document.querySelector("#compoundName3");
+             const compoundName3 = document.createElement("h5");
+             const compoundDescription3 = document.createElement("h6");
+             compound3.append(compoundName3, compoundDescription3);
+             compoundName3.innerHTML = "";
+             compoundName3.style.fontWeight = "bold";
+             compoundDescription3.innerHTML = "";
+             compoundDescription3.style.padding = "";
+ 
+             // create elements for fourth compound's name and description
+             const compound4 = document.querySelector("#compoundName4");
+             const compoundName4 = document.createElement("h5");
+             const compoundDescription4 = document.createElement("h6");
+             compound4.append(compoundName4, compoundDescription4);
+             compoundName4.innerHTML = "";
+             compoundName4.style.fontWeight = "bold";
+             compoundDescription4.innerHTML = "";
+             compoundDescription4.style.padding = "";
+ 
+             // create elements for fifth compound's name and description
+             const compound5 = document.querySelector("#compoundName5");
+             const compoundName5 = document.createElement("h5");
+             const compoundDescription5 = document.createElement("h6");
+             compound5.append(compoundName5, compoundDescription5);
+             compoundName5.innerHTML = "";
+             compoundName5.style.fontWeight = "bold";
+             compoundDescription5.innerHTML = "";
+             compoundDescription5.style.padding = "";
 
         }
 
@@ -511,7 +637,37 @@ siarkaMaster.onclick = function() {
             compoundName2.innerHTML = "";
             compoundName2.style.fontWeight = "bold";
             compoundDescription2.innerHTML = "";
-            compoundDescription2.style.padding = "10px 40px 10px 40px";
+            compoundDescription2.style.padding = "";
+
+             // create elements for third compound's name and description
+             const compound3 = document.querySelector("#compoundName3");
+             const compoundName3 = document.createElement("h5");
+             const compoundDescription3 = document.createElement("h6");
+             compound3.append(compoundName3, compoundDescription3);
+             compoundName3.innerHTML = "";
+             compoundName3.style.fontWeight = "bold";
+             compoundDescription3.innerHTML = "";
+             compoundDescription3.style.padding = "";
+ 
+             // create elements for fourth compound's name and description
+             const compound4 = document.querySelector("#compoundName4");
+             const compoundName4 = document.createElement("h5");
+             const compoundDescription4 = document.createElement("h6");
+             compound4.append(compoundName4, compoundDescription4);
+             compoundName4.innerHTML = "";
+             compoundName4.style.fontWeight = "bold";
+             compoundDescription4.innerHTML = "";
+             compoundDescription4.style.padding = "";
+ 
+             // create elements for fifth compound's name and description
+             const compound5 = document.querySelector("#compoundName5");
+             const compoundName5 = document.createElement("h5");
+             const compoundDescription5 = document.createElement("h6");
+             compound5.append(compoundName5, compoundDescription5);
+             compoundName5.innerHTML = "";
+             compoundName5.style.fontWeight = "bold";
+             compoundDescription5.innerHTML = "";
+             compoundDescription5.style.padding = "";
 
         }
 }
