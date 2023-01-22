@@ -187,6 +187,69 @@ p.myTextJustify
     }
     p.regular {
         font-size: 15px;
+    }/* do opisów w skillach */
+@media (max-width: 575px)
+{
+    p.myTextJustify
+    {
+        margin: 40px 20px;
+        text-align: left;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 330px) {
+    .masthead {
+        min-height: 140px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+    }
+    h1.regular {
+        font-size: 25px;
+    }
+    p.regular {
+        font-size: 12px;
+    }
+}
+@media (min-width: 331px) and (max-width: 475px) {
+    .masthead {
+        min-height: 200px;
+    }
+    h1 {
+        font-size: 32px; 
+    }
+    p {
+        font-size: 22px;
+    }
+    h1.regular {
+        font-size: 25px;
+    }
+    p.regular {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 767px) {
+    .masthead {
+        min-height: 240px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 26px;
+    }
+    h1.regular {
+        font-size: 25px;
+    }
+    p.regular {
+        font-size: 15px;
     }
 }
 
@@ -229,6 +292,49 @@ p.myTextJustify
     }
     p {
         font-size: calc(0.525rem + 3.3vw);
+    }
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .masthead {
+        min-height: 330px;
+    }
+    h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
+    }
+        h1.regular {
+        font-size: 25px;
+    }
+    p.regular {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .masthead {
+        min-height: 460px;
+    }
+    h1 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+    p {
+        font-size: calc(0.525rem + 3.3vw);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .masthead {
+        min-height: 580px;
+    }
+    h1 {
+        font-size: calc(1.525rem + 2.3vw);
+    }
+    p {
+        font-size: calc(0.525rem + 2.3vw);
     }
 }
 
@@ -1176,7 +1282,7 @@ hr
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 60%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 60%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)*/
   }
   
   .responsive-iframe {
@@ -1188,11 +1294,27 @@ hr
     border: 1px solid black;
   }
 
-/* -------------- DESIGN SECTION ---------------- */
+/* -------------- EXPERIENCE SECTION ---------------- */
 .experienceStep
 {
     max-width: 600px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.experienceIconLeft
+{
+    position: absolute;
+    top: 38px;
+    left: 60px;
+    font-size: 27px;
+}
+.experienceIconRight
+{
+    position: absolute;
+    top: 38px;
+    right: 60px;
+    font-size: 27px;
 }
 
   /* --------------- CONTACT SECTION ---------------*/
