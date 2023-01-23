@@ -1391,7 +1391,7 @@ hr
 {
     display: block;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 4px;
     width: 50px;
     height: 70px;
@@ -1400,11 +1400,21 @@ hr
     align-items: center;
     justify-content: center;
 }
+.elementItem:hover
+{
+    background-color: lightgrey !important;
+}
 
-/* pierwiastek główny */
+/* pierwiastki główne */
 .elementMaster
 {
     border: solid 2px red;
+}
+
+/* pierwiastki pomocnicze */
+.elementPartner
+{
+    border: none;
 }
 
 /* pusty div */
@@ -1416,6 +1426,10 @@ hr
     width: 50px;
     height: 70px;
     padding: 1px;
+}
+.elementItemX:hover
+{
+    background-color: #fff9bb !important; 
 }
 
 .elementAbbreviation
@@ -1430,7 +1444,7 @@ hr
     }
     .elementAbbreviation
     {
-        font-size: 9px;
+        font-size: 8px;
     }
     .elementItem
     {
