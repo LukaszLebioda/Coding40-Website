@@ -163,7 +163,7 @@ alchemyButton.onclick = function () {
 
 //------------------------------------------------------------------------------------
 
-// ***** WODÓR ***** //
+// ***** WODÓR MASTER ***** //
 
 // HTML: CREATE SEPARATE VIVS (BUTTONS) FOR PARTNER VERSION & MASTER VERSION RESPECTIVELY;
 // HTML: ADD CLASS "ELEMENTITEM" TO EVERY ELEMENT;
@@ -198,7 +198,7 @@ wodorMaster.onclick = function() {
     elementMasterName.textContent = "HYDROGEN (H)";
     elementMasterName.style.fontWeight = "bold";
     elementMasterDescription.innerHTML = "The first element to be created in the Big Bang. The most common in the Universe (91% of all atoms out there) and the main fuel and building material for all the stars. Its conversion into helium is the reason why the Sun will shine and spread its warm rays for the next 4 billion years.";
-    elementMasterDescription.style.padding = "10px 40px 10px 40px";
+    elementMasterDescription.style.padding = "10px 20px 10px 20px";
 
     // removes master elements
     // installs partner elements
@@ -246,7 +246,7 @@ wodorMaster.onclick = function() {
             elementPartnerName.textContent = "OXYGEN (O)";
             elementPartnerName.style.fontWeight = "bold";
             elementPartnerDescription.innerHTML = "2.5 billion years ago some bacteria and other unicellular organisms started to produce oxygen and release it into Earth's atmosphere. It was highly toxic initially and life had to evolve to deal with it. Now it builds 21% of the air we're breathing in.";
-            elementPartnerDescription.style.padding = "10px 40px 10px 40px";
+            elementPartnerDescription.style.padding = "10px 20px 10px 20px";
 
             // create elements for first compound's name and description
             const compound1 = document.querySelector("#compoundName1");
@@ -256,7 +256,7 @@ wodorMaster.onclick = function() {
             compoundName1.innerHTML = "WATER (H<sub>2</sub>O)";
             compoundName1.style.fontWeight = "bold";
             compoundDescription1.innerHTML = "71% of the surface of the Earth lies underwater. 60-75% human bodyweight is water. Water was brought to Earth by asteroids billions of years ago. It's the environment where life first appeared and started to evolve.<hr>";
-            compoundDescription1.style.padding = "10px 40px 10px 40px";
+            compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             // create elements for second compound's name and description
             const compound2 = document.querySelector("#compoundName2");
@@ -266,7 +266,7 @@ wodorMaster.onclick = function() {
             compoundName2.innerHTML = "HYDROGEN PEROXIDE (H<sub>2</sub>O<sub>2</sub>)";
             compoundName2.style.fontWeight = "bold";
             compoundDescription2.innerHTML = "Low-concentrated solution is friendly as it cleans minor wounds. Medium-concentrated solution becomes a bleach used at hairdressers' to brighten hair. High-concentrated one becomes very toxic and is used only in the industry (e.g. in the production of rocket and submarine fuel).";
-            compoundDescription2.style.padding = "10px 40px 10px 40px";
+            compoundDescription2.style.padding = "10px 20px 10px 20px";
 
             // create elements for third compound's name and description
             const compound3 = document.querySelector("#compoundName3");
@@ -327,7 +327,7 @@ wodorMaster.onclick = function() {
             elementPartnerName.textContent = "CHLORINE (Cl)";
             elementPartnerName.style.fontWeight = "bold";
             elementPartnerDescription.innerHTML = "Poisonous, toxic, very reactive gas of green-yellowish colour. Its strong, irritating scent is to be caught in the public swimming-pools (where it's used for water disinfection) and in some household bleaching products.";
-            elementPartnerDescription.style.padding = "10px 40px 10px 40px";
+            elementPartnerDescription.style.padding = "10px 20px 10px 20px";
 
             // create elements for first compound's name and description
             const compound1 = document.querySelector("#compoundName1");
@@ -337,7 +337,7 @@ wodorMaster.onclick = function() {
             compoundName1.innerHTML = "HYDROCHLORIC ACID (HCl)";
             compoundName1.style.fontWeight = "bold";
             compoundDescription1.innerHTML = "One of the strongest inorganic acids and at the same time an important digestive factor present in every mammal's stomach (humans included). Broadly used in the industry (metalworking, food industry etc.) as well as in the underground production of illegal drugs.";
-            compoundDescription1.style.padding = "10px 40px 10px 40px";
+            compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             // create elements for second compound's name and description
             const compound2 = document.querySelector("#compoundName2");
@@ -407,8 +407,8 @@ wodorMaster.onclick = function() {
             elementPartner.append(elementPartnerName, elementPartnerDescription);
             elementPartnerName.textContent = "SULFUR (S)";
             elementPartnerName.style.fontWeight = "bold";
-            elementPartnerDescription.innerHTML = "Poisonous, toxic, very reactive gas of green-yellowish colour. Its strong, irritating scent is to be caught in the public swimming-pools (where it's used for water disinfection) and in some household bleaching products.";
-            elementPartnerDescription.style.padding = "10px 40px 10px 40px";
+            elementPartnerDescription.innerHTML = "A widespread element often found in the form of yellowish minerals. Used e.g. in plastics industry, petrochemical industry, medicine (for skin diseases) and of course in matches' manufacturing. The smell os sulfur compounds is to be sensed in the nearby of active volcanoes or some hot springs.";
+            elementPartnerDescription.style.padding = "10px 20px 10px 20px";
 
             // create elements for first compound's name and description
             const compound1 = document.querySelector("#compoundName1");
@@ -418,7 +418,7 @@ wodorMaster.onclick = function() {
             compoundName1.innerHTML = "HYDROGEN SULFIDE (H<sub>2</sub>S)";
             compoundName1.style.fontWeight = "bold";
             compoundDescription1.innerHTML = "Toxic and poisonous, but luckily tends to warn its surroundings by spreading a very unpleasant smell of rotten eggs. Sometimes escapes its underground hideouts (gas deposits, mineral waters etc.), especially in the proximity of active volcanoes or some hot springs.";
-            compoundDescription1.style.padding = "10px 40px 10px 40px";
+            compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             // create elements for second compound's name and description
             const compound2 = document.querySelector("#compoundName2");
@@ -465,7 +465,7 @@ wodorMaster.onclick = function() {
 
 // --------------------------------------------------------------------------
 
-// ***** SIARKA ***** //
+// ***** SIARKA MASTER ***** //
 
 // HTML: CREATE SEPARATE VIVS (BUTTONS) FOR PARTNER VERSION & MASTER VERSION RESPECTIVELY;
 // HTML: ADD CLASS "ELEMENTITEM" TO EVERY ELEMENT;
@@ -500,7 +500,7 @@ siarkaMaster.onclick = function() {
     elementMasterName.textContent = "SULFUR (S)";
     elementMasterName.style.fontWeight = "bold";
     elementMasterDescription.innerHTML = "A widespread element often found in the form of yellowish minerals. Used e.g. in plastics industry, petrochemical industry, medicine (for skin diseases) and of course in matches' manufacturing. The smell os sulfur compounds is to be sensed in the nearby of active volcanoes or some hot springs.";
-    elementMasterDescription.style.padding = "10px 40px 10px 40px";
+    elementMasterDescription.style.padding = "10px 20px 10px 20px";
 
     // removes master elements
     // installs partner elements
@@ -513,7 +513,7 @@ siarkaMaster.onclick = function() {
     tlenPartner.style.backgroundColor = "red";
     tlenMaster.style.display = "none"; 
 
-        // PARTNER ELEMENT 1
+        // PARTNER ELEMENT 1 ------------------------------------
         wodorPartner.onclick = function() {
 
             // disables all the elements
@@ -537,18 +537,18 @@ siarkaMaster.onclick = function() {
             elementPartner.append(elementPartnerName, elementPartnerDescription);
             elementPartnerName.textContent = "HYDROGEN (O)";
             elementPartnerName.style.fontWeight = "bold";
-            elementPartnerDescription.innerHTML = "Lorem ipsum";
-            elementPartnerDescription.style.padding = "10px 40px 10px 40px";
+            elementPartnerDescription.innerHTML = "The first element to be created in the Big Bang. The most common in the Universe (91% of all atoms out there) and the main fuel and building material for all the stars. Its conversion into helium is the reason why the Sun will shine and spread its warm rays for the next 4 billion years.";
+            elementPartnerDescription.style.padding = "10px 20px 10px 20px";
 
             // create elements for first compound's name and description
             const compound1 = document.querySelector("#compoundName1");
             const compoundName1 = document.createElement("h5");
             const compoundDescription1 = document.createElement("h6");
             compound1.append(compoundName1, compoundDescription1);
-            compoundName1.innerHTML = "";
+            compoundName1.innerHTML = "HYDROGEN SULFIDE (H<sub>2</sub>S)";
             compoundName1.style.fontWeight = "bold";
-            compoundDescription1.innerHTML = "";
-            compoundDescription1.style.padding = "";
+            compoundDescription1.innerHTML = "Toxic and poisonous, but luckily tends to warn its surroundings by spreading a very unpleasant smell of rotten eggs. Sometimes escapes its underground hideouts (gas deposits, mineral waters etc.), especially in the proximity of active volcanoes or some hot springs.";
+            compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             // create elements for second compound's name and description
             const compound2 = document.querySelector("#compoundName2");
@@ -592,7 +592,7 @@ siarkaMaster.onclick = function() {
 
         }
 
-        // PARTNER ELEMENT 2
+        // PARTNER ELEMENT 2 --------------------------------------------
         tlenPartner.onclick = function() {
 
             // disables all the elements
@@ -616,18 +616,18 @@ siarkaMaster.onclick = function() {
             elementPartner.append(elementPartnerName, elementPartnerDescription);
             elementPartnerName.textContent = "OXYGEN (O)";
             elementPartnerName.style.fontWeight = "bold";
-            elementPartnerDescription.innerHTML = "";
-            elementPartnerDescription.style.padding = "10px 40px 10px 40px";
+            elementPartnerDescription.innerHTML = "2.5 billion years ago some bacteria and other unicellular organisms started to produce oxygen and release it into Earth's atmosphere. It was highly toxic initially and life had to evolve to deal with it. Now it builds 21% of the air we're breathing in.";
+            elementPartnerDescription.style.padding = "10px 20px 10px 20px";
 
             // create elements for first compound's name and description
             const compound1 = document.querySelector("#compoundName1");
             const compoundName1 = document.createElement("h5");
             const compoundDescription1 = document.createElement("h6");
             compound1.append(compoundName1, compoundDescription1);
-            compoundName1.innerHTML = "";
+            compoundName1.innerHTML = "SULFUR DIOXIDE (SO<sub>2</sub>)";
             compoundName1.style.fontWeight = "bold";
-            compoundDescription1.innerHTML = "";
-            compoundDescription1.style.padding = "10px 40px 10px 40px";
+            compoundDescription1.innerHTML = "A toxic gas that is being released to the atmosphere naturally by volcanic activity as well as the side effect of fossil fuels combustion and thus contributes to the global warming effect. Mixed with water creates a sulfuric acid clouds that can fall down as acid rain. A significant part of Venus's atmosphere.";
+            compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             // create elements for second compound's name and description
             const compound2 = document.querySelector("#compoundName2");

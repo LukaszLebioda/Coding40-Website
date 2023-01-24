@@ -1,0 +1,29 @@
+Wdrożenie:
+- moduł księgowej wymiany danych;
+- wsparcie techniczne;
+- regulamin;
+- deklaracja dostępności;
+- RODO;
+
+Maintenance:
+- harmonogramy;
+- bieżąca pomoc i szkolenia;
+- aktualizacja oferty, cenników;
+- konfiguracja i wdrożenie;
+- raporty sprzedażowe;
+- infrastruktura sieciowa (administrowanie, backupy);
+
+Operator płatności
+- zwroty;
+- kontakt z pomocą techniczną;
+- kontakt z Księgowością UJ;
+- raporty;
+
+Rozbudowa:
+- inne jednostki;
+- inne moduły;
+- kontrola dostępu;
+- automat biletowy; 
+- bramki;
+- sprzedaż biletów poprzez inne platformy;
+- ekrany informacyjne;

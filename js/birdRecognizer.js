@@ -22,21 +22,21 @@ const szpak = {
 //     photo: "./img/birds/trznadel.jpg"
 // }
 
-// const wrobel = {
-//     sequence: 4,
-//     name: "Sparrow (wróbel)",
-//     description: "Once one of the largest, the sparrow population is shrinking rapidly due to vanishing of old farm countryside. Fortunately sparrow is a very fertile creature...",
-//     rights: "Photo by CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=1719233",
-//     photo: "./img/birds/wrobel.jpg"
-// }
+const wrobel = {
+    sequence: 4,
+    name: "Sparrow (wróbel)",
+    description: "Once one of the largest, the sparrow population is shrinking rapidly due to vanishing of old farm countryside. Fortunately sparrow is a very fertile creature...",
+    rights: "CC BY-SA 3.0, https://commons.wikimedia.org/",
+    photo: "./img/birds/wrobel.jpg"
+}
 
-// const mazurek = {
-//     sequence: 5,
-//     name: "Tree-sparrow (mazurek)",
-//     description: "Similar to sparrow, but a bit smaller, with brown hat and black spots on cheeks. Less attached to humans, yet still tends to visit bird feeders in winter.",
-//     rights: "Photo by Andreas Trepte, CC BY-SA 2.5",
-//     photo: "./img/birds/mazurek.jpg"
-// }
+const mazurek = {
+    sequence: 5,
+    name: "Tree-sparrow (mazurek)",
+    description: "Similar to sparrow, but a bit smaller, with brown hat and black spots on cheeks. Less attached to humans, yet still tends to visit bird feeders in winter.",
+    rights: "Photo by Andreas Trepte, CC BY-SA 2.5",
+    photo: "./img/birds/mazurek.jpg"
+}
 
 // const sojka = {
 //     sequence: 6,
@@ -366,6 +366,16 @@ const kawka = {
     photo: "./img/birds/kawka.jpg"
 }
 
+const kwiczol = {
+    sequence: 47,
+    name: "Fieldfare (kwiczoł)",
+    description: "In spring hunts for earthworms, in autumn looks for fruits fallen from the trees. A real fighter ready to repell any predator from the nest. Smaller species often take advantage of it and built their nests in the close proximity.",
+    rights: "Photo by hedera.baltica, CC BY-SA 2.0",
+    photo: "./img/birds/kwiczol.jpg"
+}
+
+
+
 // next
 
 // ---------------------------------------------------------------------
@@ -392,10 +402,13 @@ const placeBird = (name, description, photo, rights) => {
 
                             birdHeadingDescription.style.color = "blue";
                             birdHeadingDescription.style.padding = "20px 40px 20px 40px";
+                            birdHeadingDescription.style.marginLeft = "auto"; /* nie było wcale */
+                            birdHeadingDescription.style.marginRight = "auto"; /* nie było wcale */
+                            birdHeadingDescription.style.width = "90%"; /* nie było wcale */
                             birdHeadingDescription.textContent = description;
 
                             birdHeadingImage.setAttribute("src", photo);
-                            birdHeadingImage.style.width = "780px";
+                            birdHeadingImage.style.width = "85%"; /* było 780px */
 
                             birdHeadingRights.style.color = "blue";
                             birdHeadingRights.style.padding = "10px";
@@ -482,39 +495,37 @@ button.addEventListener("click", () => {
 
                     // 4 wróbel
                     if(
-                        // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
-                        // location 5-12
-                        && (bp.includes("7") || bp.includes("9") || bp.includes("11") || bp.includes("12")) 
-                        // size 13-18
-                        && bp.includes("13") 
-                        // color 19-27
-                        && (bp.includes("22") || bp.includes("23")) 
-                        // numbers 28-33
-                        && (bp.includes("30") || bp.includes("31") || bp.includes("32")) 
-                        // activity 34-43
-                        && (bp.includes("37") || bp.includes("39") || bp.includes("40") || bp.includes("42"))) 
+                        // location 1-8
+                        (bp.includes("4") || bp.includes("6") || bp.includes("8")) 
+                        // size 9-15
+                        && bp.includes("10") 
+                        // color 16-26
+                        && (bp.includes("18") || bp.includes("20")) 
+                        // numbers 27-31
+                        && (bp.includes("27") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
+                        // activity 32-44
+                        && (bp.includes("36") || bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
+                        ) 
                         {
                             placeBird(wrobel.name, wrobel.description, wrobel.photo, wrobel.rights);
                         }  
                 
                     // 5 mazurek
                     if(
-                        // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
-                        // location 5-12
-                        && (bp.includes("7") || bp.includes("9") || bp.includes("12")) 
-                        // size 13-18
-                        && bp.includes("13") 
-                        // color 19-27
-                        && (bp.includes("22") || bp.includes("23")) 
-                        // numbers 28-33
-                        && (bp.includes("30") || bp.includes("31")) 
-                        // activity 34-43
-                        && (bp.includes("37") || bp.includes("39") || bp.includes("40") || bp.includes("42"))) 
+                        // location 1-8
+                        (bp.includes("4") || bp.includes("5") || bp.includes("6") || bp.includes("8")) 
+                        // size 9-15
+                        && bp.includes("10") 
+                        // color 16-26
+                        && (bp.includes("18") || bp.includes("20")) 
+                        // numbers 27-31
+                        && (bp.includes("27") || bp.includes("29") || bp.includes("30")) 
+                        // activity 32-44
+                        && (bp.includes("36") || bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
+                        ) 
                         {
                             placeBird(mazurek.name, mazurek.description, mazurek.photo, mazurek.rights);
-                        }  
+                        }   
 
                     // 6 sójka
                     if(
@@ -1278,7 +1289,7 @@ button.addEventListener("click", () => {
                             // size 9-15
                             && bp.includes("11") 
                             // color 16-26
-                            && (bp.includes("16") || bp.includes("20")) 
+                            && bp.includes("16") 
                             // numbers 27-31
                             && (bp.includes("27") || bp.includes("29") || bp.includes("30") || bp.includes("31")) 
                             // activity 32-44
@@ -1287,6 +1298,23 @@ button.addEventListener("click", () => {
                             {
                                 placeBird(kawka.name, kawka.description, kawka.photo, kawka.rights);
                             }
+
+                            // 47 kwiczoł
+                            if(
+                                // location 1-8
+                                (bp.includes("3") || bp.includes("4") || bp.includes("6") || bp.includes("8")) 
+                                // size 9-15
+                                && bp.includes("11") 
+                                // color 16-26
+                                && (bp.includes("18") || bp.includes("20")) 
+                                // numbers 27-31
+                                && (bp.includes("27") || bp.includes("29")) 
+                                // activity 32-44
+                                && (bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("43"))
+                                ) 
+                                {
+                                    placeBird(kwiczol.name, kwiczol.description, kwiczol.photo, kwiczol.rights);
+                                }
                             
 
 

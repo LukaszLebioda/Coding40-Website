@@ -1305,17 +1305,17 @@ hr
 .experienceIconLeft
 {
     position: absolute;
-    top: 38px;
-    left: 60px;
+    top: 32px;
+    left: 40px;
     font-size: 27px;
 }
-.experienceIconRight
+/* .experienceIconRight
 {
     position: absolute;
     top: 38px;
     right: 60px;
     font-size: 27px;
-}
+} */
 
   /* --------------- CONTACT SECTION ---------------*/
 #myForm {
@@ -1409,6 +1409,10 @@ hr
 .elementMaster
 {
     border: solid 2px red;
+}
+.elementMaster:hover
+{
+    background-color: red !important;
 }
 
 /* pierwiastki pomocnicze */
