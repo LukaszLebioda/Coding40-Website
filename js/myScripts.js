@@ -51,5 +51,20 @@ copyButton2.addEventListener("click", function () {
               )
 })
 
+const copyButton3 = document.querySelector("#clipboardButton3");
+copyButton3.addEventListener("click", function () {
+
+  const copyButton0 = document.createElement("button");
+  copyButton0.innerHTML = "<i class='bi bi-clipboard-check'></i>";        
+
+  copyButton3.parentNode.replaceChild(copyButton0, copyButton3);
+
+          navigator.clipboard
+              .writeText(document.getElementById("sourceCodeClipboard3").innerText)
+              .then(
+                  success => console.log("text copied"), err => console.log("error copying text")
+              )
+})
+
 
                   

@@ -519,6 +519,148 @@ describe('when navigate to the online bookstore page', () => {
                       
                     </div>        
 
+                    <!-- next accordion -->
+
+                    <div class="accordion accordion-flush col-md-10 mt-2" id="accordionExample">
+                     
+                        <div class="accordion-item mt-1 accordionTestingItem">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Cypress Automation Test 3 - Login / Logout E2E 
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <h1 class="h3 fw-normal mb-4 regular">Login / Logout E2E</h1>
+                          
+                              <p class="myTextJustify regular mt-3 mb-4">
+                                  <i><b>Scenario:</b> I would like to log in to a banking application. I probably shouldn't try this with a real app. So I found a fake one where people like me can have a go without worrying to much about the consequences. </i>
+                              </p>
+                                
+                              <p class="myTextJustify regular mt-3 mb-4">
+                                  <i><b>Context:</b> This time I did not invent the test scenario on my own. I followed a Udemy tutorial that uses a fake banking application to practice login / logout functionalities. This made me understand the concept of features and allow to use them in my testing practice for the first time. </i>  
+                              </p>
+  
+                              <p class="myTextJustify regular mt-3 mb-4">
+                                  <i><b>Environment:</b>
+                                  <br>Testing framework: Cypress (v. 11.2.0)  
+                                  <br>OS: Windows 10 Home 64-bit
+                                  <br>Browser: Google chrome </i></p>
+                                
+                                  <p class="myTextJustify regular mt-3 mb-4">
+                                      <b>Test results:</b>
+                                      <br>
+                                      - when logging in with invalid credentials, an error message is displayed <i class="bi bi-check"></i> <br>    
+                                      - loggin in with valid credentials possible  <i class="bi bi-check"></i> <br> 
+                                      - logout possible <i class="bi bi-check"></i> <br> 
+                                </p>
+  
+                              <div class="automationTest">
+                              <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
+                                      <legend class="w-auto px-2 mb-4"></legend>
+                                          <div class="form-group mb-4">
+                                          <h5 class="mb-4" style="text-align: center;">Source code:</h5>
+                                     
+                                          <div class="d-flex justify-content-center" >  
+                                          <button id="clipboardButton3" title="Copy to clipboard" style="text-align: right;"><i class="bi bi-clipboard"></i></button>
+                                          </div>
+                                              
+  <pre id="sourceCodeClipboard3" class="regular sourceCodeClipboard" style="font-family: Courier New;">
+                                                                                 
+    /* FIXTURES Used:
+    {
+        "username_ID": "username",
+        "password_ID": "password"
+    }
+    */
+    
+    describe("Login / Logout test", () => {
+    
+        let invalidUsername = "some username";
+        let invalidPassword = "some password";
+        const errorMessage = "Login and/or password are wrong.";
+        
+        before( () => {
+            cy.visit("http://zero.webappsecurity.com/index.html")
+            // 3 shoulds do wyboru: eq = equal, include, contain
+            cy.url().should("include", "index.html")
+            cy.url().should("contain", "index.html")
+            cy.title().should("equal", "Zero - Personal Banking - Loans - Credit Cards") 
+            cy.get("#signin_button").click()
+        })
+    
+    
+        it("should try to login with invalid data", () => {
+            cy.get("#login_form").should("be.visible")
+            cy.get("#user_login").clear().type(invalidUsername, {delay: 100})
+            cy.get("#user_password").clear().type(invalidPassword, {delay: 100})
+            cy.get("#user_remember_me").check() // optional
+            cy.get("input[name='submit']").click()
+    
+        })
+    
+        it("should display error message", () => {
+            cy.get(".alert-error")
+                .should("exist")
+                .and("contain", errorMessage)
+        })
+    
+        it("should log in to the application", () => {
+    
+            // fixtures
+            cy.fixture("credentials").then(credentials => {
+                const username = credentials.username_ID;
+                const password = credentials.password_ID; 
+    
+                // aliases
+                cy.get("#user_login").as("loginInput")
+                cy.get("@loginInput").clear().type(username, {delay: 100})
+                cy.get("#user_password").as("passwordInput")
+                cy.get("@passwordInput").clear().type(password, {delay: 100})
+    
+                cy.get("#user_remember_me").check() // optional
+                cy.get("input[name='submit']").click()
+            })
+    
+            cy.get("ul.nav-tabs").should("be.visible")
+            
+        })
+    
+        it("should logout from the application", () => {
+            cy.contains("username").click()
+            cy.get("#logout_link").click()
+            cy.url().should("include", "index.html")
+        })
+    
+    })
+
+  </pre>   
+                                  </div>
+                                  </fieldset>
+                               
+                              </div>  
+                              
+                          <div> 
+                             <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
+                                  <legend class="w-auto px-2 mb-3"></legend> 
+                                  <h5 class="mb-4">Video:</h5> 
+                              <div class="embed-responsive embed-responsive-16by9">  
+                                  <video class="embed-responsive-item" width="90%" max-height="auto" controls>
+                                      <source src="video/banklogin.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                              </fieldset>
+                          </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div> 
+
+                      <!-- end of accordion -->
+
+
                         <div class="col-12 my-4 emptyDiv">
                             <hr>   
                         </div>

@@ -1,9 +1,9 @@
-const kos = {
+const trznadel = {
     sequence: 1,
-    name: "Blackbird (kos)",
-    description: "One of the best singers out there, often to be heard composing from the top of a tree all day long. Tends to focus on singing so much, that may lose vigilance and become an easy pray for predators.",
-    rights: "Photo by Zeynel Cebeci, CC BY-SA 4.0",
-    photo: "./img/birds/kos.jpg"
+    name: "Yellowhammer (trznadel)",
+    description: "Sings persistently in the middle of hot summer day, when no other species sing. Supposedly inspired Beethoven to compose the 5th Symphony.",
+    rights: "Photo by Andreas Trepte, www.avi-fauna.info",
+    photo: "./img/birds/trznadel.jpg"
 }
 
 const szpak = {
@@ -14,13 +14,13 @@ const szpak = {
     photo: "./img/birds/szpak.jpg"
 }
 
-// const trznadel = {
-//     sequence: 3,
-//     name: "Yellowhammer (trznadel)",
-//     description: "Sings persistently in the middle of hot summer day, when no other species sing. Supposedly inspired Beethoven to compose the 5th Symphony.",
-//     rights: "Photo by Andreas Trepte, www.avi-fauna.info",
-//     photo: "./img/birds/trznadel.jpg"
-// }
+const kos = {
+    sequence: 3,
+    name: "Blackbird (kos)",
+    description: "One of the best singers out there, often to be heard composing from the top of a tree all day long. Tends to focus on singing so much, that may lose vigilance and become an easy pray for predators.",
+    rights: "Photo by Zeynel Cebeci, CC BY-SA 4.0",
+    photo: "./img/birds/kos.jpg"
+}
 
 const wrobel = {
     sequence: 4,
@@ -134,13 +134,13 @@ const mazurek = {
 //     photo: "./img/birds/dzieciolduzy.jpg"
 // }
 
-// const modraszka = {
-//     sequence: 18,
-//     name: "Blue tit (modraszka, sikora modraszka)",
-//     description: "A very busy bird, full of vital energy, even in the coldest mornings of winter. Often visits bird feeders. Wears a blue cap what distincts it from other tit species.",
-//     rights: "Photo by Francis C. Franklin, CC-BY-SA-3.0, CC BY-SA 3.0",
-//     photo: "./img/birds/modraszka.jpg"
-// }
+const modraszka = {
+    sequence: 18,
+    name: "Blue tit (modraszka, sikora modraszka)",
+    description: "A very busy bird, full of vital energy, even in the coldest mornings of winter. Often visits bird feeders. Wears a blue cap what distincts it from other tit species.",
+    rights: "Photo by Francis C. Franklin, CC-BY-SA-3.0, CC BY-SA 3.0",
+    photo: "./img/birds/modraszka.jpg"
+}
 
 // const mewaSmieszka = {
 //     sequence: 19,
@@ -236,14 +236,6 @@ const mazurek = {
 //     description: "A common falcon, quite easy to spot in urban or rural areas where he learned to live among humans. Scans grassy areas hovering 10-20m above ground for couple of minutes, then moves to another place and begins scanning anew.",
 //     rights: "Photo by Charles J. Sharp, CC BY-SA 4.0",
 //     photo: "./img/birds/pustulka.jpg"
-// }
-
-// const drozdSpiewak = {
-//     sequence: 31,
-//     name: "Song thrush (śpiewak)",
-//     description: "A great singer whose far-reaching, diversified melodies resound from the tree tops in warm spring evenings. Often wanders around on the ground searching for earthworms.",
-//     rights: "Photo by JJ Harrison, CC BY-SA 4.0",
-//     photo: "./img/birds/drozdspiewak.jpg"
 // }
 
 // const nuroges = {
@@ -374,6 +366,14 @@ const kwiczol = {
     photo: "./img/birds/kwiczol.jpg"
 }
 
+const drozdSpiewak = {
+    sequence: 48,
+    name: "Song thrush (drozd śpiewak)",
+    description: "In many European languages its name refers to the beautiful melodies the bird produces, especially in the evening and in the night. If You happen to hear it, look up there, at the very top of the tree. You might see a little shape in the falling dark.",
+    rights: "Photo by JJ Harrison, CC BY-SA 4.0",
+    photo: "./img/birds/drozdspiewak.jpg"
+}
+
 
 
 // next
@@ -442,23 +442,21 @@ button.addEventListener("click", () => {
                 document.getElementById("buttonBirds2").disabled = false; 
                 console.log(bp);
                 
-                    // 3 trznadel
-                    if(
-                        // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
-                        // location 5-12
-                        && (bp.includes("7") || bp.includes("9")) 
-                        // size 13-18
-                        && bp.includes("13") 
-                        // color 19-27
-                        && (bp.includes("22") || bp.includes("24") || bp.includes("25")) 
-                        // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
-                        // activity 34-43
-                        && (bp.includes("39") || bp.includes("42") || bp.includes("45"))
-                        ) {
-                            placeBird(trznadel.name, trznadel.description, trznadel.photo, trznadel.rights);
-                        }
+                    // 1 trznadel
+                   if(
+                    // location 1-8
+                    (bp.includes("4") || bp.includes("6")) 
+                    // size 9-15
+                    && bp.includes("10") 
+                    // color 16-26
+                    && (bp.includes("18") || bp.includes("23")) 
+                    // numbers 27-31
+                    && (bp.includes("27") || bp.includes("29")) 
+                    // activity 32-44
+                    && (bp.includes("37") || bp.includes("41") || bp.includes("43"))
+                    ) {
+                        placeBird(trznadel.name, trznadel.description, trznadel.photo, trznadel.rights);
+                    }
                         
                     // 2 szpak
                     if(
@@ -476,7 +474,7 @@ button.addEventListener("click", () => {
                             placeBird(szpak.name, szpak.description, szpak.photo, szpak.rights);
                         }
 
-                    // 1 kos
+                    // 3 kos
                     if(
                         // location 1-8
                         (bp.includes("4") || bp.includes("5") || bp.includes("6") || bp.includes("8")) 
@@ -753,23 +751,20 @@ button.addEventListener("click", () => {
                         } 
 
                     // 18 modraszka
-                    if(
-                        // season 1-4
-                        (bp.includes("1") || bp.includes("2") || bp.includes("3") || bp.includes("4")) 
-                        // location 5-12
-                        && (bp.includes("8") || bp.includes("9") || bp.includes("12")) 
-                        // size 13-18
-                        && bp.includes("16")
-                        // color 19-27
-                        && (bp.includes("44") || bp.includes("25") || bp.includes("27")) 
-                        // numbers 28-33
-                        && (bp.includes("28") || bp.includes("30") || bp.includes("31")) 
-                        // activity 34-43
-                        && (bp.includes("37") || bp.includes("39") || bp.includes("42"))
-                        ) 
-                        {
+                      if(
+                        // location 1-8
+                        (bp.includes("4") || bp.includes("5") || bp.includes("6") || bp.includes("8")) 
+                        // size 9-15
+                        && bp.includes("9") 
+                        // color 16-26
+                        && (bp.includes("22") || bp.includes("23") || bp.includes("25")) 
+                        // numbers 27-31
+                        && (bp.includes("27") || bp.includes("29")) 
+                        // activity 32-44
+                        && (bp.includes("36") || bp.includes("37") || bp.includes("41"))
+                        ) {
                             placeBird(modraszka.name, modraszka.description, modraszka.photo, modraszka.rights);
-                        } 
+                        }
 
                     // 19 mewa śmieszka
                     if(
@@ -997,25 +992,6 @@ button.addEventListener("click", () => {
                             ) 
                             {
                                 placeBird(pustulka.name, pustulka.description, pustulka.photo, pustulka.rights);
-                            } 
-
-                        // 31 drozd śpiewak
-                        if(
-                            // season 1-4
-                            (bp.includes("1") || bp.includes("2") || bp.includes("3"))
-                            // location 5-12
-                            && (bp.includes("7") || bp.includes("8") || bp.includes("9") || bp.includes("10") || bp.includes("11") || bp.includes("12"))
-                            // size 13-18
-                            && bp.includes("14")
-                            // color 19-27
-                            && bp.includes("22")  
-                            // numbers 28-33
-                            && bp.includes("28")
-                            // activity 34-43
-                            && (bp.includes("40") || bp.includes("42") || bp.includes("43") || bp.includes("45"))
-                            ) 
-                            {
-                                placeBird(drozdSpiewak.name, drozdSpiewak.description, drozdSpiewak.photo, drozdSpiewak.rights);
                             } 
 
                          // 32 nurogęś
@@ -1315,6 +1291,24 @@ button.addEventListener("click", () => {
                                 {
                                     placeBird(kwiczol.name, kwiczol.description, kwiczol.photo, kwiczol.rights);
                                 }
+
+                            // 48 drozd śpiewak
+                            if(
+                                // location 1-8
+                                (bp.includes("4") || bp.includes("5") || bp.includes("6") || bp.includes("7") || bp.includes("8")) 
+                                // size 9-15
+                                && bp.includes("11") 
+                                // color 16-26
+                                && (bp.includes("18") || bp.includes("20")) 
+                                // numbers 27-31
+                                && bp.includes("27") 
+                                // activity 32-44
+                                && (bp.includes("37") || bp.includes("39") || bp.includes("41") || bp.includes("42") || bp.includes("43"))
+                                ) 
+                                {
+                                    placeBird(drozdSpiewak.name, drozdSpiewak.description, drozdSpiewak.photo, drozdSpiewak.rights);
+                                }
+                            
                             
 
 

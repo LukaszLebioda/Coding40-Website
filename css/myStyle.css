@@ -1309,6 +1309,14 @@ hr
     left: 40px;
     font-size: 27px;
 }
+
+.experienceIconLeft2
+{
+    position: absolute;
+    top: 32px;
+    left: 69px;
+    font-size: 27px;
+}
 /* .experienceIconRight
 {
     position: absolute;
