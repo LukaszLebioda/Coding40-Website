@@ -640,19 +640,19 @@ azotMaster.onclick = function() {
             const compoundName1 = document.createElement("h5");
             const compoundDescription1 = document.createElement("h6");
             compound1.append(compoundName1, compoundDescription1);
-            compoundName1.innerHTML = "WATER (H<sub>2</sub>O)";
+            compoundName1.innerHTML = "NITRIC OXIDE (NO)";
             compoundName1.style.fontWeight = "bold";
-            compoundDescription1.innerHTML = "71% of the surface of the Earth lies underwater. 60-75% human bodyweight is water. Water was brought to Earth by asteroids billions of years ago. It's the environment where life first appeared and started to evolve.<hr>";
+            compoundDescription1.innerHTML = "An important compound produced by humans and other mammals. It regulates the blood pressure and stimulates the proper muscle nourishment and oxigenation, hence it's very important for fit & active persons.";
             compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             const compound2 = document.querySelector("#compoundName2");
             const compoundName2 = document.createElement("h5");
             const compoundDescription2 = document.createElement("h6");
             compound2.append(compoundName2, compoundDescription2);
-            compoundName2.innerHTML = "HYDROGEN PEROXIDE (H<sub>2</sub>O<sub>2</sub>)";
+            compoundName2.innerHTML = "";
             compoundName2.style.fontWeight = "bold";
-            compoundDescription2.innerHTML = "Low-concentrated solution is friendly as it cleans minor wounds. Medium-concentrated solution becomes a bleach used at hairdressers' to brighten hair. High-concentrated one becomes very toxic and is used only in the industry (e.g. in the production of rocket and submarine fuel).";
-            compoundDescription2.style.padding = "10px 20px 10px 20px";
+            compoundDescription2.innerHTML = "";
+            compoundDescription2.style.padding = "";
 
             const compound3 = document.querySelector("#compoundName3");
             const compoundName3 = document.createElement("h5");
@@ -694,26 +694,26 @@ azotMaster.onclick = function() {
             const elementPartner = document.querySelector("#elementPartner");
             const elementPartnerName = document.createElement("h5");
             elementPartner.append(elementPartnerName);
-            elementPartnerName.textContent = "OXYGEN (O)";
+            elementPartnerName.textContent = "HYDROGEN (H)";
             elementPartnerName.style.fontWeight = "bold";
 
             const compound1 = document.querySelector("#compoundName1");
             const compoundName1 = document.createElement("h5");
             const compoundDescription1 = document.createElement("h6");
             compound1.append(compoundName1, compoundDescription1);
-            compoundName1.innerHTML = "WATER (H<sub>2</sub>O)";
+            compoundName1.innerHTML = "AMMONIA (NH<sub>3</sub>)";
             compoundName1.style.fontWeight = "bold";
-            compoundDescription1.innerHTML = "71% of the surface of the Earth lies underwater. 60-75% human bodyweight is water. Water was brought to Earth by asteroids billions of years ago. It's the environment where life first appeared and started to evolve.<hr>";
+            compoundDescription1.innerHTML = "A gas of strong, recognizable smell that can irritate both eyes and nose. Used in the production of fertilizers, as well as explosives, cosmetics and fabrics. Since the Middle Ages known a useful cleaning agent (metal parts, greasy stains etc.).";
             compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             const compound2 = document.querySelector("#compoundName2");
             const compoundName2 = document.createElement("h5");
             const compoundDescription2 = document.createElement("h6");
             compound2.append(compoundName2, compoundDescription2);
-            compoundName2.innerHTML = "HYDROGEN PEROXIDE (H<sub>2</sub>O<sub>2</sub>)";
+            compoundName2.innerHTML = "";
             compoundName2.style.fontWeight = "bold";
-            compoundDescription2.innerHTML = "Low-concentrated solution is friendly as it cleans minor wounds. Medium-concentrated solution becomes a bleach used at hairdressers' to brighten hair. High-concentrated one becomes very toxic and is used only in the industry (e.g. in the production of rocket and submarine fuel).";
-            compoundDescription2.style.padding = "10px 20px 10px 20px";
+            compoundDescription2.innerHTML = "";
+            compoundDescription2.style.padding = "";
 
             const compound3 = document.querySelector("#compoundName3");
             const compoundName3 = document.createElement("h5");
