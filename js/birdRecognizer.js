@@ -238,6 +238,14 @@ const modraszka = {
 //     photo: "./img/birds/pustulka.jpg"
 // }
 
+const jaskolkaDymowka = {
+    sequence: 31,
+    name: "Barn swallow (jaskółka dymówka)",
+    description: "A wonderful aviator living in the close proximity to human settlements, especially in the countryside close to water deposits or pastures where there are numerous insects to hunt. Its nests, built of clay, are attached to the walls of farm buildings.",
+    rights: "Photo by I, Malene, CC BY 2.5",
+    photo: "./img/birds/jaskolkadymowka.jpg"
+}
+
 // const nuroges = {
 //     sequence: 32,
 //     name: "Merganser (nurogęś)",
@@ -993,6 +1001,24 @@ button.addEventListener("click", () => {
                             {
                                 placeBird(pustulka.name, pustulka.description, pustulka.photo, pustulka.rights);
                             } 
+
+
+                        // 31 jaskółka dymówka
+                        if(
+                            // location 1-8
+                            (bp.includes("3") || bp.includes("4") || bp.includes("6")) 
+                            // size 9-15
+                            && bp.includes("10") 
+                            // color 16-26
+                            && (bp.includes("17") || bp.includes("22")) 
+                            // numbers 27-31
+                            && (bp.includes("29") || bp.includes("30") || bp.includes("31")) 
+                            // activity 32-44
+                            && (bp.includes("38") || bp.includes("41") || bp.includes("43") || bp.includes("44"))
+                            ) 
+                            {
+                                placeBird(jaskolkaDymowka.name, jaskolkaDymowka.description, jaskolkaDymowka.photo, jaskolkaDymowka.rights);
+                            }
 
                          // 32 nurogęś
                          if(
