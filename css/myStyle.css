@@ -347,11 +347,11 @@ p.myTextJustify
 }
 
 .leisurePhotos img
-
 /* można też użyć class="img-fluid" wewnątrz <img> w html */
 {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .leisurePhotos p {
