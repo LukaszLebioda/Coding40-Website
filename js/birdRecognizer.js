@@ -294,13 +294,13 @@ const jaskolkaDymowka = {
 //     photo: "./img/birds/perkozek.jpg"
 // }
 
-// const slowikSzary = {
-//     sequence: 38,
-//     name: "Thrush nightingale (słowik szary)",
-//     description: "One of the best singers out there. It's songs spread far away in the evening and through the night. A bird loved and revered by poets and others of romantic nature.",
-//     rights: "Photo by cheloVechek / talk - Own work, CC BY-SA 4.0",
-//     photo: "./img/birds/slowikszary.jpg"
-// }
+const slowikSzary = {
+    sequence: 38,
+    name: "Thrush nightingale (słowik szary)",
+    description: "One of the best singers out there. It's songs spread far away in the evening and through the night. A bird loved and revered by poets and others of romantic nature.",
+    rights: "Photo by cheloVechek / talk - Own work, CC BY-SA 4.0",
+    photo: "./img/birds/slowikszary.jpg"
+}
 
 // const kukulka = {
 //     sequence: 39,
@@ -1135,19 +1135,17 @@ button.addEventListener("click", () => {
                             } 
 
                             // 38 słowik szary
-                           if(
-                            // season 1-4
-                            (bp.includes("1") || bp.includes("2"))
-                            // location 5-12
-                            && (bp.includes("7") || bp.includes("9"))
-                            // size 13-18
-                            && (bp.includes("13") || bp.includes("46"))
-                            // color 19-27
-                            && (bp.includes("22") || bp.includes("23") || bp.includes("47"))
-                            // numbers 28-33
-                            && bp.includes("28") 
-                            // activity 34-43
-                            && (bp.includes("39") || bp.includes("42") || bp.includes("45"))
+                            if(
+                            // location 1-8
+                            (bp.includes("3") || bp.includes("4") || bp.includes("6") || bp.includes("8")) 
+                            // size 9-15
+                            && (bp.includes("10") || bp.includes("15")) 
+                            // color 16-26
+                            && (bp.includes("18") || bp.includes("20")) 
+                            // numbers 27-31
+                            && bp.includes("27") 
+                            // activity 32-44
+                            && (bp.includes("37") || bp.includes("41") || bp.includes("43"))
                             ) 
                             {
                                 placeBird(slowikSzary.name, slowikSzary.description, slowikSzary.photo, slowikSzary.rights);

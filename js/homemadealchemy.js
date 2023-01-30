@@ -164,8 +164,6 @@ alchemyButton.onclick = function () {
 
 // ***** WODÓR MASTER ***** //
 
-
-
 wodorMaster.onclick = function() {
 
     disableAll()
@@ -406,17 +404,17 @@ wodorMaster.onclick = function() {
             compound1.append(compoundName1, compoundDescription1);
             compoundName1.innerHTML = "AMMONIA (NH<sub>3</sub>)";
             compoundName1.style.fontWeight = "bold";
-            compoundDescription1.innerHTML = "A gas of strong, recognizable smell that can irritate both eyes and nose. Used in the production of fertilizers, as well as explosives, cosmetics and fabrics. Since the Middle Ages known a useful cleaning agent (metal parts, greasy stains etc.).";
+            compoundDescription1.innerHTML = "A gas of strong, recognizable smell that can irritate both eyes and nose. Used in the production of fertilizers, as well as explosives, cosmetics and fabrics. Since the Middle Ages known a useful cleaning agent (metal parts, greasy stains etc.).<hr>";
             compoundDescription1.style.padding = "10px 20px 10px 20px";
 
             const compound2 = document.querySelector("#compoundName2");
             const compoundName2 = document.createElement("h5");
             const compoundDescription2 = document.createElement("h6");
             compound2.append(compoundName2, compoundDescription2);
-            compoundName2.innerHTML = "";
+            compoundName2.innerHTML = "HYDRAZINE (N<sub>2</sub>H<sub>4</sub>)";
             compoundName2.style.fontWeight = "bold";
-            compoundDescription2.innerHTML = "";
-            compoundDescription2.style.padding = "";
+            compoundDescription2.innerHTML = "Extremely poisonous, corrosive, flammable and carcinogenic. Used as space rocket and submarine fuel as well as a DNA sequencing agent.";
+            compoundDescription2.style.padding = "10px 20px 10px 20px";
 
             const compound3 = document.querySelector("#compoundName3");
             const compoundName3 = document.createElement("h5");
