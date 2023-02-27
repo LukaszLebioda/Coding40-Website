@@ -1134,6 +1134,13 @@ hr
     margin: auto;
 }
 
+.indexCarouselTesting
+{
+    height: auto;
+    width: 70%;
+    margin: auto;
+}
+
 /* only for non-active items with more content */
 .lifecycleItem
 {
@@ -1142,6 +1149,10 @@ hr
 .manifestoItem
 {
     height: 440px;
+}
+.testingItem
+{
+    height: 540px;
 }
 
 .carouselPhoto
@@ -1192,6 +1203,10 @@ hr
     {
     height: 340px;
     }
+    .testingItem
+    {
+    height: 340px;
+    }
 }
 @media (min-width: 331px) and (max-width: 434px) {
     .divCarousel 
@@ -1222,6 +1237,11 @@ hr
     {
     height: 300px;
     }
+    .testingItem
+    {
+    height: 330px;
+    }
+    
 }
 @media (min-width: 435px) and (max-width: 575px) {
     .divCarousel 
@@ -1240,6 +1260,10 @@ hr
     {
     height: 370px;
     }
+    .testingItem
+    {
+    height: 430px;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .divCarousel 
@@ -1256,6 +1280,10 @@ hr
     {
     height: 400px;
     }
+    .testingItem
+    {
+    height: 440px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .divCarousel 
@@ -1266,6 +1294,10 @@ hr
     .manifestoItem
     {
     height: 420px;
+    }
+    .testingItem
+    {
+    height: 460px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
