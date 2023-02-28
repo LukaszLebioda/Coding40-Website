@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
+    <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
+	<meta name="keywords" content="coding, self-study, lifechange">
+    <meta name="author" content="Coding40"> 
+	<title>Coding40 - A story of a lifechanging project</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- css podpięty zdalnie, ale można też lokalnie -->
+    
+    <link rel="icon" href="img/logo/logoSemiTransparentLarge.png">   
+	<link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">  
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+
+</head>
+   
+<body>
+
+<header class="cotainer-fluid">
+    
+    <nav class="navbar navbar-dark bg-myNavColor navbar-expand-md fixed-top"> 
+    
+        <a class="navbar-brand" href="./index.html"><img class="align-bottom ms-1" src="img/logo/logo2_semiwhite.png" width="38" height="38" alt="A logo called Coding 40"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation toggler">
+            <!-- było: <span class="navbar-toggler-icon"></span> -->
+            <img src="./img/other/menu.png" witdh="33" height="33">
+        </button>
+        
+        <div class="collapse navbar-collapse mainMenu">
+
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Coding40</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Testing</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="html_testingmanual.html">Part 1: Manual</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_testingautomation.html">Part 2: Automation</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Varia</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="html_mpjavascripts.html">JS Apps</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_implementation.html">Implementation</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_serverside.html">Server</a>
+                        <a class="dropdown-item" id="dropMenu" href="html_webdesign.html">Design</a>
+                    </div>
+                </li>
+                
+                <!-- <div class="dropdown-divider"></div> żeby ew. podzielić menu -->
+                
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="subMenu" aria-haspopup="true">Skills</a>
+                    <div class="dropdown-menu" aria-labelledby="subMenu">
+                        <a class="dropdown-item" id="dropMenu" href="./html_hardskills.html">Hard</a>
+                        <a class="dropdown-item" id="dropMenu" href="./html_softskills.html">Soft</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_leisures.html">Leisures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html_contact.html">Contact</a>
+                </li>
+            </ul>
+             
+        </div>
+        
+    </nav>
+    
+</header>
+    
+<main>
+    
+        <div class="container"> 
+        
+            <section class="">
+				
+				<aside class="col-12 bg-myQuotationColor mt-4 p-3 myAside"><i>'Never gonna give you up, Never gonna let you down, Never gonna run around and desert you'</i>, Rick Aistley</aside>
+        
+				<header class="my-3"> 
+				
+				<!-- https://www.flightnotch.com/post/hang-gliding-vs-wingsuit-diving -->
+				<div class="masthead" style="background-image: url('./img/backgrounds/testing.jpg');">
+					
+					<div class="color-overlay d-flex flex-column justify-content-center align-items-center">
+                        <div class="row">
+                           <div>
+                            <h1 class="fw-bold text-uppercase">Manual testing</h1>
+                            <p>Early experiences</p>
+                            </div>
+                        </div>
+                    </div>		
+						
+                </div>		
+						
+				</header>
+				
+                <section class="leisureSection">
+                   
+                    <header class="myHeader">
+					
+                        <h1 class="regular">You're already a tester</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <p class="regular">cause You were born to test reality </p>
+                       
+				    </header>
+                    
+                </section>
+               
+                <div class="row d-flex justify-content-center m-4"> 
+               
+                    <h1 class="regular">Part 1: Manual <br> 
+                        (test cases, bug reports)</h1>
+
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+
+                   <div class="col-md-2 m-3">
+                        <figure>
+                            <img src="img/icons/user.jpg" width="90px" alt="A user logo">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 1: Enlightment</h1>
+                        <p class="regular p-4 mb-0"><i>Lukasz has finally discovered the diverse world of IT which had always been there but Lukasz was too blind to see it. The more blind he had been, the more intense his experiencing of IT-environment is nowadays. <br><br> After having tried various aspects of the matter he finally realized that all his experiences, all his actions and all the decisions he had made led to this precious moment: <br><br> to the resolution of becoming a software tester.</i></hp>
+                    </div>
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                    
+                     <div class="col-md-2 mb-1 mx-3">
+                        <figure>
+                            <img src="img/other/kindle.png" width="100px" alt="A Kindle logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="userStory col-md-8">
+                    
+                    <div class="d-flex justify-content-center">
+                        
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <img src="img/other/bookontesting1.png" width="80px" height="120px" alt="Book on testing" class="bookOnTesting">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <img src="img/other/bookontesting2.jpg" width="80px" height="120px" alt="Book on testing" class="bookOnTesting">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <img src="img/other/bookontesting3.jpg" width="80px" height="120px" alt="Book on testing" class="bookOnTesting">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="mb-1 mx-1">
+                            <figure>
+                                <img src="img/other/bookontesting4.jpg" width="80px" height="120px" alt="Book on testing" class="bookOnTesting">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+                       
+                    </div>       
+                       
+                        <h1 class="regular">User story, ep. 2: Theory</h1>
+                        
+                        <p class="regular p-4 mb-0"><i>So he started where many university-graduates think they should start from - buying / borrowing / downloading tons of books. Some he read from cover to cover, some he left unfinished and some he abandoned after taking look at the contents. <br><br> Yet despite the efforts of the authors he couldn't truly comprehense what was being written without previous software testing experience whatsoever.<br><br>He needed some practice.</i></p>
+                    
+                    </div>
+                    
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                    
+                    <div class="col-md-2 m-3">
+                        <figure>
+                            <img src="img/other/ISTQBsyllabus.jpg" width="100px" alt="A user logo">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 3: More theory</h1>
+                        <p class="regular p-4 mb-0"><i>There was one book however, the book of books, the bible, the almanach he inevitably encountered. The ISTQB syllabus. <br><br> A merely 100-pages volume to encompass the foundations of knowledge every software tester just can't do without. Definitely not a thrilling bedtime reading piece of art to be honest. But Lukasz continued turning the pages and getting familiar with the tech-vocabulary... <br><br> to find out that he has already been testing a lot!</i></p>
+                    </div>
+                    
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+
+                    <div class="col-md-2 d-flex flex-column align-items-center m-3">
+                  
+                        <div class="col-md-2">
+                             <figure>
+                                <!-- obraz iStock -->
+                                 <img src="img/other/handwithlantern.jpg" width="70px" alt="hand with a lantern">
+                                 <figcaption></figcaption>
+                             </figure>
+                         </div>
+                        
+                         <div class="col-md-2 mb-1">
+                             <figure>
+                                <!-- obraz autorstwa Freepik -->
+                                 <img src="img/other/handshake.jpg" width="70px" alt="handshake">
+                                 <figcaption></figcaption>
+                             </figure>
+                         </div>
+                         
+                         </div>
+                          
+                         <div class="userStory col-md-8">
+                             <h1 class="regular">User story, ep. 4: Exploratory & Acceptance tests</h1>
+                             <p class="regular p-4 mb-0"><i> Whenever he was playing a video-game on his PC, searching for his favourite tv-series on Netflix or buying christmas gifts online he was actually running kind of manual exploratory (but strongly unorganized and informal) tests! <br><br> And he carried out some acceptance tests (both UAT & OAT) as well, when he was veryfying the functionalities of the sale & booking application that was about to be implemented at his work (more about that implementation 
+                                <a href="./html_implementation.html">here</a>). </i> This time he kept the tests as organized and formal as possible, learning how to create test documentation (tests cases, bug reports). <br><br>The thought he wasn't a total newbie after all was kind of refreshing.</p>
+                         </div>
+                         
+                         <div class="col-12 my-4 emptyDiv">
+                             <hr>   
+                         </div>
+                        
+
+                    <div class="col-md-2 m-3">
+                        <figure>
+                            <a href="#"><img src="img/other/testlink.png" width="80px" alt="A TestLink logo"></a>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="userStory col-md-8">
+                        <h1 class="regular">User story, ep. 5: Test cases</h1>
+                        <p class="regular p-4 mb-0"><i>So finally he was ready to run some real organized pre-planned manual testing. A TestLink software was exactly what he was looking for to manage the test cases he was about to invent. <br><br> Although not super-intuitive, not easy to install and not easy to set up, the tool soon made recording of the test cases really straightforward and enjoyable. <br><br>See below how it went:</i></p> 
+                    </div>
+                    
+                    <div class="accordion accordion-flush col-md-10 mt-3" id="accordionExample">
+                     
+                        <div class="accordion-item mt-2 accordionTestingItem">
+                          <h2 class="accordion-header" id="headingZero">
+                            <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                                TestLink - Manual online bookstore test
+                            </button>
+                          </h2>
+                          <div id="collapseZero" class="accordion-collapse collapse" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <h1 class="h3 fw-normal mb-4 regular">Manual online bookstore test</h1>
+                          
+                              <p class="myTextJustify regular mt-3 mb-4">
+                              <i><b>Scenario:</b> At first I examined the behaviour of an online bookstore searchbox. With no specification at hand all I could do was to validate whether the searchbox behaviour met my personal expectations. In other words: I made this test fail on purpose hoping the owners won't ever hear about this. </i></p>
+                                   
+                              <p class="myTextJustify regular mt-3 mb-4">
+                              <i><b>Environment:</b>
+                              <br>Tool: Testlink (v. 1_0_20_fixed)  
+                              <br>OS: Windows 10 Home 64-bit
+                              <br>Browser: Google chrome </i></p>
+
+                        <div class="d-flex flex-column flex-lg-row">
+                            <figure class="m-2">
+                                <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution1.png" width="700px" alt="A screenshot of TestLink test cases">
+                                <figcaption></figcaption>
+                            </figure>
+                            
+                             <figure class="m-2">
+                                <img class="img-fluid enlargePhoto border border-dark" src="img/other/TestLinkExecution2.png" width="700px" alt="A screenshot of TestLink test cases">
+                                <figcaption></figcaption>
+                            </figure>
+                            
+                            </div> 
+                                                              
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+                                   
+                        <div class="col-md-2">
+                             <figure>
+                                <!-- obraz iStock -->
+                                 <img src="img/icons/jira_big.png" width="90px" alt="a logo of Jira software">
+                                 <figcaption></figcaption>
+                             </figure>
+                         </div>
+                        
+               
+               <div class="userStory col-md-8">
+                   <h1 class="regular">User story, ep. 6: Bug reports</h1>
+                   <p class="regular p-4 mb-0"><i>The time has come to report some bugs. Firstly Lukasz tested a chat app (for mobile devices) filled with bugs located all over the place for testing purposes. He wrote his report in a word document. <br><br> Secondly he learned, that there was a group of applications build for the purpose of testing education, called Mr Buggy, that served as tasks during actual championships in software testing. The tool he chose to report a 'Mr Buggy bug' was Jira - a proprietary (non-free) but still super-popular software that allows bug tracking and agile project management. Luckily there was a free trial version he could sing up for.<br><br>See below how it went:</i></p> 
+               </div>
+               
+               <div class="accordion accordion-flush col-md-10 mt-3" id="accordionExample">
+                
+                <div class="accordion-item mt-2 accordionTestingItem">
+                  <h2 class="accordion-header" id="headingFSeven">
+                    <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFSeven" aria-expanded="true" aria-controls="collapseFSeven">
+                        A mobile chat application bug report
+                    </button>
+                  </h2>
+                  <div id="collapseFSeven" class="accordion-collapse collapse" aria-labelledby="headingFSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h1 class="h3 fw-normal mb-4 regular">A mobile chat application bug report</h1>
+                  
+                      <p class="myTextJustify regular mt-3 mb-4">
+                      <i><b>Scenario:</b> The mobile chat application bug report I wrote was part of a recruitment process run by a certain company. I downloaded the app from a link sent via e-mail, installed it on my mobile and tested through. Whether if passed or failed will remain my secret :) </i></p>
+                           
+                      <p class="myTextJustify regular mt-3 mb-4">
+                      <i><b>Environment:</b>
+                      <br>Bugtracker: ms word document :)  
+                      <br>Tested app: confidential
+                      <br>Device / RAM / OS: Xiaomi Redmi Note 8T / 4 GB RAM / Android v. 11; </i></p>
+
+                <div class="d-flex flex-column">
+                 
+                    <h1 class="h3 fw-normal mb-4 regular">Open PDF file below:</h1>
+                    <h4><a href="other/bug report.pdf">BUG REPORT</a></h4>
+
+                    </div> 
+                                                      
+                    </div>
+                  </div>
+                </div>
+              </div> 
+
+
+
+               <div class="accordion accordion-flush col-md-10 mt-1" id="accordionExample">
+                
+                   <div class="accordion-item mt-2 accordionTestingItem">
+                     <h2 class="accordion-header" id="headingFour">
+                       <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                           A bug report with Jira & Mr Buggy 6
+                       </button>
+                     </h2>
+                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                       <div class="accordion-body">
+                         <h1 class="h3 fw-normal mb-4 regular">A bug report with Jira & Mr Buggy 6</h1>
+                     
+                         <p class="myTextJustify regular mt-3 mb-4">
+                         <i><b>Scenario:</b> This time I decided not to make up a bug myself, but to use the one created by someone else for me to find it and report it. I played with Mr Buggy 6 for a while and decided the initial login form issue best suits my needs at this point. The case was simple: it was possible to establish a password different than the password-rules provided.</i></p>
+                              
+                         <p class="myTextJustify regular mt-3 mb-4">
+                         <i><b>Environment:</b>
+                         <br>Bugtracker: Jira  
+                         <br>Tested app: Mr Buggy 6
+                         <br>OS: Windows 8.1 </i></p>
+
+                   <div class="d-flex flex-column">
+                    
+                       <figure class="m-2 mt-4">
+                        <figcaption>Mr Buggy 6 login form</figcaption>
+                           <img class="img-fluid enlargePhoto border border-dark" src="img/other/Jira_MrBuggy6.png" width="700px" alt="A screenshot of Mr Buggy 6 login form">
+                           
+                       </figure>
+                       
+                       <figure class="m-2 mt-4">
+                        <figcaption>Jira bug report</figcaption>
+                        <img class="img-fluid enlargePhoto border border-dark" src="img/other/Jira_bugreport1.png" width="700px" alt="A screenshot of Jira bug report">
+                        
+                    </figure>
+
+                        <figure class="m-2 mt-4">
+                            <figcaption>Jira progress board</figcaption>
+                           <img class="img-fluid enlargePhoto border border-dark" src="img/other/Jira_bugreport2.png" width="700px" alt="A screenshot of Jira progress board">
+                       </figure>
+                       
+                       </div> 
+                                                         
+                       </div>
+                     </div>
+                   </div>
+                 </div> 
+
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+
+                    <h1 class="regular"><a href="html_testingautomation.html" style="text-decoration: none; color: #b0c05d;">Go to Part 2: Automation <br> 
+                        (Cypress, Postman)</a></h1>
+
+                    <div class="col-12 my-4 emptyDiv">
+                        <hr>   
+                    </div>
+		
+        </div> <!-- container -->
+                
+                        <h1 class="regular mb-4">Some crosscuts</h1>
+                        
+                        <section>
+                        
+                            <div class="container">
+
+                            <div class="row d-flex justify-content-center mb-5">
+                            
+                                <div class="col-lg-3 menuTile p-0 m-3">
+                                    <a href="html_mpjavascripts.html">
+                                        <i class="icon-cog-alt"></i> <br>        
+                                        <h3>JS Apps</h3>
+                                        <p>Some JavaScript apps <br> for practice and  fun</p>
+                                    </a>
+                                </div>  
+                            
+                                <div class="col-lg-3 menuTile p-0 m-3">
+                                    <a href="html_testing.html">
+                                        <i class="bi bi-stoplights-fill"></i> <br>        
+                                        <h3>Testing</h3>
+                                        <p>Trivia about testing <br> including Cypress test examples</p> 
+                                    </a>
+                                </div>
+                                    
+                                <div class="col-lg-3 menuTile p-0 m-3">
+                                    <a href="html_serverside.html">
+                                        <i class="icon-chat"></i> <br>        
+                                        <h3>Server</h3> 
+                                        <p>Struggles with node.js, <br> servers and databases</p>
+                                    </a>
+                                        
+                                </div>    
+                        
+                                <div class="col-lg-3 menuTile p-0 m-3">
+                                    <a href="html_webdesign.html">
+                                        <i class="icon-snowflake-o"></i> <br>        
+                                        <h3>Design</h3> 
+                                        <p>A few non-responsive <br> web designs</p>
+                                    </a>
+                                        
+                                </div>  
+                                            
+                                <div class="col-lg-3 menuTile p-0 m-3">
+                                    <a href="html_implementation.html">
+                                        <i class="bi bi-box-arrow-in-right"></i> <br>        
+                                        <h3>Implementation</h3> 
+                                        <p>Of a sale system <br> I coordinated</p>
+                                    </a>
+                                        
+                                </div>  
+
+                        </div> <!-- row -->	
+
+                        </section> <!-- section -->
+
+</main>
+   
+<footer class="container-fluid mt-3 p-3 text-center bg-primary">
+
+    <!-- <a href="mailto:lukasz.leb@gmail.com"></a> -->
+    &copy; All rights reserved - Łukasz Lebioda, 2022-2023
+    <br> <i class="icon-mail-alt"></i> lukasz.leb@gmail.com, <i class="icon-phone"></i>+48 513-637-367
+    
+</footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> <!-- skrypty bootstrapa podpięte zdalnie, ale można też lokalnie -->   
+
+<script src="js/myScripts.js"></script>
+</body>
+    
+</html>
+    
