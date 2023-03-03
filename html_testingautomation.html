@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
-    <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't done it sooner">
+    <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't made it sooner">
 	<meta name="keywords" content="coding, self-study, lifechange">
     <meta name="author" content="Coding40"> 
 	<title>Coding40 - A story of a lifechanging project</title>
@@ -101,7 +101,7 @@
                         <div class="row">
                            <div>
                             <h1 class="fw-bold text-uppercase">Automation Testing</h1>
-                            <p>From tester to programmer</p>
+                            <p>Cypress & Postman</p>
                             </div>
                         </div>
                     </div>		
@@ -114,8 +114,8 @@
                    
                     <header class="myHeader">
 					
-                        <h1 class="regular">New tools</h1> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
-                        <p class="regular">new challenges </p>
+                        <h3 class="mt-3">From tester to programmer</h3> <!-- można tak:  <h1 class="h2">Tools'n'Software</h1> -->
+                        <p class="regular">New tools, new challenges </p>
                        
 				    </header>
                     
@@ -123,46 +123,50 @@
                
                 <div class="row d-flex justify-content-center m-4"> 
                
-                    <h1 class="regular">Part 2: Automation <br> 
-                        (Cypress, Postman)</h1>
+                    <h4 class="mt-4"><a href="html_testingmanual.html" style="text-decoration: none;">Go back to Part 1: Manual <br> 
+                        (self-study, test cases, bug reports)</a></h4>
 
                     <div class="col-12 my-4 emptyDiv">
                         <hr>   
                     </div>
 
-                    <div class="col-md-2 m-3">
+                    <div class="justify-content-center align-items-center m-4 userStoryDiv">
+                        <div class="col-md-2 m-3 me-lg-5">
                         <figure>
-                            <img src="img/icons/cypress.jpeg" width="120px" alt="A Cypress software logo">
+                            <img src="img/icons/cypress.jpeg" width="120px" alt="A Cypress software logo" style="border-radius: 70px;">
                             <figcaption></figcaption>
                         </figure>
                     </div>
                     
-                    <div class="userStory col-md-8">
+                    <div class="userStory userStoryText col-md-8">
                     
-                        <h1 class="regular">User story, ep. 7: The Cypress breakthrough</h1>
-                        <p class="regular p-4 mb-0"><i>One beautiful day Lukasz learned that tests could be automated. It was like falling in love... Bang! And You know the reason You're breathing for... <br><br> Luckily he had learned some JavaScript before and got quite familiar with Visual Studio Code. After hours and hours of heavy practice he was finally able to run his first simple tests that actually tested something. <br><br> Below they are, ordered as they get more advanced.</i></p>
+                        <h2 class="mt-3">Ep. 7: The Cypress breakthrough</h1>
+                        <!-- <p class="regular p-4 mb-0"><i>One beautiful day Lukasz learned that tests could be automated. It was like falling in love... Bang! And You know the reason You're breathing for... <br><br> Luckily he had learned some JavaScript before and got quite familiar with Visual Studio Code. After hours and hours of heavy practice he was finally able to run his first simple tests that actually tested something. <br><br> Below they are, ordered as they get more advanced.</i></p> -->
+                        <p class="regular myTextJustify mb-0"><b>User story: </b><br>As a person who is eager to become an automation tester I want to be introduced to the best front-end automation tool on the market, so that I can write automation scripts with pure joy.
+                        <br><br><b>Acceptance criteria: </b><br> 1. Download and install Visual Studio Code. <br> 2. Hit 'npm install cypress' in the terminal to install Cypress. <br> 3. Find a Cypress tutorial on Youtube and start writing test scripts.  <br> 4. After weeks of heavy decide that You're ready to test some API with another splendid tool.</p>
                                        
                     </div>
+                </div>
                 
                 <div class="accordion accordion-flush col-md-10 mt-2" id="accordionExample">
                      
                       <div class="accordion-item mt-3 accordionTestingItem">
                         <h2 class="accordion-header" id="headingOne">
                           <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Cypress Test 1 - Mountain weather report (basics + aliases)
+                              Cypress Test 1 - Mountain weather report (with aliases)
                           </button>
                         </h2>
                         <!-- <div id="collapseOne" class="accordion-collapse show": wtedy ten div jest defaultowo otwarty -->
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <h1 class="h3 fw-normal mb-4 regular">Mountain weather report (basics + aliases)</h1>
+                            <!-- <h1 class="h3 fw-normal mb-4 regular">Mountain weather report (basics + aliases)</h1> -->
                         
                             <p class="myTextJustify regular mt-3 mb-4">
                                 <i><b>Scenario:</b> I'm about to set for an expedition to conquer Gerlach summit (The Tatras, Slovakia) in winter. I'd better see the weather report. The test below would check if it is possible on one particular website.</i>   
                           </p>
-                          <p class="myTextJustify regular mt-3 mb-4">
+                          <!-- <p class="myTextJustify regular mt-3 mb-4">
                             <i><b>Context:</b> There are only basic Cypress commands and assertions used in this test. Plus some aliases for practice. Without any specified requirements to look up to I found it really enjoyable to conduct.</i>          
-                            </p>
+                            </p> -->
 
                             <p class="myTextJustify regular mt-3 mb-4">
                             <i><b>Environment:</b>
@@ -251,20 +255,19 @@ viewport: 393 x 851", () => {
                       <div class="accordion-item mt-1 accordionTestingItem">
                         <h2 class="accordion-header" id="headingTwo">
                           <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                              Cypress Test 2 - Online bookstore searchbox (variables + hooks)
+                              Cypress Test 2 - Online bookstore searchbox (with hooks)
                           </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <h1 class="h3 fw-normal mb-4 regular">Online bookstore searchbox (variables + hooks)</h1>
-                        
+                            
                             <p class="myTextJustify regular mt-3 mb-4">
                                 <i><b>Scenario:</b> I am about to buy a novel of one of my favourite authors: John Grisham. There is an online bookstore I get in touch with quite often when I need a good stuff to read. The source code below would see if the searchbox of that bookstore website is flawless. </i>
                             </p>
                               
-                            <p class="myTextJustify regular mt-3 mb-4">
+                            <!-- <p class="myTextJustify regular mt-3 mb-4">
                                 <i><b>Context:</b> I used a hook and variables this time. And some new assertions as well. This test is an automated version of manual test I run using TestLink (above). I found it much more difficult to follow the established route of test cases rather than to design them freely. And again - the test failed because it was about to fail. I'm sure the searchbox actually works as planned and designed. </i>  
-                            </p>
+                            </p> -->
 
                             <p class="myTextJustify regular mt-3 mb-4">
                                 <i><b>Environment:</b>
@@ -301,10 +304,15 @@ describe('when navigate to the online bookstore page', () => {
     let dummyPhrase = "sdgrdthfhjgfhkgkgh";
     let searchbox = "#headerSearchInput";
     let website = "https://bonito.pl/";
+    let afterHookInfo = "I've just used 2 hooks in my test :)";
   
-    beforeEach(() => {
+    beforeEach( () => {
         cy.visit(website);
         cy.url().should("contain", "bonito");
+    })
+
+    after( () => {
+        cy.log(afterHookInfo);
     })
   
     it("website loaded and searchbox with placeholder visible", () => {
@@ -373,20 +381,19 @@ describe('when navigate to the online bookstore page', () => {
                         <div class="accordion-item mt-1 accordionTestingItem">
                           <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                Cypress Test 3 - Login / Logout E2E (with fixtures)
+                                Cypress Test 3 - Login / Logout (with fixtures)
                             </button>
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <h1 class="h3 fw-normal mb-4 regular">Login / Logout E2E (with fixtures)</h1>
                           
                               <p class="myTextJustify regular mt-3 mb-4">
                                   <i><b>Scenario:</b> I would like to login to a banking application. I probably shouldn't try this with a real app. So I found a fake one where people like me can have a go without worrying to much about the consequences. </i>
                               </p>
                                 
-                              <p class="myTextJustify regular mt-3 mb-4">
+                              <!-- <p class="myTextJustify regular mt-3 mb-4">
                                   <i><b>Context:</b> This time I did not invent the test scenario on my own. I followed a Udemy tutorial that uses a fake banking application to practice login / logout functionalities. This made me got familiar with the concept of fixtures and allow me to use them in my testing practice for the first time. </i>  
-                              </p>
+                              </p> -->
   
                               <p class="myTextJustify regular mt-3 mb-4">
                                   <i><b>Environment:</b>
@@ -514,20 +521,19 @@ describe('when navigate to the online bookstore page', () => {
                         <div class="accordion-item mt-1 accordionTestingItem">
                           <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                Cypress Test 4 - Login / Logout E2E (custom commands)
+                                Cypress Test 4 - Login / Logout E2E (with custom commands)
                             </button>
                           </h2>
                           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <h1 class="h3 fw-normal mb-4 regular">Login / Logout E2E (with custom commands)</h1>
-                          
+                              
                               <p class="myTextJustify regular mt-3 mb-4">
-                                  <i><b>Scenario:</b> I would like to login to a fake banking application again, but this time with more advanced hacking tools :) (see the test above for comparison). </i>
+                                  <i><b>Scenario:</b> I would like to login to a fake banking application again, but this time with more advanced hacking tools :). </i>
                               </p>
                                 
-                              <p class="myTextJustify regular mt-3 mb-4">
+                              <!-- <p class="myTextJustify regular mt-3 mb-4">
                                   <i><b>Context:</b> This time I used two custom commands I created for the first time in my testing life. What a wonderfull feeling it is.... </i>  
-                              </p>
+                              </p> -->
   
                               <p class="myTextJustify regular mt-3 mb-4">
                                   <i><b>Environment:</b>
@@ -630,153 +636,90 @@ describe('when navigate to the online bookstore page', () => {
                             <hr>   
                         </div>
                         
-                        <div class="col-md-2 m-3">
+                        <div class="justify-content-center align-items-center m-4 userStoryDiv">
+                            <div class="col-md-2 m-3 me-lg-5">
                             <figure>
                                 <img src="img/icons/postman_medium.png" width="105px" alt="A Postman software logo">
                                 <figcaption></figcaption>
                             </figure>
                         </div>
                         
-                        <div class="userStory col-md-8">
-                        
-                            <h1 class="regular">User story, ep. 8: The Postman breakthrough</h1>
-                            <p class="regular p-4 mb-0"><i>Testing front-end layers of the web applications is not the only way of testing, as Lucas subsequently found out. There are more actions taking place beneath the surface of visibility... <br><br> There is for instance a business layer (an API) that does the magic with the user request, sent it to the data layer (database), retrieves the response, does the magic again and send the response to the presentation layer where the user can see and enjoy the result. <br><br> Lucas thinks that there is no other back-end testing tool so nice and easy and smooth than the Postman. With it testing API's brings pure joy.</i></p>
-                                           
+                        <div class="userStory userStoryText col-md-8">
+                            <h2 class="mt-3">Ep. 8: The Postman breakthrough</h2>
+                            <!-- <p class="regular p-4 mb-0"><i>Testing front-end layers of the web applications is not the only way of testing, as Lucas subsequently found out. There are more actions taking place beneath the surface of visibility... <br><br> There is for instance a business layer (an API) that does the magic with the user request, sent it to the data layer (database), retrieves the response, does the magic again and send the response to the presentation layer where the user can see and enjoy the result. <br><br> Lucas thinks that there is no other back-end testing tool so nice and easy and smooth than the Postman. With it testing API's brings pure joy.</i></p> -->
+                            <p class="regular myTextJustify mb-0"><b>User story: </b><br><i>As a person who is absolutely commited to become an automation tester I want to get familiar with the best API automation tool out there, so that I can write automation scripts with fun and efficiency.</i> <br><br><b>Acceptance criteria: </b><br> 1. Learn what are API's and what they do with the user input. <br> 2. Download and install Postman. <br> 3. Start using Postman. Don't worry, it has a very friendly GUI. <br> 4. After mastering Postman, start searching for new challenges.</p>
+                        </div>            
                         </div>
 
-                            <!-- next accordion -->
+                    <!-- next accordion -->
 
-                    <div class="accordion accordion-flush col-md-10 mt-2" id="accordionExample">
+                    <div class="accordion accordion-flush col-md-10 mt-2 mb-4" id="accordionExample">
                      
                         <div class="accordion-item mt-1 accordionTestingItem">
                           <h2 class="accordion-header" id="headingSix">
                             <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                Postman - fake API test practice (coming soon)
+                                Postman 1 - a collection of basic requests
                             </button>
                           </h2>
                           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <h1 class="h3 fw-normal mb-4 regular">Postman - fake API test practice (coming soon)</h1>
-                          
-                              <!-- <p class="myTextJustify regular mt-3 mb-4">
-                                  <i><b>Scenario:</b> I would like to login to a banking application. I probably shouldn't try this with a real app. So I found a fake one where people like me can have a go without worrying to much about the consequences. </i>
-                              </p>
-                                
+                                                          
                               <p class="myTextJustify regular mt-3 mb-4">
-                                  <i><b>Context:</b> This time I did not invent the test scenario on my own. I followed a Udemy tutorial that uses a fake banking application to practice login / logout functionalities. This made me got familiar with the concept of fixtures and allow me to use them in my testing practice for the first time. </i>  
-                              </p> -->
+                                  <i><b>Intro:</b> There are many fake API's to be tested out there using Postman (or any API testing tool actually). They often provide documentations to learn how the basic http requests should look like. </i>  
+                              </p>
   
-                              <!-- <p class="myTextJustify regular mt-3 mb-4">
-                                  <i><b>Environment:</b>
-                                  <br>Testing framework: Cypress (v. 11.2.0)  
-                                  <br>OS: Windows 10 Home 64-bit
-                                  <br>Browser: Google chrome </i></p>
+                              <p class="myTextJustify regular mt-3 mb-3">
                                 
-                                  <p class="myTextJustify regular mt-3 mb-4">
+                                <i><b>Tested API:</b>
+                                <br>https://reqres.in</i> <br><br>
+
+                                  <i><b>Environment:</b>
+                                  <br>Testing tool: Postman (v. 10.10.9)  
+                                  <br>OS: Windows 8.1</p>
+                                
+                                  <!-- <p class="myTextJustify regular mt-3 mb-4">
                                       <b>Test results:</b>
                                       <br>
                                       - when login with invalid credentials, an error message is displayed <i class="bi bi-check"></i> <br>    
                                       - login with valid credentials possible  <i class="bi bi-check"></i> <br> 
                                       - logout possible <i class="bi bi-check"></i> <br> 
                                 </p> -->
-  
-                              <!-- <div class="automationTest">
-                              <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
-                                      <legend class="w-auto px-2 mb-4"></legend>
-                                          <div class="form-group mb-4">
-                                          <h5 class="mb-4" style="text-align: center;">Source code:</h5>
-                                     
-                                          <div class="d-flex justify-content-center" >  
-                                          <button id="clipboardButton3" title="Copy to clipboard" style="text-align: right;"><i class="bi bi-clipboard"></i></button>
-                                          </div>
-                                              
-  <pre id="sourceCodeClipboard3" class="regular sourceCodeClipboard" style="font-family: Courier New;">
-                                                                                 
-    /* FIXTURES Used:
-    {
-        "username_ID": "username",
-        "password_ID": "password"
-    }
-    */
-    
-    describe("Login / Logout test", () => {
-    
-        let invalidUsername = "some username";
-        let invalidPassword = "some password";
-        const errorMessage = "Login and/or password are wrong.";
-        
-        before( () => {
-            cy.visit("http://zero.webappsecurity.com/index.html")
-            // 3 shoulds do wyboru: eq = equal, include, contain
-            cy.url().should("include", "index.html")
-            cy.url().should("contain", "index.html")
-            cy.title().should("equal", "Zero - Personal Banking - Loans - Credit Cards") 
-            cy.get("#signin_button").click()
-        })
-    
-    
-        it("should try to login with invalid data", () => {
-            cy.get("#login_form").should("be.visible")
-            cy.get("#user_login").clear().type(invalidUsername, {delay: 100})
-            cy.get("#user_password").clear().type(invalidPassword, {delay: 100})
-            cy.get("#user_remember_me").check() // optional
-            cy.get("input[name='submit']").click()
-    
-        })
-    
-        it("should display error message", () => {
-            cy.get(".alert-error")
-                .should("exist")
-                .and("contain", errorMessage)
-        })
-    
-        it("should login to the application", () => {
-    
-            // fixtures
-            cy.fixture("credentials").then(credentials => {
-                const username = credentials.username_ID;
-                const password = credentials.password_ID; 
-    
-                // aliases
-                cy.get("#user_login").as("loginInput")
-                cy.get("@loginInput").clear().type(username, {delay: 100})
-                cy.get("#user_password").as("passwordInput")
-                cy.get("@passwordInput").clear().type(password, {delay: 100})
-    
-                cy.get("#user_remember_me").check() // optional
-                cy.get("input[name='submit']").click()
-            })
-    
-            cy.get("ul.nav-tabs").should("be.visible")
-            
-        })
-    
-        it("should logout from the application", () => {
-            cy.contains("username").click()
-            cy.get("#logout_link").click()
-            cy.url().should("include", "index.html")
-        })
-    
-    })
-
-  </pre>   
-                                  </div>
-                                  </fieldset>
-                               
-                              </div>   -->
-                              
-                          <!-- <div> 
-                             <fieldset class="form-group border p-3 mb-4 accordionTestingFieldset">
-                                  <legend class="w-auto px-2 mb-3"></legend> 
-                                  <h5 class="mb-4">Video:</h5> 
-                              <div class="embed-responsive embed-responsive-16by9">  
-                                  <video class="embed-responsive-item" width="90%" max-height="auto" controls>
-                                      <source src="video/banklogin.mp4" type="video/mp4">
-                                  </video>
-                              </div>
-                              </fieldset>
-                          </div> -->
                                 
+                                <div class="d-flex flex-column">
+
+                                    <p class="myTextJustify regular mt-3 mb-2"><b>Step I:</b> <br>Read the documentation carefully to see what are the supported HTTP requests and how the respective endpoints should be like.</p>
+
+                                        <figure class="m-2">
+                                        <figcaption></figcaption>
+                                            <img class="img-fluid border border-dark" src="img/api/documentation.png" width="900px" alt="A screenshot of fake API documentation">
+                                        </figure>  
+
+                                        <p class="myTextJustify regular mt-3 mb-2"><b>Step II:</b>
+                                        <br> 1: Create a collection of most common http requests (GET, POST, PUT, PATCH, DELETE).
+                                        <br> 2: For every request provide a proper URI (consult the documentation).
+                                        <br> 3: Use code snippets provided by Postman to validate, e.g. server response code or part of post request body.
+                                        <br> 4. Send a request body in JSON format to the server. This will be tested when server responds.
+                                        </p>
+
+                                        <figure class="m-2">
+                                        <figcaption></figcaption>
+                                            <img class="img-fluid border border-dark" src="img/api/requests_overview.png" width="900px" alt="A screenshot of fake API documentation">
+                                        </figure> 
+
+                                        <p class="myTextJustify regular mt-3 mb-2"><b>Step III:</b> 
+                                        <br> 1: The main bar displays iterations, test duration, total number of tests etc.
+                                        <br> 2: The lower bar informs how many tests have passed, failed or been skipped.
+                                        <br> 3: The first test is written on the collection level - it's applied to every request in the collection.
+                                        <br> 4: Other tests are written separately for each request.   
+                                        </p>
+
+                                        <figure class="m-2">
+                                        <figcaption></figcaption>
+                                            <img class="img-fluid border border-dark" src="img/api/tests_overview.png" width="900px" alt="A screenshot of fake API documentation">
+                                        </figure> 
+
+                                </div> 
+
                             </div>
                           </div>
                         </div>
@@ -788,12 +731,7 @@ describe('when navigate to the online bookstore page', () => {
                       <div class="col-12 my-4 emptyDiv">
                         <hr>   
                     </div>
-
-                      <h1 class="regular"><a href="html_testingmanual.html" style="text-decoration: none; color: #b0c05d;">Go to Part 1: Manual <br> 
-                        (test cases, bug reports)</a></h1>
-
-                        <div class="col-12 mt-4 mb-2 emptyDiv">
-                            <hr>   
+  
                         </div>
 		
         </div> <!-- container -->
@@ -813,20 +751,12 @@ describe('when navigate to the online bookstore page', () => {
                                         <p>Some JavaScript apps <br> for practice and  fun</p>
                                     </a>
                                 </div>  
-                            
-                                <div class="col-lg-3 menuTile p-0 m-3">
-                                    <a href="html_testing.html">
-                                        <i class="bi bi-stoplights-fill"></i> <br>        
-                                        <h3>Testing</h3>
-                                        <p>Trivia about testing <br> including Cypress test examples</p> 
-                                    </a>
-                                </div>
-                                    
+                             
                                 <div class="col-lg-3 menuTile p-0 m-3">
                                     <a href="html_serverside.html">
                                         <i class="icon-chat"></i> <br>        
                                         <h3>Server</h3> 
-                                        <p>Struggles with node.js, <br> servers and databases</p>
+                                        <p>Steps to create <br> and manage a database</p>
                                     </a>
                                         
                                 </div>    
@@ -835,7 +765,7 @@ describe('when navigate to the online bookstore page', () => {
                                     <a href="html_webdesign.html">
                                         <i class="icon-snowflake-o"></i> <br>        
                                         <h3>Design</h3> 
-                                        <p>A few non-responsive <br> web designs</p>
+                                        <p>A few (non)responsive <br> web designs</p>
                                     </a>
                                         
                                 </div>  
@@ -844,10 +774,18 @@ describe('when navigate to the online bookstore page', () => {
                                     <a href="html_implementation.html">
                                         <i class="bi bi-box-arrow-in-right"></i> <br>        
                                         <h3>Implementation</h3> 
-                                        <p>Of a sale system <br> I coordinated</p>
+                                        <p>of a sale & booking system <br> I coordinated</p>
                                     </a>
                                         
                                 </div>  
+
+                                <div class="col-lg-3 menuTile p-0 m-3">
+                                    <a href="html_contact.html">
+                                        <i class="icon-flashlight"></i> <br>        
+                                        <h3>Contact</h3>
+                                        <p>How to find me <br> and get in touch with me </p>
+                                    </a>
+                                </div>
 
                         </div> <!-- row -->	
 

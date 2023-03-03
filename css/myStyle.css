@@ -52,7 +52,7 @@ main
 
 .myHeader
 {
-    background-color: #FFF5EE;
+    background-color: #C0D06F; /* było: #FFF5EE; */
     border: 1px solid #C0D06F;
     border-radius: 10px;
     padding-left: 10px;
@@ -499,19 +499,26 @@ p.myTextJustify
 
 .accordionTestingButton /* style of closed button */
 {
-    background-color: lightskyblue !important;
+    background-color: #E9967A !important;
     font-size: 20px !important;
     border-radius: 15px !important;
 }
 
 .accordionTestingButton:hover
 {
-    background-color: #76bdea !important;
+    background-color: tomato !important;
+    font-size: 20px !important;
 }
 
 .accordionTestingButton:not(.collapsed) /* style of opened button */
 {
-    background-color: lightskyblue !important;
+    background-color: #E9967A !important;
+    font-size: 20px !important;
+    color: black !important;
+}
+.accordionTestingButton:not(.collapsed):hover
+{
+    background-color: tomato !important;
     font-size: 20px !important;
     color: black !important;
 }
@@ -531,7 +538,7 @@ p.myTextJustify
 
 .accordionTestingItem /* background for opened div */
 {
-    background-color: aliceblue; 
+    background-color: #89CFF0; 
 }
 
 .accordionTestingFieldset
@@ -586,6 +593,10 @@ p.myTextJustify
         font-size: 15px !important;
     }
     .accordion-item button:not(.collapsed)
+    {
+        font-size: 15px !important;
+    }
+    .accordionTestingButton:not(.collapsed):hover
     {
         font-size: 15px !important;
     }
@@ -978,6 +989,29 @@ hr
 }
 
 /* -------------- TESTING SECTION --------------------------*/
+.userStoryDiv
+{
+    background-color: #89CFF0;
+    border-radius: 15px;
+}
+
+.userStoryText
+{
+    background-color: lemonchiffon;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+@media (min-width: 769px) {
+    .userStoryDiv
+    {
+        display: flex;
+    }
+}
+
+/* ------------ */
+
 @media (min-width: 1px) and (max-width: 300px) {
     .userStory h6
     {
@@ -1001,12 +1035,12 @@ hr
 .enlargePhoto
 {
     cursor: zoom-in;
-    transition:transform 0.55s ease;
+    transition: transform 0.55s ease;
 }
 
 .enlargePhoto:hover {
-    -webkit-transform:scale(2.05); 
-    transform:scale(2.05);
+    -webkit-transform: scale(1.75); /* było 2.05 */ 
+    transform: scale(1.75); /* było 2.05 */ 
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
@@ -1144,7 +1178,7 @@ hr
 /* only for non-active items with more content */
 .lifecycleItem
 {
-    height: 180px;
+    height: 540px;
 }
 .manifestoItem
 {
@@ -1197,7 +1231,7 @@ hr
     }
     .lifecycleItem
     {
-    height: 280px;
+    height: 380px;
     }
     .manifestoItem
     {
@@ -1231,7 +1265,7 @@ hr
     }
     .lifecycleItem
     {
-    height: 250px;
+    height: 360px;
     }
     .manifestoItem
     {
@@ -1256,6 +1290,10 @@ hr
         font-size: 12px;
         margin-top: 25px;
     }
+    .lifecycleItem
+    {
+    height: 370px;
+    }
     .manifestoItem
     {
     height: 370px;
@@ -1276,6 +1314,10 @@ hr
         padding-left: 10px;
         padding-right: 10px;
     }
+    .lifecycleItem
+    {
+    height: 400px;
+    }
     .manifestoItem
     {
     height: 400px;
@@ -1290,6 +1332,10 @@ hr
     {
         margin-left: 60px;
         margin-right: 60px;
+    }
+    .lifecycleItem
+    {
+    height: 420px;
     }
     .manifestoItem
     {
