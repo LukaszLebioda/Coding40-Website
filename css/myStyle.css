@@ -1265,7 +1265,7 @@ hr
     }
     .lifecycleItem
     {
-    height: 360px;
+    height: 380px;
     }
     .manifestoItem
     {
@@ -1290,9 +1290,13 @@ hr
         font-size: 12px;
         margin-top: 25px;
     }
+    .divCarousel figcaption
+    {
+        font-size: 12px;
+    }
     .lifecycleItem
     {
-    height: 370px;
+    height: 390px;
     }
     .manifestoItem
     {
@@ -1300,7 +1304,7 @@ hr
     }
     .testingItem
     {
-    height: 430px;
+    height: 320px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1314,6 +1318,10 @@ hr
         padding-left: 10px;
         padding-right: 10px;
     }
+    .divCarousel figcaption
+    {
+        font-size: 12px;
+    }
     .lifecycleItem
     {
     height: 400px;
@@ -1324,7 +1332,7 @@ hr
     }
     .testingItem
     {
-    height: 440px;
+    height: 300px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1335,7 +1343,7 @@ hr
     }
     .lifecycleItem
     {
-    height: 420px;
+    height: 480px;
     }
     .manifestoItem
     {
@@ -1343,14 +1351,26 @@ hr
     }
     .testingItem
     {
-    height: 460px;
+    height: 420px;
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
     .divCarousel 
     {
         margin-left: 170px;
         margin-right: 170px;
+    }
+    .lifecycleItem
+    {
+    height: 540px;
+    }
+    .manifestoItem
+    {
+    height: 420px;
+    }
+    .testingItem
+    {
+    height: 420px;
     }
 }
 
