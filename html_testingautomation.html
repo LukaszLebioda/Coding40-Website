@@ -649,27 +649,25 @@ describe('when navigate to the online bookstore page', () => {
 
                     <!-- next accordion -->
 
-                    <div class="accordion accordion-flush col-md-10 mt-2 mb-4" id="accordionExample">
+                    <div class="accordion accordion-flush col-md-10 mt-2 mb-1" id="accordionExample">
                      
                         <div class="accordion-item mt-1 accordionTestingItem">
                           <h2 class="accordion-header" id="headingSix">
                             <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                Postman 1 - a collection of basic requests
+                                Postman Test 1 - a collection of basic http requests / validation of server responses
                             </button>
                           </h2>
                           <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                                           
                               <p class="myTextJustify regular mt-3 mb-4">
-                                  <i><b>Intro:</b> There are many fake API's to be tested out there using Postman (or any API testing tool actually). They often provide documentations to learn how the basic http requests should look like. </i>  
+                                  <i><b>Intro:</b> There are many fake API's to be tested online using Postman. They often provide enough documentation to learn the most common http requests and basic validations of server responses. There is no better way of practice before diving deep into the real API jungle out there.</i>  
                               </p>
   
                               <p class="myTextJustify regular mt-3 mb-3">
                                 
-                                <i><b>Tested API:</b>
-                                <br>https://reqres.in</i> <br><br>
-
                                   <i><b>Environment:</b>
+                                <br> Tested API: https://reqres.in
                                   <br>Testing tool: Postman (v. 10.10.9)  
                                   <br>OS: Windows 8.1</p>
                                 
@@ -712,6 +710,75 @@ describe('when navigate to the online bookstore page', () => {
                                         <figure class="m-2">
                                         <figcaption></figcaption>
                                             <img class="img-fluid border border-dark" src="img/api/tests_overview.png" width="900px" alt="A screenshot of fake API documentation">
+                                        </figure> 
+
+                                </div> 
+
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div> 
+
+                      <!-- end of accordion -->
+
+                    <!-- next accordion -->
+
+                    <div class="accordion accordion-flush col-md-10 mt-2 mb-5" id="accordionExample" style="margin-left:auto; margin-right: auto;">
+                     
+                        <div class="accordion-item mt-1 accordionTestingItem">
+                          <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                Postman Test 2 - global variables / validation of http post request 
+                            </button>
+                          </h2>
+                          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                                          
+                              <p class="myTextJustify regular mt-3 mb-4">
+                                  <i><b>Intro:</b> I worked with the same fake API as in the previous test (above). This time however I went one little step forward and applied global variables to test an HTTP post request.</i>  
+                              </p>
+  
+                              <p class="myTextJustify regular mt-3 mb-3">
+                                
+                                  <i><b>Environment:</b>
+                                  <br> Tested API: https://reqres.in
+                                  <br>Testing tool: Postman (v. 10.10.9)  
+                                  <br>OS: Windows 8.1</p>
+                                
+                                <div class="d-flex flex-column">
+
+                                    <p class="myTextJustify regular mt-3 mb-2"><b>Step I:</b> 
+                                        <br> 1: Go to 'Environments' tab, then click 'Globals' to open the panel for setting the variables.
+                                        <br> 2: Declare 3 variables: for the hostname (host2 = 'reqres.in/api'), for the username (nameGlobalVariable = 'some random name') and for the username occupation (jobGlobalVariable = 'some random job').  
+                                    </p>
+
+                                        <figure class="m-2">
+                                        <figcaption></figcaption>
+                                            <img class="img-fluid border border-dark" src="img/api/globalvariable.png" width="900px" alt="A screenshot of fake API documentation">
+                                        </figure>  
+
+                                        <p class="myTextJustify regular mt-3 mb-2"><b>Step II:</b>
+                                        <br> 1: Select POST request. Use the 'host2' variable and insert it into the URL.
+                                        <br> 2: Click the 'Body' tab, then choose JSON format for the request body to be provided.
+                                        <br> 3: Create the body of the post request. Use 2 variables previously established for the username and username occupation.
+                                        </p>
+
+                                        <figure class="m-2">
+                                        <figcaption></figcaption>
+                                            <img class="img-fluid border border-dark" src="img/api/postrequest.png" width="900px" alt="A screenshot of fake API documentation">
+                                        </figure> 
+
+                                        <p class="myTextJustify regular mt-3 mb-2"><b>Step III:</b> 
+                                        <br> 1: Create a test to validate the server response.
+                                        <br> 2: Create a test to validate the 'name' value in the server response body. Don't use hardcoded values. Use previously declared global variable instead.
+                                        <br> 3: Create a test to validate the 'job' value in the server response body. 
+                                        <br> 4: See the result of the tests you created.  
+                                        </p>
+
+                                        <figure class="m-2">
+                                        <figcaption></figcaption>
+                                            <img class="img-fluid border border-dark" src="img/api/postrequesttest.png" width="900px" alt="A screenshot of fake API documentation">
                                         </figure> 
 
                                 </div> 
