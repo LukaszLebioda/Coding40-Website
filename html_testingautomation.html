@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6B88Q7FR4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+             gtag('config', 'G-L6B88Q7FR4');
+        </script>
+    
+    <link rel="canonical" href="https://coding40.eu/">
+
+    <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sprawdzić initial-scale=1 -->
     <meta name="description" content="I'd like to tell You a story of the lifechange project I made not to regret ever again I hadn't made it sooner">
@@ -432,14 +445,21 @@ describe('when navigate to the online bookstore page', () => {
         
         before( () => {
             cy.visit("http://zero.webappsecurity.com/index.html")
-            // 3 shoulds do wyboru: eq = equal, include, contain
             cy.url().should("include", "index.html")
-            cy.url().should("contain", "index.html")
             cy.title().should("equal", "Zero - Personal Banking - Loans - Credit Cards") 
             cy.get("#signin_button").click()
         })
     
-    
+        /* commented out, just for practice
+        it("should create json file with login data", () => {
+            cy.writeFile("credentials.json", { username_ID: "username", password_ID: "password"});
+        })
+        it("should read & verify data from JSON file", () => {
+            cy.readFile("credentials.json").its("username_ID").should("eq", "username");
+            cy.readFile("credentials.json").its("password_ID").should("eq", "password");
+        })
+        */
+
         it("should try to login with invalid data", () => {
             cy.get("#login_form").should("be.visible")
             cy.get("#user_login").clear().type(invalidUsername, {delay: 100})
@@ -517,7 +537,7 @@ describe('when navigate to the online bookstore page', () => {
                         <div class="accordion-item mt-1 accordionTestingItem">
                           <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed accordionTestingButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                Cypress Test 4 - Login / Logout E2E (with custom commands)
+                                Cypress Test 4 - Login / Logout (with custom commands)
                             </button>
                           </h2>
                           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">

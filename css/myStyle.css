@@ -623,6 +623,13 @@ p.myTextJustify
     width: 55px;
 }
 
+.hardskillParagraph
+{
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 /* zmniejszenie paddingu na niskich rozdzielczościach */
 @media (min-width: 1px) and (max-width: 390px) {
     .accordion-body
@@ -1177,7 +1184,7 @@ hr
 }
 
 /* only for non-active items with more content */
-.lifecycleItem
+/* .lifecycleItem
 {
     height: 540px;
 }
@@ -1188,7 +1195,7 @@ hr
 .testingItem
 {
     height: 540px;
-}
+} */
 
 .carouselPhoto
 {
@@ -1344,7 +1351,7 @@ hr
     }
     .lifecycleItem
     {
-    height: 480px;
+    height: 510px;
     }
     .manifestoItem
     {
@@ -1355,7 +1362,7 @@ hr
     height: 420px;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1600px) {
     .divCarousel 
     {
         margin-left: 170px;
